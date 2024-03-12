@@ -1,0 +1,14 @@
+.blue-box {
+  box-shadow: 4px 4px 50px #666ae520, -3px -4px 50px #666ae520;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(
+        10deg,
+        #666ae5,
+        #666ae550,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+      )
+      border-box;
+  border: 1px solid transparent;
+}

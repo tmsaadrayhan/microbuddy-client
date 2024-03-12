@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap");
+
+.header {
+  background: linear-gradient(
+    to bottom,
+    rgba(102, 106, 229, 0.15) 0%,
+    rgba(102, 106, 229, 0) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-weight: bolder;
+}
+.onHeader {
+  color: #000;
+  margin-left: 20px;
+
+  text-align: center;
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.scroll {
+  margin: auto;
+  overflow-x: auto;
+  padding: 20px;
+}
+.scroll div {
+  margin: 20px;
+}
+.services div {
+  margin-bottom: 50px;
+}
+.company div {
+  box-shadow: 10px 10px 20px #8e5cbc20;
+  margin: 1rem;
+  height: 120px;
+}

@@ -1,0 +1,34 @@
+@media only screen and (max-width: 640px) {
+  .bg-map {
+    background-image: url("../../assets/Contact/Group 298.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 600px 500px;
+  }
+}
+
+.input-box,
+input,
+textarea {
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(0deg, #666ae5, rgba(0, 0, 0, 0)) border-box;
+  border: 1px solid transparent;
+}
+input {
+  box-shadow: 4px 4px 8px #666ae520, -4px -4px 8px #666ae520;
+  border: 5px solid transparent;
+}
+textarea {
+  box-shadow: 4px 4px 8px #666ae520, -4px -4px 8px #666ae520;
+}
+.input-box {
+  box-shadow: 4px 4px 8px #666ae520, -4px -4px 8px #666ae520;
+  color: #666ae5;
+}
+.contact-button {
+  box-shadow: 5px 10px 10px #666ae520, -4px -4px 8px #666ae520;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(270deg, #666ae5, rgba(0, 0, 0, 0)) border-box;
+  border: 1px solid transparent;
+  color: #666ae5;
+}

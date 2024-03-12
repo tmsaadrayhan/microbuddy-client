@@ -1,0 +1,21 @@
+.project-textarea {
+  resize: none;
+  box-shadow: 10px 10px 20px #666ae550;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(180deg, #46b0eb, #e0aa1512) border-box;
+  border: 2px solid transparent;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+.blue-border {
+  box-shadow: 10px 10px 20px #666ae550;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(270deg, #666ae5, rgba(0, 0, 0, 0)) border-box;
+  border: 2px solid transparent;
+}
+.blue-border input {
+  box-shadow: 10px 10px 20px #666ae550;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(180deg, #46b0eb, #e0aa1512) border-box;
+  border: 2px solid transparent;
+}

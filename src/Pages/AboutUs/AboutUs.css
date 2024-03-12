@@ -1,0 +1,44 @@
+.about-from-left {
+  position: relative;
+  animation: aboutFromLeft 2s;
+}
+.about-from-right {
+  position: relative;
+  animation: aboutFromRight 2s;
+}
+.about-grow-from-0 {
+  animation: growFrom0 2s both;
+  animation-delay: 1s;
+}
+
+@keyframes aboutGrowFrom0 {
+  from {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scaleX(1);
+  }
+}
+
+@keyframes aboutFromLeft {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
+@keyframes aboutFromRight {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}

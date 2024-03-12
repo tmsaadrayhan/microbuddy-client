@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap");
+
+.bg-head {
+  background-image: linear-gradient(180deg, #eeeefa, #fafafe);
+}
+.left-text {
+  font-family: Outfit;
+}
+.text-gradient {
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.left-btn {
+  background: #666ae5;
+}
+.text-with-stroke {
+  margin: 0;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #666ae5;
+  color: rgba(0, 0, 0, 0);
+}
+.home-from-left {
+  position: relative;
+  animation: homeFromLeft 2s;
+}
+.home-from-right {
+  position: relative;
+  animation: homeFromRight 2s;
+}
+@keyframes homeFromLeft {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
+@keyframes homeFromRight {
+  0% {
+    -webkit-transform: translateX(20px);
+    transform: translateX(200px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}

@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  background: white;
+  color: black;
+  width: 100%;
+  margin: 0px;
+  font-family: "Outfit", sans-serif;
+}
+
+
+button {
+  border: none;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-visible {
+  overflow: visible;
+}
+
+.pop-up {
+  position: relative;
+  animation: popUp 1s;
+}
+.grow-from-0 {
+  position: relative;
+  animation: growFrom0 1s;
+}
+.grow-from-y0 {
+  position: relative;
+  animation: growFromY0 1s;
+}
+
+.grow-from-x0 {
+  position: relative;
+  animation: growFromX0 1s;
+}
+.breathe {
+  position: relative;
+  animation: breathe 4s;
+  animation-iteration-count: infinite;
+}
+.breathe-after {
+  position: relative;
+  animation-delay: 1000;
+  animation: breathe 4s;
+  animation-iteration-count: infinite;
+}
+.fade-in-delay-one {
+  position: relative;
+  animation: fadeInDelayOne 2s;
+}
+.from-zero-breathe {
+  animation: growFrom0 1s forwards, breathe 2s infinite alternate;
+}
+.primary-button {
+  transition: all 0.5s;
+  font-size: 17px;
+  padding: 1rem 1.25rem 1rem 1.25rem;
+  background-color: #666ae5;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px #666ae580;
+}
+.primary-button:hover {
+  border-radius: 50px;
+  background-color: #43d9b3;
+  box-shadow: 10px 10px 0px #666ae5;
+  color: #fff;
+}
+
+@keyframes fadeInDelayOne {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes breathe {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
+@keyframes popUp {
+  from {
+    bottom: -100px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+@keyframes growFrom0 {
+  from {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scaleX(1);
+  }
+}
+@keyframes growFromX0 {
+  from {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes growFromY0 {
+  from {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}

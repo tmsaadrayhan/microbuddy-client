@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap");
+.footer-header {
+  color: #666ae5;
+  font-family: "Outfit", sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.z-up {
+  z-index: 1;
+}
+.z-down {
+  z-index: 0;
+}
+.absolute-center {
+  position: absolute;
+  left: 50%;
+  
+  transform: translate(-50%, -50%);
+}
