@@ -15,7 +15,7 @@ const OurService = () => {
     <div className="service-bg relative">
       <div className="lg:max-w-[70rem] mx-auto lg:flex gap-4">
         {/*sm and md*/}
-        <div className="block lg:hidden flex justify-end mx-[1rem] md:mx-[3rem]">
+        <div className="flex lg:hidden justify-end mx-[1rem] md:mx-[3rem]">
           <div className="text-end w-full mx-auto md:max-w-[35rem] md:mb-[10rem]">
             <div>
               <h1 className="gradient-text text-7xl md:text-9xl font-bold -z-40">
@@ -39,17 +39,12 @@ const OurService = () => {
             <div>
               <button className="service-button">Learn More</button>
             </div>
-            <img
-              className="hidden lg:block absolute bottom-[350px] right-[-200px] w-[22rem]"
-              src={img2}
-              alt=""
-            />
           </div>
         </div>
-        {/*lg*/}
+        {/*lg and md*/}
         <div className="md:max-w-[35rem] mx-auto">
           {/*lg*/}
-          <div className="hidden lg:grid grid-cols-2 gap-4 mt-[5rem] lg:mt-[-2] services">
+          <div className="hidden lg:grid grid-cols-2 gap-4 mt-[-2] services">
             <ScrollAnimation
               animateOnce={true}
               delay={500}
@@ -127,7 +122,7 @@ const OurService = () => {
             </ScrollAnimation>
           </div>
           {/*md*/}
-          <div className="hidden md:grid lg:hidden grid-cols-2 gap-4 mt-[5rem] lg:mt-[-2] services">
+          <div className="hidden md:grid lg:hidden grid-cols-2 gap-4 mt-[5rem] services">
             <div className="pt-[5rem]">
               <div className="mx-[1rem] rounded-xl h-[17rem] tech-service">
                 <img className="my-[-6rem]" src={img3} alt="" />
@@ -248,7 +243,7 @@ const OurService = () => {
           </Slider>
         </div>
         {/*lg*/}
-        <div className="hidden  text-end relative w-1/2 lg:mx-[1rem] lg:flex items-center">
+        <div className="hidden lg:flex text-end relative w-1/2 mx-[1rem] items-center">
           <div>
             <div className="mirror w-[6rem] absolute right-4 top-[13rem]">
               <div className="relative">
@@ -284,7 +279,7 @@ const OurService = () => {
       </div>
       <ScrollAnimation animateOnce={true} animateIn="home-from-right">
         <img
-          className=" hidden lg:block absolute bottom-[-3rem] right-[0px] w-[22rem]"
+          className="hidden lg:block absolute bottom-[-3rem] right-[0px] w-[22rem]"
           src={img2}
           alt=""
         />

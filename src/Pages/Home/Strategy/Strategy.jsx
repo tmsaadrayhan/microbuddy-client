@@ -17,6 +17,7 @@ const Strategy = () => {
           <h1>FOR EVERYONE</h1>
         </div>
       </div>
+      {/*lg and md*/}
       <div className="hidden md:block lg:flex justify-normal items-center mx-auto px-[1rem]">
         <div className="z-[50] md:ms-[2rem] lg:ms-0">
           <ScrollAnimation
@@ -136,18 +137,19 @@ const Strategy = () => {
           </ScrollAnimation>
         </div>
       </div>
-      <div className="block md:hidden lg:items-center mx-auto overflow-hidden px-[1rem]">
-        <div className="z-[50] md:ms-[2rem] lg:ms-0">
+      {/*sm*/}
+      <div className="block md:hidden mx-auto overflow-hidden px-[1rem]">
+        <div className="z-[50]">
           <ScrollAnimation
             animateOnce={true}
             animateIn="home-from-left"
             className="strategy-box bg-white m-[1rem] max-w-[30rem] p-[1rem] rounded-2xl mx-auto lg:mx-0"
           >
-            <div className="lg:text-end">
+            <div>
               <h1 className="text-xl font-bold">Data entry</h1>
             </div>
-            <div className="flex lg:justify-end">
-              <div className="w-[20rem] lg:text-end">
+            <div className="flex">
+              <div className="w-[20rem]">
                 <p>
                   Microbuddy provides efficient data entry solutions, ensuring
                   accuracy and confidentiality, tailored to meet diverse
@@ -159,13 +161,13 @@ const Strategy = () => {
           <ScrollAnimation
             animateOnce={true}
             animateIn="home-from-right"
-            className="strategy-box bg-white m-[1rem] max-w-[30rem] p-[1rem] rounded-2xl mx-auto lg:mx-0"
+            className="strategy-box bg-white m-[1rem] max-w-[30rem] p-[1rem] rounded-2xl mx-auto"
           >
-            <div className="lg:text-end">
+            <div>
               <h1 className="text-xl font-bold">Web/App Deployment</h1>
             </div>
-            <div className="flex lg:justify-end">
-              <div className="w-[20rem] lg:text-end">
+            <div className="flex">
+              <div className="w-[20rem]">
                 <p>
                   Seamless deployment services for web and app development
                   projects, ensuring efficient and reliable delivery of digital
@@ -177,13 +179,13 @@ const Strategy = () => {
           <ScrollAnimation
             animateOnce={true}
             animateIn="home-from-left"
-            className="strategy-box bg-white m-[1rem] max-w-[30rem] p-[1rem] rounded-2xl mx-auto lg:mx-0"
+            className="strategy-box bg-white m-[1rem] max-w-[30rem] p-[1rem] rounded-2xl mx-auto "
           >
-            <div className="lg:text-end">
+            <div>
               <h1 className="text-xl font-bold">Training and Documentation</h1>
             </div>
             <div className="flex lg:justify-end">
-              <div className="w-[20rem] lg:text-end">
+              <div className="w-[20rem] ">
                 <p>
                   Microbuddy offers comprehensive training and documentation
                   services, ensuring smooth user adoption and proficiency in
@@ -193,37 +195,29 @@ const Strategy = () => {
             </div>
           </ScrollAnimation>
         </div>
-        <div className="col-span-1 mx-auto lg:mx-[-4rem]">
+        <div className="col-span-1 mx-auto">
           <ScrollAnimation
             animateOnce={true}
             duration={2}
             animateIn="grow-from-4"
           >
             <div className="block md:hidden">
-              <img
-                className="block lg:hidden mx-auto w-[40rem]"
-                src={img1}
-                alt=""
-              />
+              <img className="block mx-auto w-[40rem]" src={img1} alt="" />
             </div>
           </ScrollAnimation>
-          <img
-            className="hidden md:block mx-auto w-[40rem]"
-            src={img1}
-            alt=""
-          />
+          <img className="hidden mx-auto w-[40rem]" src={img1} alt="" />
         </div>
-        <div className="z-[50] md:ms-[2rem] lg:ms-0">
+        <div className="z-[50] lg:ms-0">
           <ScrollAnimation
             animateOnce={true}
             animateIn="home-from-right"
-            className="strategy-box bg-white m-[1rem] max-w-[30rem] p-[1rem] rounded-2xl mx-auto lg:mx-0"
+            className="strategy-box bg-white m-[1rem] max-w-[30rem] p-[1rem] rounded-2xl mx-auto"
           >
-            <div className="lg:text-end">
+            <div>
               <h1 className="text-xl font-bold">SEO</h1>
             </div>
-            <div className="flex lg:justify-end">
-              <div className="w-[20rem] lg:text-end">
+            <div className="flex ">
+              <div className="w-[20rem]">
                 <p>
                   Boost your online visibility with Microbuddy's expert SEO
                   service. Drive traffic, enhance rankings, and dominate search
@@ -235,13 +229,13 @@ const Strategy = () => {
           <ScrollAnimation
             animateOnce={true}
             animateIn="home-from-left"
-            className="strategy-box bg-white m-[1rem] max-w-[30rem] p-[1rem] rounded-2xl mx-auto lg:mx-0"
+            className="strategy-box bg-white m-[1rem] max-w-[30rem] p-[1rem] rounded-2xl mx-auto"
           >
-            <div className="lg:text-end">
+            <div>
               <h1 className="text-xl font-bold">Updates and Maintenance</h1>
             </div>
-            <div className="flex lg:justify-end">
-              <div className="w-[20rem] lg:text-end">
+            <div className="flex">
+              <div className="w-[20rem]">
                 <p>
                   IT support is all about, comprehensive updates and maintenance
                   services, ensuring your systems remain optimized.
@@ -252,13 +246,13 @@ const Strategy = () => {
           <ScrollAnimation
             animateOnce={true}
             animateIn="home-from-right"
-            className="strategy-box bg-white m-[1rem] max-w-[30rem] p-[1rem] rounded-2xl mx-auto lg:mx-0"
+            className="strategy-box bg-white m-[1rem] max-w-[30rem] p-[1rem] rounded-2xl mx-auto"
           >
-            <div className="lg:text-end">
+            <div>
               <h1 className="text-xl font-bold">Consultation Services</h1>
             </div>
-            <div className="flex lg:justify-end">
-              <div className="w-[20rem] lg:text-end">
+            <div className="flex">
+              <div className="w-[20rem]">
                 <p>
                   Expert business guidance, specializing in microenterprise
                   solutions, tailored strategies, and growth optimization. Your

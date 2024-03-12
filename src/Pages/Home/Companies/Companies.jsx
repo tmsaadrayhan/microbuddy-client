@@ -27,7 +27,8 @@ const Companies = () => {
           We Help to Grow
         </h1>
       </div>
-      <div className="lg:max-w-[75rem] mx-auto company hidden lg:flex pt-[3rem]">
+      {/*lg*/}
+      <div className="max-w-[75rem] mx-auto company hidden lg:flex pt-[3rem]">
         <div className="bg-white w-[200px] h-[200px] flex items-center">
           <img src={img1} alt="" />
         </div>
@@ -50,6 +51,7 @@ const Companies = () => {
           <img src={img7} alt="" />
         </div>
       </div>
+      {/*md*/}
       <div className="hidden md:block lg:hidden mx-auto">
         <Slider autoplay={true} arrows={false} slidesToShow={4}>
           <div className="company">
@@ -89,6 +91,7 @@ const Companies = () => {
           </div>
         </Slider>
       </div>
+      {/*sm*/}
       <div className="block md:hidden mx-auto">
         <Slider autoplay={true} arrows={false} slidesToShow={2}>
           <div className="company">

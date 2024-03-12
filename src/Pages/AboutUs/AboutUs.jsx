@@ -72,7 +72,7 @@ const AboutUs = () => {
     // Simulate async loading (e.g., fetching data)
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 900); // Simulating a 2-second loading time
+    }, 2000); // Simulating a 2-second loading time
 
     return () => clearTimeout(timer);
   }, []);
