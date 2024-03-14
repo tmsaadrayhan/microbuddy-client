@@ -34,12 +34,15 @@ const Review = () => {
           </h1>
           <h1 className="md:text-4xl lg:text-5xl">READ WHAT THEY SAY.</h1>
         </div>
+        {/*lg*/}
         <img className="lg:mt-[7rem] -z-50 hidden lg:block" src={img1} alt="" />
+        {/*md and sm*/}
         <img
           className="mx-auto w-full -z-50 block lg:hidden"
           src={img1Md}
           alt=""
         />
+        {/*md and sm*/}
         <div className="hidden lg:block z-50 w-[8rem] absolute bottom-[23rem] left-[500px]">
           <div className="relative">
             <img className="breathe" src={img3} alt="" />

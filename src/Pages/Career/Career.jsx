@@ -134,9 +134,14 @@ const Career = () => {
                 <img src={img4} alt="" />
               </div>
             </div>
-            <h1 className=" text-center font-[700] text-[30px] md:text-4xl md:text-[50px] mt-[-25px] md:mt-[-40px]">
-              Current Job Openings
-            </h1>
+            <div className="text-center">
+              <h1 className="font-[700] text-[30px] md:text-4xl md:text-[50px] mt-[-25px] md:mt-[-40px]">
+                Current Job Openings
+              </h1>
+              <p className="text-xl mt-[1rem]">
+                Find your next job at Microbuddy.
+              </p>
+            </div>
           </div>
           <div className="mx-[0rem] md:mx-[2rem] lg:mx-auto blue-career-box rounded-xl lg:flex lg:content-center md:flex md:items-center my-[3rem] md:my-[5rem] py-[2rem] lg:w-[60rem]">
             <div className="md:w-3/5 lg:w-1/2 font-[700] mx-[2rem] md:mx-[0rem] md:ps-[4rem]">
@@ -146,9 +151,7 @@ const Career = () => {
               <div className="grid grid-cols-2 md:grid-cols-3">
                 <div className="flex">
                   <img className="w-[2rem]" src={img5} alt="" />
-                  <Link>
-                    <p className="ms-[1rem]">Marketing</p>
-                  </Link>
+                  <p className="ms-[1rem]">Marketing</p>
                 </div>
                 <div className="flex">
                   <img
@@ -156,9 +159,7 @@ const Career = () => {
                     src={img6}
                     alt=""
                   />
-                  <Link>
-                    <p className="ms-[1rem]">Deadline</p>
-                  </Link>
+                  <p className="ms-[1rem]">Deadline</p>
                 </div>
                 <div className="flex ms-[0rem] mt-[1rem] md:mt-[0rem]">
                   <img
@@ -166,9 +167,7 @@ const Career = () => {
                     src={img7}
                     alt=""
                   />
-                  <Link>
-                    <p className="ms-[0.75rem]">Mirpur</p>
-                  </Link>
+                  <p className="ms-[0.75rem]">Mirpur</p>
                 </div>
               </div>
             </div>
@@ -203,14 +202,11 @@ const Career = () => {
           </div>
           <div className="mx-[2rem] lg:mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-[1rem] md:mt-[3rem]">
             <div className="blue-box-career p-[2rem]">
-              <small>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic
-              </small>
+              <p className="text-xl">
+                Our medical insurance ensures your well-being is covered. We
+                prioritize your health, providing peace of mind for whatever
+                life throws your way.
+              </p>
               <div className="flex items-end">
                 <div className="w-full">
                   <h1 className="text-2xl font-[700]">Medical Insurance</h1>
@@ -221,14 +217,11 @@ const Career = () => {
               </div>
             </div>
             <div className="blue-box-career p-[2rem]">
-              <small>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic
-              </small>
+              <p className="text-xl">
+                Work on your terms with our flexible arrangements. We support
+                your unique needs, ensuring a balanced and productive work-life
+                blend.
+              </p>
               <div className="flex items-end">
                 <div className="w-full">
                   <h1 className="text-2xl font-[700]">Flexibility</h1>
@@ -239,14 +232,10 @@ const Career = () => {
               </div>
             </div>
             <div className="blue-box-career p-[2rem]">
-              <small>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic
-              </small>
+              <p className="text-xl">
+                Join us for delicious, communal meals. Beyond nourishment, we
+                foster camaraderie and enjoyment in every bite.
+              </p>
               <div className="flex items-end">
                 <div className="w-full">
                   <h1 className="text-2xl font-[700]">Office Meals</h1>
@@ -257,14 +246,10 @@ const Career = () => {
               </div>
             </div>
             <div className="blue-box-career p-[2rem] hidden md:block">
-              <small>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic
-              </small>
+              <p className="text-xl">
+                Celebrate parenthood with our supportive benefits. Take time off
+                worry-free to bond with your newborn.
+              </p>
               <div className="flex items-end">
                 <div className="w-full">
                   <h1 className="text-2xl font-[700]">
@@ -277,14 +262,10 @@ const Career = () => {
               </div>
             </div>
             <div className="blue-box-career p-[2rem] hidden md:block">
-              <small>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic
-              </small>
+              <p className="text-xl">
+                Experience a lively workplace where creativity thrives. Laughter
+                and celebration are always welcome, making work enjoyable.
+              </p>
               <div className="flex items-end">
                 <div className="w-full">
                   <h1 className="text-2xl font-[700]">Fun Office</h1>
@@ -295,14 +276,10 @@ const Career = () => {
               </div>
             </div>
             <div className="blue-box-career p-[2rem] hidden md:block">
-              <small>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic
-              </small>
+              <p className="text-xl">
+                Elevate your skills with our top-notch training programs. We
+                invest in your growth for long-term success.
+              </p>
               <div className="flex items-end">
                 <div className="w-full">
                   <h1 className="text-2xl font-[700]">Quality Trainings</h1>
@@ -313,14 +290,10 @@ const Career = () => {
               </div>
             </div>
             <div className="blue-box-career p-[2rem] hidden lg:block">
-              <small>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic
-              </small>
+              <p className="text-xl">
+                Progress in your career with ample opportunities. We're
+                committed to helping you achieve your goals and aspirations.
+              </p>
               <div className="flex items-end">
                 <div className="w-full">
                   <h1 className="text-2xl font-[700]">Career Growth</h1>
@@ -331,14 +304,10 @@ const Career = () => {
               </div>
             </div>
             <div className="blue-box-career p-[2rem] hidden lg:block">
-              <small>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic
-              </small>
+              <p className="text-xl">
+                Receive fair compensation for your efforts. Your contributions
+                are valued and rewarded accordingly.
+              </p>
               <div className="flex items-end">
                 <div className="w-full">
                   <h1 className="text-2xl font-[700]">Income Opportunity</h1>
@@ -349,14 +318,10 @@ const Career = () => {
               </div>
             </div>
             <div className="blue-box-career p-[2rem] hidden lg:block">
-              <small>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic
-              </small>
+              <p className="text-xl">
+                Collaborate with skilled professionals. Our diverse team fosters
+                innovation and excellence.
+              </p>
               <div className="flex items-end">
                 <div className="w-full">
                   <h1 className="text-2xl font-[700]">Qualified Team</h1>
@@ -367,14 +332,10 @@ const Career = () => {
               </div>
             </div>
             <div className="blue-box-career p-[2rem] hidden lg:block">
-              <small>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic
-              </small>
+              <p className="text-xl">
+                Secure your future with our financial plans. We're here to help
+                you achieve your long-term goals.
+              </p>
               <div className="flex items-end">
                 <div className="w-full">
                   <h1 className="text-2xl font-[700]">Savings & Investment</h1>
@@ -385,14 +346,10 @@ const Career = () => {
               </div>
             </div>
             <div className="blue-box-career p-[2rem] hidden lg:block">
-              <small>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic
-              </small>
+              <p className="text-xl">
+                Access financial support conveniently. We offer assistance for
+                unexpected expenses, ensuring peace of mind.
+              </p>
               <div className="flex items-end">
                 <div className="w-full">
                   <h1 className="text-2xl font-[700]">
@@ -405,14 +362,10 @@ const Career = () => {
               </div>
             </div>
             <div className="blue-box-career p-[2rem] hidden lg:block">
-              <small>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic
-              </small>
+              <p className="text-xl">
+                Breathe easily in our green workspace. We prioritize your
+                well-being with clean, refreshing air.
+              </p>
               <div className="flex items-end">
                 <div className="w-full">
                   <h1 className="text-2xl font-[700]">Clean Air</h1>
@@ -434,9 +387,14 @@ const Career = () => {
                 <img src={img26} alt="" />
               </ScrollAnimation>
             </div>
-            <h1 className="text-center font-[700] text-[28px] md:text-[64px] mt-[-25px] md:mt-[-5rem]">
-              Join Microbuddy Team
-            </h1>
+            <div className="text-center">
+              <h1 className="font-[700] text-[28px] md:text-[64px] mt-[-25px] md:mt-[-5rem]">
+                Join Microbuddy Team
+              </h1>
+              <p className="text-xl">
+                We would like a picture of You to be posted here.
+              </p>
+            </div>
           </div>
           <div className="block  lg:hidden md:mt-[3rem]">
             <div className="flex">

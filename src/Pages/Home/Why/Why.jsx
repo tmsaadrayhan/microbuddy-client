@@ -47,10 +47,9 @@ const Why = () => {
             </div>
           </div>
         </div>
-
         <div className="hidden lg:flex px-[1rem] items-center">
           <ScrollAnimation
-            animateOnce={false}
+            animateOnce={true}
             duration={2}
             animateIn="from-right"
           >
@@ -59,7 +58,7 @@ const Why = () => {
         </div>
         <div className="lg:hidden overflow-hidden px-[1rem]">
           <ScrollAnimation
-            animateOnce={false}
+            animateOnce={true}
             duration={2}
             animateIn="from-right"
           >

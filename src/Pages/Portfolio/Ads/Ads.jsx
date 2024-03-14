@@ -17,7 +17,7 @@ const Ads = () => {
   return (
     <div>
       <PortfolioHead></PortfolioHead>
-      <div className="pt-[5rem] lg:w-[75rem] mx-auto">
+      <div className="pt-[5rem] max-w-[75rem] mx-auto">
         <PortFolioHeader></PortFolioHeader>
         <div className="hidden lg:block w-full portfolio-item">
           <div className="flex">
