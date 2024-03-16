@@ -300,7 +300,7 @@ const ITService = () => {
           </div>
           <div
             ref={ref1}
-            className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-[5rem] flex items-center mx-[1rem] lg:mx-[0rem]"
+            className="lg:flex gap-4 my-[5rem] items-center mx-[1rem] lg:mx-[0rem]"
           >
             <div className="md:w-[28rem]">
               {/*lg*/}
@@ -360,26 +360,28 @@ const ITService = () => {
                     MicroBuddy's Tech Support streamlines complexity, enhancing
                     digital environments for seamless operations and innovation.
                   </p>
-                  <div>
-                    <h1 className="text-xl font-bold">Native App</h1>
-                    <p>
-                      P3- Build custom apps designed to your needs with
-                      Microbuddy's expertise.
-                    </p>
-                  </div>
-                  <div>
-                    <h1 className="text-xl font-bold">CROSS-PLATFORM</h1>
-                    <p>
-                      Reach wider audiences seamlessly with our versatile app
-                      solutions.
-                    </p>
-                  </div>
-                  <div>
-                    <h1 className="text-xl font-bold">Web Development</h1>
-                    <p>
-                      Craft engaging and functional websites with our expert
-                      development team.
-                    </p>
+                  <div className="mx-[-1rem] md:mx-[0rem] md:ms-[-1rem]">
+                    <div className="blue-shadow">
+                      <h1 className="text-xl font-bold">Native App</h1>
+                      <p>
+                        P3- Build custom apps designed to your needs with
+                        Microbuddy's expertise.
+                      </p>
+                    </div>
+                    <div className="blue-shadow">
+                      <h1 className="text-xl font-bold">CROSS-PLATFORM</h1>
+                      <p>
+                        Reach wider audiences seamlessly with our versatile app
+                        solutions.
+                      </p>
+                    </div>
+                    <div className="blue-shadow">
+                      <h1 className="text-xl font-bold">Web Development</h1>
+                      <p>
+                        Craft engaging and functional websites with our expert
+                        development team.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -401,7 +403,7 @@ const ITService = () => {
           </div>
           <div
             ref={ref2}
-            className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-[5rem] flex items-center mx-[1rem] lg:mx-[0rem]"
+            className="lg:flex gap-4 my-[5rem] items-center mx-[1rem] lg:mx-[0rem]"
           >
             {/*lg*/}
             <div className="hidden lg:block">
@@ -478,33 +480,37 @@ const ITService = () => {
                     compelling visuals, bolstering brand influence through
                     creative mastery.
                   </p>
-                  <div className="blue-box">
-                    <h1 className="text-xl font-bold">UI/UX DESIGN</h1>
-                    <p>
-                      Enhance user experience and engagement with our intuitive
-                      design solutions.
-                    </p>
-                  </div>
-                  <div className="blue-box">
-                    <h1 className="text-xl font-bold">PRINT DESIGN</h1>
-                    <p>
-                      Bring your brand to life with eye-catching print materials
-                      designed by us.
-                    </p>
-                  </div>
-                  <div className="blue-box">
-                    <h1 className="text-xl font-bold">MOTION GRAPHICS</h1>
-                    <p>
-                      Add dynamic visuals to your projects with Microbuddy's
-                      motion graphics expertise.
-                    </p>
-                  </div>
-                  <div className="blue-box">
-                    <h1 className="text-xl font-bold">CUSTOM CONTENT DESIGN</h1>
-                    <p>
-                      Stand out with unique content designed specifically for
-                      your brand
-                    </p>
+                  <div className="mx-[-1rem] md:mx-[0rem] md:me-[-1rem]">
+                    <div className="blue-shadow">
+                      <h1 className="text-xl font-bold">UI/UX DESIGN</h1>
+                      <p>
+                        Enhance user experience and engagement with our
+                        intuitive design solutions.
+                      </p>
+                    </div>
+                    <div className="blue-shadow">
+                      <h1 className="text-xl font-bold">PRINT DESIGN</h1>
+                      <p>
+                        Bring your brand to life with eye-catching print
+                        materials designed by us.
+                      </p>
+                    </div>
+                    <div className="blue-shadow">
+                      <h1 className="text-xl font-bold">MOTION GRAPHICS</h1>
+                      <p>
+                        Add dynamic visuals to your projects with Microbuddy's
+                        motion graphics expertise.
+                      </p>
+                    </div>
+                    <div className="blue-shadow">
+                      <h1 className="text-xl font-bold">
+                        CUSTOM CONTENT DESIGN
+                      </h1>
+                      <p>
+                        Stand out with unique content designed specifically for
+                        your brand
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -515,7 +521,7 @@ const ITService = () => {
           </div>
           <div
             ref={ref3}
-            className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-[5rem] flex items-center mx-[1rem] lg:mx-[0rem]"
+            className="lg:flex gap-4 my-[5rem] items-center mx-[1rem] lg:mx-[0rem]"
           >
             {/*lg*/}
             <ScrollAnimation
@@ -585,33 +591,35 @@ const ITService = () => {
                   solutions, turning concepts into effective outcomes, fostering
                   innovation, and achieving success.
                 </p>
-                <div className="blue-shadow">
-                  <h1 className="text-xl font-bold">Software Prototyping </h1>
-                  <p>
-                    Test and refine your ideas quickly with our efficient
-                    prototyping services.
-                  </p>
-                </div>
-                <div className="blue-shadow">
-                  <h1 className="text-xl font-bold">System Integration</h1>
-                  <p>
-                    Seamlessly connect your systems for improved efficiency and
-                    performance.
-                  </p>
-                </div>
-                <div className="blue-shadow">
-                  <h1 className="text-xl font-bold">Quality Assurance</h1>
-                  <p>
-                    Ensure flawless performance with our thorough quality
-                    assurance processes.
-                  </p>
-                </div>
-                <div className="blue-shadow">
-                  <h1 className="text-xl font-bold">Mobile Optimization</h1>
-                  <p>
-                    Optimize your mobile presence for improved user experience
-                    and performance.
-                  </p>
+                <div className="mx-[-1rem] md:mx-[0rem] md:ms-[-1rem]">
+                  <div className="blue-shadow">
+                    <h1 className="text-xl font-bold">Software Prototyping </h1>
+                    <p>
+                      Test and refine your ideas quickly with our efficient
+                      prototyping services.
+                    </p>
+                  </div>
+                  <div className="blue-shadow">
+                    <h1 className="text-xl font-bold">System Integration</h1>
+                    <p>
+                      Seamlessly connect your systems for improved efficiency
+                      and performance.
+                    </p>
+                  </div>
+                  <div className="blue-shadow">
+                    <h1 className="text-xl font-bold">Quality Assurance</h1>
+                    <p>
+                      Ensure flawless performance with our thorough quality
+                      assurance processes.
+                    </p>
+                  </div>
+                  <div className="blue-shadow">
+                    <h1 className="text-xl font-bold">Mobile Optimization</h1>
+                    <p>
+                      Optimize your mobile presence for improved user experience
+                      and performance.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -629,7 +637,7 @@ const ITService = () => {
           </div>
           <div
             ref={ref4}
-            className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-[5rem] flex items-center mx-[1rem] lg:mx-[0rem]"
+            className="lg:flex gap-4 my-[5rem] items-center mx-[1rem] lg:mx-[0rem]"
           >
             <ScrollAnimation
               delay={1000}
@@ -661,35 +669,37 @@ const ITService = () => {
                     robust security, and uninterrupted operation for effortless
                     adjustment in the digital world.
                   </p>
-                  <div className="blue-shadow">
-                    <h1 className="text-xl font-bold">
-                      Server & Hosting Management
-                    </h1>
-                    <p>
-                      Keep your online presence secure and running smoothly with
-                      our expert management.
-                    </p>
-                  </div>
-                  <div className="blue-shadow">
-                    <h1 className="text-xl font-bold">Software Deployment</h1>
-                    <p>
-                      Keep your online presence secure and running smoothly with
-                      our expert management.
-                    </p>
-                  </div>
-                  <div className="blue-shadow">
-                    <h1 className="text-xl font-bold">Developer Support</h1>
-                    <p>
-                      Get the assistance you need to keep your projects on track
-                      and successful.
-                    </p>
-                  </div>
-                  <div className="blue-shadow">
-                    <h1 className="text-xl font-bold">Mobile Optimization</h1>
-                    <p>
-                      Optimize your mobile presence for improved user experience
-                      and performance.
-                    </p>
+                  <div className="me-[-1rem]">
+                    <div className="blue-shadow">
+                      <h1 className="text-xl font-bold">
+                        Server & Hosting Management
+                      </h1>
+                      <p>
+                        Keep your online presence secure and running smoothly
+                        with our expert management.
+                      </p>
+                    </div>
+                    <div className="blue-shadow">
+                      <h1 className="text-xl font-bold">Software Deployment</h1>
+                      <p>
+                        Keep your online presence secure and running smoothly
+                        with our expert management.
+                      </p>
+                    </div>
+                    <div className="blue-shadow">
+                      <h1 className="text-xl font-bold">Developer Support</h1>
+                      <p>
+                        Get the assistance you need to keep your projects on
+                        track and successful.
+                      </p>
+                    </div>
+                    <div className="blue-shadow">
+                      <h1 className="text-xl font-bold">Mobile Optimization</h1>
+                      <p>
+                        Optimize your mobile presence for improved user
+                        experience and performance.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </ScrollAnimation>
@@ -704,35 +714,42 @@ const ITService = () => {
                   <h1 className="text-4xl font-[700] text-[#F55498]">
                     CLOUD SERVICE
                   </h1>
-                  <div className="blue-shadow">
-                    <h1 className="text-xl font-bold">
-                      Server & Hosting Management
-                    </h1>
-                    <p>
-                      Keep your online presence secure and running smoothly with
-                      our expert management.
-                    </p>
-                  </div>
-                  <div className="blue-shadow">
-                    <h1 className="text-xl font-bold">Software Deployment</h1>
-                    <p>
-                      Keep your online presence secure and running smoothly with
-                      our expert management.
-                    </p>
-                  </div>
-                  <div className="blue-shadow">
-                    <h1 className="text-xl font-bold">Developer Support</h1>
-                    <p>
-                      Get the assistance you need to keep your projects on track
-                      and successful.
-                    </p>
-                  </div>
-                  <div className="blue-shadow">
-                    <h1 className="text-xl font-bold">Mobile Optimization</h1>
-                    <p>
-                      Optimize your mobile presence for improved user experience
-                      and performance.
-                    </p>
+                  <p>
+                    MicroBuddy's Cloud Service ensures infinite scalability,
+                    robust security, and uninterrupted operation for effortless
+                    adjustment in the digital world.
+                  </p>
+                  <div className="mx-[-1rem] md:mx-[0rem] md:me-[-1rem]">
+                    <div className="blue-shadow">
+                      <h1 className="text-xl font-bold">
+                        Server & Hosting Management
+                      </h1>
+                      <p>
+                        Keep your online presence secure and running smoothly
+                        with our expert management.
+                      </p>
+                    </div>
+                    <div className="blue-shadow">
+                      <h1 className="text-xl font-bold">Software Deployment</h1>
+                      <p>
+                        Keep your online presence secure and running smoothly
+                        with our expert management.
+                      </p>
+                    </div>
+                    <div className="blue-shadow">
+                      <h1 className="text-xl font-bold">Developer Support</h1>
+                      <p>
+                        Get the assistance you need to keep your projects on
+                        track and successful.
+                      </p>
+                    </div>
+                    <div className="blue-shadow">
+                      <h1 className="text-xl font-bold">Mobile Optimization</h1>
+                      <p>
+                        Optimize your mobile presence for improved user
+                        experience and performance.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -37,7 +37,7 @@ const WebProject = () => {
               </ScrollAnimation>
             </div>
             <h1 className="font-[700] text-4xl md:text-5xl mt-[-25px] md:mt-[-40px]">
-              Websites
+              WEBSITE
             </h1>
           </div>
         </div>
@@ -48,7 +48,7 @@ const WebProject = () => {
           {/*lg*/}
           <div className="hidden lg:block ms-[-2rem] lg:h-[40rem]">
             <div className="absolute pt-[2rem] lg:pt-[10rem] ps-[2rem] lg:px-[5rem] pb-[3rem] text-black">
-              <div className="blue-box md:flex h-[30rem] items-center justify-center lg:justify-start lg:w-[110rem] rounded-3xl mx-auto lg:mx-[0rem] lg:ms-[5rem] lg:ps-[3rem] lg:pe-[15rem] pb-[2rem]"></div>
+              <div className="blue-box flex h-[30rem] items-center justify-start w-[110rem] rounded-3xl mx-[0rem] ms-[5rem] ps-[3rem] pe-[15rem] pb-[2rem]"></div>
             </div>
             <Slider
               ref={(slider) => {
@@ -59,7 +59,7 @@ const WebProject = () => {
             >
               <div>
                 <div className="flex items-center">
-                  <div className="mx-[2rem] md:mx-[0rem] lg:w-[30rem]  p-[2rem]">
+                  <div className="mx-[0rem] lg:w-[30rem] p-[2rem]">
                     <div className="md:w-[30rem]">
                       <h1 className="text-5xl font-bold">1. Xerrat</h1>
                       <div className="w-[20rem]">
@@ -77,11 +77,7 @@ const WebProject = () => {
                       </div>
                     </div>
                   </div>
-                  <img
-                    className="ms-[-10rem] hidden lg:block"
-                    src={img3}
-                    alt=""
-                  />
+                  <img className="ms-[-10rem]" src={img3} alt="" />
                 </div>
               </div>
               <div>
@@ -101,35 +97,7 @@ const WebProject = () => {
                       </div>
                     </div>
                   </div>
-                  <img
-                    className="ms-[-10rem] hidden lg:block"
-                    src={img4}
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div>
-                <div className="flex items-center">
-                  <div className="mx-[2rem] md:mx-[0rem] lg:w-[30rem]  p-[2rem]">
-                    <div className="md:w-[30rem]">
-                      <h1 className="text-5xl font-bold">2. Portifai</h1>
-                      <div className="w-[20rem]">
-                        <p className="text-[#666AE5] text-xl mb-[1rem]">
-                          Blog Website
-                        </p>
-                        <p>
-                          Not only IT support, we also help to create free
-                          visually appealing portfolios to showcase your
-                          professional achievements and stand out.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <img
-                    className="ms-[-10rem] hidden lg:block"
-                    src={img5}
-                    alt=""
-                  />
+                  <img className="ms-[-10rem]" src={img4} alt="" />
                 </div>
               </div>
             </Slider>
@@ -145,7 +113,7 @@ const WebProject = () => {
           {/*sm and md*/}
           <div className="lg:hidden lg:w-[130rem] ms-[-2rem] ">
             <Slider autoplay={true} arrows={false}>
-              <div className="pt-[2rem] lg:pt-[10rem] ps-[2rem] lg:px-[5rem]  pb-[3rem] text-black">
+              <div className="pt-[2rem] lg:pt-[10rem] ps-[2rem] lg:px-[5rem] pb-[3rem] text-black">
                 <div className="blue-box md:flex items-center justify-center lg:justify-start lg:w-[110rem] rounded-3xl mx-auto lg:mx-[0rem] lg:ms-[5rem] lg:ps-[3rem] lg:pe-[15rem] pb-[2rem]">
                   <div className="lg:w-[30rem] p-[2rem]">
                     <img src={img3} alt="" />
@@ -172,26 +140,6 @@ const WebProject = () => {
                 <div className="blue-box md:flex items-center justify-center lg:justify-start lg:w-[110rem] rounded-3xl mx-auto lg:mx-[0rem] lg:ms-[5rem] lg:ps-[3rem] lg:pe-[15rem] pb-[2rem]">
                   <div className="mx-[2rem] md:mx-[0rem] lg:w-[30rem]  p-[2rem]">
                     <img className="hidden lg:block" src={img4} alt="" />
-                    <div className="mx-auto text-center md:max-w-[30rem]">
-                      <h1 className="text-5xl font-bold">2. Portifai</h1>
-                      <div>
-                        <p className="text-[#666AE5] text-xl mb-[1rem]">
-                          Blog Website
-                        </p>
-                        <p>
-                          Not only IT support, we also help to create free
-                          visually appealing portfolios to showcase your
-                          professional achievements and stand out.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="pt-[2rem] lg:pt-[10rem] ps-[2rem] lg:px-[5rem] pb-[3rem] text-black">
-                <div className="blue-box md:flex items-center justify-center lg:justify-start lg:w-[110rem] rounded-3xl mx-auto lg:mx-[0rem] lg:ms-[5rem] lg:ps-[3rem] lg:pe-[15rem] pb-[2rem]">
-                  <div className="mx-[2rem] md:mx-[0rem] lg:w-[30rem]  p-[2rem]">
-                    <img className="hidden lg:block" src={img5} alt="" />
                     <div className="mx-auto text-center md:max-w-[30rem]">
                       <h1 className="text-5xl font-bold">2. Portifai</h1>
                       <div>

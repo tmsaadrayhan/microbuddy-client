@@ -77,8 +77,8 @@ const Content = () => {
             alt=""
           />
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:max-w-[70rem] mt-[2rem] lg:mt-0 mx-auto">
-          <div className="mx-auto text-start flex items-center">
+        <div className="lg:flex gap-4 lg:max-w-[70rem] mt-[2rem] lg:mt-0 mx-auto">
+          <div className="px-[1rem] mx-auto text-start flex items-center">
             <div>
               <div className="overflow-hidden">
                 <img className="w-[15rem] lg:w-auto pop-up" src={grow} alt="" />
@@ -319,19 +319,17 @@ const Content = () => {
                 />
               </ScrollAnimation>
             </div>
-
+            1qw
             <div className="w-fit mx-auto">
               <h1 className="text-4xl md:text-6xl font-black mt-[-2rem] md:mt-[-4rem]">
                 Service You Get
               </h1>
               <p>FOR RAPIDLY GROWING BUSINESS</p>
-
               <div className="w-full hidden lg:flex justify-end">
                 <img className="w-[5rem] breathe" src={img1} alt="" />
               </div>
             </div>
           </div>
-
           <div className="w-auto md:w-[40rem] lg:w-auto mx-auto">
             <div className="hidden lg:grid pt-[2rem] grid-cols-2 lg:grid-cols-4 gap-4 services  overflow-hidden px-[2rem]">
               <div className="mt-[5rem] one">
@@ -339,22 +337,18 @@ const Content = () => {
                   <img className="mt-[-5rem]" src={img9} alt="" />
                   <div className="mx-[1rem] mb-[2rem] fix-margin">
                     <h1 className="text-xl font-bold">App Development</h1>
-
                     <div className="flex mt-[1rem]">
                       <img className="me-[0.5rem] " src={img16} alt="" />
                       <p className="">User journey mapping</p>
                     </div>
-
                     <div className="flex mt-[1rem]">
                       <img className="me-[0.5rem] " src={img16} alt="" />
                       <p className="">Product Mockups</p>
                     </div>
-
                     <div className="flex mt-[1rem]">
                       <img className="me-[0.5rem]" src={img16} alt="" />
                       <p className="">App Engineering</p>
                     </div>
-
                     <div className="flex mt-[1rem]">
                       <img className="me-[0.5rem] " src={img16} alt="" />
                       <p>QA Testing & Launch</p>
@@ -366,22 +360,18 @@ const Content = () => {
                 <img className="mt-[-6rem]" src={img10} alt="" />
                 <div className="mx-[1rem] mb-[2rem] fix-margin">
                   <h1 className="text-xl font-bold">App Development</h1>
-
                   <div className="flex mt-[1rem]">
                     <img className="me-[0.5rem] " src={img17} alt="" />
                     <p className="">User journey mapping</p>
                   </div>
-
                   <div className="flex mt-[1rem]">
                     <img className="me-[0.5rem] " src={img17} alt="" />
                     <p className="">Product Mockups</p>
                   </div>
-
                   <div className="flex mt-[1rem]">
                     <img className="me-[0.5rem]" src={img17} alt="" />
                     <p className="">App Engineering</p>
                   </div>
-
                   <div className="flex mt-[1rem]">
                     <img className="me-[0.5rem] " src={img17} alt="" />
                     <p>QA Testing & Launch</p>
@@ -393,22 +383,18 @@ const Content = () => {
                   <img className="mt-[-6rem]" src={img11} alt="" />
                   <div className="mx-[1rem] mb-[2rem] fix-margin">
                     <h1 className="text-xl font-bold">App Development</h1>
-
                     <div className="flex mt-[1rem]">
                       <img className="me-[0.5rem] " src={img18} alt="" />
                       <p className="">User journey mapping</p>
                     </div>
-
                     <div className="flex mt-[1rem]">
                       <img className="me-[0.5rem] " src={img18} alt="" />
                       <p className="">Product Mockups</p>
                     </div>
-
                     <div className="flex mt-[1rem]">
                       <img className="me-[0.5rem]" src={img18} alt="" />
                       <p className="">App Engineering</p>
                     </div>
-
                     <div className="flex mt-[1rem]">
                       <img className="me-[0.5rem] " src={img18} alt="" />
                       <p>QA Testing & Launch</p>
@@ -420,22 +406,18 @@ const Content = () => {
                 <img className="mt-[-6rem]" src={img12} alt="" />
                 <div className="mx-[1rem] mb-[2rem] fix-margin">
                   <h1 className="text-xl font-bold">App Development</h1>
-
                   <div className="flex mt-[1rem]">
                     <img className="me-[0.5rem] " src={img19} alt="" />
                     <p className="">User journey mapping</p>
                   </div>
-
                   <div className="flex mt-[1rem]">
                     <img className="me-[0.5rem] " src={img19} alt="" />
                     <p className="">Product Mockups</p>
                   </div>
-
                   <div className="flex mt-[1rem]">
                     <img className="me-[0.5rem]" src={img19} alt="" />
                     <p className="">App Engineering</p>
                   </div>
-
                   <div className="flex mt-[1rem]">
                     <img className="me-[0.5rem] " src={img19} alt="" />
                     <p>QA Testing & Launch</p>
@@ -449,22 +431,18 @@ const Content = () => {
                   <img className="mt-[-6rem]" src={img9} alt="" />
                   <div className="mx-[1rem] mb-[2rem] fix-margin">
                     <h1 className="text-xl font-bold">App Development</h1>
-
                     <div className="flex mt-[1rem]">
                       <img className="me-[0.5rem] " src={img16} alt="" />
                       <p className="">User journey mapping</p>
                     </div>
-
                     <div className="flex mt-[1rem]">
                       <img className="me-[0.5rem] " src={img16} alt="" />
                       <p className="">Product Mockups</p>
                     </div>
-
                     <div className="flex mt-[1rem]">
                       <img className="me-[0.5rem]" src={img16} alt="" />
                       <p className="">App Engineering</p>
                     </div>
-
                     <div className="flex mt-[1rem]">
                       <img className="me-[0.5rem] " src={img16} alt="" />
                       <p>QA Testing & Launch</p>
@@ -476,22 +454,18 @@ const Content = () => {
                 <img className="mt-[-6rem]" src={img10} alt="" />
                 <div className="mx-[1rem] mb-[2rem] fix-margin">
                   <h1 className="text-xl font-bold">App Development</h1>
-
                   <div className="flex mt-[1rem]">
                     <img className="me-[0.5rem] " src={img17} alt="" />
                     <p className="">User journey mapping</p>
                   </div>
-
                   <div className="flex mt-[1rem]">
                     <img className="me-[0.5rem] " src={img17} alt="" />
                     <p className="">Product Mockups</p>
                   </div>
-
                   <div className="flex mt-[1rem]">
                     <img className="me-[0.5rem]" src={img17} alt="" />
                     <p className="">App Engineering</p>
                   </div>
-
                   <div className="flex mt-[1rem]">
                     <img className="me-[0.5rem] " src={img17} alt="" />
                     <p>QA Testing & Launch</p>
@@ -503,22 +477,18 @@ const Content = () => {
                   <img className="mt-[-6rem]" src={img11} alt="" />
                   <div className="mx-[1rem] mb-[2rem] fix-margin">
                     <h1 className="text-xl font-bold">App Development</h1>
-
                     <div className="flex mt-[1rem]">
                       <img className="me-[0.5rem] " src={img18} alt="" />
                       <p className="">User journey mapping</p>
                     </div>
-
                     <div className="flex mt-[1rem]">
                       <img className="me-[0.5rem] " src={img18} alt="" />
                       <p className="">Product Mockups</p>
                     </div>
-
                     <div className="flex mt-[1rem]">
                       <img className="me-[0.5rem]" src={img18} alt="" />
                       <p className="">App Engineering</p>
                     </div>
-
                     <div className="flex mt-[1rem]">
                       <img className="me-[0.5rem] " src={img18} alt="" />
                       <p>QA Testing & Launch</p>
@@ -530,22 +500,18 @@ const Content = () => {
                 <img className="mt-[-6rem]" src={img12} alt="" />
                 <div className="mx-[1rem] mb-[2rem] fix-margin">
                   <h1 className="text-xl font-bold">App Development</h1>
-
                   <div className="flex mt-[1rem]">
                     <img className="me-[0.5rem] " src={img19} alt="" />
                     <p className="">User journey mapping</p>
                   </div>
-
                   <div className="flex mt-[1rem]">
                     <img className="me-[0.5rem] " src={img19} alt="" />
                     <p className="">Product Mockups</p>
                   </div>
-
                   <div className="flex mt-[1rem]">
                     <img className="me-[0.5rem]" src={img19} alt="" />
                     <p className="">App Engineering</p>
                   </div>
-
                   <div className="flex mt-[1rem]">
                     <img className="me-[0.5rem] " src={img19} alt="" />
                     <p>QA Testing & Launch</p>
@@ -560,22 +526,18 @@ const Content = () => {
                     <img className="my-[-6rem]" src={img9} alt="" />
                     <div className="mt-[4rem] mx-[1rem] mb-[2rem] fix-margin">
                       <h1 className="text-xl font-bold">App Development</h1>
-
                       <div className="flex mt-[1rem]">
                         <img className="me-[0.5rem] " src={img16} alt="" />
                         <p className="">User journey mapping</p>
                       </div>
-
                       <div className="flex mt-[1rem]">
                         <img className="me-[0.5rem] " src={img16} alt="" />
                         <p className="">Product Mockups</p>
                       </div>
-
                       <div className="flex mt-[1rem]">
                         <img className="me-[0.5rem]" src={img16} alt="" />
                         <p className="">App Engineering</p>
                       </div>
-
                       <div className="flex mt-[1rem]">
                         <img className="me-[0.5rem] " src={img16} alt="" />
                         <p>QA Testing & Launch</p>
@@ -588,22 +550,18 @@ const Content = () => {
                     <img className="my-[-6rem]" src={img10} alt="" />
                     <div className="mt-[4rem] mx-[1rem] mb-[2rem] fix-margin">
                       <h1 className="text-xl font-bold">App Development</h1>
-
                       <div className="flex mt-[1rem]">
                         <img className="me-[0.5rem] " src={img17} alt="" />
                         <p className="">User journey mapping</p>
                       </div>
-
                       <div className="flex mt-[1rem]">
                         <img className="me-[0.5rem] " src={img17} alt="" />
                         <p className="">Product Mockups</p>
                       </div>
-
                       <div className="flex mt-[1rem]">
                         <img className="me-[0.5rem]" src={img17} alt="" />
                         <p className="">App Engineering</p>
                       </div>
-
                       <div className="flex mt-[1rem]">
                         <img className="me-[0.5rem] " src={img17} alt="" />
                         <p>QA Testing & Launch</p>
@@ -616,22 +574,18 @@ const Content = () => {
                     <img className="my-[-6rem]" src={img11} alt="" />
                     <div className="mt-[4rem] mx-[1rem] mb-[2rem] fix-margin">
                       <h1 className="text-xl font-bold">App Development</h1>
-
                       <div className="flex mt-[1rem]">
                         <img className="me-[0.5rem] " src={img18} alt="" />
                         <p className="">User journey mapping</p>
                       </div>
-
                       <div className="flex mt-[1rem]">
                         <img className="me-[0.5rem] " src={img18} alt="" />
                         <p className="">Product Mockups</p>
                       </div>
-
                       <div className="flex mt-[1rem]">
                         <img className="me-[0.5rem]" src={img18} alt="" />
                         <p className="">App Engineering</p>
                       </div>
-
                       <div className="flex mt-[1rem]">
                         <img className="me-[0.5rem] " src={img18} alt="" />
                         <p>QA Testing & Launch</p>
@@ -644,22 +598,18 @@ const Content = () => {
                     <img className="my-[-6rem]" src={img12} alt="" />
                     <div className="mt-[4rem] mx-[1rem] mb-[2rem] fix-margin">
                       <h1 className="text-xl font-bold">App Development</h1>
-
                       <div className="flex mt-[1rem]">
                         <img className="me-[0.5rem] " src={img19} alt="" />
                         <p className="">User journey mapping</p>
                       </div>
-
                       <div className="flex mt-[1rem]">
                         <img className="me-[0.5rem] " src={img19} alt="" />
                         <p className="">Product Mockups</p>
                       </div>
-
                       <div className="flex mt-[1rem]">
                         <img className="me-[0.5rem]" src={img19} alt="" />
                         <p className="">App Engineering</p>
                       </div>
-
                       <div className="flex mt-[1rem]">
                         <img className="me-[0.5rem] " src={img19} alt="" />
                         <p>QA Testing & Launch</p>
@@ -677,16 +627,19 @@ const Content = () => {
               <div className="hidden lg:flex justify-end">
                 <img className="breathe w-[8rem]" src={img1} alt="" />
               </div>
-              <img className="mx-auto" src={img13} alt="" />
-            </div>
-            <div className="lg:w-1/2 flex justify-center lg:justify-end">
               <div>
-                <div className="overflow-hidden">
-                  <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                    <img className="px-[1rem] md:px-0" src={img14} alt="" />
-                  </ScrollAnimation>
+                <img src={img13} alt="" />
+              </div>
+            </div>
+            <div className="lg:w-1/2 flex justify-center lg:justify-end px-[1rem]">
+              <div>
+                <div className="w-full flex justify-center md:justify-end">
+                  <div className="overflow-hidden w-fit">
+                    <ScrollAnimation animateOnce={true} animateIn="pop-up">
+                      <img className="px-[1rem] md:px-0" src={img14} alt="" />
+                    </ScrollAnimation>
+                  </div>
                 </div>
-
                 <h1 className="mt-[-3rem] text-6xl font-black text-center md:text-end text-[#666AE5]">
                   Write to US
                 </h1>
@@ -733,10 +686,10 @@ const Content = () => {
                   </div>
                   <div className="flex justify-center mt-[1rem] mb-[1.5rem]">
                     <div className="button-parent relative">
-                      <div className="write-button absolute form-control"></div>
+                      <div className="write-button absolute left-[-5rem] form-control"></div>
                       <button
                         type="submit"
-                        className="absolute text-nowrap button-child"
+                        className="absolute left-[-5rem] text-nowrap button-child w-[10.25rem]"
                       >
                         Send Message
                       </button>

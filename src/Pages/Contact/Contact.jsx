@@ -241,7 +241,7 @@ const Contact = () => {
                           <button
                             type="submit"
                             disabled={isSubmitting}
-                            className="absolute right-[0rem] text-nowrap button-child"
+                            className="absolute right-[0rem] text-rap button-child"
                           >
                             Send Message
                           </button>

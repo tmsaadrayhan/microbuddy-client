@@ -8,6 +8,7 @@ const Project = () => {
   return (
     <div>
       <div className="mx-[1rem] md:mx-[5rem] lg:max-w-[70rem] lg:mx-auto lg:flex gap-[5rem]">
+        {/*lg*/}
         <div className="hidden lg:flex">
           <div className="mt-[5rem] me-[-2rem]">
             <div className="relative">
@@ -25,9 +26,10 @@ const Project = () => {
                 <img className="mx-auto" src={img2} alt="" />
               </ScrollAnimation>
             </div>
-            <div className="mt-[-3rem] text-[30px] md:text-[50px] lg:text-[35px] font-[700]">
-              <h1 className="mb-[-0.5rem]">Let’s Turn Your Project idea</h1>
-              <h1>into a Reality !</h1>
+            <div className="mt-[-2rem] md:mt-[-3rem] text-[30px] md:text-[50px] lg:text-[35px] font-[700]">
+              <h1 className="mb-[-0.5rem]">
+                Let’s Turn Your Project idea into a Reality !
+              </h1>
             </div>
           </div>
 
@@ -88,7 +90,7 @@ const Project = () => {
             </div>
           </form>
         </div>
-        <div className="block lg:hidden flex mx-auto">
+        <div className="lg:hidden flex mx-auto">
           <div className="mt-[5rem] me-[-2rem]">
             <img src={img3} alt="" />
           </div>

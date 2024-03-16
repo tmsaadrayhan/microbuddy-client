@@ -33,7 +33,7 @@ const Projects = () => {
     fade: true, // Enable fade effect
   };
   return (
-    <div className="lg:max-w-[90rem] lg:mx-auto relative">
+    <div className="max-w-[90rem] lg:mx-auto relative">
       <div className="my-[5rem]">
         <div className="hidden lg:block absolute left-[0rem] top-[10rem]">
           <img src={img1} alt="" />
@@ -53,8 +53,8 @@ const Projects = () => {
           </div>
           {/*lg*/}
           <div className="hidden lg:block ms-[-8rem] mx-auto">
-            <div className="absolute lg:w-[150rem] top-[10rem] left-[13rem] text-black">
-              <div className="ps-[2rem] pt-[1rem] blue-box h-[38rem] md:flex  rounded-3xl"></div>
+            <div className="absolute w-[150rem] top-[10rem] left-[13rem] text-black">
+              <div className="ps-[2rem] pt-[1rem] blue-box h-[38rem] flex rounded-3xl"></div>
             </div>
             <Slider
               ref={(slider) => {
@@ -62,11 +62,11 @@ const Projects = () => {
               }}
               {...settings}
               {...settings}
-              className="ms-[25rem]"
+              className="ms-[25rem] mt-[3rem]"
             >
               <div>
                 <div className="flex items-center">
-                  <div className="mx-[2rem] md:mx-[0rem] md:max-w-[40rem] m-4 p-[2rem]">
+                  <div className="mx-[0rem] max-w-[40rem] m-4 p-[2rem]">
                     <h1 className="text-5xl font-bold">1. Dorpon</h1>
                     <p className="text-[#666AE5] text-xl mb-[1rem]">
                       Movie Streaming app
@@ -79,12 +79,12 @@ const Projects = () => {
                       the developers at Microbuddyy!
                     </p>
                   </div>
-                  <img className="hidden md:block" src={img3} alt="" />
+                  <img src={img3} alt="" />
                 </div>
               </div>
               <div>
                 <div className="flex items-center">
-                  <div className="mx-[2rem] md:mx-[0rem] md:max-w-[40rem] m-4 p-[2rem]">
+                  <div className="mx-[0rem] max-w-[40rem] m-4 p-[2rem]">
                     <h1 className="text-5xl font-bold">2. EXPENSE WIZARD</h1>
                     <p className="text-[#666AE5] text-xl mb-[1rem]">
                       Movie Streaming app
@@ -98,7 +98,7 @@ const Projects = () => {
                       lost piece of the managing money puzzle for you.
                     </p>
                   </div>
-                  <img className="hidden md:block" src={img4} alt="" />
+                  <img src={img4} alt="" />
                 </div>
               </div>
               <div>
@@ -139,26 +139,6 @@ const Projects = () => {
                     </p>
                   </div>
                   <img className="hidden md:block" src={img6} alt="" />
-                </div>
-              </div>
-              <div>
-                <div className="flex items-center">
-                  <div className="mx-[2rem] md:mx-[0rem] md:max-w-[40rem] m-4 p-[2rem]">
-                    <h1 className="text-5xl font-bold">4. Home Gym Master</h1>
-                    <p className="text-[#666AE5] text-xl mb-[1rem]">
-                      Movie Streaming app
-                    </p>
-                    <p>
-                      Home Gym Master is one of the finest developments by
-                      Microbuddy. It is an app that assists you in creating a
-                      spirited workout environment tailored to your preferences.
-                      Whether you're a beginner just starting your fitness
-                      journey or a seasoned pro aiming to push your limits, our
-                      app adapts to your unique needs and goals, all from the
-                      comfort of your home.
-                    </p>
-                  </div>
-                  <img className="hidden md:block" src={img7} alt="" />
                 </div>
               </div>
             </Slider>
@@ -267,30 +247,6 @@ const Projects = () => {
                   </div>
                 </div>
               </div>
-              <div className="pt-[2rem] md:pt-[5rem] lg:pt-[10rem] text-black">
-                <div className="pt-[1rem] blue-box lg:w-[105rem] rounded-3xl">
-                  <img
-                    className="mx-auto z-50 block md:hidden"
-                    src={img7}
-                    alt=""
-                  />
-                  <div className="text-center mx-auto md:w-[30rem] m-4 p-[2rem]">
-                    <h1 className="text-5xl font-bold">4. Home Gym Master</h1>
-                    <p className="text-[#666AE5] text-xl mb-[1rem]">
-                      Movie Streaming app
-                    </p>
-                    <p>
-                      Home Gym Master is one of the finest developments by
-                      Microbuddy. It is an app that assists you in creating a
-                      spirited workout environment tailored to your preferences.
-                      Whether you're a beginner just starting your fitness
-                      journey or a seasoned pro aiming to push your limits, our
-                      app adapts to your unique needs and goals, all from the
-                      comfort of your home.
-                    </p>
-                  </div>
-                </div>
-              </div>
             </Slider>
           </div>
           {/*sm*/}
@@ -370,30 +326,6 @@ const Projects = () => {
                   <img
                     className="z-50 block md:hidden mx-auto"
                     src={img6}
-                    alt=""
-                  />
-                  <div className="mx-[rem] md:mx-[0rem] md:w-[30rem] m-4 p-[2rem]">
-                    <h1 className="text-3xl font-bold">4. Home Gym Master</h1>
-                    <p className="text-[#666AE5] text-xl mb-[1rem]">
-                      Movie Streaming app
-                    </p>
-                    <p>
-                      Home Gym Master is one of the finest developments by
-                      Microbuddy. It is an app that assists you in creating a
-                      spirited workout environment tailored to your preferences.
-                      Whether you're a beginner just starting your fitness
-                      journey or a seasoned pro aiming to push your limits, our
-                      app adapts to your unique needs and goals, all from the
-                      comfort of your home.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="lg:px-[20rem] lg:pb-[3rem] pt-[2rem] md:pt-[5rem] lg:pt-[10rem] text-black">
-                <div className="pt-[1rem] blue-box md:flex lg:w-[105rem] rounded-3xl">
-                  <img
-                    className="z-50 block md:hidden mx-auto"
-                    src={img7}
                     alt=""
                   />
                   <div className="mx-[rem] md:mx-[0rem] md:w-[30rem] m-4 p-[2rem]">
