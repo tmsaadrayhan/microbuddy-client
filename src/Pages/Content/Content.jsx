@@ -689,7 +689,7 @@ const Content = () => {
                       <div className="write-button absolute left-[-5rem] form-control"></div>
                       <button
                         type="submit"
-                        className="absolute left-[-5rem] text-nowrap button-child w-[10.25rem]"
+                        className="absolute left-[-5rem] text-wrap button-child w-[11rem]"
                       >
                         Send Message
                       </button>

@@ -87,7 +87,7 @@ const Projects = () => {
                   <div className="mx-[0rem] max-w-[40rem] m-4 p-[2rem]">
                     <h1 className="text-5xl font-bold">2. EXPENSE WIZARD</h1>
                     <p className="text-[#666AE5] text-xl mb-[1rem]">
-                      Movie Streaming app
+                      Financial app
                     </p>
                     <p>
                       Expense Wizard is the perfect tool for managing your
@@ -106,7 +106,7 @@ const Projects = () => {
                   <div className="mx-[2rem] md:mx-[0rem] md:max-w-[40rem] m-4 p-[2rem]">
                     <h1 className="text-5xl font-bold">3. Ibadat</h1>
                     <p className="text-[#666AE5] text-xl mb-[1rem]">
-                      Movie Streaming app
+                      Religious app
                     </p>
                     <p>
                       Ibadat is an Islamic life companion app developed by
@@ -126,7 +126,7 @@ const Projects = () => {
                   <div className="mx-[2rem] md:mx-[0rem] md:max-w-[40rem] m-4 p-[2rem]">
                     <h1 className="text-5xl font-bold">4. Home Gym Master</h1>
                     <p className="text-[#666AE5] text-xl mb-[1rem]">
-                      Movie Streaming app
+                      Exercise app
                     </p>
                     <p>
                       Home Gym Master is one of the finest developments by
@@ -186,7 +186,7 @@ const Projects = () => {
                   <div className="text-center mx-auto md:w-[30rem] m-4 p-[2rem]">
                     <h1 className="text-5xl font-bold">2. EXPENSE WIZARD</h1>
                     <p className="text-[#666AE5] text-xl mb-[1rem]">
-                      Movie Streaming app
+                      Financial app
                     </p>
                     <p>
                       Expense Wizard is the perfect tool for managing your
@@ -209,7 +209,7 @@ const Projects = () => {
                   <div className="text-center mx-auto md:w-[30rem] m-4 p-[2rem]">
                     <h1 className="text-5xl font-bold">3. Ibadat</h1>
                     <p className="text-[#666AE5] text-xl mb-[1rem]">
-                      Movie Streaming app
+                      Religious app
                     </p>
                     <p>
                       Ibadat is an Islamic life companion app developed by
@@ -233,7 +233,7 @@ const Projects = () => {
                   <div className="text-center mx-auto md:w-[30rem] m-4 p-[2rem]">
                     <h1 className="text-5xl font-bold">4. Home Gym Master</h1>
                     <p className="text-[#666AE5] text-xl mb-[1rem]">
-                      Movie Streaming app
+                      Exercise app
                     </p>
                     <p>
                       Home Gym Master is one of the finest developments by
@@ -284,7 +284,7 @@ const Projects = () => {
                   <div className="mx-[rem] md:mx-[0rem] md:w-[30rem] m-4 p-[2rem]">
                     <h1 className="text-3xl font-bold">2. EXPENSE WIZARD</h1>
                     <p className="text-[#666AE5] text-xl mb-[1rem]">
-                      Movie Streaming app
+                      Financial app
                     </p>
                     <p>
                       Expense Wizard is the perfect tool for managing your
@@ -307,7 +307,7 @@ const Projects = () => {
                   <div className="mx-[rem] md:mx-[0rem] md:w-[30rem] m-4 p-[2rem]">
                     <h1 className="text-3xl font-bold">3. Ibadat</h1>
                     <p className="text-[#666AE5] text-xl mb-[1rem]">
-                      Movie Streaming app
+                      Religious app
                     </p>
                     <p>
                       Ibadat is an Islamic life companion app developed by
@@ -331,7 +331,7 @@ const Projects = () => {
                   <div className="mx-[rem] md:mx-[0rem] md:w-[30rem] m-4 p-[2rem]">
                     <h1 className="text-3xl font-bold">4. Home Gym Master</h1>
                     <p className="text-[#666AE5] text-xl mb-[1rem]">
-                      Movie Streaming app
+                      Exercise app
                     </p>
                     <p>
                       Home Gym Master is one of the finest developments by
