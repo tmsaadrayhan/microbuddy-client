@@ -113,7 +113,7 @@ const YouTube = () => {
                       2. Design Buddy-
                     </h1>
                     <p className="text-[#666AE5] text-xl my-[1rem]">
-                      Code Learning
+                      Design Content
                     </p>
                     <p>
                       Design Buddy is here to improve your design skills with
@@ -195,7 +195,7 @@ const YouTube = () => {
                       2. Design Buddy-
                     </h1>
                     <p className="text-[#666AE5] text-xl my-[1rem]">
-                      Code Learning
+                      Design Content
                     </p>
                     <p>
                       Design Buddy is here to improve your design skills with

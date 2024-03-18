@@ -9,8 +9,10 @@ import img7 from "../../../assets/services/ourservice.png";
 import img8 from "../../../assets/services/service.png";
 import ScrollAnimation from "react-animate-on-scroll";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 
 const OurService = () => {
+  
   return (
     <div className="service-bg relative">
       <div className="lg:max-w-[70rem] mx-auto lg:flex gap-4">
@@ -37,7 +39,9 @@ const OurService = () => {
               </p>
             </div>
             <div>
-              <button className="service-button">Learn More</button>
+              <Link to="./it-service">
+                <button className="service-button">Learn More</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -272,18 +276,22 @@ const OurService = () => {
               </p>
             </div>
             <div>
-              <button className="service-button">Learn More</button>
+              <Link to="/it-service">
+                <button className="service-button">Learn More</button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
-      <ScrollAnimation animateOnce={true} animateIn="home-from-right">
-        <img
-          className="hidden lg:block absolute bottom-[-3rem] right-[0px] w-[22rem]"
-          src={img2}
-          alt=""
-        />
-      </ScrollAnimation>
+      <div className="hidden lg:block">
+        <ScrollAnimation animateOnce={true} animateIn="home-from-right">
+          <img
+            className="absolute bottom-[-3rem] right-[0px] w-[22rem]"
+            src={img2}
+            alt=""
+          />
+        </ScrollAnimation>
+      </div>
     </div>
   );
 };

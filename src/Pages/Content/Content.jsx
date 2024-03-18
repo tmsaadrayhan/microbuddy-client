@@ -103,16 +103,18 @@ const Content = () => {
                   and deliver packaged value.The future is here.
                 </p>
               </div>
-              <button className="contact-now-button">
-                CONTACT NOW
-                <div className="flex justify-end">
-                  <img
-                    className="w-[6rem] mt-[-0.75rem] me-[-2rem]"
-                    src={img20}
-                    alt=""
-                  />
-                </div>
-              </button>
+              <Link to="/contact">
+                <button className="contact-now-button">
+                  CONTACT NOW
+                  <div className="flex justify-end">
+                    <img
+                      className="w-[6rem] mt-[-0.75rem] me-[-2rem]"
+                      src={img20}
+                      alt=""
+                    />
+                  </div>
+                </button>
+              </Link>
             </div>
           </div>
           <div className="flex justify-center lg:justify-end">
@@ -319,7 +321,6 @@ const Content = () => {
                 />
               </ScrollAnimation>
             </div>
-            1qw
             <div className="w-fit mx-auto">
               <h1 className="text-4xl md:text-6xl font-black mt-[-2rem] md:mt-[-4rem]">
                 Service You Get

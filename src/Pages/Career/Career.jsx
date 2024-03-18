@@ -167,16 +167,18 @@ const Career = () => {
                     src={img7}
                     alt=""
                   />
-                  <p className="ms-[0.75rem]">Mirpur</p>
+                  <p className="ms-[0.75rem]">Banasree</p>
                 </div>
               </div>
             </div>
             <div className="flex justify-center md:justify-end md:w-2/5 lg:w-1/2 md:pe-[4rem] mt-[2rem] md:mt-[0rem]">
-              <div className="button-border">
-                <button className="rounded-[10px] m-[0.1rem] bg-[#666AE5] text-[white] px-[2.25rem] py-[0.75rem]">
-                  Apply Now
-                </button>
-              </div>
+              <Link to="/contact">
+                <div className="button-border">
+                  <button className="rounded-[10px] m-[0.1rem] bg-[#666AE5] text-[white] px-[2.25rem] py-[0.75rem]">
+                    Apply Now
+                  </button>
+                </div>
+              </Link>
             </div>
           </div>
           <div className="mx-[2rem] md:mx-auto md:w-[45rem]">

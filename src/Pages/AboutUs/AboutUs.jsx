@@ -73,7 +73,7 @@ const AboutUs = () => {
   const previous = () => {
     sliderRef.slickPrev();
   };
-  animateScroll.scrollToTop();
+
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     // Simulate async loading (e.g., fetching data)
@@ -83,13 +83,36 @@ const AboutUs = () => {
 
     return () => clearTimeout(timer);
   }, []);
-  if (loading)
+  const texts = [
+    "Microbuddy exceeded my expectations with their IT service and support. Their team was incredibly responsive and knowledgeable, swiftly resolving any issues we encountered. From software glitches to hardware malfunctions, they tackled every challenge with professionalism and efficiency. Their proactive approach to maintenance has minimized downtime for our business, ensuring smooth operations at all times. I highly recommend Microbuddy to any company seeking reliable IT solutions and unparalleled support.",
+    "Microbuddy has been instrumental in optimizing our IT infrastructure. Their support team is top-notch, always available to assist us with any technical issues quickly. What truly sets them apart is their dedication to understanding our unique business needs and providing tailored solutions. They've implemented innovative strategies that have streamlined our processes and enhanced productivity. With Microbuddy's expertise, we feel confident in our technology's reliability, allowing us to focus on our core objectives. I can't thank them enough for their exceptional service and support.",
+    "Choosing Microbuddy for our IT service needs has been a game-changer for our organization. Their team is incredibly proactive, often resolving issues before we even notice them. Their depth of knowledge and expertise have been evident in every interaction we've had. From network security to software updates, they've consistently delivered high-quality solutions tailored to our requirements. Microbuddy has become an invaluable partner, empowering us to stay ahead in a fast-paced digital landscape. If you're seeking a reliable IT service provider, look no further than Microbuddy.",
+    "Microbuddy has been a lifesaver for our small business. Their support team is always available and goes above and beyond to ensure our operations run smoothly. They've helped us transition to cloud-based solutions, significantly improving our efficiency and collaboration. What's truly remarkable is their commitment to customer satisfaction; they take the time to explain technical concepts in a way that's easy to understand, empowering us to make informed decisions. With Microbuddy handling our IT needs, we can focus on confidently growing our business. I highly recommend them to anyone in need of dependable IT services.",
+  ];
+  const [isExpanded1, setIsExpanded1] = useState(false);
+  const [isExpanded2, setIsExpanded2] = useState(false);
+  const [isExpanded3, setIsExpanded3] = useState(false);
+  const [isExpanded4, setIsExpanded4] = useState(false);
+  const toggleExpansion1 = () => {
+    setIsExpanded1(!isExpanded1);
+  };
+  const toggleExpansion2 = () => {
+    setIsExpanded2(!isExpanded2);
+  };
+  const toggleExpansion3 = () => {
+    setIsExpanded3(!isExpanded3);
+  };
+  const toggleExpansion4 = () => {
+    setIsExpanded4(!isExpanded4);
+  };
+  if (loading) {
+    animateScroll.scrollToTop();
     return (
       <div className="w-full py-[15rem]">
         <img className="mx-auto" src={imgLoad} alt="" />
       </div>
     );
-  else
+  } else
     return (
       <div>
         <Helmet>
@@ -466,8 +489,9 @@ const AboutUs = () => {
               </div>
             </div>
             <div className="lg:w-[60rem] -z-10 lg:-mt-[25rem] mb-[5rem] ms-[-1rem] lg:mx-auto">
+              {/*lg*/}
               <div className="hidden lg:block max-w-[60rem] -z-10 -mt-[25rem] mb-[15rem] mx-auto">
-                <div className="hidden lg:block absolute z-[50] left-[3rem] bottom-[22rem] ">
+                <div className="hidden lg:block absolute z-[50] left-[3rem] top-[41rem]">
                   <button onClick={previous}>
                     <IoIosArrowBack className="text-[#666ae580] text-[40px]" />
                   </button>
@@ -481,7 +505,7 @@ const AboutUs = () => {
                   arrows={false}
                 >
                   <div className="p-[3rem] text-black">
-                    <div className="bg-white mx-auto rounded-[3rem] border blue-box h-[40rem]">
+                    <div className="bg-white mx-auto rounded-[3rem] border blue-box">
                       <div className="flex">
                         <div className="w-[15rem] px-[3rem] py-[4rem]">
                           <img src={img17} />
@@ -501,25 +525,36 @@ const AboutUs = () => {
                             }
                             placeholderRating={5}
                           />
-                          <p className="py-6 text-xl">
-                            Microbuddy exceeded my expectations with their IT
-                            service and support. Their team was incredibly
-                            responsive and knowledgeable, swiftly resolving any
-                            issues we encountered. From software glitches to
-                            hardware malfunctions, they tackled every challenge
-                            with professionalism and efficiency. Their proactive
-                            approach to maintenance has minimized downtime for
-                            our business, ensuring smooth operations at all
-                            times. I highly recommend Microbuddy to any company
-                            seeking reliable IT solutions and unparalleled
-                            support.
-                          </p>
+                          {!isExpanded1 ? (
+                            <p className="py-6 text-xl">
+                              {texts[0].slice(0, 150)}
+                              {".... "}
+                              <span
+                                onClick={toggleExpansion1}
+                                className="text-primary underline"
+                              >
+                                Show more.
+                              </span>
+                            </p>
+                          ) : (
+                            <p className="py-6 text-xl">
+                              {" "}
+                              {texts[0]}{" "}
+                              <span
+                                onClick={toggleExpansion1}
+                                className="text-primary underline"
+                              >
+                                {" "}
+                                Show less
+                              </span>
+                            </p>
+                          )}
                         </div>
                       </div>
                     </div>
                   </div>
                   <div className="p-[3rem] text-black">
-                    <div className="bg-white mx-auto rounded-[3rem] border blue-box h-[40rem]">
+                    <div className="bg-white mx-auto rounded-[3rem] border blue-box">
                       <div className="flex ">
                         <div className="w-[15rem] px-[3rem] py-[4rem]">
                           <img src={img17} />
@@ -528,6 +563,7 @@ const AboutUs = () => {
                           <h1 className="text-5xl font-bold">
                             Salman Alqahtani
                           </h1>
+
                           <Rating
                             fullSymbol={
                               <IoMdStar className="text-[#FFD600] text-5xl" />
@@ -541,26 +577,36 @@ const AboutUs = () => {
                             }
                             placeholderRating={5}
                           />
-                          <p className="py-6 text-xl">
-                            Microbuddy has been instrumental in optimizing our
-                            IT infrastructure. Their support team is top-notch,
-                            always available to assist us with any technical
-                            issues quickly. What truly sets them apart is their
-                            dedication to understanding our unique business
-                            needs and providing tailored solutions. They've
-                            implemented innovative strategies that have
-                            streamlined our processes and enhanced productivity.
-                            With Microbuddy's expertise, we feel confident in
-                            our technology's reliability, allowing us to focus
-                            on our core objectives. I can't thank them enough
-                            for their exceptional service and support.
-                          </p>
+                          {!isExpanded2 ? (
+                            <p className="py-6 text-xl">
+                              {texts[1].slice(0, 150)}
+                              {".... "}
+                              <span
+                                onClick={toggleExpansion2}
+                                className="text-primary underline"
+                              >
+                                Show more.
+                              </span>
+                            </p>
+                          ) : (
+                            <p className="py-6 text-xl">
+                              {" "}
+                              {texts[1]}{" "}
+                              <span
+                                onClick={toggleExpansion2}
+                                className="text-primary underline"
+                              >
+                                {" "}
+                                Show less
+                              </span>
+                            </p>
+                          )}
                         </div>
                       </div>
                     </div>
                   </div>
                   <div className="p-[3rem] text-black">
-                    <div className="bg-white mx-auto rounded-[3rem] border blue-box h-[40rem]">
+                    <div className="bg-white mx-auto rounded-[3rem] border blue-box">
                       <div className="flex ">
                         <div className="w-[15rem] px-[3rem] py-[4rem]">
                           <img src={img17} />
@@ -582,26 +628,36 @@ const AboutUs = () => {
                             }
                             placeholderRating={5}
                           />
-                          <p className="py-6 text-xl">
-                            Choosing Microbuddy for our IT service needs has
-                            been a game-changer for our organization. Their team
-                            is incredibly proactive, often resolving issues
-                            before we even notice them. Their depth of knowledge
-                            and expertise have been evident in every interaction
-                            we've had. From network security to software
-                            updates, they've consistently delivered high-quality
-                            solutions tailored to our requirements. Microbuddy
-                            has become an invaluable partner, empowering us to
-                            stay ahead in a fast-paced digital landscape. If
-                            you're seeking a reliable IT service provider, look
-                            no further than Microbuddy.
-                          </p>
+                          {!isExpanded3 ? (
+                            <p className="py-6 text-xl">
+                              {texts[2].slice(0, 150)}
+                              {".... "}
+                              <span
+                                onClick={toggleExpansion3}
+                                className="text-primary underline"
+                              >
+                                Show more.
+                              </span>
+                            </p>
+                          ) : (
+                            <p className="py-6 text-xl">
+                              {" "}
+                              {texts[2]}{" "}
+                              <span
+                                onClick={toggleExpansion3}
+                                className="text-primary underline"
+                              >
+                                {" "}
+                                Show less
+                              </span>
+                            </p>
+                          )}
                         </div>
                       </div>
                     </div>
                   </div>
                   <div className="p-[3rem] text-black">
-                    <div className="bg-white mx-auto rounded-[3rem] border blue-box h-[40rem]">
+                    <div className="bg-white mx-auto rounded-[3rem] border blue-box">
                       <div className="flex ">
                         <div className="w-[15rem] px-[3rem] py-[4rem]">
                           <img src={img17} />
@@ -623,28 +679,36 @@ const AboutUs = () => {
                             }
                             placeholderRating={5}
                           />
-                          <p className="py-6 text-xl">
-                            Microbuddy has been a lifesaver for our small
-                            business. Their support team is always available and
-                            goes above and beyond to ensure our operations run
-                            smoothly. They've helped us transition to
-                            cloud-based solutions, significantly improving our
-                            efficiency and collaboration. What's truly
-                            remarkable is their commitment to customer
-                            satisfaction; they take the time to explain
-                            technical concepts in a way that's easy to
-                            understand, empowering us to make informed
-                            decisions. With Microbuddy handling our IT needs, we
-                            can focus on confidently growing our business. I
-                            highly recommend them to anyone in need of
-                            dependable IT services.
-                          </p>
+                          {!isExpanded4 ? (
+                            <p className="py-6 text-xl">
+                              {texts[3].slice(0, 150)}
+                              {".... "}
+                              <span
+                                onClick={toggleExpansion4}
+                                className="text-primary underline"
+                              >
+                                Show more.
+                              </span>
+                            </p>
+                          ) : (
+                            <p className="py-6 text-xl">
+                              {" "}
+                              {texts[3]}{" "}
+                              <span
+                                onClick={toggleExpansion4}
+                                className="text-primary underline"
+                              >
+                                {" "}
+                                Show less
+                              </span>
+                            </p>
+                          )}
                         </div>
                       </div>
                     </div>
                   </div>
                 </Slider>
-                <div className="hidden lg:block absolute right-[3rem] bottom-[22rem] ">
+                <div className="hidden lg:block absolute right-[3rem] top-[41rem]">
                   <button onClick={next}>
                     <IoIosArrowForward className="text-[#666ae580] text-[40px]" />
                   </button>
@@ -677,19 +741,30 @@ const AboutUs = () => {
                             }
                             placeholderRating={5}
                           />
-                          <p className="py-6 md:text-xl">
-                            Microbuddy exceeded my expectations with their IT
-                            service and support. Their team was incredibly
-                            responsive and knowledgeable, swiftly resolving any
-                            issues we encountered. From software glitches to
-                            hardware malfunctions, they tackled every challenge
-                            with professionalism and efficiency. Their proactive
-                            approach to maintenance has minimized downtime for
-                            our business, ensuring smooth operations at all
-                            times. I highly recommend Microbuddy to any company
-                            seeking reliable IT solutions and unparalleled
-                            support.
-                          </p>
+                          {!isExpanded1 ? (
+                            <p className="py-6 text-xl">
+                              {texts[0].slice(0, 150)}
+                              {".... "}
+                              <span
+                                onClick={toggleExpansion1}
+                                className="text-primary underline"
+                              >
+                                Show more.
+                              </span>
+                            </p>
+                          ) : (
+                            <p className="py-6 text-xl">
+                              {" "}
+                              {texts[0]}{" "}
+                              <span
+                                onClick={toggleExpansion1}
+                                className="text-primary underline"
+                              >
+                                {" "}
+                                Show less
+                              </span>
+                            </p>
+                          )}
                         </div>
                       </div>
                     </div>
@@ -718,20 +793,30 @@ const AboutUs = () => {
                             }
                             placeholderRating={5}
                           />
-                          <p className="py-6 md:text-xl">
-                            Microbuddy has been instrumental in optimizing our
-                            IT infrastructure. Their support team is top-notch,
-                            always available to assist us with any technical
-                            issues quickly. What truly sets them apart is their
-                            dedication to understanding our unique business
-                            needs and providing tailored solutions. They've
-                            implemented innovative strategies that have
-                            streamlined our processes and enhanced productivity.
-                            With Microbuddy's expertise, we feel confident in
-                            our technology's reliability, allowing us to focus
-                            on our core objectives. I can't thank them enough
-                            for their exceptional service and support.
-                          </p>
+                          {!isExpanded2 ? (
+                            <p className="py-6 text-xl">
+                              {texts[1].slice(0, 150)}
+                              {".... "}
+                              <span
+                                onClick={toggleExpansion2}
+                                className="text-primary underline"
+                              >
+                                Show more.
+                              </span>
+                            </p>
+                          ) : (
+                            <p className="py-6 text-xl">
+                              {" "}
+                              {texts[1]}{" "}
+                              <span
+                                onClick={toggleExpansion2}
+                                className="text-primary underline"
+                              >
+                                {" "}
+                                Show less
+                              </span>
+                            </p>
+                          )}
                         </div>
                       </div>
                     </div>
@@ -760,20 +845,30 @@ const AboutUs = () => {
                             }
                             placeholderRating={5}
                           />
-                          <p className="py-6 md:text-xl">
-                            Choosing Microbuddy for our IT service needs has
-                            been a game-changer for our organization. Their team
-                            is incredibly proactive, often resolving issues
-                            before we even notice them. Their depth of knowledge
-                            and expertise have been evident in every interaction
-                            we've had. From network security to software
-                            updates, they've consistently delivered high-quality
-                            solutions tailored to our requirements. Microbuddy
-                            has become an invaluable partner, empowering us to
-                            stay ahead in a fast-paced digital landscape. If
-                            you're seeking a reliable IT service provider, look
-                            no further than Microbuddy.
-                          </p>
+                          {!isExpanded3 ? (
+                            <p className="py-6 text-xl">
+                              {texts[2].slice(0, 150)}
+                              {".... "}
+                              <span
+                                onClick={toggleExpansion3}
+                                className="text-primary underline"
+                              >
+                                Show more.
+                              </span>
+                            </p>
+                          ) : (
+                            <p className="py-6 text-xl">
+                              {" "}
+                              {texts[2]}{" "}
+                              <span
+                                onClick={toggleExpansion3}
+                                className="text-primary underline"
+                              >
+                                {" "}
+                                Show less
+                              </span>
+                            </p>
+                          )}
                         </div>
                       </div>
                     </div>
@@ -802,22 +897,30 @@ const AboutUs = () => {
                             }
                             placeholderRating={5}
                           />
-                          <p className="py-6 md:text-xl">
-                            Microbuddy has been a lifesaver for our small
-                            business. Their support team is always available and
-                            goes above and beyond to ensure our operations run
-                            smoothly. They've helped us transition to
-                            cloud-based solutions, significantly improving our
-                            efficiency and collaboration. What's truly
-                            remarkable is their commitment to customer
-                            satisfaction; they take the time to explain
-                            technical concepts in a way that's easy to
-                            understand, empowering us to make informed
-                            decisions. With Microbuddy handling our IT needs, we
-                            can focus on confidently growing our business. I
-                            highly recommend them to anyone in need of
-                            dependable IT services.
-                          </p>
+                          {!isExpanded4 ? (
+                            <p className="py-6 text-xl">
+                              {texts[3].slice(0, 150)}
+                              {".... "}
+                              <span
+                                onClick={toggleExpansion4}
+                                className="text-primary underline"
+                              >
+                                Show more.
+                              </span>
+                            </p>
+                          ) : (
+                            <p className="py-6 text-xl">
+                              {" "}
+                              {texts[3]}{" "}
+                              <span
+                                onClick={toggleExpansion4}
+                                className="text-primary underline"
+                              >
+                                {" "}
+                                Show less
+                              </span>
+                            </p>
+                          )}
                         </div>
                       </div>
                     </div>
