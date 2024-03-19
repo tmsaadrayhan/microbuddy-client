@@ -203,7 +203,7 @@ const Career = () => {
             </h1>
           </div>
           <div className="mx-[2rem] lg:mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-[1rem] md:mt-[3rem]">
-            <div className="blue-box-career p-[2rem]">
+            <div className="hover:scale-110 duration-300 blue-box-career p-[2rem]">
               <p className="text-xl">
                 Our medical insurance ensures your well-being is covered. We
                 prioritize your health, providing peace of mind for whatever
@@ -218,7 +218,7 @@ const Career = () => {
                 </div>
               </div>
             </div>
-            <div className="blue-box-career p-[2rem]">
+            <div className="hover:scale-110 duration-300 blue-box-career p-[2rem]">
               <p className="text-xl">
                 Work on your terms with our flexible arrangements. We support
                 your unique needs, ensuring a balanced and productive work-life
@@ -233,7 +233,7 @@ const Career = () => {
                 </div>
               </div>
             </div>
-            <div className="blue-box-career p-[2rem]">
+            <div className="hover:scale-110 duration-300 blue-box-career p-[2rem]">
               <p className="text-xl">
                 Join us for delicious, communal meals. Beyond nourishment, we
                 foster camaraderie and enjoyment in every bite.
@@ -247,7 +247,7 @@ const Career = () => {
                 </div>
               </div>
             </div>
-            <div className="blue-box-career p-[2rem] hidden md:block">
+            <div className="hover:scale-110 duration-300 blue-box-career p-[2rem] hidden md:block">
               <p className="text-xl">
                 Celebrate parenthood with our supportive benefits. Take time off
                 worry-free to bond with your newborn.
@@ -263,7 +263,7 @@ const Career = () => {
                 </div>
               </div>
             </div>
-            <div className="blue-box-career p-[2rem] hidden md:block">
+            <div className="hover:scale-110 duration-300 blue-box-career p-[2rem] hidden md:block">
               <p className="text-xl">
                 Experience a lively workplace where creativity thrives. Laughter
                 and celebration are always welcome, making work enjoyable.
@@ -277,7 +277,7 @@ const Career = () => {
                 </div>
               </div>
             </div>
-            <div className="blue-box-career p-[2rem] hidden md:block">
+            <div className="hover:scale-110 duration-300 blue-box-career p-[2rem] hidden md:block">
               <p className="text-xl">
                 Elevate your skills with our top-notch training programs. We
                 invest in your growth for long-term success.
@@ -291,7 +291,7 @@ const Career = () => {
                 </div>
               </div>
             </div>
-            <div className="blue-box-career p-[2rem] hidden lg:block">
+            <div className="hover:scale-110 duration-300 blue-box-career p-[2rem] hidden lg:block">
               <p className="text-xl">
                 Progress in your career with ample opportunities. We're
                 committed to helping you achieve your goals and aspirations.
@@ -305,7 +305,7 @@ const Career = () => {
                 </div>
               </div>
             </div>
-            <div className="blue-box-career p-[2rem] hidden lg:block">
+            <div className="hover:scale-110 duration-300 blue-box-career p-[2rem] hidden lg:block">
               <p className="text-xl">
                 Receive fair compensation for your efforts. Your contributions
                 are valued and rewarded accordingly.
@@ -319,7 +319,7 @@ const Career = () => {
                 </div>
               </div>
             </div>
-            <div className="blue-box-career p-[2rem] hidden lg:block">
+            <div className="hover:scale-110 duration-300 blue-box-career p-[2rem] hidden lg:block">
               <p className="text-xl">
                 Collaborate with skilled professionals. Our diverse team fosters
                 innovation and excellence.
@@ -333,7 +333,7 @@ const Career = () => {
                 </div>
               </div>
             </div>
-            <div className="blue-box-career p-[2rem] hidden lg:block">
+            <div className="hover:scale-110 duration-300 blue-box-career p-[2rem] hidden lg:block">
               <p className="text-xl">
                 Secure your future with our financial plans. We're here to help
                 you achieve your long-term goals.
@@ -347,7 +347,7 @@ const Career = () => {
                 </div>
               </div>
             </div>
-            <div className="blue-box-career p-[2rem] hidden lg:block">
+            <div className="hover:scale-110 duration-300 blue-box-career p-[2rem] hidden lg:block">
               <p className="text-xl">
                 Access financial support conveniently. We offer assistance for
                 unexpected expenses, ensuring peace of mind.
@@ -363,7 +363,7 @@ const Career = () => {
                 </div>
               </div>
             </div>
-            <div className="blue-box-career p-[2rem] hidden lg:block">
+            <div className="hover:scale-110 duration-300 blue-box-career p-[2rem] hidden lg:block">
               <p className="text-xl">
                 Breathe easily in our green workspace. We prioritize your
                 well-being with clean, refreshing air.
@@ -400,45 +400,51 @@ const Career = () => {
           </div>
           <div className="block  lg:hidden md:mt-[3rem]">
             <div className="flex">
-              <div className="w-full">
-                <img className="w-full p-[0.25rem]" src={img21} />
+              <div className="w-full overflow-hidden m-[0.25rem]">
+                <img
+                  className="hover:scale-110 duration-300 w-full"
+                  src={img21}
+                />
               </div>
             </div>
             <div className="flex">
-              <div className="w-1/2">
-                <img className="h-full p-[0.25rem]" src={img22} />
+              <div className="w-1/2 overflow-hidden m-[0.25rem]">
+                <img
+                  className="hover:scale-110 duration-300 h-full"
+                  src={img22}
+                />
               </div>
-              <div className="w-1/2">
-                <img className="p-[0.25rem]" src={img23} />
+              <div className="w-1/2 overflow-hidden m-[0.25rem]">
+                <img className="hover:scale-110 duration-300" src={img23} />
               </div>
             </div>
             <div className="flex">
-              <div>
-                <img className="p-[0.25rem]" src={img24} />
+              <div className="overflow-hidden m-[0.25rem]">
+                <img className="hover:scale-110 duration-300" src={img24} />
               </div>
-              <div>
-                <img className="p-[0.25rem]" src={img25} />
+              <div className="overflow-hidden m-[0.25rem]">
+                <img className="hover:scale-110 duration-300" src={img25} />
               </div>
             </div>
           </div>
           <div className="hidden lg:block mt-[3rem]">
             <div className="flex">
-              <div>
-                <img className="p-[0.25rem]" src={img21} />
+              <div className="overflow-hidden m-[0.25rem]">
+                <img className="hover:scale-110 duration-300" src={img21} />
               </div>
-              <div>
-                <img className="p-[0.25rem]" src={img22} />
+              <div className="overflow-hidden m-[0.25rem]">
+                <img className="hover:scale-110 duration-300" src={img22} />
               </div>
             </div>
             <div className="flex">
-              <div>
-                <img className="p-[0.25rem]" src={img23} />
+              <div className="overflow-hidden m-[0.25rem]">
+                <img className="hover:scale-110 duration-300" src={img23} />
               </div>
-              <div>
-                <img className="p-[0.25rem]" src={img24} />
+              <div className="overflow-hidden m-[0.25rem]">
+                <img className="hover:scale-110 duration-300" src={img24} />
               </div>
-              <div>
-                <img className="p-[0.25rem]" src={img25} />
+              <div className="overflow-hidden m-[0.25rem]">
+                <img className="hover:scale-110 duration-300" src={img25} />
               </div>
             </div>
           </div>

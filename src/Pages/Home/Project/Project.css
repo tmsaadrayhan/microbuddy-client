@@ -19,3 +19,32 @@
     linear-gradient(180deg, #46b0eb, #e0aa1512) border-box;
   border: 2px solid transparent;
 }
+.project-button {
+  transition: all 0.5s;
+  box-shadow: 5px 10px 10px #666ae520, -4px -4px 8px #666ae520;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(270deg, #666ae5, rgba(0, 0, 0, 0)) border-box;
+  border: 3px solid transparent;
+  color: #666ae5;
+  border-radius: 15px;
+  width: 10.5rem;
+  height: 3.9rem;
+}
+.button-parent:hover .project-button {
+  translate: 10px 10px;
+}
+.button-child {
+  transition: all 0.5s;
+  margin: 3px;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background-color: white;
+}
+.button-parent:hover .button-child {
+  background-color: #666ae5;
+  color: white;
+}
+
+.button-child:hover {
+  background-color: white;
+}

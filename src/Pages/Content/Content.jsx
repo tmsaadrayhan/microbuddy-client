@@ -34,6 +34,8 @@ import Slider from "react-slick";
 import ScrollAnimation from "react-animate-on-scroll";
 import { animateScroll } from "react-scroll";
 import { useEffect, useState } from "react";
+import { Formik } from "formik";
+import axios from "axios";
 
 const Content = () => {
   animateScroll.scrollToTop();
@@ -648,55 +650,113 @@ const Content = () => {
                   Share your thoughts or valuable feedback about any of our
                   services, and our team members will assist you in no time.
                 </p>
-                <form className="mt-[2rem] px-[1rem] md:px-[0]">
-                  <div className=" grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
-                    <div className="form-control">
-                      <input
-                        type="text"
-                        name="name"
-                        placeholder="Name"
-                        className="input write-input input-bordered"
-                        required
-                      />
-                    </div>
-                    <div className="form-control">
-                      <input
-                        type="text"
-                        name="email"
-                        placeholder="Email"
-                        className="input write-input input-bordered"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div className="form-control mt-6">
-                    <input
-                      type="text"
-                      placeholder="Subject"
-                      name="subject"
-                      className="input write-input input-bordered"
-                      required
-                    />
-                  </div>
-                  <div className="form-control">
-                    <textarea
-                      className="input input-bordered rounded-xl w-full h-[10rem] mt-[1.75rem]"
-                      name="message"
-                      placeholder="Message....."
-                    ></textarea>
-                  </div>
-                  <div className="flex justify-center mt-[1rem] mb-[1.5rem]">
-                    <div className="button-parent relative">
-                      <div className="write-button absolute left-[-5rem] form-control"></div>
-                      <button
-                        type="submit"
-                        className="absolute left-[-5rem] text-wrap button-child w-[11rem]"
-                      >
-                        Send Message
-                      </button>
-                    </div>
-                  </div>
-                </form>
+                <Formik
+                  initialValues={{
+                    name: "",
+                    email: "",
+                    subject: "",
+                    message: "",
+                  }}
+                  validate={(values) => {
+                    const errors = {};
+                    if (!values.email) {
+                      errors.email = "Required";
+                    } else if (
+                      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(
+                        values.email
+                      )
+                    ) {
+                      errors.email = "Invalid email address";
+                    }
+                    return errors;
+                  }}
+                  onSubmit={(values) => {
+                    axios
+                      .post("http://localhost:5000/content-email", values)
+                      .then(function (response) {
+                        console.log(response);
+                      })
+                      .catch(function (error) {
+                        console.log(error);
+                      });
+                    alert("Thanks for your response");
+                  }}
+                >
+                  {({
+                    values,
+                    handleChange,
+                    handleBlur,
+                    handleSubmit,
+                    isSubmitting,
+                    /* and other goodies */
+                  }) => (
+                    <form
+                      onSubmit={handleSubmit}
+                      className="mt-[2rem] px-[1rem] md:px-[0]"
+                    >
+                      <div className=" grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+                        <div className="form-control">
+                          <input
+                            type="text"
+                            name="name"
+                            placeholder="Name"
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            value={values.name}
+                            className="input write-input input-bordered"
+                            required
+                          />
+                        </div>
+                        <div className="form-control">
+                          <input
+                            type="text"
+                            name="email"
+                            placeholder="Email"
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            value={values.email}
+                            className="input write-input input-bordered"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div className="form-control mt-6">
+                        <input
+                          type="text"
+                          placeholder="Subject"
+                          onChange={handleChange}
+                          onBlur={handleBlur}
+                          name="subject"
+                          value={values.values}
+                          className="input write-input input-bordered"
+                          required
+                        />
+                      </div>
+                      <div className="form-control">
+                        <textarea
+                          className="input input-bordered rounded-xl w-full h-[10rem] mt-[1.75rem]"
+                          onChange={handleChange}
+                          onBlur={handleBlur}
+                          name="message"
+                          value={values.message}
+                          placeholder="Message....."
+                        ></textarea>
+                      </div>
+                      <div className="flex justify-center mt-[1rem] mb-[1.5rem]">
+                        <div className="button-parent relative">
+                          <div className="write-button absolute left-[-5rem] form-control"></div>
+                          <button
+                            type="submit"
+                            disabled={isSubmitting}
+                            className="absolute left-[-5rem] text-wrap button-child w-[11rem]"
+                          >
+                            Send Message
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  )}
+                </Formik>
               </div>
             </div>
           </div>

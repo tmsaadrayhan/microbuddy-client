@@ -13,6 +13,8 @@ import img10 from "../../assets/portfolio/ads/rectangle63.png";
 import img11 from "../../assets/portfolio/ads/rectangle64.png";
 import { Helmet } from "react-helmet";
 import { animateScroll } from "react-scroll";
+import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
 
 const Portfolio = () => {
   return (
@@ -23,142 +25,160 @@ const Portfolio = () => {
       </Helmet>
       <PortfolioHead></PortfolioHead>
       <div className="pt-[5rem] lg:max-w-[82rem] px-[1rem] lg:mx-auto">
-        <PortFolioHeader></PortFolioHeader>
-        <div className="hidden lg:block w-full portfolio-item mb-[5rem]">
-          <div className="flex">
-            <div className="flex w-[65%]">
-              <div className="w-2/3">
-                <img src={img1} />
-              </div>
-              <div className="w-1/3 h-full">
-                <div className="h-3/5">
-                  <img className="h-full" src={img2} alt="" />
+        <Tabs aria-label="scrollable auto tabs example">
+          <TabList>
+            <Tab>All</Tab>
+            <Tab>Ads Design</Tab>
+            <Tab>Apps</Tab>
+            <Tab>Banner & Poster</Tab>
+            <Tab>Website</Tab>
+          </TabList>
+
+          <TabPanel>
+            <h2>
+              <div className="hidden lg:block w-full portfolio-item mb-[5rem]">
+                <div className="flex">
+                  <div className="flex w-[65%]">
+                    <div className="w-2/3">
+                      <img src={img1} />
+                    </div>
+                    <div className="w-1/3 h-full">
+                      <div className="h-3/5">
+                        <img className="h-full" src={img2} alt="" />
+                      </div>
+                      <div className="h-2/5">
+                        <img className="h-full" src={img3} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-[35%]">
+                    <div className="flex h-2/5">
+                      <div className="w-1/2">
+                        <img className="h-full" src={img6} alt="" />
+                      </div>
+                      <div className="w-1/2">
+                        <img className="h-full" src={img5} alt="" />
+                      </div>
+                    </div>
+                    <div className="h-3/5">
+                      <img className="h-full" src={img4} alt="" />
+                    </div>
+                  </div>
                 </div>
-                <div className="h-2/5">
-                  <img className="h-full" src={img3} alt="" />
+                <div className="flex">
+                  <div className="w-[45%]">
+                    <img className="h-full" src={img7} alt="" />
+                  </div>
+                  <div className="w-[55%] flex">
+                    <div className="w-3/5">
+                      <div className="flex">
+                        <div className="w-1/2">
+                          <img src={img8} alt="" />
+                        </div>
+                        <div className="w-1/2">
+                          <img src={img11} alt="" />
+                        </div>
+                      </div>
+                      <div>
+                        <img src={img9} alt="" />
+                      </div>
+                    </div>
+                    <div className="w-2/5">
+                      <img className="h-full" src={img10} alt="" />
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="w-[35%]">
-              <div className="flex h-2/5">
-                <div className="w-1/2">
-                  <img className="h-full" src={img6} alt="" />
+              <div className="hidden md:block lg:hidden w-full portfolio-item portfolio-item mb-[5rem]">
+                <div className="flex">
+                  <div className="w-[60%]">
+                    <img className="w-full h-full" src={img1} alt="" />
+                  </div>
+                  <div className="w-[40%]">
+                    <div>
+                      <img className="w-full" src={img2} alt="" />
+                    </div>
+                    <div>
+                      <img className="w-full" src={img3} alt="" />
+                    </div>
+                  </div>
                 </div>
-                <div className="w-1/2">
-                  <img className="h-full" src={img5} alt="" />
+                <div className="flex">
+                  <div className="w-[65%]">
+                    <img className="w-full" src={img4} alt="" />
+                  </div>
+                  <div className="w-[35%]">
+                    <img className="w-full h-full" src={img6} alt="" />
+                  </div>
                 </div>
-              </div>
-              <div className="h-3/5">
-                <img className="h-full" src={img4} alt="" />
-              </div>
-            </div>
-          </div>
-          <div className="flex">
-            <div className="w-[45%]">
-              <img className="h-full" src={img7} alt="" />
-            </div>
-            <div className="w-[55%] flex">
-              <div className="w-3/5">
+                <div className="flex">
+                  <div className="w-[60%]">
+                    <img className="w-full" src={img9} alt="" />
+                  </div>
+                  <div className="w-[40%]">
+                    <img className="w-full" src={img5} alt="" />
+                  </div>
+                </div>
+                <div>
+                  <img className="w-full" src={img7} alt="" />
+                </div>
                 <div className="flex">
                   <div className="w-1/2">
-                    <img src={img8} alt="" />
+                    <div>
+                      <img className="w-full" src={img8} alt="" />
+                    </div>
+                    <div>
+                      <img className="w-full" src={img11} alt="" />
+                    </div>
                   </div>
                   <div className="w-1/2">
-                    <img src={img11} alt="" />
+                    <img className=" w-full" src={img10} alt="" />
+                  </div>
+                </div>
+              </div>
+              <div className="block md:hidden w-full portfolio-item portfolio-item mb-[5rem]">
+                <div>
+                  <img src={img1} alt="" />
+                </div>
+                <div className="flex">
+                  <div className="w-[60%]">
+                    <img src={img2} alt="" />
+                  </div>
+                  <div className="w-[40%]">
+                    <div>
+                      <img src={img6} alt="" />
+                    </div>
+                    <div>
+                      <img src={img3} alt="" />
+                    </div>
                   </div>
                 </div>
                 <div>
                   <img src={img9} alt="" />
                 </div>
+                <div>
+                  <img src={img7} alt="" />
+                </div>
+                <div className="flex">
+                  <div>
+                    <img src={img8} alt="" />
+                  </div>
+                  <div>
+                    <img src={img10} alt="" />
+                  </div>
+                </div>
+                <div className="w-full">
+                  <img className="w-full" src={img11} alt="" />
+                </div>
               </div>
-              <div className="w-2/5">
-                <img className="h-full" src={img10} alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="hidden md:block lg:hidden w-full portfolio-item portfolio-item mb-[5rem]">
-          <div className="flex">
-            <div className="w-[60%]">
-              <img className="w-full h-full" src={img1} alt="" />
-            </div>
-            <div className="w-[40%]">
-              <div>
-                <img className="w-full" src={img2} alt="" />
-              </div>
-              <div>
-                <img className="w-full" src={img3} alt="" />
-              </div>
-            </div>
-          </div>
-          <div className="flex">
-            <div className="w-[65%]">
-              <img className="w-full" src={img4} alt="" />
-            </div>
-            <div className="w-[35%]">
-              <img className="w-full h-full" src={img6} alt="" />
-            </div>
-          </div>
-          <div className="flex">
-            <div className="w-[60%]">
-              <img className="w-full" src={img9} alt="" />
-            </div>
-            <div className="w-[40%]">
-              <img className="w-full" src={img5} alt="" />
-            </div>
-          </div>
-          <div>
-            <img className="w-full" src={img7} alt="" />
-          </div>
-          <div className="flex">
-            <div className="w-1/2">
-              <div>
-                <img className="w-full" src={img8} alt="" />
-              </div>
-              <div>
-                <img className="w-full" src={img11} alt="" />
-              </div>
-            </div>
-            <div className="w-1/2">
-              <img className=" w-full" src={img10} alt="" />
-            </div>
-          </div>
-        </div>
-        <div className="block md:hidden w-full portfolio-item portfolio-item mb-[5rem]">
-          <div>
-            <img src={img1} alt="" />
-          </div>
-          <div className="flex">
-            <div className="w-[60%]">
-              <img src={img2} alt="" />
-            </div>
-            <div className="w-[40%]">
-              <div>
-                <img src={img6} alt="" />
-              </div>
-              <div>
-                <img src={img3} alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <img src={img9} alt="" />
-          </div>
-          <div>
-            <img src={img7} alt="" />
-          </div>
-          <div className="flex">
-            <div>
-              <img src={img8} alt="" />
-            </div>
-            <div>
-              <img src={img10} alt="" />
-            </div>
-          </div>
-          <div className="w-full">
-            <img className="w-full" src={img11} alt="" />
-          </div>
-        </div>
+            </h2>
+          </TabPanel>
+          <TabPanel>Ads Design</TabPanel>
+          <TabPanel>Apps</TabPanel>
+          <TabPanel>Banner & Poster</TabPanel>
+          <TabPanel>Website</TabPanel>
+        </Tabs>
+
         <div
           className="max-w-[65rem] mx-auto rounded-3xl p-[3rem] text-center lg:text-start"
           style={{ boxShadow: ".25rem .25rem .5rem #00000080" }}

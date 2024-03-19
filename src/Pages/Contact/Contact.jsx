@@ -16,7 +16,6 @@ import { useEffect, useState } from "react";
 
 const Contact = () => {
   animateScroll.scrollToTop();
-  animateScroll.scrollToTop();
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     // Simulate async loading (e.g., fetching data)

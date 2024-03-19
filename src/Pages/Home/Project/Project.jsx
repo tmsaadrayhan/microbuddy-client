@@ -3,6 +3,8 @@ import img1 from "../../../assets/project/group289.png";
 import img2 from "../../../assets/project/project.png";
 import img3 from "../../../assets/7330e9ce4d8bcdb5788e27aabbcd4fc4.png";
 import "./Project.css";
+import { Formik } from "formik";
+import axios from "axios";
 
 const Project = () => {
   return (
@@ -32,63 +34,114 @@ const Project = () => {
               </h1>
             </div>
           </div>
-
-          <form className="card-body rounded-xl lg:mx-[0rem] mx-auto blue-border">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="form-control">
-                <input
-                  type="text"
-                  placeholder="Name"
-                  className="input input-bordered"
-                  required
-                />
-              </div>
-              <div className="form-control">
-                <input
-                  type="email"
-                  placeholder="Email"
-                  className="input input-bordered"
-                  required
-                />
-              </div>
-              <div className="form-control">
-                <input
-                  type="text"
-                  placeholder="Whatsapp"
-                  className="input input-bordered"
-                  required
-                />
-              </div>
-              <div className="form-control">
-                <input
-                  type="text"
-                  placeholder="Project Category"
-                  className="input input-bordered"
-                  required
-                />
-              </div>
-            </div>
-            <div>
-              <textarea
-                className="project-textarea rounded-xl w-full h-[10rem] mt-4"
-                placeholder="Project details"
-              ></textarea>
-            </div>
-
-            <div className="mb-[2rem]">
-              <div className="flex justify-center mt-[1rem] mb-[1.5rem] relative">
-                <div className="button-parent ">
-                  <div className="write-button absolute right-[0rem] form-control"></div>
-                  <button
-                    type="submit"
-                    className="absolute right-[0rem] text-nowrap button-child"
-                  >
-                    Send Message
-                  </button>
+          <Formik
+            initialValues={{
+              name: "",
+              email: "",
+              whatsapp: "",
+              project_category: "",
+              project_detail: "",
+            }}
+            onSubmit={(values) => {
+              axios
+                .post("http://localhost:5000/project-email", values)
+                .then(function (response) {
+                  console.log(response);
+                })
+                .catch(function (error) {
+                  console.log(error);
+                });
+              alert("Thanks for your response");
+            }}
+          >
+            {({
+              values,
+              handleChange,
+              handleBlur,
+              handleSubmit,
+              isSubmitting,
+              /* and other goodies */
+            }) => (
+              <form
+                onSubmit={handleSubmit}
+                className="card-body rounded-xl lg:mx-[0rem] mx-auto blue-border"
+              >
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="form-control">
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      name="name"
+                      className="input input-bordered"
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      required
+                    />
+                  </div>
+                  <div className="form-control">
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      name="email"
+                      className="input input-bordered"
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      value={values.email}
+                      required
+                    />
+                  </div>
+                  <div className="form-control">
+                    <input
+                      type="text"
+                      placeholder="Whatsapp"
+                      name="whatsapp"
+                      className="input input-bordered"
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      value={values.whatsapp}
+                      required
+                    />
+                  </div>
+                  <div className="form-control">
+                    <input
+                      type="text"
+                      placeholder="Project Category"
+                      name="project_category"
+                      className="input input-bordered"
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      value={values.project_category}
+                    />
+                  </div>
                 </div>
-              </div>
-            </div>
-          </form>
+                <div>
+                  <textarea
+                    className="project-textarea rounded-xl w-full h-[10rem] mt-4"
+                    placeholder="Project details"
+                    name="project_detail"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    value={values.project_detail}
+                  ></textarea>
+                </div>
+
+                <div className="mb-[2rem]">
+                  <div className="flex justify-center mt-[1rem] mb-[1.5rem] relative">
+                    <div className="button-parent ">
+                      <div className="project-button absolute right-[0rem] form-control"></div>
+                      <button
+                        type="submit"
+                        disabled={isSubmitting}
+                        className="absolute right-[0rem] text-nowrap button-child"
+                      >
+                        Send Message
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            )}
+          </Formik>
         </div>
         <div className="lg:hidden flex mx-auto">
           <div className="mt-[5rem] me-[-2rem]">
