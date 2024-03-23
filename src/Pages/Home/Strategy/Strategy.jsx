@@ -1,4 +1,4 @@
-import img1 from "../../../assets/strategy/42a856b58793f91bee5138e7dd0cf78e.jpeg";
+import img1 from "../../../assets/strategy/service.webp";
 import img2 from "../../../assets/strategy/strategy.png";
 import "./Strategy.css";
 import ScrollAnimation from "react-animate-on-scroll";
@@ -12,7 +12,7 @@ const Strategy = () => {
             <img className="mx-auto w-[50rem]" src={img2} alt="" />
           </ScrollAnimation>
         </div>
-        <div className="text-[20px] md:text-[34px] md:text-[43px] font-[700] mt-[-2rem] md:mt-[-4rem]">
+        <div className="text-[20px] md:text-[34px] lg:text-[43px] font-[700] mt-[-2rem] md:mt-[-4rem]">
           <h1 className="mb-[-0.5rem] md:mb-[-1rem]">A QUALITY IT SUPPORT</h1>
           <h1>FOR EVERYONE</h1>
         </div>

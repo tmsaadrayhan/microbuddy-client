@@ -1,5 +1,5 @@
 import img from "../../../assets/portfolio/portfolio.png";
-import img1 from "../../../assets/7330e9ce4d8bcdb5788e27aabbcd4fc4.png";
+import img1 from "../../../assets/cube.webp";
 
 const PortfolioHead = () => {
   return (

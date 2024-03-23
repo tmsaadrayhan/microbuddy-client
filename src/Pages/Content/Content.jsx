@@ -1,9 +1,9 @@
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import imgLoad from "../../assets/loading.gif";
-import img1 from "../../assets/7330e9ce4d8bcdb5788e27aabbcd4fc4.png";
+import img1 from "../../assets/cube.webp";
 import grow from "../../assets/content/grow.png";
-import img2 from "../../assets/content/frame.png";
+import img2 from "../../assets/content/work.webp";
 import how from "../../assets/content/how.png";
 import img3 from "../../assets/content/group355.png";
 import img4 from "../../assets/content/group356.png";
@@ -17,7 +17,7 @@ import img10 from "../../assets/services/group296.png";
 import img11 from "../../assets/services/group294.png";
 import img12 from "../../assets/services/group295.png";
 
-import img13 from "../../assets/content/writeimg.png";
+import img13 from "../../assets/content/c2.webp";
 import img14 from "../../assets/content/write.png";
 import img15 from "../../assets/content/line12.png";
 
@@ -36,6 +36,7 @@ import { animateScroll } from "react-scroll";
 import { useEffect, useState } from "react";
 import { Formik } from "formik";
 import axios from "axios";
+import HeaderBG from "../Header/HeaderBG";
 
 const Content = () => {
   animateScroll.scrollToTop();
@@ -60,26 +61,11 @@ const Content = () => {
         <Helmet>
           <title>Content</title>
         </Helmet>
-        <div className="text-center h-[15rem] pt-[7rem] bg-head relative">
-          <h1 className="text-6xl font-[500]">Content</h1>
-          <p className="text-xl font-bold">
-            <Link to="/">Home</Link> /{" "}
-            <Link to="/content" className="underline text-[#666AE5]">
-              Content
-            </Link>
-          </p>
-          <div className="hidden lg:block absolute w-[4rem] md:w-[7rem] lg:w-[9rem] right-[3rem] md:right-[5rem] lg:right-[3rem] bottom-[-1rem] md:bottom-[-2rem] lg:scale-x-[-1]">
-            <div className="relative">
-              <img className="breathe" src={img1} alt="" />
-            </div>
+        <HeaderBG></HeaderBG>
+        <div className="lg:flex gap-4 lg:max-w-[70rem] mt-[2rem] mx-auto relative">
+          <div className="hidden lg:block absolute w-[8rem] right-[-10rem]">
+            <img className="breathe" src={img1} alt="" />
           </div>
-          <img
-            className="block lg:hidden absolute w-[4rem] md:w-[7rem] right-[3rem] md:right-[5rem] bottom-[-1rem] md:bottom-[-2rem]"
-            src={img1}
-            alt=""
-          />
-        </div>
-        <div className="lg:flex gap-4 lg:max-w-[70rem] mt-[2rem] lg:mt-0 mx-auto">
           <div className="px-[1rem] mx-auto text-start flex items-center">
             <div>
               <div className="overflow-hidden">
@@ -672,7 +658,7 @@ const Content = () => {
                   }}
                   onSubmit={(values) => {
                     axios
-                      .post("http://localhost:5000/content-email", values)
+                      .post("https://37.60.225.188:8081/content-email", values)
                       .then(function (response) {
                         console.log(response);
                       })

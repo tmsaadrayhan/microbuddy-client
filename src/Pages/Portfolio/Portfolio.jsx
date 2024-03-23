@@ -1,4 +1,4 @@
-import PortFolioHeader from "./PortfolioHeader/PortFolioHeader";
+import "./portfolio.css";
 import PortfolioHead from "./PortfolioHead/PortfolioHead";
 import img1 from "../../assets/portfolio/ads/rectangle54.png";
 import img2 from "../../assets/portfolio/ads/rectangle55.png";
@@ -13,29 +13,75 @@ import img10 from "../../assets/portfolio/ads/rectangle63.png";
 import img11 from "../../assets/portfolio/ads/rectangle64.png";
 import { Helmet } from "react-helmet";
 import { animateScroll } from "react-scroll";
-import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
+import { useState } from "react";
+import { useEffect } from "react";
+import imgLoad from "../../assets/loading.gif";
 
 const Portfolio = () => {
-  return (
-    <div>
-      {animateScroll.scrollToTop()}
-      <Helmet>
-        <title>Portfolio</title>
-      </Helmet>
-      <PortfolioHead></PortfolioHead>
-      <div className="pt-[5rem] lg:max-w-[82rem] px-[1rem] lg:mx-auto">
-        <Tabs aria-label="scrollable auto tabs example">
-          <TabList>
-            <Tab>All</Tab>
-            <Tab>Ads Design</Tab>
-            <Tab>Apps</Tab>
-            <Tab>Banner & Poster</Tab>
-            <Tab>Website</Tab>
-          </TabList>
+  const [activeTab, setActiveTab] = useState(1);
+  const handleTabClick = (index) => {
+    setActiveTab(index);
+  };
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    // Simulate async loading (e.g., fetching data)
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 900); // Simulating a 2-second loading time
 
-          <TabPanel>
-            <h2>
+    return () => clearTimeout(timer);
+  }, []);
+  if (loading)
+    return (
+      <div className="w-full py-[15rem]">
+        <img className="mx-auto" src={imgLoad} alt="" />
+      </div>
+    );
+  else
+    return (
+      <div>
+        {animateScroll.scrollToTop()}
+        <Helmet>
+          <title>Portfolio</title>
+        </Helmet>
+        <PortfolioHead></PortfolioHead>
+        <div className="pt-[5rem] lg:max-w-[82rem] px-[1rem] lg:mx-auto">
+          <div>
+            <div className="flex justify-center text-xl overflow-hidden md:overflow-hidden mb-[1rem]">
+              <p
+                className={`${activeTab === 1 && "text-primary"} mx-[1rem]`}
+                onClick={() => handleTabClick(1)}
+              >
+                All
+              </p>
+              <p
+                className={`${activeTab === 2 && "text-primary"} mx-[1rem]`}
+                onClick={() => handleTabClick(2)}
+              >
+                Ads Design
+              </p>
+              <p
+                className={`${activeTab === 3 && "text-primary"} mx-[1rem]`}
+                onClick={() => handleTabClick(3)}
+              >
+                Apps
+              </p>
+              <p
+                className={`${activeTab === 4 && "text-primary"} mx-[1rem]`}
+                onClick={() => handleTabClick(4)}
+              >
+                Banner & Poster
+              </p>
+              <p
+                className={`${activeTab === 5 && "text-primary"} mx-[1rem]`}
+                onClick={() => handleTabClick(5)}
+              >
+                Website
+              </p>
+            </div>
+
+            <div className={`${activeTab === 1 ? "block" : "hidden"}`}>
               <div className="hidden lg:block w-full portfolio-item mb-[5rem]">
                 <div className="flex">
                   <div className="flex w-[65%]">
@@ -171,62 +217,72 @@ const Portfolio = () => {
                   <img className="w-full" src={img11} alt="" />
                 </div>
               </div>
-            </h2>
-          </TabPanel>
-          <TabPanel>Ads Design</TabPanel>
-          <TabPanel>Apps</TabPanel>
-          <TabPanel>Banner & Poster</TabPanel>
-          <TabPanel>Website</TabPanel>
-        </Tabs>
+            </div>
+            <div className={`${activeTab === 2 ? "block" : "hidden"}`}>
+              Ads Design
+            </div>
+            <div className={`${activeTab === 3 ? "block" : "hidden"}`}>
+              Apps
+            </div>
+            <div className={`${activeTab === 4 ? "block" : "hidden"}`}>
+              Banner & Poster
+            </div>
+            <div className={`${activeTab === 5 ? "block" : "hidden"}`}>
+              Website
+            </div>
+          </div>
 
-        <div
-          className="max-w-[65rem] mx-auto rounded-3xl p-[3rem] text-center lg:text-start"
-          style={{ boxShadow: ".25rem .25rem .5rem #00000080" }}
-        >
-          <h1 className="text-3xl lg:text-[50px] font-bold">
-            Our portfolio includes projects that are:
-          </h1>
-          <div className="text-xl">
-            <ul>
-              <li className="my-[1rem]">
-                <span className="font-bold">• Customer-centric:</span> <br />
-                Prioritizing solutions that address pressing customer needs
-                rather than being solely driven by technology.
-              </li>
-              <li className="my-[1rem]">
-                <span className="font-bold">• Solution-focused:</span> <br />
-                Displays clear strategic value to MicroBuddy that stands on its
-                own.
-              </li>
-              <li className="my-[1rem]">
-                <span className="font-bold">• Disruptive/High-potential:</span>
-                <br /> Showing promise in benefiting a broad range of users and
-                possessing significant growth potential.
-              </li>
-              <li className="my-[1rem]">
-                <span className="font-bold">• Unproven:</span> <br />{" "}
-                Introducing fresh ideas that offer a competitive edge in the
-                current market landscape, without existing widespread adoption.
-              </li>
-              <li className="my-[1rem]">
-                <span className="font-bold">
-                  • Are suitable for incubation:
-                </span>
-                <br /> Capable of being tested through small-scale market
-                experiments to validate market hypotheses.
-              </li>
-              <li className="my-[1rem]">
-                <span className="font-bold">• Are supported by talent:</span>
-                <br /> Accessible expertise within MicroBuddy to support the
-                development and success of the idea.
-              </li>
-            </ul>
-            <p>View about us {">>"}</p>
+          <div
+            className="max-w-[65rem] mx-auto rounded-3xl p-[3rem] text-center lg:text-start"
+            style={{ boxShadow: ".25rem .25rem .5rem #00000080" }}
+          >
+            <h1 className="text-3xl lg:text-[50px] font-bold">
+              Our portfolio includes projects that are:
+            </h1>
+            <div className="text-xl">
+              <ul>
+                <li className="my-[1rem]">
+                  <span className="font-bold">• Customer-centric:</span> <br />
+                  Prioritizing solutions that address pressing customer needs
+                  rather than being solely driven by technology.
+                </li>
+                <li className="my-[1rem]">
+                  <span className="font-bold">• Solution-focused:</span> <br />
+                  Displays clear strategic value to MicroBuddy that stands on
+                  its own.
+                </li>
+                <li className="my-[1rem]">
+                  <span className="font-bold">
+                    • Disruptive/High-potential:
+                  </span>
+                  <br /> Showing promise in benefiting a broad range of users
+                  and possessing significant growth potential.
+                </li>
+                <li className="my-[1rem]">
+                  <span className="font-bold">• Unproven:</span> <br />{" "}
+                  Introducing fresh ideas that offer a competitive edge in the
+                  current market landscape, without existing widespread
+                  adoption.
+                </li>
+                <li className="my-[1rem]">
+                  <span className="font-bold">
+                    • Are suitable for incubation:
+                  </span>
+                  <br /> Capable of being tested through small-scale market
+                  experiments to validate market hypotheses.
+                </li>
+                <li className="my-[1rem]">
+                  <span className="font-bold">• Are supported by talent:</span>
+                  <br /> Accessible expertise within MicroBuddy to support the
+                  development and success of the idea.
+                </li>
+              </ul>
+              <p>View about us {">>"}</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  );
+    );
 };
 
 export default Portfolio;

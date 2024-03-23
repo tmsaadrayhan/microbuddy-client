@@ -1,7 +1,7 @@
 import imgLoad from "../../assets/loading.gif";
-import img1 from "../../assets/7330e9ce4d8bcdb5788e27aabbcd4fc4.png";
+import img1 from "../../assets/cube.webp";
 import img2 from "../../assets/career/welcome.png";
-import img3 from "../../assets/career/img331.png";
+import img3 from "../../assets/career/career.webp";
 import img4 from "../../assets/career/circuler.png";
 import img5 from "../../assets/career/vector1.png";
 import img6 from "../../assets/career/group298.png";
@@ -19,28 +19,28 @@ import img17 from "../../assets/career/9.png";
 import img18 from "../../assets/career/10.png";
 import img19 from "../../assets/career/11.png";
 import img20 from "../../assets/career/12.png";
-import img21 from "../../assets/career/pic1.png";
-import img22 from "../../assets/career/pic2.png";
-import img23 from "../../assets/career/pic3.png";
-import img24 from "../../assets/career/pic4.png";
-import img25 from "../../assets/career/pic5.png";
+import img21 from "../../assets/career/g1.webp";
+import img22 from "../../assets/career/g2.webp";
+import img23 from "../../assets/career/g3.webp";
+import img24 from "../../assets/career/g4.webp";
+import img25 from "../../assets/career/g5.webp";
 import img26 from "../../assets/career/team.png";
 import { Link } from "react-router-dom";
 import "./Career.css";
 import { Helmet } from "react-helmet";
 import { ScrollRestoration } from "react-router-dom";
 import ScrollAnimation from "react-animate-on-scroll";
-import { animateScroll } from "react-scroll";
 import { useEffect, useState } from "react";
+import HeaderBG from "../Header/HeaderBG";
 
 const Career = () => {
-  animateScroll.scrollToTop();
+  // animateScroll.scrollToTop();
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     // Simulate async loading (e.g., fetching data)
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000); // Simulating a 2-second loading time
+    }, 2000); // Simulating a 2-second loading time
 
     return () => clearTimeout(timer);
   }, []);
@@ -57,28 +57,11 @@ const Career = () => {
         <Helmet>
           <title>Career</title>
         </Helmet>
-        <div className="text-center h-[15rem] pt-[7rem] bg-head relative">
-          <h1 className="text-6xl font-[500]">Career</h1>
-          <p className="text-xl font-bold">
-            <Link to="/">Home</Link> /{" "}
-            <Link to="/career" className="underline text-[#666AE5]">
-              Career
-            </Link>
-          </p>
-          <div className="hidden lg:block absolute w-[4rem] md:w-[7rem] lg:w-[9rem] right-[3rem] md:right-[5rem] lg:right-[3rem] bottom-[-1rem] md:bottom-[-2rem] lg:scale-x-[-1]">
-            <div className="relative">
-              <img className="breathe" src={img1} alt="" />
-            </div>
-          </div>
-          <img
-            className="block lg:hidden absolute w-[4rem] md:w-[7rem] right-[3rem] md:right-[5rem] bottom-[-1rem] md:bottom-[-2rem]"
-            src={img1}
-            alt=""
-          />
-        </div>
+        <HeaderBG></HeaderBG>
         <div className="mx-[0rem] lg:mx-auto lg:w-[70rem]">
           {/*lg*/}
           <div className="relative hidden my-[5rem] lg:flex lg:items-center">
+            
             <div className="career-from-left w-[37rem] mx-auto z-50">
               <div className="from-left">
                 <div className="overflow-hidden">
@@ -398,7 +381,7 @@ const Career = () => {
               </p>
             </div>
           </div>
-          <div className="block  lg:hidden md:mt-[3rem]">
+          <div className="block lg:hidden md:mt-[3rem]">
             <div className="flex">
               <div className="w-full overflow-hidden m-[0.25rem]">
                 <img
@@ -408,13 +391,10 @@ const Career = () => {
               </div>
             </div>
             <div className="flex">
-              <div className="w-1/2 overflow-hidden m-[0.25rem]">
-                <img
-                  className="hover:scale-110 duration-300 h-full"
-                  src={img22}
-                />
+              <div className="w-[52%] overflow-hidden m-[0.25rem] ">
+                <img className="hover:scale-110 duration-300" src={img22} />
               </div>
-              <div className="w-1/2 overflow-hidden m-[0.25rem]">
+              <div className="w-[48%] overflow-hidden m-[0.25rem]">
                 <img className="hover:scale-110 duration-300" src={img23} />
               </div>
             </div>
@@ -427,6 +407,7 @@ const Career = () => {
               </div>
             </div>
           </div>
+          {/*lg*/}
           <div className="hidden lg:block mt-[3rem]">
             <div className="flex">
               <div className="overflow-hidden m-[0.25rem]">

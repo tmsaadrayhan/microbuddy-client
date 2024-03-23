@@ -1,6 +1,9 @@
 import img1 from "../../../assets/review/map2.png";
 import img1Md from "../../../assets/review/group299md.png";
-import img2 from "../../../assets/review/dustinzhu.jpg";
+import imgDZ from "../../../assets/review/dustinzhu.jpg";
+import imgSA from "../../../assets/review/salmanalqahtani.jpg";
+import imgSP from "../../../assets/review/salmanparvez.jpg";
+import imgYB from "../../../assets/review/yashikababbar.jpg";
 import img4 from "../../../assets/review/reviews.png";
 import Rating from "react-rating";
 import { IoIosArrowBack, IoIosArrowForward, IoMdStar } from "react-icons/io";
@@ -42,8 +45,8 @@ const Review = () => {
 
   return (
     <div>
-      <div className="relative lg:max-w-[70rem] mx-auto mt-[4rem] lg:mb-[-11rem]">
-        <div className="text-center font-[700] lg:mb-[-5rem]">
+      <div className="relative lg:max-w-[70rem] mx-auto mt-[4rem]">
+        <div className="text-center font-[700] lg:mb-[rem]">
           <div className="mx-[1rem] md:mx-auto md:w-[40rem]">
             <div className="overflow-hidden">
               <ScrollAnimation animateOnce={true} animateIn="pop-up">
@@ -65,8 +68,8 @@ const Review = () => {
           alt=""
         />
         {/*lg*/}
-        <div className="hidden lg:block max-w-[60rem] -z-10 -mt-[25rem] mb-[15rem] mx-auto">
-          <div className="hidden lg:block absolute z-[50] left-[3rem] top-[41rem]">
+        <div className="hidden lg:block max-w-[60rem] -z-10 -mt-[25rem] mx-auto">
+          <div className="hidden lg:block absolute left-[3rem] top-[45rem]">
             <button onClick={previous}>
               <IoIosArrowBack className="text-[#666ae580] text-[40px]" />
             </button>
@@ -83,7 +86,7 @@ const Review = () => {
               <div className="bg-white mx-auto rounded-[3rem] border blue-box">
                 <div className="flex">
                   <div className="w-[15rem] px-[3rem] py-[4rem]">
-                    <img src={img2} />
+                    <img className="rounded-full w-[10rem]" src={imgDZ} />
                   </div>
                   <div className="py-[5rem] w-[30rem] text-left">
                     <h1 className="text-5xl font-bold">Dustin Zhu</h1>
@@ -132,7 +135,7 @@ const Review = () => {
               <div className="bg-white mx-auto rounded-[3rem] border blue-box">
                 <div className="flex ">
                   <div className="w-[15rem] px-[3rem] py-[4rem]">
-                    <img src={img2} />
+                    <img className="rounded-full" src={imgSA} />
                   </div>
                   <div className="py-[5rem] w-[30rem] text-left">
                     <h1 className="text-5xl font-bold">Salman Alqahtani</h1>
@@ -182,7 +185,7 @@ const Review = () => {
               <div className="bg-white mx-auto rounded-[3rem] border blue-box">
                 <div className="flex ">
                   <div className="w-[15rem] px-[3rem] py-[4rem]">
-                    <img src={img2} />
+                    <img className="rounded-full" src={imgYB} />
                   </div>
                   <div className="py-[5rem] w-[30rem] text-left">
                     <h1 className="text-4xl md:text-5xl font-bold">
@@ -233,7 +236,7 @@ const Review = () => {
               <div className="bg-white mx-auto rounded-[3rem] border blue-box">
                 <div className="flex ">
                   <div className="w-[15rem] px-[3rem] py-[4rem]">
-                    <img src={img2} />
+                    <img className="rounded-full" src={imgSP} />
                   </div>
                   <div className="py-[5rem] w-[30rem] text-left">
                     <h1 className="text-4xl md:text-5xl font-bold">
@@ -281,23 +284,23 @@ const Review = () => {
               </div>
             </div>
           </Slider>
-          <div className="hidden lg:block absolute right-[3rem] top-[41rem]">
+          <div className="hidden lg:block absolute right-[3rem] top-[45rem]">
             <button onClick={next}>
               <IoIosArrowForward className="text-[#666ae580] text-[40px]" />
             </button>
           </div>
         </div>
         {/*md and sm*/}
-        <div className="-z-10 mb-[5rem] mx-auto lg:hidden">
+        <div className="-z-10 mb-[5rem] mx-auto lg:hidden ">
           <Slider overScan={1} autoplay={true} arrows={false}>
-            <div className="p-[1rem] text-black">
-              <div className="bg-white mx-auto rounded-xl blue-box px-[1rem]">
+            <div className="px-[1rem] py-[2rem] text-black">
+              <div className="bg-white mx-auto rounded-3xl blue-box px-[1rem]">
                 <div>
                   <div className="mx-auto w-fit mt-[2rem]">
-                    <img src={img2} />
+                    <img className="rounded-full w-[10rem]" src={imgDZ} />
                   </div>
 
-                  <div className="py-[3rem] text-left">
+                  <div className="py-[3rem] text-center">
                     <h1 className="text-4xl md:text-5xl font-bold">
                       Dustin Zhu
                     </h1>
@@ -342,14 +345,14 @@ const Review = () => {
                 </div>
               </div>
             </div>
-            <div className="p-[1rem] text-black">
-              <div className="bg-white mx-auto rounded-xl blue-box px-[1rem]">
+            <div className="px-[1rem] py-[2rem] text-black">
+              <div className="bg-white mx-auto rounded-3xl blue-box px-[1rem]">
                 <div>
                   <div className="mx-auto w-fit mt-[2rem]">
-                    <img src={img2} />
+                    <img className="rounded-full w-[10rem]" src={imgDZ} />
                   </div>
 
-                  <div className="py-[3rem] text-left">
+                  <div className="py-[3rem] text-center">
                     <h1 className="text-4xl md:text-5xl font-bold">
                       Salman Alqahtani
                     </h1>
@@ -394,14 +397,14 @@ const Review = () => {
                 </div>
               </div>
             </div>
-            <div className="p-[1rem] text-black">
-              <div className="bg-white mx-auto rounded-xl blue-box px-[1rem]">
+            <div className="px-[1rem] py-[2rem] text-black">
+              <div className="bg-white mx-auto rounded-3xl blue-box px-[1rem]">
                 <div>
                   <div className="mx-auto w-fit mt-[2rem]">
-                    <img src={img2} />
+                    <img className="rounded-full w-[10rem]" src={imgDZ} />
                   </div>
 
-                  <div className="py-[3rem] text-left">
+                  <div className="py-[3rem] text-center">
                     <h1 className="text-4xl md:text-5xl font-bold">
                       Yashika Babbar
                     </h1>
@@ -446,14 +449,14 @@ const Review = () => {
                 </div>
               </div>
             </div>
-            <div className="p-[1rem] text-black">
-              <div className="bg-white mx-auto rounded-xl blue-box px-[1rem]">
+            <div className="px-[1rem] py-[2rem] text-black">
+              <div className="bg-white mx-auto rounded-3xl blue-box px-[1rem]">
                 <div>
                   <div className="mx-auto w-fit mt-[2rem]">
-                    <img src={img2} />
+                    <img className="rounded-full w-[10rem]" src={imgDZ} />
                   </div>
 
-                  <div className="py-[3rem] text-left">
+                  <div className="py-[3rem] text-center">
                     <h1 className="text-4xl md:text-5xl font-bold">
                       Salman Parvez
                     </h1>

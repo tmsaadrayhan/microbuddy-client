@@ -1,18 +1,17 @@
 import "./OurService.css";
-import img1 from "../../../assets/7330e9ce4d8bcdb5788e27aabbcd4fc4.png";
-import img2 from "../../../assets/services/870c375332e7ebf14bfad465db6c975a.png";
+import img1 from "../../../assets/cube.webp";
+import img2 from "../../../assets/services/calender.webp";
 import img3 from "../../../assets/services/group297.png";
 import img4 from "../../../assets/services/group296.png";
 import img5 from "../../../assets/services/group294.png";
 import img6 from "../../../assets/services/group295.png";
 import img7 from "../../../assets/services/ourservice.png";
-import img8 from "../../../assets/services/service.png";
+import img8 from "../../../assets/services/services.png";
 import ScrollAnimation from "react-animate-on-scroll";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 
 const OurService = () => {
-  
   return (
     <div className="service-bg relative">
       <div className="lg:max-w-[70rem] mx-auto lg:flex gap-4">
@@ -20,7 +19,7 @@ const OurService = () => {
         <div className="flex lg:hidden justify-end mx-[1rem] md:mx-[3rem]">
           <div className="text-end w-full mx-auto md:max-w-[35rem] md:mb-[10rem]">
             <div>
-              <h1 className="gradient-text text-7xl md:text-9xl font-bold -z-40">
+              <h1 className="gradient-text text-7xl md:text-9xl font-bold z-[-1rem]">
                 SERVICES
               </h1>
             </div>
@@ -40,7 +39,7 @@ const OurService = () => {
             </div>
             <div>
               <Link to="./it-service">
-                <button className="service-button">Learn More</button>
+                <button className="primary-button">Learn More</button>
               </Link>
             </div>
           </div>
@@ -249,7 +248,7 @@ const OurService = () => {
         {/*lg*/}
         <div className="hidden lg:flex text-end relative w-1/2 mx-[1rem] items-center">
           <div>
-            <div className="mirror w-[6rem] absolute right-4 top-[13rem]">
+            <div className="mirror w-[6rem] absolute right-4 top-[13rem] z-[1]">
               <div className="relative">
                 <img className="breathe" src={img1} alt="" />
               </div>
@@ -277,12 +276,13 @@ const OurService = () => {
             </div>
             <div>
               <Link to="/it-service">
-                <button className="service-button">Learn More</button>
+                <button className="primary-button">Learn More</button>
               </Link>
             </div>
           </div>
         </div>
       </div>
+      {/*lg*/}
       <div className="hidden lg:block">
         <ScrollAnimation animateOnce={true} animateIn="home-from-right">
           <img

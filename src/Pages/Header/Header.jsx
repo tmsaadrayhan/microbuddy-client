@@ -32,8 +32,8 @@ const Header = () => {
             Home
           </NavLink>
 
-          <NavLink exact className="z-[50] space-a" to="/content">
-            Content
+          <NavLink exact className="z-[50] space-a" to="/how-it-works">
+            How IT Works
           </NavLink>
           <NavLink exact className="z-[50] space-a" to="/it-service">
             IT Service
@@ -56,7 +56,7 @@ const Header = () => {
                   </NavLink>
                 </div>
                 <div className="my-[1rem]">
-                  <NavLink exact className="z-[50] space-a" to="/all">
+                  <NavLink exact className="z-[50] space-a" to="/portfolio">
                     Portfolio
                   </NavLink>
                 </div>
@@ -120,7 +120,7 @@ const Header = () => {
                 <div>
                   <Link
                     className="text-xl font-[700] ms-[1rem] z-[50]"
-                    to="/all"
+                    to="/portfolio"
                   >
                     Portfolio
                   </Link>

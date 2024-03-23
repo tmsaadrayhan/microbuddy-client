@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import imgLoad from "../../assets/loading.gif";
-import img1 from "../../assets/7330e9ce4d8bcdb5788e27aabbcd4fc4.png";
-import img2 from "../../assets/contact/untitled61.png";
+import img1 from "../../assets/cube.webp";
+import img2 from "../../assets/contact/contact.webp";
 import img3 from "../../assets/contact/contact.png";
 import img4 from "../../assets/contact/group298.png";
 import img5 from "../../assets/footer/group.png";
@@ -13,6 +13,7 @@ import { animateScroll } from "react-scroll";
 import { Formik } from "formik";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import HeaderBG from "../Header/HeaderBG";
 
 const Contact = () => {
   animateScroll.scrollToTop();
@@ -51,26 +52,11 @@ const Contact = () => {
         <Helmet>
           <title>Contact</title>
         </Helmet>
-        <div className=" text-center h-[15rem] pt-[7rem] bg-head relative">
-          <h1 className="text-6xl font-[500]">Contact</h1>
-          <p className="text-xl font-bold">
-            <Link to="/">Home</Link> /{" "}
-            <Link to="/contact" className="underline text-[#666AE5]">
-              Contact
-            </Link>
-          </p>
-          <div className="hidden lg:block absolute w-[4rem] md:w-[7rem] lg:w-[9rem] right-[3rem] md:right-[5rem] lg:right-[3rem] bottom-[-1rem] md:bottom-[-2rem] lg:scale-x-[-1]">
-            <div className="relative">
-              <img className="breathe" src={img1} alt="" />
-            </div>
+        <HeaderBG></HeaderBG>
+        <div className="pt-[5rem] lg:max-w-[70rem] lg:mx-auto pb-[18rem] md:pb-[30rem] lg:pb-[50rem] mb-[-10rem] relative">
+          <div className="hidden lg:block absolute w-[4rem] right-[-10rem] ">
+            <img className="breathe" src={img1} alt="" />
           </div>
-          <img
-            className="block lg:hidden absolute w-[4rem] md:w-[7rem] right-[3rem] md:right-[5rem] bottom-[-1rem] md:bottom-[-2rem]"
-            src={img1}
-            alt=""
-          />
-        </div>
-        <div className="pt-[5rem] lg:max-w-[70rem] lg:mx-auto pb-[18rem] md:pb-[30rem] lg:pb-[50rem] mb-[-10rem]">
           <div className="grid grid-cols-1 md:grid-cols-2 mx-[1rem] lg:mx-[0rem]">
             <div>
               <img src={img2} alt="" />
@@ -146,7 +132,7 @@ const Contact = () => {
               }}
               onSubmit={(values) => {
                 axios
-                  .post("http://localhost:5000/email", values)
+                  .post("https://37.60.225.188:8081/email", values)
                   .then(function (response) {
                     console.log(response);
                   })
@@ -236,7 +222,7 @@ const Contact = () => {
                     <div className=" mt-[1rem] mb-[1.5rem]">
                       <div className="flex justify-center mt-[2rem] mb-[1.5rem] relative">
                         <div className="button-parent ">
-                          <div className="write-button absolute right-[0rem] form-control"></div>
+                          <div className="contact-button absolute right-[0rem] form-control"></div>
                           <button
                             type="submit"
                             disabled={isSubmitting}

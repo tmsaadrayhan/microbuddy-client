@@ -1,22 +1,20 @@
-import { Link } from "react-router-dom";
-
-import img from "../../assets/services/service.png";
+import img from "../../assets/services/services.png";
 import imgLoad from "../../assets/loading.gif";
 
-import img1 from "../../assets/7330e9ce4d8bcdb5788e27aabbcd4fc4.png";
+import img1 from "../../assets/cube.webp";
 import img2 from "../../assets/services/group297.png";
 import img3 from "../../assets/services/group296.png";
 import img4 from "../../assets/services/group294.png";
 import img5 from "../../assets/services/group295.png";
 
 import img6 from "../../assets/services/tech.png";
-import img7 from "../../assets/services/untitled21.png";
+import img7 from "../../assets/services/tech.webp";
 import img8 from "../../assets/services/design.png";
-import img9 from "../../assets/services/untitled31.png";
+import img9 from "../../assets/services/graphic.webp";
 import img10 from "../../assets/services/software.png";
-import img11 from "../../assets/services/untitled41.png";
+import img11 from "../../assets/services/software.webp";
 import img12 from "../../assets/services/cloud.png";
-import img13 from "../../assets/services/untitled51.png";
+import img13 from "../../assets/services/cloud.webp";
 import img14 from "../../assets/services/ourservice.png";
 
 import { Helmet } from "react-helmet";
@@ -25,18 +23,11 @@ import ScrollAnimation from "react-animate-on-scroll";
 import { animateScroll } from "react-scroll";
 import "./ITService.css";
 import { useEffect, useRef, useState } from "react";
+import HeaderBG from "../Header/HeaderBG";
 
 const ITService = () => {
   animateScroll.scrollToTop();
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    // Simulate async loading (e.g., fetching data)
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 900); // Simulating a 2-second loading time
 
-    return () => clearTimeout(timer);
-  }, []);
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
@@ -54,6 +45,15 @@ const ITService = () => {
   const handleClick4 = () => {
     ref4.current?.scrollIntoView({ behavior: "smooth" });
   };
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    // Simulate async loading (e.g., fetching data)
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 900); // Simulating a 2-second loading time
+
+    return () => clearTimeout(timer);
+  }, []);
   if (loading)
     return (
       <div className="w-full py-[15rem]">
@@ -74,26 +74,12 @@ const ITService = () => {
             content="Discover how Microbuddy can accelerate your fast-growing business with unified teams, integrated cloud software, cutting-edge tech, and dynamic graphic solutions. Elevate your possibilities with our comprehensive services. Contact us today!"
           />
         </Helmet>
-        <div className="text-center h-[15rem] pt-[7rem] bg-head relative">
-          <h1 className="text-6xl font-[500]">IT Services</h1>
-          <p className="text-xl font-bold">
-            <Link to="/">Home</Link> /{" "}
-            <Link to="/it-service" className="underline text-[#666AE5]">
-              IT Services
-            </Link>
-          </p>
-          <div className="hidden lg:block absolute w-[4rem] md:w-[7rem] lg:w-[9rem] right-[3rem] md:right-[5rem] lg:right-[3rem] bottom-[-1rem] md:bottom-[-2rem] lg:scale-x-[-1]">
-            <div className="relative">
-              <img className="breathe" src={img1} alt="" />
-            </div>
+        <HeaderBG></HeaderBG>
+
+        <div className="pt-[5rem] lg:max-w-[70rem] lg:mx-auto relative">
+          <div className="hidden lg:block absolute w-[8rem] right-[-10rem]">
+            <img className="breathe" src={img1} alt="" />
           </div>
-          <img
-            className="block lg:hidden absolute w-[4rem] md:w-[7rem] right-[3rem] md:right-[5rem] bottom-[-1rem] md:bottom-[-2rem]"
-            src={img1}
-            alt=""
-          />
-        </div>
-        <div className="pt-[5rem] lg:max-w-[70rem] lg:mx-auto">
           <div className="text-end md:text-center mx-[1rem] lg:mx-[0rem]">
             <div className="flex justify-center">
               <div className="overflow-hidden">
@@ -105,7 +91,7 @@ const ITService = () => {
             <h1 className="hidden md:block text-6xl tracking-[1.5rem] lg:tracking-[1.5rem] mt-[-3rem] lg:mt-[-4rem] font-bold ms-[1rem]">
               OUR SERVICES
             </h1>
-            <div className="block md:hidden flex justify-end mt-[-2rem]">
+            <div className="flex md:hidden justify-end mt-[-2rem]">
               <img className="w-[20rem]" src={img14} alt="" />
             </div>
             <p>

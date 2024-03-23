@@ -1,6 +1,6 @@
 import "./Why.css";
-import img1 from "../../../assets/why/group309.png";
-import img2 from "../../../assets/7330e9ce4d8bcdb5788e27aabbcd4fc4.png";
+import img1 from "../../../assets/why/grow.webp";
+import img2 from "../../../assets/cube.webp";
 import img3 from "../../../assets/why/group301.png";
 import img4 from "../../../assets/why/business.png";
 import ScrollAnimation from "react-animate-on-scroll";

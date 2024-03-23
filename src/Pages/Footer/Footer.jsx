@@ -46,7 +46,7 @@ const Footer = () => {
 
                   <div className="md:w-1/2 lg:w-2/5 flex justify-center mt-[1rem] md:mt-[0]">
                     <Link to="/contact">
-                      <button className="primary-button rounded-xl border-4 text-lg">
+                      <button className="flex p primary-button rounded-xl border-4 text-lg">
                         Get Started Now
                       </button>
                     </Link>
@@ -58,7 +58,7 @@ const Footer = () => {
         </ScrollAnimation>
       </div>
       <div className="block lg:hidden mt-[15rem] md:mt-[10rem] text-center md:text-start">
-        <div className="absolute-center bg-[#14133B] lg:rounded-3xl md:flex w-full lg:w-[65rem] items-center z-up mx-auto lg:my-[0] pt-[2rem] md:pt-[0rem] h-[20rem] md:h-[15rem] lg:h-[10rem] text-white">
+        <div className="absolute-center bg-[#14133B] lg:rounded-3xl md:flex w-full lg:w-[65rem] items-center z-up mx-auto lg:my-[0] pt-[2rem] md:pt-[0rem] md:h-[15rem] lg:h-[10rem] text-white">
           <div className="md:ms-[4rem] md:w-1/2 lg:w-3/5">
             <div>
               <div className="flex justify-center md:justify-start">
@@ -72,7 +72,7 @@ const Footer = () => {
               </h1>
             </div>
           </div>
-          <div className="md:w-1/2 lg:w-2/5 flex justify-center mt-[1rem] md:mt-[0]">
+          <div className="md:w-1/2 lg:w-2/5 flex justify-center mt-[1rem] md:mt-[0] my-[3rem]">
             <Link to="/contact">
               <button className="bg-[#666AE5] py-[0.75rem] rounded-xl px-[2rem] border-4 text-lg">
                 Get Started Now
@@ -86,7 +86,7 @@ const Footer = () => {
         <footer className="lg:flex mx-auto lg:max-w-[100rem] pt-[15rem] lg:pt-[7rem] p-10 lg:px-[1rem]">
           <div className="w-full lg:w-2/5">
             <div className="text-center w-[18rem] md:w-[25rem] lg:max-w-[20rem] mx-auto flex justify-center md:justify-start">
-              <div className="mb-[2rem] lg:mb-[0rem]">
+              <div className="my-[2rem] lg:mb-[0rem]">
                 <img className="mx-auto lg:mx-[0rem] lg:w-[10rem]" src={img} />
 
                 <p className="text-start">
@@ -102,14 +102,14 @@ const Footer = () => {
               <Link to="/" className="link link-hover">
                 <p className="my-[0.25rem]">Home</p>
               </Link>
+              <Link to="/how-it-works" className="link link-hover">
+                <p className="my-[0.25rem]">How It Works</p>
+              </Link>
               <Link to="/it-service" className="link link-hover">
                 <p className="my-[0.25rem]">IT Service</p>
               </Link>
-              <Link to="/all" className="link link-hover">
+              <Link to="/portfolio" className="link link-hover">
                 <p className="my-[0.25rem]">Portfolio</p>
-              </Link>
-              <Link to="/content" className="link link-hover">
-                <p className="my-[0.25rem]">Content</p>
               </Link>
             </div>
 

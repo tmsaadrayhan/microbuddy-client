@@ -1,7 +1,7 @@
 import ScrollAnimation from "react-animate-on-scroll";
-import img1 from "../../../assets/project/group289.png";
+import img1 from "../../../assets/project/idea.webp";
 import img2 from "../../../assets/project/project.png";
-import img3 from "../../../assets/7330e9ce4d8bcdb5788e27aabbcd4fc4.png";
+import img3 from "../../../assets/cube.webp";
 import "./Project.css";
 import { Formik } from "formik";
 import axios from "axios";
@@ -14,7 +14,7 @@ const Project = () => {
         <div className="hidden lg:flex">
           <div className="mt-[5rem] me-[-2rem]">
             <div className="relative">
-              <img className="breathe" src={img3} alt="" />
+              <img className="breathe w-[10rem]" src={img3} alt="" />
             </div>
           </div>
           <div>
@@ -44,7 +44,7 @@ const Project = () => {
             }}
             onSubmit={(values) => {
               axios
-                .post("http://localhost:5000/project-email", values)
+                .post("https://37.60.225.188:8081/project-email", values)
                 .then(function (response) {
                   console.log(response);
                 })
@@ -145,7 +145,7 @@ const Project = () => {
         </div>
         <div className="lg:hidden flex mx-auto">
           <div className="mt-[5rem] me-[-2rem]">
-            <img src={img3} alt="" />
+            <img className="w-[10rem]" src={img3} alt="" />
           </div>
           <div>
             <img src={img1} alt="" />
