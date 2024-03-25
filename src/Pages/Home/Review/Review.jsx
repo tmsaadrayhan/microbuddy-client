@@ -349,7 +349,7 @@ const Review = () => {
               <div className="bg-white mx-auto rounded-3xl blue-box px-[1rem]">
                 <div>
                   <div className="mx-auto w-fit mt-[2rem]">
-                    <img className="rounded-full w-[10rem]" src={imgDZ} />
+                    <img className="rounded-full w-[10rem]" src={imgSA} />
                   </div>
 
                   <div className="py-[3rem] text-center">
@@ -401,9 +401,8 @@ const Review = () => {
               <div className="bg-white mx-auto rounded-3xl blue-box px-[1rem]">
                 <div>
                   <div className="mx-auto w-fit mt-[2rem]">
-                    <img className="rounded-full w-[10rem]" src={imgDZ} />
+                    <img className="rounded-full w-[10rem]" src={imgYB} />
                   </div>
-
                   <div className="py-[3rem] text-center">
                     <h1 className="text-4xl md:text-5xl font-bold">
                       Yashika Babbar
@@ -453,7 +452,7 @@ const Review = () => {
               <div className="bg-white mx-auto rounded-3xl blue-box px-[1rem]">
                 <div>
                   <div className="mx-auto w-fit mt-[2rem]">
-                    <img className="rounded-full w-[10rem]" src={imgDZ} />
+                    <img className="rounded-full w-[10rem]" src={imgSP} />
                   </div>
 
                   <div className="py-[3rem] text-center">

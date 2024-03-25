@@ -7,6 +7,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 import Slider from "react-slick";
 import { useRef } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const YouTube = () => {
   let sliderRef = useRef(null);
@@ -70,9 +71,11 @@ const YouTube = () => {
                         most efficient way possible.
                       </p>
                     </div>
-                    <button className="btn btn-error text-white rounded-full mb-[1rem]">
-                      Subscribe Now
-                    </button>
+                    <Link to="http://www.youtube.com/@speedybuddyy">
+                      <button className="btn btn-error text-white rounded-full mb-[1rem]">
+                        Subscribe Now
+                      </button>
+                    </Link>
                   </div>
                   <div className="text-end md:text-center lg:text-start lg:mx-[0] md:w-[30rem] m-4 p-[2rem]">
                     <h1 className="text-4xl md:text-5xl font-bold">
@@ -96,7 +99,7 @@ const YouTube = () => {
                     <img className="my-[-1rem]" src={img3} alt="" />
                     <img className="w-full" src={img5} alt="" />
                     <div className="md:m-[1rem]">
-                      <h1 className="font-bold">SpeedyBuddy</h1>
+                      <h1 className="font-bold">DesignBuddy</h1>
                       <p>
                         Welcome to Speed Codding, Speedy Budddy is the ultimate
                         destination for programmers and coding enthusiasts who
@@ -104,9 +107,12 @@ const YouTube = () => {
                         most efficient way possible.
                       </p>
                     </div>
-                    <button className="btn btn-error text-white rounded-full mb-[1rem]">
-                      Subscribe Now
-                    </button>
+
+                    <Link to="http://www.youtube.com/@DesignBuddy0">
+                      <button className="btn btn-error text-white rounded-full mb-[1rem]">
+                        Subscribe Now
+                      </button>
+                    </Link>
                   </div>
                   <div className="text-end md:text-center lg:text-start md:mx-auto lg:mx-[0] md:w-[30rem] m-4 p-[2rem]">
                     <h1 className="text-4xl md:text-5xl font-bold">
@@ -152,9 +158,11 @@ const YouTube = () => {
                         most efficient way possible.
                       </p>
                     </div>
-                    <button className="btn btn-error text-white rounded-full mb-[1rem]">
-                      Subscribe Now
-                    </button>
+                    <Link to="http://www.youtube.com/@speedybuddyy">
+                      <button className="btn btn-error text-white rounded-full mb-[1rem]">
+                        Subscribe Now
+                      </button>
+                    </Link>
                   </div>
                   <div className="text-end md:text-center lg:text-start md:mx-auto lg:mx-[0] md:w-[30rem] m-4 p-[2rem]">
                     <h1 className="text-4xl md:text-5xl font-bold">
@@ -178,7 +186,7 @@ const YouTube = () => {
                     <img className="my-[-1rem]" src={img3} alt="" />
                     <img className="mx-auto" src={img5} alt="" />
                     <div className="md:m-[1rem]">
-                      <h1 className="font-bold">SpeedyBuddy</h1>
+                      <h1 className="font-bold">DesignBuddy</h1>
                       <p>
                         Welcome to Speed Codding, Speedy Budddy is the ultimate
                         destination for programmers and coding enthusiasts who
@@ -186,9 +194,11 @@ const YouTube = () => {
                         most efficient way possible.
                       </p>
                     </div>
-                    <button className="btn btn-error text-white rounded-full mb-[1rem]">
-                      Subscribe Now
-                    </button>
+                    <Link to="http://www.youtube.com/@DesignBuddy0">
+                      <button className="btn btn-error text-white rounded-full mb-[1rem]">
+                        Subscribe Now
+                      </button>
+                    </Link>
                   </div>
                   <div className="text-end md:text-center lg:text-start md:mx-auto lg:mx-[0] md:w-[30rem] m-4 p-[2rem]">
                     <h1 className="text-4xl md:text-5xl font-bold">

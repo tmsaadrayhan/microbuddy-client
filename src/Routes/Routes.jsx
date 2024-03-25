@@ -7,10 +7,12 @@ import AboutUs from "../Pages/AboutUs/AboutUs";
 import Contact from "../Pages/Contact/Contact";
 import Career from "../Pages/Career/Career";
 import Content from "../Pages/Content/Content";
+import Error from "../Pages/Error/Error";
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
+    errorElement: <Error></Error>,
     children: [
       {
         path: "/",

@@ -88,7 +88,6 @@ const Footer = () => {
             <div className="text-center w-[18rem] md:w-[25rem] lg:max-w-[20rem] mx-auto flex justify-center md:justify-start">
               <div className="my-[2rem] lg:mb-[0rem]">
                 <img className="mx-auto lg:mx-[0rem] lg:w-[10rem]" src={img} />
-
                 <p className="text-start">
                   Personalization assumed up an excess of position in the
                   showcasing space and has made each and every one of
@@ -105,14 +104,13 @@ const Footer = () => {
               <Link to="/how-it-works" className="link link-hover">
                 <p className="my-[0.25rem]">How It Works</p>
               </Link>
-              <Link to="/it-service" className="link link-hover">
+              <Link to="/it-servickjz uysae" className="link link-hover">
                 <p className="my-[0.25rem]">IT Service</p>
               </Link>
               <Link to="/portfolio" className="link link-hover">
                 <p className="my-[0.25rem]">Portfolio</p>
               </Link>
             </div>
-
             <div className="flex justify-end md:justify-start">
               <div>
                 <h6 className="footer-header my-[1rem]">About</h6>

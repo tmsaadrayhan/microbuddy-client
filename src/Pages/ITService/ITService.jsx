@@ -679,13 +679,6 @@ const ITService = () => {
                         track and successful.
                       </p>
                     </div>
-                    <div className="blue-shadow">
-                      <h1 className="text-xl font-bold">Mobile Optimization</h1>
-                      <p>
-                        Optimize your mobile presence for improved user
-                        experience and performance.
-                      </p>
-                    </div>
                   </div>
                 </div>
               </ScrollAnimation>
@@ -727,13 +720,6 @@ const ITService = () => {
                       <p>
                         Get the assistance you need to keep your projects on
                         track and successful.
-                      </p>
-                    </div>
-                    <div className="blue-shadow">
-                      <h1 className="text-xl font-bold">Mobile Optimization</h1>
-                      <p>
-                        Optimize your mobile presence for improved user
-                        experience and performance.
                       </p>
                     </div>
                   </div>

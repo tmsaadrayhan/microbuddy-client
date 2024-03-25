@@ -4,12 +4,12 @@ import "./AboutUs.css";
 import img1 from "../../assets/cube.webp";
 
 import img1Md from "../../assets/review/group299md.png";
-import img2 from "../../assets/aboutus/mission.png";
-import img3 from "../../assets/aboutus/mission.webp";
-import img4 from "../../assets/aboutus/vision.png";
+import map from "../../assets/aboutus/area.webp";
+import mission from "../../assets/aboutus/mission.webp";
+import proposition from "../../assets/aboutus/proposition.webp";
+import value from "../../assets/aboutus/value.webp";
+
 import img5 from "../../assets/aboutus/vision.webp";
-import img6 from "../../assets/aboutus/career.png";
-import img7 from "../../assets/aboutus/besteployee2.png";
 import img8 from "../../assets/aboutus/clients.png";
 
 import img9 from "../../assets/companies/1.png";
@@ -137,7 +137,7 @@ const AboutUs = () => {
           <div className="hidden lg:block absolute w-[8rem] right-[-10rem]">
             <img className="breathe" src={img1} alt="" />
           </div>
-          <div className="text-end md:text-center mx-[1rem] lg:mx-[0rem]">
+          <div className="text-center mx-[1rem] lg:mx-[0rem]">
             <div className="flex justify-center">
               <div className="overflow-hidden">
                 <div className="pop-up">
@@ -145,7 +145,7 @@ const AboutUs = () => {
                 </div>
               </div>
             </div>
-            <h1 className="text-5xl mt-[-3rem] font-black ">
+            <h1 className="text-3xl md:text-5xl mt-[-1rem] md:mt-[-3rem] font-black">
               About Us
             </h1>
             <p>
@@ -153,9 +153,9 @@ const AboutUs = () => {
               supply diverse needs and preferences.
             </p>
           </div>
-          <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-4 flex items-center my-[5rem] mx-[1rem] lg:mx-[0rem]">
+          <div className="lg:grid lg:grid-cols-2 items-center my-[5rem] mx-[1rem] lg:mx-[0rem]">
             <div className="hidden lg:block w-full lg:w-[40rem] lg:ms-[-5rem] grow-from-0">
-              <img src={img5} alt="" />
+              <img src={map} alt="" />
             </div>
             <div className="hidden lg:block about-from-right">
               <div className="flex justify-end">
@@ -167,8 +167,7 @@ const AboutUs = () => {
               </div>
 
               <div className="text-end mt-[-4rem]">
-                <h1 className="font-bold text-4xl">Area</h1>
-
+                <h1 className="font-bold text-5xl">Area</h1>
                 <p>
                   At MicroBuddy, our services transcend borders. While we
                   operate worldwide, our clientele mostly hails from dynamic
@@ -178,42 +177,30 @@ const AboutUs = () => {
                 </p>
               </div>
             </div>
+            <div className="lg:hidden w-full lg:w-[40rem]">
+              <img src={map} alt="" />
+            </div>
             <div className="lg:hidden">
               <div className="flex justify-end">
                 <div className="overflow-hidden">
-                  <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                    <img src={img4} alt="" />
-                  </ScrollAnimation>
+                  <div className="pop-up">
+                    <img src={service} alt="" />
+                  </div>
                 </div>
               </div>
-
               <div className="text-end">
-                <h1 className="font-bold text-4xl text-[#0766CB]">
-                  OUR VISION
-                </h1>
-                <h1>
-                  We envision a digital world where innovation and
-                  client-centric thinking come together seamlessly.
-                </h1>
+                <h1 className="font-bold text-5xl mt-[-2rem]">Area</h1>
                 <p>
-                  We're driven to create websites, apps, marketing, and videos
-                  that not only impress but also empower. Our vision is a future
-                  where businesses thrive with our tech-savvy solutions, making
-                  a global impact through our partnership and pioneering
-                  spirit."
+                  At MicroBuddy, our services transcend borders. While we
+                  operate worldwide, our clientele mostly hails from dynamic
+                  economies such as China, India, Japan, Canada, France,
+                  Germany, Australia, Bangladesh, the United Kingdom, and the
+                  United States.
                 </p>
               </div>
             </div>
-            <div className="block lg:hidden w-full lg:w-[40rem]">
-              <img src={img5} alt="" />
-            </div>
           </div>
-          <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-4 flex items-center my-[5rem] mx-[1rem] lg:mx-[0rem]">
-            <div className="absolute w-[7rem] top-[9rem] left-[-10rem]">
-              <div className="relative">
-                <img className="breathe" src={img1} alt="" />
-              </div>
-            </div>
+          <div className="lg:grid lg:grid-cols-2 items-center my-[5rem] mx-[1rem] lg:mx-[0rem]">
             <ScrollAnimation
               animateOnce={true}
               duration={2}
@@ -222,49 +209,22 @@ const AboutUs = () => {
             >
               <div className="overflow-hidden">
                 <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                  <img src={img6} alt="" />
+                  <img src={our} alt="" />
                 </ScrollAnimation>
               </div>
               <div>
-                <h1 className="text-4xl font-bold text-[#F55498]">
-                  MICROBUDDY CAREERS
-                </h1>
-                <h1>
-                  Welcome to MicroBuddy's Careers – where innovation meets
-                  opportunity.
-                </h1>
+                <h1 className="text-5xl font-bold mt-[-3rem]">Mission</h1>
                 <p>
-                  Join a dynamic team that shapes the future through creativity
-                  and collaboration. Whether tech, design, or support, your
-                  unique skills find a home here. we value your unique talents.
-                  Experience a culture of collaboration and growth, we’re
-                  offering more than a job. Shape the future with MicroBuddy.
+                  At MicroBuddy, we're here to make your digital dreams a
+                  reality. We create stunning websites, user-friendly apps,
+                  impactful marketing strategies, and captivating videos. Our
+                  focus is on blending exciting innovation with what you need.
+                  We're not just about technology – we're about you. Your
+                  success is our success, and together, we'll bring your vision
+                  to life.
                 </p>
               </div>
             </ScrollAnimation>
-            <div className="lg:hidden">
-              <div className="overflow-hidden">
-                <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                  <img src={img6} alt="" />
-                </ScrollAnimation>
-              </div>
-              <div>
-                <h1 className="text-4xl font-bold text-[#F55498]">
-                  MICROBUDDY CAREERS
-                </h1>
-                <h1>
-                  Welcome to MicroBuddy's Careers – where innovation meets
-                  opportunity.
-                </h1>
-                <p>
-                  Join a dynamic team that shapes the future through creativity
-                  and collaboration. Whether tech, design, or support, your
-                  unique skills find a home here. we value your unique talents.
-                  Experience a culture of collaboration and growth, we’re
-                  offering more than a job. Shape the future with MicroBuddy.
-                </p>
-              </div>
-            </div>
             <ScrollAnimation
               animateOnce={true}
               animateIn="grow-from-0"
@@ -272,18 +232,32 @@ const AboutUs = () => {
               duration={2}
               className="hidden lg:block lg:w-[40rem]"
             >
-              <img src={img7} alt="" />
+              <img src={mission} alt="" />
             </ScrollAnimation>
             <div className="lg:hidden">
-              <img src={img7} alt="" />
+              <img src={mission} alt="" />
             </div>
-          </div>
-          <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-4 flex items-center my-[5rem] mx-[1rem] lg:mx-[0rem]">
-            <div className="absolute w-[7rem] top-[9rem] right-[-10rem] hidden lg:block">
-              <div className="relative">
-                <img className="breathe" src={img1} alt="" />
+            <div className="lg:hidden">
+              <div className="overflow-hidden">
+                <ScrollAnimation animateOnce={true} animateIn="pop-up">
+                  <img src={our} alt="" />
+                </ScrollAnimation>
+              </div>
+              <div>
+                <h1 className="text-5xl font-bold mt-[-3rem]">Mission</h1>
+                <p>
+                  At MicroBuddy, we're here to make your digital dreams a
+                  reality. We create stunning websites, user-friendly apps,
+                  impactful marketing strategies, and captivating videos. Our
+                  focus is on blending exciting innovation with what you need.
+                  We're not just about technology – we're about you. Your
+                  success is our success, and together, we'll bring your vision
+                  to life.
+                </p>
               </div>
             </div>
+          </div>
+          <div className="lg:grid lg:grid-cols-2 items-center my-[5rem] mx-[1rem] lg:mx-[0rem]">
             <ScrollAnimation
               animateOnce={true}
               delay={1000}
@@ -302,16 +276,13 @@ const AboutUs = () => {
               <div className="flex justify-end">
                 <div className="overflow-hidden">
                   <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                    <img src={img4} alt="" />
+                    <img src={our} alt="" />
                   </ScrollAnimation>
                 </div>
               </div>
 
               <div className="text-end">
-                <h1 className="font-bold text-4xl text-[#0766CB]">
-                  OUR VISION
-                </h1>
-
+                <h1 className="font-bold text-5xl mt-[-3rem]">Vision</h1>
                 <p>
                   We envision a digital world where innovation and
                   client-centric thinking come together seamlessly. We're driven
@@ -322,42 +293,33 @@ const AboutUs = () => {
                 </p>
               </div>
             </ScrollAnimation>
+            <div className="block lg:hidden w-full lg:w-[40rem]">
+              <img src={img5} alt="" />
+            </div>
             <div className="lg:hidden">
               <div className="flex justify-end">
                 <div className="overflow-hidden">
                   <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                    <img src={img4} alt="" />
+                    <img src={our} />
                   </ScrollAnimation>
                 </div>
               </div>
 
               <div className="text-end">
-                <h1 className="font-bold text-4xl text-[#0766CB]">
-                  OUR VISION
-                </h1>
-                <h1>
-                  We envision a digital world where innovation and
-                  client-centric thinking come together seamlessly.
-                </h1>
+                <h1 className="font-bold text-5xl mt-[-3rem]">Vision</h1>
+
                 <p>
-                  We're driven to create websites, apps, marketing, and videos
-                  that not only impress but also empower. Our vision is a future
-                  where businesses thrive with our tech-savvy solutions, making
-                  a global impact through our partnership and pioneering
-                  spirit."
+                  We envision a digital world where innovation and
+                  client-centric thinking come together seamlessly. We're driven
+                  to create websites, apps, marketing, and videos that not only
+                  impress but also empower. Our vision is a future where
+                  businesses thrive with our tech-savvy solutions, making a
+                  global impact through our partnership and pioneering spirit.
                 </p>
               </div>
             </div>
-            <div className="block lg:hidden w-full lg:w-[40rem]">
-              <img src={img5} alt="" />
-            </div>
           </div>
-          <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-4 flex items-center my-[5rem] mx-[1rem] lg:mx-[0rem]">
-            <div className="absolute w-[7rem] top-[9rem] left-[-10rem]">
-              <div className="relative">
-                <img className="breathe" src={img1} alt="" />
-              </div>
-            </div>
+          <div className="lg:grid lg:grid-cols-2 items-center my-[5rem] mx-[1rem] lg:mx-[0rem]">
             <ScrollAnimation
               animateOnce={true}
               duration={2}
@@ -366,49 +328,19 @@ const AboutUs = () => {
             >
               <div className="overflow-hidden">
                 <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                  <img src={img6} alt="" />
+                  <img src={our} alt="" />
                 </ScrollAnimation>
               </div>
               <div>
-                <h1 className="text-4xl font-bold text-[#F55498]">
-                  MICROBUDDY CAREERS
-                </h1>
-                <h1>
-                  Welcome to MicroBuddy's Careers – where innovation meets
-                  opportunity.
-                </h1>
+                <h1 className="text-5xl font-bold mt-[-3rem]">Propositions</h1>
                 <p>
-                  Join a dynamic team that shapes the future through creativity
-                  and collaboration. Whether tech, design, or support, your
-                  unique skills find a home here. we value your unique talents.
-                  Experience a culture of collaboration and growth, we’re
-                  offering more than a job. Shape the future with MicroBuddy.
+                  Our propositions cover comprehensive audit services, engaging
+                  demo showcases, and expert consultancy to ensure that your
+                  digital aim aligns seamlessly with your objectives. Which we
+                  offer at the beginning and cost-free.
                 </p>
               </div>
             </ScrollAnimation>
-            <div className="lg:hidden">
-              <div className="overflow-hidden">
-                <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                  <img src={img6} alt="" />
-                </ScrollAnimation>
-              </div>
-              <div>
-                <h1 className="text-4xl font-bold text-[#F55498]">
-                  MICROBUDDY CAREERS
-                </h1>
-                <h1>
-                  Welcome to MicroBuddy's Careers – where innovation meets
-                  opportunity.
-                </h1>
-                <p>
-                  Join a dynamic team that shapes the future through creativity
-                  and collaboration. Whether tech, design, or support, your
-                  unique skills find a home here. we value your unique talents.
-                  Experience a culture of collaboration and growth, we’re
-                  offering more than a job. Shape the future with MicroBuddy.
-                </p>
-              </div>
-            </div>
             <ScrollAnimation
               animateOnce={true}
               animateIn="grow-from-0"
@@ -416,18 +348,29 @@ const AboutUs = () => {
               duration={2}
               className="hidden lg:block lg:w-[40rem]"
             >
-              <img src={img7} alt="" />
+              <img src={proposition} alt="" />
             </ScrollAnimation>
             <div className="lg:hidden">
-              <img src={img7} alt="" />
+              <img src={proposition} alt="" />
             </div>
-          </div>
-          <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-4 flex items-center my-[5rem] mx-[1rem] lg:mx-[0rem]">
-            <div className="absolute w-[7rem] top-[9rem] right-[-10rem] hidden lg:block">
-              <div className="relative">
-                <img className="breathe" src={img1} alt="" />
+            <div className="lg:hidden">
+              <div className="overflow-hidden">
+                <ScrollAnimation animateOnce={true} animateIn="pop-up">
+                  <img src={our} alt="" />
+                </ScrollAnimation>
+              </div>
+              <div>
+                <h1 className="text-5xl font-bold mt-[-2rem]">Propositions</h1>
+                <p>
+                  Our propositions cover comprehensive audit services, engaging
+                  demo showcases, and expert consultancy to ensure that your
+                  digital aim aligns seamlessly with your objectives. Which we
+                  offer at the beginning and cost-free.
+                </p>
               </div>
             </div>
+          </div>
+          <div className="lg:grid lg:grid-cols-2 items-center my-[5rem] mx-[1rem] lg:mx-[0rem]">
             <ScrollAnimation
               animateOnce={true}
               delay={1000}
@@ -435,7 +378,7 @@ const AboutUs = () => {
               animateIn="grow-from-0"
               className="hidden lg:block w-full lg:w-[40rem] lg:ms-[-5rem]"
             >
-              <img src={img5} alt="" />
+              <img src={value} alt="" />
             </ScrollAnimation>
             <ScrollAnimation
               animateOnce={true}
@@ -446,54 +389,46 @@ const AboutUs = () => {
               <div className="flex justify-end">
                 <div className="overflow-hidden">
                   <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                    <img src={img4} alt="" />
+                    <img src={we} />
                   </ScrollAnimation>
                 </div>
               </div>
 
               <div className="text-end">
-                <h1 className="font-bold text-4xl text-[#0766CB]">
-                  OUR VISION
-                </h1>
+                <h1 className="font-bold text-5xl mt-[-3rem]">Value</h1>
 
                 <p>
-                  We envision a digital world where innovation and
-                  client-centric thinking come together seamlessly. We're driven
-                  to create websites, apps, marketing, and videos that not only
-                  impress but also empower. Our vision is a future where
-                  businesses thrive with our tech-savvy solutions, making a
-                  global impact through our partnership and pioneering spirit.
+                  At MicroBuddy, our values form the bedrock of everything we
+                  do. From raising creativity and collaboration to striving for
+                  excellence and celebrating the success of our clients, our
+                  guiding principles reflect our fixed commitment to delivering
+                  unparalleled results and driving positive change in the
+                  digital sphere.
                 </p>
               </div>
             </ScrollAnimation>
+            <div className="block lg:hidden w-full lg:w-[40rem] mb-[1rem]">
+              <img src={value} alt="" />
+            </div>
             <div className="lg:hidden">
               <div className="flex justify-end">
                 <div className="overflow-hidden">
                   <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                    <img src={img4} alt="" />
+                    <img src={we} alt="" />
                   </ScrollAnimation>
                 </div>
               </div>
-
               <div className="text-end">
-                <h1 className="font-bold text-4xl text-[#0766CB]">
-                  OUR VISION
-                </h1>
-                <h1>
-                  We envision a digital world where innovation and
-                  client-centric thinking come together seamlessly.
-                </h1>
+                <h1 className="font-bold text-5xl mt-[-2rem]">Value</h1>
                 <p>
-                  We're driven to create websites, apps, marketing, and videos
-                  that not only impress but also empower. Our vision is a future
-                  where businesses thrive with our tech-savvy solutions, making
-                  a global impact through our partnership and pioneering
-                  spirit."
+                  At MicroBuddy, our values form the bedrock of everything we
+                  do. From raising creativity and collaboration to striving for
+                  excellence and celebrating the success of our clients, our
+                  guiding principles reflect our fixed commitment to delivering
+                  unparalleled results and driving positive change in the
+                  digital sphere.
                 </p>
               </div>
-            </div>
-            <div className="block lg:hidden w-full lg:w-[40rem]">
-              <img src={img5} alt="" />
             </div>
           </div>
           <div className="flex justify-center text-center mx-[1rem] lg:mx-[0rem]">
@@ -923,7 +858,7 @@ const AboutUs = () => {
                     <div className="bg-white mx-auto rounded-3xl blue-box px-[1rem]">
                       <div>
                         <div className="mx-auto w-fit mt-[2rem]">
-                          <img className="rounded-full w-[10rem]" src={imgDZ} />
+                          <img className="rounded-full w-[10rem]" src={imgSA} />
                         </div>
 
                         <div className="py-[3rem] text-center">
@@ -975,7 +910,7 @@ const AboutUs = () => {
                     <div className="bg-white mx-auto rounded-3xl blue-box px-[1rem]">
                       <div>
                         <div className="mx-auto w-fit mt-[2rem]">
-                          <img className="rounded-full w-[10rem]" src={imgDZ} />
+                          <img className="rounded-full w-[10rem]" src={imgYB} />
                         </div>
 
                         <div className="py-[3rem] text-center">
@@ -1027,7 +962,7 @@ const AboutUs = () => {
                     <div className="bg-white mx-auto rounded-3xl blue-box px-[1rem]">
                       <div>
                         <div className="mx-auto w-fit mt-[2rem]">
-                          <img className="rounded-full w-[10rem]" src={imgDZ} />
+                          <img className="rounded-full w-[10rem]" src={imgSP} />
                         </div>
 
                         <div className="py-[3rem] text-center">

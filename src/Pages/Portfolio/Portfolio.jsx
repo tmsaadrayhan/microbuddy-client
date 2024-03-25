@@ -13,7 +13,6 @@ import img10 from "../../assets/portfolio/ads/rectangle63.png";
 import img11 from "../../assets/portfolio/ads/rectangle64.png";
 import { Helmet } from "react-helmet";
 import { animateScroll } from "react-scroll";
-import "react-tabs/style/react-tabs.css";
 import { useState } from "react";
 import { useEffect } from "react";
 import imgLoad from "../../assets/loading.gif";
@@ -28,7 +27,7 @@ const Portfolio = () => {
     // Simulate async loading (e.g., fetching data)
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 900); // Simulating a 2-second loading time
+    }, 2000); // Simulating a 2-second loading time
 
     return () => clearTimeout(timer);
   }, []);

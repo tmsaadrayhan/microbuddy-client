@@ -101,10 +101,19 @@ const Header = () => {
             enableOverlay={false}
           >
             <div className="">
-              <div className="mt-[5rem]">
+              <div className="mt-[3rem]">
                 <div>
                   <Link className="text-xl font-[700] ms-[1rem] z-[50]" to="/">
                     Home
+                  </Link>
+                </div>
+                <div className="divider"></div>
+                <div>
+                  <Link
+                    className="text-xl font-[700] ms-[1rem] z-[50]"
+                    to="/how-it-works"
+                  >
+                    How IT Works
                   </Link>
                 </div>
                 <div className="divider"></div>
@@ -120,18 +129,27 @@ const Header = () => {
                 <div>
                   <Link
                     className="text-xl font-[700] ms-[1rem] z-[50]"
-                    to="/portfolio"
+                    to="/about-us"
                   >
-                    Portfolio
+                    About Us
                   </Link>
                 </div>
                 <div className="divider"></div>
                 <div>
                   <Link
                     className="text-xl font-[700] ms-[1rem] z-[50]"
-                    to="/about-us"
+                    to="/career"
                   >
-                    About Us
+                    Career
+                  </Link>
+                </div>
+                <div className="divider"></div>
+                <div>
+                  <Link
+                    className="text-xl font-[700] ms-[1rem] z-[50]"
+                    to="/portfolio"
+                  >
+                    Portfolio
                   </Link>
                 </div>
                 <div className="divider"></div>
