@@ -7,6 +7,9 @@ import img4 from "../../assets/contact/group298.png";
 import img5 from "../../assets/footer/group.png";
 import img6 from "../../assets/footer/group1.png";
 import img7 from "../../assets/footer/group2.png";
+import successtoast from "../../assets/successtoast.svg";
+import successtoastbox from "../../assets/successteastbox.svg";
+
 import "./Contact.css";
 import { Helmet } from "react-helmet";
 import { animateScroll } from "react-scroll";
@@ -14,8 +17,11 @@ import { Formik } from "formik";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import HeaderBG from "../Header/HeaderBG";
+import toast, { Toaster } from "react-hot-toast";
+import { CiCircleCheck } from "react-icons/ci";
 
 const Contact = () => {
+  const toastTest = () => {};
   animateScroll.scrollToTop();
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -54,6 +60,10 @@ const Contact = () => {
         </Helmet>
         <HeaderBG></HeaderBG>
         <div className="pt-[5rem] lg:max-w-[70rem] lg:mx-auto pb-[18rem] md:pb-[30rem] lg:pb-[50rem] mb-[-10rem] relative">
+          <button onClick={toastTest()} className="btn">
+            toast
+          </button>
+          <Toaster />
           <div className="hidden lg:block absolute w-[4rem] right-[-10rem] ">
             <img className="breathe" src={img1} alt="" />
           </div>
@@ -135,11 +145,76 @@ const Contact = () => {
                   .post("https://37.60.225.188:8081/email", values)
                   .then(function (response) {
                     console.log(response);
+                    toast.custom((t) => (
+                      <div
+                        className={`bg-[#12B569] kadwA px-6 py-4 shadow-md rounded-xl ${
+                          t.visible ? "animate-enter" : "animate-leave"
+                        }`}
+                      >
+                        <div className="flex">
+                          <img
+                            className="absolute w-[4rem] top-[-1.75rem]"
+                            src={successtoast}
+                            alt=""
+                          />
+                          <div className="relative w-[4rem] ms-[-1.5rem] mb-[-1rem] overflow-hidden rounded-xl">
+                            <img
+                              className="absolute w-[4rem] left-[-1rem] bottom-[-1rem]"
+                              src={successtoastbox}
+                              alt=""
+                            />
+                          </div>
+                          <div className="ms-[2rem]">
+                            <h1 className="font-[600] text-2xl text-[#FFFFFF]">
+                              Success!
+                            </h1>
+                            <p className=" text-[#FFFFFF]">
+                              Your email was sent!
+                            </p>
+                          </div>
+                          <div className="overflow-hidden me-[-1.5rem] mb-[-1rem]">
+                            <CiCircleCheck className="text-[120px] text-[#00000033] me-[-3rem] mb-[-2.5rem]" />
+                          </div>
+                        </div>
+                      </div>
+                    ));
                   })
                   .catch(function (error) {
                     console.log(error);
+                    toast.custom((t) => (
+                      <div
+                        className={`bg-[#12B569] kadwA px-6 py-4 shadow-md rounded-xl ${
+                          t.visible ? "animate-enter" : "animate-leave"
+                        }`}
+                      >
+                        <div className="flex">
+                          <img
+                            className="absolute w-[4rem] top-[-1.75rem]"
+                            src={successtoast}
+                            alt=""
+                          />
+                          <div className="relative w-[4rem] ms-[-1.5rem] mb-[-1rem] overflow-hidden rounded-xl">
+                            <img
+                              className="absolute w-[4rem] left-[-1rem] bottom-[-1rem]"
+                              src={successtoastbox}
+                              alt=""
+                            />
+                          </div>
+                          <div className="ms-[2rem]">
+                            <h1 className="font-[600] text-2xl text-[#FFFFFF]">
+                              Success!
+                            </h1>
+                            <p className=" text-[#FFFFFF]">
+                              Your email could not be sent!
+                            </p>
+                          </div>
+                          <div className="overflow-hidden me-[-1.5rem] mb-[-1rem]">
+                            <CiCircleCheck className="text-[120px] text-[#00000033] me-[-3rem] mb-[-2.5rem]" />
+                          </div>
+                        </div>
+                      </div>
+                    ));
                   });
-                alert("Thanks for your response");
               }}
             >
               {({
