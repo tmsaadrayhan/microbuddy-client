@@ -288,18 +288,56 @@ const ITService = () => {
             ref={ref1}
             className="lg:flex gap-4 my-[5rem] items-center mx-[1rem] lg:mx-[0rem]"
           >
-            <div className="md:w-[28rem]">
-              {/*lg*/}
-              <ScrollAnimation
-                animateOnce={true}
-                animateIn="it-from-left"
-                className="hidden lg:block mt-[-1rem] md:mt-[-3rem]"
-              >
-                <div className="overflow-hidden">
-                  <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                    <img src={img6} alt="" />
-                  </ScrollAnimation>
+            {/*lg*/}
+            <ScrollAnimation
+              animateOnce={true}
+              animateIn="it-from-left"
+              className="hidden lg:block mt-[-1rem] w-1/2"
+            >
+              <div className="overflow-hidden mb-[-3rem]">
+                <ScrollAnimation animateOnce={true} animateIn="pop-up">
+                  <img src={img6} alt="" />
+                </ScrollAnimation>
+              </div>
+              <h1 className="text-4xl font-[700] text-[#886CFF]">
+                TECH SERVICE
+              </h1>
+              <p className="text-lg">
+                MicroBuddy's Tech Support streamlines complexity, enhancing
+                digital environments for seamless operations and innovation.
+              </p>
+              <div className="ms-[-1rem]">
+                <div className="blue-shadow">
+                  <h1 className="text-xl font-bold">Native App</h1>
+                  <p>
+                    Build custom apps designed to your needs with Microbuddy's
+                    expertise.
+                  </p>
                 </div>
+                <div className="blue-shadow">
+                  <h1 className="text-xl font-bold">CROSS-PLATFORM</h1>
+                  <p>
+                    Reach wider audiences seamlessly with our versatile app
+                    solutions.
+                  </p>
+                </div>
+                <div className="blue-shadow">
+                  <h1 className="text-xl font-bold">Web Development</h1>
+                  <p>
+                    Craft engaging and functional websites with our expert
+                    development team.
+                  </p>
+                </div>
+              </div>
+            </ScrollAnimation>
+            {/*md and sm*/}
+            <div className="lg:hidden">
+              <div className="overflow-hidden">
+                <ScrollAnimation animateOnce={true} animateIn="pop-up">
+                  <img src={img6} alt="" />
+                </ScrollAnimation>
+              </div>
+              <div className="mt-[-1rem] md:mt-[-3rem]">
                 <h1 className="text-4xl font-[700] text-[#886CFF]">
                   TECH SERVICE
                 </h1>
@@ -307,12 +345,12 @@ const ITService = () => {
                   MicroBuddy's Tech Support streamlines complexity, enhancing
                   digital environments for seamless operations and innovation.
                 </p>
-                <div className="ms-[-1rem]">
+                <div className="mx-[-1rem] md:mx-[0rem] md:ms-[-1rem]">
                   <div className="blue-shadow">
                     <h1 className="text-xl font-bold">Native App</h1>
                     <p>
-                      P3- Build custom apps designed to your needs with
-                      Microbuddy's expertise.
+                      Build custom apps designed to your needs with Microbuddy's
+                      expertise.
                     </p>
                   </div>
                   <div className="blue-shadow">
@@ -330,52 +368,13 @@ const ITService = () => {
                     </p>
                   </div>
                 </div>
-              </ScrollAnimation>
-              {/*md and sm*/}
-              <div className="lg:hidden">
-                <div className="overflow-hidden">
-                  <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                    <img src={img6} alt="" />
-                  </ScrollAnimation>
-                </div>
-                <div className="mt-[-1rem] md:mt-[-3rem]">
-                  <h1 className="text-4xl font-[700] text-[#886CFF]">
-                    TECH SERVICE
-                  </h1>
-                  <p className="text-lg">
-                    MicroBuddy's Tech Support streamlines complexity, enhancing
-                    digital environments for seamless operations and innovation.
-                  </p>
-                  <div className="mx-[-1rem] md:mx-[0rem] md:ms-[-1rem]">
-                    <div className="blue-shadow">
-                      <h1 className="text-xl font-bold">Native App</h1>
-                      <p>
-                        P3- Build custom apps designed to your needs with
-                        Microbuddy's expertise.
-                      </p>
-                    </div>
-                    <div className="blue-shadow">
-                      <h1 className="text-xl font-bold">CROSS-PLATFORM</h1>
-                      <p>
-                        Reach wider audiences seamlessly with our versatile app
-                        solutions.
-                      </p>
-                    </div>
-                    <div className="blue-shadow">
-                      <h1 className="text-xl font-bold">Web Development</h1>
-                      <p>
-                        Craft engaging and functional websites with our expert
-                        development team.
-                      </p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
             <ScrollAnimation
               animateOnce={true}
               delay={1000}
               animateIn="grow-from-0"
+              className="w-1/2"
             >
               <ScrollAnimation
                 animateOnce={true}
@@ -392,22 +391,22 @@ const ITService = () => {
             className="lg:flex gap-4 my-[5rem] items-center mx-[1rem] lg:mx-[0rem]"
           >
             {/*lg*/}
-            <div className="hidden lg:block">
+            <div className="hidden lg:block w-1/2">
               <img className="w-full" src={img9} alt="" />
             </div>
-            <div className="flex justify-end">
+            <div className="flex justify-end lg:w-1/2">
               {/*lg*/}
               <ScrollAnimation
                 animateOnce={true}
                 animateIn="it-from-right"
-                className="hidden lg:block"
+                className="hidden lg:block "
               >
                 <div className="overflow-hidden">
                   <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                    <img className="md:w-[30rem]" src={img8} alt="" />
+                    <img src={img8} alt="" />
                   </ScrollAnimation>
                 </div>
-                <div className="md:w-[30rem] mt-[-1rem] md:mt-[-1.5rem] text-end">
+                <div className="mt-[-1rem] md:mt-[-1.5rem] text-end">
                   <h1 className="text-4xl font-[700] text-[#886CFF]">
                     Graphic Design
                   </h1>
@@ -513,14 +512,14 @@ const ITService = () => {
             <ScrollAnimation
               animateOnce={true}
               animateIn="it-from-left"
-              className="hidden lg:block"
+              className="hidden lg:block w-1/2"
             >
               <div className="overflow-hidden">
                 <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                  <img className="md:w-[35rem]" src={img10} alt="" />
+                  <img src={img10} alt="" />
                 </ScrollAnimation>
               </div>
-              <div className="mt-[-1rem] md:mt-[-1.5rem] md:w-[28rem]">
+              <div className="mt-[-1rem] md:mt-[-1.5rem]">
                 <h1 className="text-4xl font-[700] text-[#0081F5]">
                   SOFTWARE SERVICE
                 </h1>
@@ -613,7 +612,7 @@ const ITService = () => {
               delay={1000}
               animateOnce={true}
               animateIn="grow-from-0"
-              className="hidden lg:block"
+              className="hidden lg:block w-1/2"
             >
               <img className="w-full breathe" src={img11} alt="" />
             </ScrollAnimation>
@@ -629,12 +628,13 @@ const ITService = () => {
               delay={1000}
               animateOnce={true}
               animateIn="grow-from-0"
+              className="w-1/2"
             >
               <div className="hidden lg:block">
                 <img className="w-full breathe" src={img13} alt="" />
               </div>
             </ScrollAnimation>
-            <div className="flex justify-end">
+            <div className="flex justify-end lg:w-1/2">
               {/*lg*/}
               <ScrollAnimation
                 animateOnce={true}
@@ -646,7 +646,7 @@ const ITService = () => {
                     <img className="w-auto md:w-[28rem]" src={img12} alt="" />
                   </ScrollAnimation>
                 </div>
-                <div className="w-auto md:w-[28rem] mt-[-1rem] md:mt-[-2rem] text-end">
+                <div className="w-auto mt-[-1rem] md:mt-[-2rem] text-end">
                   <h1 className="text-4xl font-[700] text-[#F55498]">
                     CLOUD SERVICE
                   </h1>

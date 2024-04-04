@@ -8,7 +8,10 @@ import img5 from "../../assets/footer/group.png";
 import img6 from "../../assets/footer/group1.png";
 import img7 from "../../assets/footer/group2.png";
 import successtoast from "../../assets/successtoast.svg";
+import errortoast from "../../assets/errortoast.svg";
 import successtoastbox from "../../assets/successteastbox.svg";
+
+
 
 import "./Contact.css";
 import { Helmet } from "react-helmet";
@@ -17,11 +20,12 @@ import { Formik } from "formik";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import HeaderBG from "../Header/HeaderBG";
-import toast, { Toaster } from "react-hot-toast";
+import toast, { ToastBar, Toaster } from "react-hot-toast";
 import { CiCircleCheck } from "react-icons/ci";
+import { RxCrossCircled } from "react-icons/rx";
 
-const Contact = () => {
-  const toastTest = () => {};
+
+const Contact = () => {           
   animateScroll.scrollToTop();
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -60,10 +64,6 @@ const Contact = () => {
         </Helmet>
         <HeaderBG></HeaderBG>
         <div className="pt-[5rem] lg:max-w-[70rem] lg:mx-auto pb-[18rem] md:pb-[30rem] lg:pb-[50rem] mb-[-10rem] relative">
-          <button onClick={toastTest()} className="btn">
-            toast
-          </button>
-          <Toaster />
           <div className="hidden lg:block absolute w-[4rem] right-[-10rem] ">
             <img className="breathe" src={img1} alt="" />
           </div>
@@ -147,11 +147,11 @@ const Contact = () => {
                     console.log(response);
                     toast.custom((t) => (
                       <div
-                        className={`bg-[#12B569] kadwA px-6 py-4 shadow-md rounded-xl ${
+                        className={`bg-[#12B569] kadwA px-6 py-4 shadow-md rounded-xl  ${
                           t.visible ? "animate-enter" : "animate-leave"
                         }`}
                       >
-                        <div className="flex">
+                        <div className="flex relative">
                           <img
                             className="absolute w-[4rem] top-[-1.75rem]"
                             src={successtoast}
@@ -169,9 +169,15 @@ const Contact = () => {
                               Success!
                             </h1>
                             <p className=" text-[#FFFFFF]">
-                              Your email was sent!
+                              Your email is sent!
                             </p>
                           </div>
+                          <button
+                            className="text-[#FFFFFF] absolute right-[-.6rem] text-xl"
+                            onClick={() => toast.dismiss(t.id)}
+                          >
+                            <RxCrossCircled />
+                          </button>
                           <div className="overflow-hidden me-[-1.5rem] mb-[-1rem]">
                             <CiCircleCheck className="text-[120px] text-[#00000033] me-[-3rem] mb-[-2.5rem]" />
                           </div>
@@ -183,14 +189,14 @@ const Contact = () => {
                     console.log(error);
                     toast.custom((t) => (
                       <div
-                        className={`bg-[#12B569] kadwA px-6 py-4 shadow-md rounded-xl ${
+                        className={`bg-[#E4335B] kadwA px-6 py-4 shadow-md rounded-xl  ${
                           t.visible ? "animate-enter" : "animate-leave"
                         }`}
                       >
-                        <div className="flex">
+                        <div className="flex relative">
                           <img
                             className="absolute w-[4rem] top-[-1.75rem]"
-                            src={successtoast}
+                            src={errortoast}
                             alt=""
                           />
                           <div className="relative w-[4rem] ms-[-1.5rem] mb-[-1rem] overflow-hidden rounded-xl">
@@ -202,12 +208,18 @@ const Contact = () => {
                           </div>
                           <div className="ms-[2rem]">
                             <h1 className="font-[600] text-2xl text-[#FFFFFF]">
-                              Success!
+                              Error!
                             </h1>
                             <p className=" text-[#FFFFFF]">
-                              Your email could not be sent!
+                              An error occurred.
                             </p>
                           </div>
+                          <button
+                            className="text-[#FFFFFF] absolute right-[-.6rem] text-xl"
+                            onClick={() => toast.dismiss(t.id)}
+                          >
+                            <RxCrossCircled />
+                          </button>
                           <div className="overflow-hidden me-[-1.5rem] mb-[-1rem]">
                             <CiCircleCheck className="text-[120px] text-[#00000033] me-[-3rem] mb-[-2.5rem]" />
                           </div>
@@ -312,6 +324,26 @@ const Contact = () => {
                 </form>
               )}
             </Formik>
+            <Toaster>
+              {(t) => (
+                <ToastBar toast={t}>
+                  {({ icon, message }) => (
+                    <>
+                      {icon}
+                      {message}
+                      {t.type !== "loading" && (
+                        <button
+                          type="button"
+                          onClick={() => toast.dismiss(t.id)}
+                        >
+                          X
+                        </button>
+                      )}
+                    </>
+                  )}
+                </ToastBar>
+              )}
+            </Toaster>
             {/*<form
                 form
                 autoCapitalize="off"

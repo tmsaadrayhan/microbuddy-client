@@ -28,6 +28,9 @@ import img19 from "../../assets/content/group325.svg";
 import img20 from "../../assets/content/vector.png";
 
 import service from "../../assets/content/service.png";
+import successtoast from "../../assets/successtoast.svg";
+import errortoast from "../../assets/errortoast.svg";
+import successtoastbox from "../../assets/successteastbox.svg";
 
 import "./Content.css";
 import Slider from "react-slick";
@@ -37,6 +40,9 @@ import { useEffect, useState } from "react";
 import { Formik } from "formik";
 import axios from "axios";
 import HeaderBG from "../Header/HeaderBG";
+import { RxCrossCircled } from "react-icons/rx";
+import { CiCircleCheck } from "react-icons/ci";
+import toast from "react-hot-toast";
 
 const Content = () => {
   animateScroll.scrollToTop();
@@ -661,9 +667,87 @@ const Content = () => {
                       .post("https://37.60.225.188:8081/content-email", values)
                       .then(function (response) {
                         console.log(response);
+                        toast.custom((t) => (
+                          <div
+                            className={`bg-[#12B569] kadwA px-6 py-4 shadow-md rounded-xl  ${
+                              t.visible ? "animate-enter" : "animate-leave"
+                            }`}
+                          >
+                            <div className="flex relative">
+                              <img
+                                className="absolute w-[4rem] top-[-1.75rem]"
+                                src={successtoast}
+                                alt=""
+                              />
+                              <div className="relative w-[4rem] ms-[-1.5rem] mb-[-1rem] overflow-hidden rounded-xl">
+                                <img
+                                  className="absolute w-[4rem] left-[-1rem] bottom-[-1rem]"
+                                  src={successtoastbox}
+                                  alt=""
+                                />
+                              </div>
+                              <div className="ms-[2rem]">
+                                <h1 className="font-[600] text-2xl text-[#FFFFFF]">
+                                  Success!
+                                </h1>
+                                <p className=" text-[#FFFFFF]">
+                                  Your email is sent!
+                                </p>
+                              </div>
+                              <button
+                                className="text-[#FFFFFF] absolute right-[-.6rem] text-xl"
+                                onClick={() => toast.dismiss(t.id)}
+                              >
+                                <RxCrossCircled />
+                              </button>
+                              <div className="overflow-hidden me-[-1.5rem] mb-[-1rem]">
+                                <CiCircleCheck className="text-[120px] text-[#00000033] me-[-3rem] mb-[-2.5rem]" />
+                              </div>
+                            </div>
+                          </div>
+                        ));
                       })
                       .catch(function (error) {
                         console.log(error);
+                        toast.custom((t) => (
+                          <div
+                            className={`bg-[#E4335B] kadwA px-6 py-4 shadow-md rounded-xl  ${
+                              t.visible ? "animate-enter" : "animate-leave"
+                            }`}
+                          >
+                            <div className="flex relative">
+                              <img
+                                className="absolute w-[4rem] top-[-1.75rem]"
+                                src={errortoast}
+                                alt=""
+                              />
+                              <div className="relative w-[4rem] ms-[-1.5rem] mb-[-1rem] overflow-hidden rounded-xl">
+                                <img
+                                  className="absolute w-[4rem] left-[-1rem] bottom-[-1rem]"
+                                  src={successtoastbox}
+                                  alt=""
+                                />
+                              </div>
+                              <div className="ms-[2rem]">
+                                <h1 className="font-[600] text-2xl text-[#FFFFFF]">
+                                  Error!
+                                </h1>
+                                <p className=" text-[#FFFFFF]">
+                                  An error occurred.
+                                </p>
+                              </div>
+                              <button
+                                className="text-[#FFFFFF] absolute right-[-.6rem] text-xl"
+                                onClick={() => toast.dismiss(t.id)}
+                              >
+                                <RxCrossCircled />
+                              </button>
+                              <div className="overflow-hidden me-[-1.5rem] mb-[-1rem]">
+                                <CiCircleCheck className="text-[120px] text-[#00000033] me-[-3rem] mb-[-2.5rem]" />
+                              </div>
+                            </div>
+                          </div>
+                        ));
                       });
                     alert("Thanks for your response");
                   }}
