@@ -41,28 +41,30 @@ const Home = () => {
         <Helmet>
           <title>MICROBUDDY-IT SUPPORT & SERVICES</title>
           <meta
-            name="description"
-            content="Microbuddy offers IT support & services that drive business success, including website & app development, software solutions, design, digital marketing & more."
+            name="IT SUPPORT"
+            content="Microbuddy offers IT support & services for businesses, including website & app development, software solutions, design, digital marketing & more."
           />
         </Helmet>
-        <div className="bg-head ">
+        <div className="bg-head">
           <div className="relative lg:flex gap-4 pt-20 lg:max-w-[70rem] mx-[0] lg:mx-auto items-center">
             <div className="mx-auto">
               <div className="left-text text-wrap lg:pe-[5rem] mx-auto md:max-w-[30rem] lg:max-w-[35rem]">
-                <p className="text-7xl md:text-9xl font-bold text-gradient">
+                <h1 className="text-7xl md:text-9xl font-bold text-gradient">
                   DIGITAL
-                </p>
+                </h1>
                 <div className="pl-6 md:pl-8 mt-[-2rem] md:mt-[-4rem] overflow-hidden">
-                  <p className="text-2xl md:text-4xl font-bold">
+                  <h1 className="text-2xl md:text-4xl font-bold">
                     Seeking Top-Notch
-                  </p>
-                  <p className="text-5xl md:text-7xl font-bold">IT Support ?</p>
+                  </h1>
+                  <h1 className="text-5xl md:text-7xl font-bold">
+                    IT Support ?
+                  </h1>
                   <img
                     className="ms-[-0.5rem] mb-[-1rem] w-[25rem] "
                     src={MicrobuddyImg}
                     alt=""
                   />
-                  <p className="text-4xl font-black">Got You Covered.</p>
+                  <h1 className="text-4xl font-black">Got You Covered.</h1>
                   <div className="max-w-[24rem]">
                     <p>
                       Highly cost-effective IT support that completely

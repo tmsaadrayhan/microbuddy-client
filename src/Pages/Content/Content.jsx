@@ -166,7 +166,7 @@ const Content = () => {
                 </div>
               </div>
               {/*Only sm*/}
-              <img className="md:hidden" src={img15} />
+              <img className="md:hidden mx-auto" src={img15} />
               <ScrollAnimation
                 animateOnce={true}
                 offset={500}
@@ -217,7 +217,7 @@ const Content = () => {
               </div>
             </div>
             {/*Only sm*/}
-            <img className="md:hidden" src={img15} />
+            <img className="md:hidden mx-auto" src={img15} />
             <ScrollAnimation
               animateOnce={true}
               offset={50}
@@ -264,7 +264,7 @@ const Content = () => {
                 </div>
               </div>
               {/*Only sm*/}
-              <img className="md:hidden" src={img15} />
+              <img className="md:hidden mx-auto" src={img15} />
               {/*lg and md*/}
               <div className="md:w-1/2 overflow-hidden hidden md:block">
                 <ScrollAnimation
@@ -272,7 +272,7 @@ const Content = () => {
                   offset={0}
                   animateIn="from-left"
                 >
-                  <div className="h-[17rem] lg:h-[19rem] md:ps-[5rem] md:pt-[5rem] md:p-[0rem] mt-[2rem] lg:mt-0">
+                  <div className="h-[17rem] lg:h-[19rem] md:ps-[5rem] md:pt-[5rem] md:p-[0rem] my-[2rem] lg:mt-0">
                     <img className="mx-auto md:mx-0" src={img6} alt="" />
                     <div className="text-center md:text-start max-w-[25rem] my-[2rem] md:my-0">
                       <h1 className="text-4xl md:text-3xl font-[600]">

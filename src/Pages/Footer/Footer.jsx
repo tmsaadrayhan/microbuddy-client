@@ -13,7 +13,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 const Footer = () => {
   return (
-    <div className="relative text-[black]">
+    <footer className="relative text-[black]">
       {/* footer head*/}
       <div id="footer-parent" className="hidden lg:block">
         <ScrollAnimation
@@ -36,11 +36,13 @@ const Footer = () => {
                       <div className="flex justify-center md:justify-start">
                         <div className="flex items-center">
                           <img className="me-[1rem]" src={img1} />
-                          <p className="text-lg">Let's Get in Touch</p>
+                          <h1 className="text-lg">Let's Get in Touch</h1>
                         </div>
                       </div>
 
-                      <p>Let's talk about your business IT Support Needs.</p>
+                      <h1 className="text-3xl">
+                        Let's talk about your business IT Support Needs.
+                      </h1>
                     </div>
                   </div>
 
@@ -83,7 +85,7 @@ const Footer = () => {
       </div>
       {/* footer main*/}
       <div className="bg-[#EEEEFA]">
-        <footer className="lg:flex mx-auto lg:max-w-[100rem] pt-[15rem] lg:pt-[7rem] p-10 lg:px-[1rem]">
+        <div className="lg:flex mx-auto lg:max-w-[100rem] pt-[15rem] lg:pt-[7rem] p-10 lg:px-[1rem]">
           <div className="w-full lg:w-2/5">
             <div className="text-center w-[18rem] md:w-[25rem] lg:max-w-[20rem] mx-auto flex justify-center md:justify-start">
               <div className="my-[2rem] lg:mb-[0rem]">
@@ -104,7 +106,7 @@ const Footer = () => {
               <Link to="/how-it-works" className="link link-hover">
                 <p className="my-[0.25rem]">How It Works</p>
               </Link>
-              <Link to="/it-servickjz uysae" className="link link-hover">
+              <Link to="/it-service" className="link link-hover">
                 <p className="my-[0.25rem]">IT Service</p>
               </Link>
               <Link to="/portfolio" className="link link-hover">
@@ -176,7 +178,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </footer>
+        </div>
         <div className="divider lg:w-[80rem] my-[0rem] mx-auto"></div>
         <div className="px-[2rem] lg:mx-auto lg:max-w-[80rem] mx-auto">
           <div className="flex justify-center md:justify-end pb-[3rem]">
@@ -203,7 +205,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

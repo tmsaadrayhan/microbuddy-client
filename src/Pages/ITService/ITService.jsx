@@ -24,6 +24,7 @@ import { animateScroll } from "react-scroll";
 import "./ITService.css";
 import { useEffect, useRef, useState } from "react";
 import HeaderBG from "../Header/HeaderBG";
+import Feature from "./Feature";
 
 const ITService = () => {
   animateScroll.scrollToTop();
@@ -54,6 +55,104 @@ const ITService = () => {
 
     return () => clearTimeout(timer);
   }, []);
+  const techData = {
+    title: "Tech Service",
+    description:
+      "MicroBuddy's Tech Support streamlines complexity, enhancing digital environments for seamless operations and innovation.",
+    features: [
+      {
+        title: "Native App",
+        description:
+          "Build custom apps designed to your needs with Microbuddy's expertise.",
+      },
+      {
+        title: "CROSS-PLATFORM",
+        description:
+          "Reach wider audiences seamlessly with our versatile app solutions.",
+      },
+      {
+        title: "Web Development",
+        description:
+          "Craft engaging and functional websites with our expert development team.",
+      },
+    ],
+  };
+  const graphicsData = {
+    title: "Graphic Design",
+    description:
+      "MicroBuddy's Graphic Design Service Turning concepts into impactful visuals, enhancing brand impact with creative expertise.",
+    features: [
+      {
+        title: "UI/UX DESIGN",
+        description:
+          "Enhance user experience and engagement with our intuitive design solutions.",
+      },
+      {
+        title: "PRINT DESIGN",
+        description:
+          "Bring your brand to life with eye-catching print materials designed by us.",
+      },
+      {
+        title: "MOTION GRAPHICS",
+        description:
+          "Add dynamic visuals to your projects with Microbuddy's motion graphics expertise.",
+      },
+      {
+        title: "CUSTOM CONTENT DESIGN",
+        description:
+          "Stand out with unique content designed specifically for your brand.",
+      },
+    ],
+  };
+  const softwareData = {
+    title: "Software Service",
+    description:
+      "MicroBuddy’s Software Service crafts custom solutions, translating ideas into efficient reality, driving innovation and success.",
+    features: [
+      {
+        title: "Software Prototyping",
+        description:
+          "Test and refine your ideas quickly with our efficient prototyping services.",
+      },
+      {
+        title: "System Integration",
+        description:
+          "Seamlessly connect your systems for improved efficiency and performance.",
+      },
+      {
+        title: "Quality Assurance",
+        description:
+          "Ensure flawless performance with our thorough quality assurance processes.",
+      },
+      {
+        title: "Mobile Optimization",
+        description:
+          "Optimize your mobile presence for improved user experience and performance.",
+      },
+    ],
+  };
+  const cloudData = {
+    title: "Cloud Service",
+    description:
+      "MicroBuddy’s Cloud Service delivers boundless scalability, security, and continuity for seamless adaptation in the digital landscape.",
+    features: [
+      {
+        title: "Server & Hosting Management",
+        description:
+          "Keep your online presence secure and running smoothly with our expert management.Test and refine your ideas quickly with our efficient prototyping services.",
+      },
+      {
+        title: "Software Deployment",
+        description:
+          "Keep your online presence secure and running smoothly with our expert management.",
+      },
+      {
+        title: "Developer Support",
+        description:
+          "Get the assistance you need to keep your projects on track and successful.",
+      },
+    ],
+  };
   if (loading)
     return (
       <div className="w-full py-[15rem]">
@@ -64,13 +163,9 @@ const ITService = () => {
     return (
       <div>
         <Helmet>
-          <title>
-            Empower Your Fast-Growing Business with Unified Teams, Integrated
-            Cloud Software, Cutting-Edge Tech, and Dynamic Graphic Solutions |
-            Microbuddy
-          </title>
+          <title>Microbuddy Services</title>
           <meta
-            name="description"
+            name="Microbuddy IT Services and solutions"
             content="Discover how Microbuddy can accelerate your fast-growing business with unified teams, integrated cloud software, cutting-edge tech, and dynamic graphic solutions. Elevate your possibilities with our comprehensive services. Contact us today!"
           />
         </Helmet>
@@ -110,12 +205,8 @@ const ITService = () => {
                 <div className="mx-[1rem] rounded-xl mt-[5rem] tech-service">
                   <img className="mt-[-6rem]" src={img2} alt="" />
                   <div className="mx-[1rem] mb-[2rem]">
-                    <h1 className="text-xl font-bold">Tech Service</h1>
-                    <p>
-                      MicroBuddy's Tech Support streamlines complexity,
-                      enhancing digital environments for seamless operations and
-                      innovation.
-                    </p>
+                    <h1 className="text-xl font-bold">{techData.title}</h1>
+                    <p>{techData.description}</p>
                   </div>
                 </div>
               </div>
@@ -125,24 +216,16 @@ const ITService = () => {
               >
                 <img className="mt-[-6rem]" src={img3} alt="" />
                 <div className="mx-[1rem] mb-[2rem]">
-                  <h1 className="text-xl font-bold">Graphic Design</h1>
-                  <p>
-                    MicroBuddy's Graphic Design Service transforms ideas into
-                    compelling visuals, bolstering brand influence through
-                    creative mastery.
-                  </p>
+                  <h1 className="text-xl font-bold">{graphicsData.title}</h1>
+                  <p>{graphicsData.description}</p>
                 </div>
               </div>
               <div onClick={handleClick3} className="pt-[5rem] three">
                 <div className="mx-[1rem] rounded-xl mt-[5rem] software-service">
                   <img className="mt-[-6rem]" src={img4} alt="" />
                   <div className="mx-[1rem] mb-[2rem]">
-                    <h1 className="text-xl font-bold">Software Service</h1>
-                    <p>
-                      MicroBuddy's Software Service specializes in creating
-                      bespoke solutions, turning concepts into effective
-                      outcomes, fostering innovation, and achieving success.
-                    </p>
+                    <h1 className="text-xl font-bold">{softwareData.title}</h1>
+                    <p>{softwareData.description}</p>
                   </div>
                 </div>
               </div>
@@ -152,12 +235,8 @@ const ITService = () => {
               >
                 <img className="mt-[-6rem]" src={img5} alt="" />
                 <div className="mx-[1rem] mb-[2rem]">
-                  <h1 className="text-xl font-bold">Cloud Service</h1>
-                  <p>
-                    MicroBuddy's Cloud Service ensures infinite scalability,
-                    robust security, and uninterrupted operation for effortless
-                    adjustment in the digital world.
-                  </p>
+                  <h1 className="text-xl font-bold">{cloudData.title}</h1>
+                  <p>{cloudData.description}</p>
                 </div>
               </div>
             </div>
@@ -167,12 +246,8 @@ const ITService = () => {
                 <div className="mx-[1rem] rounded-xl h-[20rem] mt-[5rem] tech-service">
                   <img className="mt-[-6rem]" src={img2} alt="" />
                   <div className="mx-[1rem] mb-[2rem]">
-                    <h1 className="text-xl font-bold">Tech Service</h1>
-                    <p>
-                      MicroBuddy's Tech Support streamlines complexity,
-                      enhancing digital environments for seamless operations and
-                      innovation.
-                    </p>
+                    <h1 className="text-xl font-bold">{techData.title}</h1>
+                    <p>{techData.description}</p>
                   </div>
                 </div>
               </div>
@@ -182,24 +257,16 @@ const ITService = () => {
               >
                 <img className="mt-[-6rem]" src={img3} alt="" />
                 <div className="mx-[1rem] mb-[2rem]">
-                  <h1 className="text-xl font-bold">Graphic Design</h1>
-                  <p>
-                    MicroBuddy's Graphic Design Service transforms ideas into
-                    compelling visuals, bolstering brand influence through
-                    creative mastery.
-                  </p>
+                  <h1 className="text-xl font-bold">{graphicsData.title}</h1>
+                  <p>{graphicsData.description}</p>
                 </div>
               </div>
               <div onClick={handleClick3} className="pt-[5rem]">
                 <div className=" mx-[1rem] rounded-xl h-[20rem] mt-[5rem] software-service">
                   <img className="mt-[-6rem]" src={img4} alt="" />
                   <div className="mx-[1rem] mb-[2rem]">
-                    <h1 className="text-xl font-bold">Tech Service</h1>
-                    <p>
-                      MicroBuddy's Software Service specializes in creating
-                      bespoke solutions, turning concepts into effective
-                      outcomes, fostering innovation, and achieving success.
-                    </p>
+                    <h1 className="text-xl font-bold">{softwareData.title}</h1>
+                    <p>{softwareData.description}</p>
                   </div>
                 </div>
               </div>
@@ -209,12 +276,8 @@ const ITService = () => {
               >
                 <img className="mt-[-6rem]" src={img5} alt="" />
                 <div className="mx-[1rem] mb-[2rem]">
-                  <h1 className="text-xl font-bold">Cloud Service</h1>
-                  <p>
-                    MicroBuddy's Cloud Service ensures infinite scalability,
-                    robust security, and uninterrupted operation for effortless
-                    adjustment in the digital world.
-                  </p>
+                  <h1 className="text-xl font-bold">{cloudData.title}</h1>
+                  <p>{cloudData.description}</p>
                 </div>
               </div>
             </div>
@@ -226,13 +289,9 @@ const ITService = () => {
                     <img className="my-[-6rem]" src={img2} alt="" />
                     <div className="mt-[3rem] mx-[1rem] mb-[2rem]">
                       <h1 className="text-[24px] my-[0.5rem] font-bold">
-                        Tech Service
+                        {techData.title}
                       </h1>
-                      <p>
-                        MicroBuddy's Tech Support streamlines complexity,
-                        enhancing digital environments for seamless operations
-                        and innovation.
-                      </p>
+                      <p>{techData.description}</p>
                     </div>
                   </div>
                 </div>
@@ -241,13 +300,9 @@ const ITService = () => {
                     <img className="my-[-6rem]" src={img3} alt="" />
                     <div className="mt-[3rem] mx-[1rem] mb-[2rem]">
                       <h1 className="text-[24px] my-[0.5rem] font-bold">
-                        Graphic Design
+                        {graphicsData.title}
                       </h1>
-                      <p>
-                        MicroBuddy's Graphic Design Service transforms ideas
-                        into compelling visuals, bolstering brand influence
-                        through creative mastery.
-                      </p>
+                      <p>{graphicsData.description}</p>
                     </div>
                   </div>
                 </div>
@@ -256,13 +311,9 @@ const ITService = () => {
                     <img className="my-[-6rem]" src={img4} alt="" />
                     <div className="mt-[3rem] mx-[1rem] mb-[2rem]">
                       <h1 className="text-[24px] my-[0.5rem] font-bold">
-                        Tech Service
+                        {softwareData.title}
                       </h1>
-                      <p>
-                        MicroBuddy's Software Service specializes in creating
-                        bespoke solutions, turning concepts into effective
-                        outcomes, fostering innovation, and achieving success.
-                      </p>
+                      <p>{softwareData.description}</p>
                     </div>
                   </div>
                 </div>
@@ -271,13 +322,9 @@ const ITService = () => {
                     <img className="my-[-6rem]" src={img5} alt="" />
                     <div className="mt-[3rem] mx-[1rem] mb-[2rem]">
                       <h1 className="text-[24px] my-[0.5rem] font-bold">
-                        Cloud Service
+                        {cloudData.title}
                       </h1>
-                      <p>
-                        MicroBuddy's Cloud Service ensures infinite scalability,
-                        robust security, and uninterrupted operation for
-                        effortless adjustment in the digital world.
-                      </p>
+                      <p>{cloudData.description}</p>
                     </div>
                   </div>
                 </div>
@@ -300,34 +347,16 @@ const ITService = () => {
                 </ScrollAnimation>
               </div>
               <h1 className="text-4xl font-[700] text-[#886CFF]">
-                TECH SERVICE
+                {techData.title}
               </h1>
-              <p className="text-lg">
-                MicroBuddy's Tech Support streamlines complexity, enhancing
-                digital environments for seamless operations and innovation.
-              </p>
+              <p className="text-lg">{techData.description}</p>
               <div className="ms-[-1rem]">
-                <div className="blue-shadow">
-                  <h1 className="text-xl font-bold">Native App</h1>
-                  <p>
-                    Build custom apps designed to your needs with Microbuddy's
-                    expertise.
-                  </p>
-                </div>
-                <div className="blue-shadow">
-                  <h1 className="text-xl font-bold">CROSS-PLATFORM</h1>
-                  <p>
-                    Reach wider audiences seamlessly with our versatile app
-                    solutions.
-                  </p>
-                </div>
-                <div className="blue-shadow">
-                  <h1 className="text-xl font-bold">Web Development</h1>
-                  <p>
-                    Craft engaging and functional websites with our expert
-                    development team.
-                  </p>
-                </div>
+                {techData.features.map((feature) => (
+                  <Feature
+                    key={techData.features.indexOf(feature)}
+                    feature={feature}
+                  ></Feature>
+                ))}
               </div>
             </ScrollAnimation>
             {/*md and sm*/}
@@ -339,34 +368,16 @@ const ITService = () => {
               </div>
               <div className="mt-[-1rem] md:mt-[-3rem]">
                 <h1 className="text-4xl font-[700] text-[#886CFF]">
-                  TECH SERVICE
+                  {techData.title}
                 </h1>
-                <p className="text-lg">
-                  MicroBuddy's Tech Support streamlines complexity, enhancing
-                  digital environments for seamless operations and innovation.
-                </p>
+                <p className="text-lg">{techData.description}</p>
                 <div className="mx-[-1rem] md:mx-[0rem] md:ms-[-1rem]">
-                  <div className="blue-shadow">
-                    <h1 className="text-xl font-bold">Native App</h1>
-                    <p>
-                      Build custom apps designed to your needs with Microbuddy's
-                      expertise.
-                    </p>
-                  </div>
-                  <div className="blue-shadow">
-                    <h1 className="text-xl font-bold">CROSS-PLATFORM</h1>
-                    <p>
-                      Reach wider audiences seamlessly with our versatile app
-                      solutions.
-                    </p>
-                  </div>
-                  <div className="blue-shadow">
-                    <h1 className="text-xl font-bold">Web Development</h1>
-                    <p>
-                      Craft engaging and functional websites with our expert
-                      development team.
-                    </p>
-                  </div>
+                  {techData.features.map((feature) => (
+                    <Feature
+                      key={techData.features.indexOf(feature)}
+                      feature={feature}
+                    ></Feature>
+                  ))}
                 </div>
               </div>
             </div>
@@ -374,13 +385,14 @@ const ITService = () => {
               animateOnce={true}
               delay={1000}
               animateIn="grow-from-0"
-              className="w-1/2"
+              className=""
             >
               <ScrollAnimation
                 animateOnce={true}
                 duration={4}
                 delay={1000}
                 animateIn="breathe"
+                className="w-full"
               >
                 <img className="w-full" src={img7} alt="" />
               </ScrollAnimation>
@@ -408,44 +420,16 @@ const ITService = () => {
                 </div>
                 <div className="mt-[-1rem] md:mt-[-1.5rem] text-end">
                   <h1 className="text-4xl font-[700] text-[#886CFF]">
-                    Graphic Design
+                    {graphicsData.title}
                   </h1>
-                  <p className="text-lg">
-                    MicroBuddy's Graphic Design Service transforms ideas into
-                    compelling visuals, bolstering brand influence through
-                    creative mastery.
-                  </p>
+                  <p className="text-lg">{graphicsData.description}</p>
                   <div className="me-[-1rem]">
-                    <div className="blue-shadow">
-                      <h1 className="text-xl font-bold">UI/UX DESIGN</h1>
-                      <p>
-                        Enhance user experience and engagement with our
-                        intuitive design solutions.
-                      </p>
-                    </div>
-                    <div className="blue-shadow">
-                      <h1 className="text-xl font-bold">PRINT DESIGN</h1>
-                      <p>
-                        Bring your brand to life with eye-catching print
-                        materials designed by us.
-                      </p>
-                    </div>
-                    <div className="blue-shadow">
-                      <h1 className="text-xl font-bold">MOTION GRAPHICS</h1>
-                      <p>
-                        Add dynamic visuals to your projects with Microbuddy's
-                        motion graphics expertise.
-                      </p>
-                    </div>
-                    <div className="blue-shadow">
-                      <h1 className="text-xl font-bold">
-                        CUSTOM CONTENT DESIGN
-                      </h1>
-                      <p>
-                        Stand out with unique content designed specifically for
-                        your brand
-                      </p>
-                    </div>
+                    {graphicsData.features.map((feature) => (
+                      <Feature
+                        key={graphicsData.features.indexOf(feature)}
+                        feature={feature}
+                      ></Feature>
+                    ))}
                   </div>
                 </div>
               </ScrollAnimation>
@@ -458,44 +442,16 @@ const ITService = () => {
                 </div>
                 <div className="md:w-[30rem] mt-[-1rem] md:mt-[-1.5rem] text-end">
                   <h1 className="text-4xl font-[700] text-[#886CFF]">
-                    Graphic Design
+                    {graphicsData.title}
                   </h1>
-                  <p className="text-lg">
-                    MicroBuddy's Graphic Design Service transforms ideas into
-                    compelling visuals, bolstering brand influence through
-                    creative mastery.
-                  </p>
+                  <p className="text-lg">{graphicsData.description}</p>
                   <div className="mx-[-1rem] md:mx-[0rem] md:me-[-1rem]">
-                    <div className="blue-shadow">
-                      <h1 className="text-xl font-bold">UI/UX DESIGN</h1>
-                      <p>
-                        Enhance user experience and engagement with our
-                        intuitive design solutions.
-                      </p>
-                    </div>
-                    <div className="blue-shadow">
-                      <h1 className="text-xl font-bold">PRINT DESIGN</h1>
-                      <p>
-                        Bring your brand to life with eye-catching print
-                        materials designed by us.
-                      </p>
-                    </div>
-                    <div className="blue-shadow">
-                      <h1 className="text-xl font-bold">MOTION GRAPHICS</h1>
-                      <p>
-                        Add dynamic visuals to your projects with Microbuddy's
-                        motion graphics expertise.
-                      </p>
-                    </div>
-                    <div className="blue-shadow">
-                      <h1 className="text-xl font-bold">
-                        CUSTOM CONTENT DESIGN
-                      </h1>
-                      <p>
-                        Stand out with unique content designed specifically for
-                        your brand
-                      </p>
-                    </div>
+                    {graphicsData.features.map((feature) => (
+                      <Feature
+                        key={graphicsData.features.indexOf(feature)}
+                        feature={feature}
+                      ></Feature>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -521,42 +477,16 @@ const ITService = () => {
               </div>
               <div className="mt-[-1rem] md:mt-[-1.5rem]">
                 <h1 className="text-4xl font-[700] text-[#0081F5]">
-                  SOFTWARE SERVICE
+                  {softwareData.title}
                 </h1>
-                <p className="text-lg">
-                  MicroBuddy's Software Service specializes in creating bespoke
-                  solutions, turning concepts into effective outcomes, fostering
-                  innovation, and achieving success.
-                </p>
+                <p className="text-lg">{softwareData.description}</p>
                 <div className="ms-[-1rem]">
-                  <div className="blue-shadow">
-                    <h1 className="text-xl font-bold">Software Prototyping </h1>
-                    <p>
-                      Test and refine your ideas quickly with our efficient
-                      prototyping services.
-                    </p>
-                  </div>
-                  <div className="blue-shadow">
-                    <h1 className="text-xl font-bold">System Integration</h1>
-                    <p>
-                      Seamlessly connect your systems for improved efficiency
-                      and performance.
-                    </p>
-                  </div>
-                  <div className="blue-shadow">
-                    <h1 className="text-xl font-bold">Quality Assurance</h1>
-                    <p>
-                      Ensure flawless performance with our thorough quality
-                      assurance processes.
-                    </p>
-                  </div>
-                  <div className="blue-shadow">
-                    <h1 className="text-xl font-bold">Mobile Optimization</h1>
-                    <p>
-                      Optimize your mobile presence for improved user experience
-                      and performance.
-                    </p>
-                  </div>
+                  {softwareData.features.map((feature) => (
+                    <Feature
+                      key={softwareData.features.indexOf(feature)}
+                      feature={feature}
+                    ></Feature>
+                  ))}
                 </div>
               </div>
             </ScrollAnimation>
@@ -569,42 +499,16 @@ const ITService = () => {
               </div>
               <div className="mt-[-1rem] md:mt-[-1.5rem] md:w-[28rem]">
                 <h1 className="text-4xl font-[700] text-[#0081F5]">
-                  SOFTWARE SERVICE
+                  {softwareData.title}
                 </h1>
-                <p className="text-lg">
-                  MicroBuddy's Software Service specializes in creating bespoke
-                  solutions, turning concepts into effective outcomes, fostering
-                  innovation, and achieving success.
-                </p>
+                <p className="text-lg">{softwareData.description}</p>
                 <div className="mx-[-1rem] md:mx-[0rem] md:ms-[-1rem]">
-                  <div className="blue-shadow">
-                    <h1 className="text-xl font-bold">Software Prototyping </h1>
-                    <p>
-                      Test and refine your ideas quickly with our efficient
-                      prototyping services.
-                    </p>
-                  </div>
-                  <div className="blue-shadow">
-                    <h1 className="text-xl font-bold">System Integration</h1>
-                    <p>
-                      Seamlessly connect your systems for improved efficiency
-                      and performance.
-                    </p>
-                  </div>
-                  <div className="blue-shadow">
-                    <h1 className="text-xl font-bold">Quality Assurance</h1>
-                    <p>
-                      Ensure flawless performance with our thorough quality
-                      assurance processes.
-                    </p>
-                  </div>
-                  <div className="blue-shadow">
-                    <h1 className="text-xl font-bold">Mobile Optimization</h1>
-                    <p>
-                      Optimize your mobile presence for improved user experience
-                      and performance.
-                    </p>
-                  </div>
+                  {softwareData.features.map((feature) => (
+                    <Feature
+                      key={softwareData.features.indexOf(feature)}
+                      feature={feature}
+                    ></Feature>
+                  ))}
                 </div>
               </div>
             </div>
@@ -643,42 +547,21 @@ const ITService = () => {
               >
                 <div className="overflow-hidden">
                   <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                    <img className="w-auto md:w-[28rem]" src={img12} alt="" />
+                    <img className="w-auto " src={img12} alt="" />
                   </ScrollAnimation>
                 </div>
                 <div className="w-auto mt-[-1rem] md:mt-[-2rem] text-end">
                   <h1 className="text-4xl font-[700] text-[#F55498]">
-                    CLOUD SERVICE
+                    {cloudData.title}
                   </h1>
-                  <p className="text-lg">
-                    MicroBuddy's Cloud Service ensures infinite scalability,
-                    robust security, and uninterrupted operation for effortless
-                    adjustment in the digital world.
-                  </p>
+                  <p className="text-lg">{cloudData.description}</p>
                   <div className="me-[-1rem]">
-                    <div className="blue-shadow">
-                      <h1 className="text-xl font-bold">
-                        Server & Hosting Management
-                      </h1>
-                      <p>
-                        Keep your online presence secure and running smoothly
-                        with our expert management.
-                      </p>
-                    </div>
-                    <div className="blue-shadow">
-                      <h1 className="text-xl font-bold">Software Deployment</h1>
-                      <p>
-                        Keep your online presence secure and running smoothly
-                        with our expert management.
-                      </p>
-                    </div>
-                    <div className="blue-shadow">
-                      <h1 className="text-xl font-bold">Developer Support</h1>
-                      <p>
-                        Get the assistance you need to keep your projects on
-                        track and successful.
-                      </p>
-                    </div>
+                    {cloudData.features.map((feature) => (
+                      <Feature
+                        key={cloudData.features.indexOf(feature)}
+                        feature={feature}
+                      ></Feature>
+                    ))}
                   </div>
                 </div>
               </ScrollAnimation>
@@ -691,37 +574,16 @@ const ITService = () => {
                 </div>
                 <div className="w-auto md:w-[28rem] mt-[-1rem] md:mt-[-2rem] text-end">
                   <h1 className="text-4xl font-[700] text-[#F55498]">
-                    CLOUD SERVICE
+                    {cloudData.title}
                   </h1>
-                  <p>
-                    MicroBuddy's Cloud Service ensures infinite scalability,
-                    robust security, and uninterrupted operation for effortless
-                    adjustment in the digital world.
-                  </p>
+                  <p>{cloudData.description}</p>
                   <div className="mx-[-1rem] md:mx-[0rem] md:me-[-1rem]">
-                    <div className="blue-shadow">
-                      <h1 className="text-xl font-bold">
-                        Server & Hosting Management
-                      </h1>
-                      <p>
-                        Keep your online presence secure and running smoothly
-                        with our expert management.
-                      </p>
-                    </div>
-                    <div className="blue-shadow">
-                      <h1 className="text-xl font-bold">Software Deployment</h1>
-                      <p>
-                        Keep your online presence secure and running smoothly
-                        with our expert management.
-                      </p>
-                    </div>
-                    <div className="blue-shadow">
-                      <h1 className="text-xl font-bold">Developer Support</h1>
-                      <p>
-                        Get the assistance you need to keep your projects on
-                        track and successful.
-                      </p>
-                    </div>
+                    {cloudData.features.map((feature) => (
+                      <Feature
+                        key={cloudData.features.indexOf(feature)}
+                        feature={feature}
+                      ></Feature>
+                    ))}
                   </div>
                 </div>
               </div>

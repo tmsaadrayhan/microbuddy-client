@@ -134,7 +134,7 @@ const AboutUs = () => {
         </Helmet>
         <HeaderBG></HeaderBG>
         <div className="lg:max-w-[70rem] lg:mx-auto mt-[3rem]">
-          <div className="hidden lg:block absolute w-[8rem] right-[-10rem]">
+          <div className="hidden lg:block absolute w-[8rem] right-[10rem]">
             <img className="breathe" src={img1} alt="" />
           </div>
           <div className="text-center mx-[1rem] lg:mx-[0rem]">

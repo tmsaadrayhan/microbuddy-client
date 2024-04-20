@@ -20,7 +20,7 @@ const Header = () => {
     setIsOpen(false);
   };
   return (
-    <div className="navbar absolute-center w-full lg:max-w-[90rem] mt-[2rem] md:mt-[3rem]">
+    <header className="navbar absolute-center w-full lg:max-w-[90rem] mt-[2rem] md:mt-[3rem]">
       <div className="navbar-start z-50 w-[10rem] md:w-[20rem] lg:w-[20rem]">
         <Link href="/">
           <img src={img} alt="Logo" />
@@ -199,7 +199,7 @@ const Header = () => {
           </Drawer>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 
