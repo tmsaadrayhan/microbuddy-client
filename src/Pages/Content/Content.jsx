@@ -42,7 +42,7 @@ import axios from "axios";
 import HeaderBG from "../Header/HeaderBG";
 import { RxCrossCircled } from "react-icons/rx";
 import { CiCircleCheck } from "react-icons/ci";
-import toast from "react-hot-toast";
+import toast, { ToastBar, Toaster } from "react-hot-toast";
 
 const Content = () => {
   animateScroll.scrollToTop();
@@ -51,8 +51,7 @@ const Content = () => {
     // Simulate async loading (e.g., fetching data)
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // Simulating a 2-second loading time
-
+    }, 2000);
     return () => clearTimeout(timer);
   }, []);
   if (loading)
@@ -166,7 +165,7 @@ const Content = () => {
                 </div>
               </div>
               {/*Only sm*/}
-              <img className="md:hidden mx-auto" src={img15} />
+              <img className="md:hidden" src={img15} />
               <ScrollAnimation
                 animateOnce={true}
                 offset={500}
@@ -217,7 +216,7 @@ const Content = () => {
               </div>
             </div>
             {/*Only sm*/}
-            <img className="md:hidden mx-auto" src={img15} />
+            <img className="md:hidden" src={img15} />
             <ScrollAnimation
               animateOnce={true}
               offset={50}
@@ -264,7 +263,7 @@ const Content = () => {
                 </div>
               </div>
               {/*Only sm*/}
-              <img className="md:hidden mx-auto" src={img15} />
+              <img className="md:hidden" src={img15} />
               {/*lg and md*/}
               <div className="md:w-1/2 overflow-hidden hidden md:block">
                 <ScrollAnimation
@@ -272,7 +271,7 @@ const Content = () => {
                   offset={0}
                   animateIn="from-left"
                 >
-                  <div className="h-[17rem] lg:h-[19rem] md:ps-[5rem] md:pt-[5rem] md:p-[0rem] my-[2rem] lg:mt-0">
+                  <div className="h-[17rem] lg:h-[19rem] md:ps-[5rem] md:pt-[5rem] md:p-[0rem] mt-[2rem] lg:mt-0">
                     <img className="mx-auto md:mx-0" src={img6} alt="" />
                     <div className="text-center md:text-start max-w-[25rem] my-[2rem] md:my-0">
                       <h1 className="text-4xl md:text-3xl font-[600]">
@@ -664,7 +663,8 @@ const Content = () => {
                   }}
                   onSubmit={(values) => {
                     axios
-                      .post("https://37.60.225.188:8081/content-email", values)
+                      // .post("https://37.60.225.188:8081/content-email", values)
+                      .post("https://mb.insigniatours.com/content-email", values)
                       .then(function (response) {
                         console.log(response);
                         toast.custom((t) => (
@@ -707,8 +707,8 @@ const Content = () => {
                           </div>
                         ));
                       })
-                      .catch(function (error) {
-                        console.log(error);
+                      .catch(function (err) {
+                        console.log(err);
                         toast.custom((t) => (
                           <div
                             className={`bg-[#E4335B] kadwA px-6 py-4 shadow-md rounded-xl  ${
@@ -749,7 +749,6 @@ const Content = () => {
                           </div>
                         ));
                       });
-                    alert("Thanks for your response");
                   }}
                 >
                   {({
@@ -827,6 +826,26 @@ const Content = () => {
                     </form>
                   )}
                 </Formik>
+                <Toaster>
+                  {(t) => (
+                    <ToastBar toast={t}>
+                      {({ icon, message }) => (
+                        <>
+                          {icon}
+                          {message}
+                          {t.type !== "loading" && (
+                            <button
+                              type="button"
+                              onClick={() => toast.dismiss(t.id)}
+                            >
+                              X
+                            </button>
+                          )}
+                        </>
+                      )}
+                    </ToastBar>
+                  )}
+                </Toaster>
               </div>
             </div>
           </div>

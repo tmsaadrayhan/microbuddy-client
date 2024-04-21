@@ -11,7 +11,7 @@ import { Formik } from "formik";
 import axios from "axios";
 import { RxCrossCircled } from "react-icons/rx";
 import { CiCircleCheck } from "react-icons/ci";
-import toast from "react-hot-toast";
+import toast, { ToastBar, Toaster } from "react-hot-toast";
 
 const Project = () => {
   return (
@@ -51,7 +51,7 @@ const Project = () => {
             }}
             onSubmit={(values) => {
               axios
-                .post("https://37.60.225.188:8081/project-email", values)
+                .post("https://mb.insigniatours.com/project-email", values)
                 .then(function (response) {
                   console.log(response);
                   toast.custom((t) => (
@@ -132,7 +132,6 @@ const Project = () => {
                     </div>
                   ));
                 });
-              alert("Thanks for your response");
             }}
           >
             {({
@@ -223,6 +222,23 @@ const Project = () => {
               </form>
             )}
           </Formik>
+          <Toaster>
+            {(t) => (
+              <ToastBar toast={t}>
+                {({ icon, message }) => (
+                  <>
+                    {icon}
+                    {message}
+                    {t.type !== "loading" && (
+                      <button type="button" onClick={() => toast.dismiss(t.id)}>
+                        X
+                      </button>
+                    )}
+                  </>
+                )}
+              </ToastBar>
+            )}
+          </Toaster>
         </div>
         <div className="lg:hidden flex mx-auto">
           <div className="mt-[5rem] me-[-2rem]">

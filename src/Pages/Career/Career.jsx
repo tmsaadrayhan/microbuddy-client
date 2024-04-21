@@ -187,11 +187,11 @@ const Career = () => {
           </div>
           <div className="mx-[2rem] lg:mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-[1rem] md:mt-[3rem]">
             <div className="hover:scale-110 duration-300 blue-box-career p-[2rem]">
-              <p className="text-xl">
+              <div className="h-[12rem]"><p className="text-xl">
                 Our medical insurance ensures your well-being is covered. We
                 prioritize your health, providing peace of mind for whatever
                 life throws your way.
-              </p>
+              </p></div>
               <div className="flex items-end">
                 <div className="w-full">
                   <h1 className="text-2xl font-[700]">Medical Insurance</h1>
@@ -202,11 +202,11 @@ const Career = () => {
               </div>
             </div>
             <div className="hover:scale-110 duration-300 blue-box-career p-[2rem]">
-              <p className="text-xl">
+              <div className="h-[12rem]"><p className="text-xl">
                 Work on your terms with our flexible arrangements. We support
                 your unique needs, ensuring a balanced and productive work-life
                 blend.
-              </p>
+              </p></div>
               <div className="flex items-end">
                 <div className="w-full">
                   <h1 className="text-2xl font-[700]">Flexibility</h1>
@@ -217,10 +217,10 @@ const Career = () => {
               </div>
             </div>
             <div className="hover:scale-110 duration-300 blue-box-career p-[2rem]">
-              <p className="text-xl">
+              <div className="h-[12rem]"><p className="text-xl">
                 Join us for delicious, communal meals. Beyond nourishment, we
                 foster camaraderie and enjoyment in every bite.
-              </p>
+              </p></div>
               <div className="flex items-end">
                 <div className="w-full">
                   <h1 className="text-2xl font-[700]">Office Meals</h1>
@@ -231,10 +231,10 @@ const Career = () => {
               </div>
             </div>
             <div className="hover:scale-110 duration-300 blue-box-career p-[2rem] hidden md:block">
-              <p className="text-xl">
+              <div className="h-[12rem]"><p className="text-xl">
                 Celebrate parenthood with our supportive benefits. Take time off
                 worry-free to bond with your newborn.
-              </p>
+              </p></div>
               <div className="flex items-end">
                 <div className="w-full">
                   <h1 className="text-2xl font-[700]">
@@ -247,10 +247,10 @@ const Career = () => {
               </div>
             </div>
             <div className="hover:scale-110 duration-300 blue-box-career p-[2rem] hidden md:block">
-              <p className="text-xl">
+              <div className="h-[12rem]"><p className="text-xl">
                 Experience a lively workplace where creativity thrives. Laughter
                 and celebration are always welcome, making work enjoyable.
-              </p>
+              </p></div>
               <div className="flex items-end">
                 <div className="w-full">
                   <h1 className="text-2xl font-[700]">Fun Office</h1>
@@ -261,10 +261,10 @@ const Career = () => {
               </div>
             </div>
             <div className="hover:scale-110 duration-300 blue-box-career p-[2rem] hidden md:block">
-              <p className="text-xl">
+              <div className="h-[12rem]"><p className="text-xl">
                 Elevate your skills with our top-notch training programs. We
                 invest in your growth for long-term success.
-              </p>
+              </p></div>
               <div className="flex items-end">
                 <div className="w-full">
                   <h1 className="text-2xl font-[700]">Quality Trainings</h1>
@@ -275,10 +275,10 @@ const Career = () => {
               </div>
             </div>
             <div className="hover:scale-110 duration-300 blue-box-career p-[2rem] hidden lg:block">
-              <p className="text-xl">
+              <div className="h-[12rem]"><p className="text-xl">
                 Progress in your career with ample opportunities. We're
                 committed to helping you achieve your goals and aspirations.
-              </p>
+              </p></div>
               <div className="flex items-end">
                 <div className="w-full">
                   <h1 className="text-2xl font-[700]">Career Growth</h1>
@@ -289,10 +289,10 @@ const Career = () => {
               </div>
             </div>
             <div className="hover:scale-110 duration-300 blue-box-career p-[2rem] hidden lg:block">
-              <p className="text-xl">
+              <div className="h-[12rem]"><p className="text-xl">
                 Receive fair compensation for your efforts. Your contributions
                 are valued and rewarded accordingly.
-              </p>
+              </p></div>
               <div className="flex items-end">
                 <div className="w-full">
                   <h1 className="text-2xl font-[700]">Income Opportunity</h1>
@@ -303,10 +303,10 @@ const Career = () => {
               </div>
             </div>
             <div className="hover:scale-110 duration-300 blue-box-career p-[2rem] hidden lg:block">
-              <p className="text-xl">
+              <div className="h-[12rem]"><p className="text-xl">
                 Collaborate with skilled professionals. Our diverse team fosters
                 innovation and excellence.
-              </p>
+              </p></div>
               <div className="flex items-end">
                 <div className="w-full">
                   <h1 className="text-2xl font-[700]">Qualified Team</h1>
@@ -317,10 +317,10 @@ const Career = () => {
               </div>
             </div>
             <div className="hover:scale-110 duration-300 blue-box-career p-[2rem] hidden lg:block">
-              <p className="text-xl">
+              <div className="h-[12rem]"><p className="text-xl">
                 Secure your future with our financial plans. We're here to help
                 you achieve your long-term goals.
-              </p>
+              </p></div>
               <div className="flex items-end">
                 <div className="w-full">
                   <h1 className="text-2xl font-[700]">Savings & Investment</h1>
@@ -331,10 +331,10 @@ const Career = () => {
               </div>
             </div>
             <div className="hover:scale-110 duration-300 blue-box-career p-[2rem] hidden lg:block">
-              <p className="text-xl">
+              <div className="h-[12rem]"><p className="text-xl">
                 Access financial support conveniently. We offer assistance for
                 unexpected expenses, ensuring peace of mind.
-              </p>
+              </p></div>
               <div className="flex items-end">
                 <div className="w-full">
                   <h1 className="text-2xl font-[700]">
@@ -347,10 +347,10 @@ const Career = () => {
               </div>
             </div>
             <div className="hover:scale-110 duration-300 blue-box-career p-[2rem] hidden lg:block">
-              <p className="text-xl">
+              <div className="h-[12rem]"><p className="text-xl">
                 Breathe easily in our green workspace. We prioritize your
                 well-being with clean, refreshing air.
-              </p>
+              </p></div>
               <div className="flex items-end">
                 <div className="w-full">
                   <h1 className="text-2xl font-[700]">Clean Air</h1>
@@ -381,6 +381,7 @@ const Career = () => {
               </p>
             </div>
           </div>
+          {/* md & sm */}
           <div className="block lg:hidden md:mt-[3rem]">
             <div className="flex">
               <div className="w-full overflow-hidden m-[0.25rem]">
@@ -410,22 +411,22 @@ const Career = () => {
           {/*lg*/}
           <div className="hidden lg:block mt-[3rem]">
             <div className="flex">
-              <div className="overflow-hidden m-[0.25rem]">
-                <img className="hover:scale-110 duration-300" src={img21} />
+              <div className="overflow-hidden m-[0.25rem] w-[47%] h-[25rem]">
+                <img className="hover:scale-110 duration-300 w-full h-full" src={img21} />
               </div>
-              <div className="overflow-hidden m-[0.25rem]">
-                <img className="hover:scale-110 duration-300" src={img22} />
+              <div className="overflow-hidden m-[0.25rem] w-[53%] h-[25rem]">
+                <img className="hover:scale-110 duration-300 w-full h-full" src={img22} />
               </div>
             </div>
             <div className="flex">
-              <div className="overflow-hidden m-[0.25rem]">
-                <img className="hover:scale-110 duration-300" src={img23} />
+              <div className="overflow-hidden m-[0.25rem] h-[16rem] w-[30%]">
+                <img className="hover:scale-110 duration-300 h-full" src={img23} />
               </div>
-              <div className="overflow-hidden m-[0.25rem]">
-                <img className="hover:scale-110 duration-300" src={img24} />
+              <div className="overflow-hidden m-[0.25rem] h-[16rem] w-[30%]">
+                <img className="hover:scale-110 duration-300 h-full" src={img24} />
               </div>
-              <div className="overflow-hidden m-[0.25rem]">
-                <img className="hover:scale-110 duration-300" src={img25} />
+              <div className="overflow-hidden m-[0.25rem] h-[16rem] w-[40%]">
+                <img className="hover:scale-110 duration-300 h-full" src={img25} />
               </div>
             </div>
           </div>

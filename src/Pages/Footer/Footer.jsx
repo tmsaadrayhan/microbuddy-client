@@ -183,23 +183,29 @@ const Footer = () => {
         <div className="px-[2rem] lg:mx-auto lg:max-w-[80rem] mx-auto">
           <div className="flex justify-center md:justify-end pb-[3rem]">
             <div className="p-[0.4rem] flex items-center w-[2rem]">
-              <a>
-                <img className="h-[1.25rem]" src={img2} alt="" />
+              <a href="https://twitter.com/MicroBuddy72305" target="_blank">
+                <img className="h-[1.25rem]" src={img2} alt="Twitter" />
               </a>
             </div>
             <div className="p-[0.4rem] flex items-center w-[2rem]">
-              <a>
-                <img className="h-[1.25rem]" src={img3} alt="" />
+              <a
+                href="https://www.linkedin.com/company/89942470/admin/feed/posts/"
+                target="_blank"
+              >
+                <img className="h-[1.25rem]" src={img3} alt="Linkedin" />
               </a>
             </div>
             <div className="p-[0.4rem] flex items-center w-[2rem]">
-              <a>
-                <img className="h-[1.25rem]" src={img4} alt="" />
+              <a href="https://www.instagram.com/microbuddyy/" target="_blank">
+                <img className="h-[1.25rem]" src={img4} alt="Instagram" />
               </a>
             </div>
             <div className="p-[0.4rem] flex items-center w-[2rem]">
-              <a>
-                <img className="h-[1.25rem]" src={img5} alt="" />
+              <a
+                href="https://www.facebook.com/microbuddy.tech"
+                target="_blank"
+              >
+                <img className="h-[1.25rem]" src={img5} alt="FaceBook" />
               </a>
             </div>
           </div>

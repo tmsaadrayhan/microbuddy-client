@@ -11,8 +11,6 @@ import successtoast from "../../assets/successtoast.svg";
 import errortoast from "../../assets/errortoast.svg";
 import successtoastbox from "../../assets/successteastbox.svg";
 
-
-
 import "./Contact.css";
 import { Helmet } from "react-helmet";
 import { animateScroll } from "react-scroll";
@@ -24,10 +22,10 @@ import toast, { ToastBar, Toaster } from "react-hot-toast";
 import { CiCircleCheck } from "react-icons/ci";
 import { RxCrossCircled } from "react-icons/rx";
 
-
-const Contact = () => {           
+const Contact = () => {
   animateScroll.scrollToTop();
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
   useEffect(() => {
     // Simulate async loading (e.g., fetching data)
     const timer = setTimeout(() => {
@@ -142,7 +140,7 @@ const Contact = () => {
               }}
               onSubmit={(values) => {
                 axios
-                  .post("https://37.60.225.188:8081/email", values)
+                  .post("https://mb.insigniatours.com/email", values)
                   .then(function (response) {
                     console.log(response);
                     toast.custom((t) => (
