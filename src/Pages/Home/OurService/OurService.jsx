@@ -13,15 +13,15 @@ import { Link } from "react-router-dom";
 
 const OurService = () => {
   return (
-    <div className="service-bg relative">
+    <section className="service-bg relative">
       <div className="lg:max-w-[70rem] mx-auto lg:flex gap-4">
         {/*sm and md*/}
         <div className="flex lg:hidden justify-end mx-[1rem] md:mx-[3rem]">
-          <div className="text-end w-full mx-auto md:max-w-[35rem] md:mb-[10rem]">
+          <article className="text-end w-full mx-auto md:max-w-[35rem] md:mb-[10rem]">
             <div>
-              <h1 className="gradient-text text-7xl md:text-9xl font-bold z-[-1rem]">
+              <header className="gradient-text text-7xl md:text-9xl font-bold z-[-1rem]">
                 SERVICES
-              </h1>
+              </header>
             </div>
             <div className="mt-[-2.5rem] md:mt-[-4.5rem]">
               <div className="flex justify-end">
@@ -42,7 +42,7 @@ const OurService = () => {
                 <button className="primary-button">Learn More</button>
               </Link>
             </div>
-          </div>
+          </article>
         </div>
         {/*lg and md*/}
         <div className="md:max-w-[35rem] mx-auto">
@@ -57,15 +57,15 @@ const OurService = () => {
             >
               <div className="mx-[1rem] rounded-xl h-fit mt-[1rem] tech-service">
                 <img className="my-[-6rem]" src={img3} alt="" />
-                <div className="mt-[3rem] mx-[1rem] mb-[1rem]">
-                  <h1 className="text-[24px] my-[0.5rem] font-bold">
+                <article className="mt-[3rem] mx-[1rem] mb-[1rem]">
+                  <header className="text-[24px] my-[0.5rem] font-bold">
                     Tech Service
-                  </h1>
+                  </header>
                   <p>
                     MicroBuddy's Tech Support streamlines complexity, enhancing
                     digital environments for seamless operations and innovation.
                   </p>
-                </div>
+                </article>
               </div>
             </ScrollAnimation>
             <ScrollAnimation
@@ -75,16 +75,16 @@ const OurService = () => {
               className=" mx-[1rem] rounded-xl h-fit mt-[1rem] graphic-design "
             >
               <img className="my-[-6rem]" src={img4} alt="" />
-              <div className="mt-[3rem] mx-[1rem] mb-[1rem]">
-                <h1 className="text-[24px] my-[0.5rem] font-bold">
+              <article className="mt-[3rem] mx-[1rem] mb-[1rem]">
+                <header className="text-[24px] my-[0.5rem] font-bold">
                   Graphic Design
-                </h1>
+                </header>
                 <p>
                   MicroBuddy's Graphic Design Service transforms ideas into
                   compelling visuals, bolstering brand influence through
                   creative mastery.
                 </p>
-              </div>
+              </article>
             </ScrollAnimation>
             <ScrollAnimation
               animateOnce={true}
@@ -94,16 +94,16 @@ const OurService = () => {
               className="mx-[1rem] rounded-xl h-fit mt-[1rem] software-service"
             >
               <img className="my-[-6rem]" src={img5} alt="" />
-              <div className="mt-[3rem] mx-[1rem] mb-[1rem]">
-                <h1 className="text-[24px] my-[0.5rem] font-bold">
+              <article className="mt-[3rem] mx-[1rem] mb-[1rem]">
+                <header className="text-[24px] my-[0.5rem] font-bold">
                   Software Service
-                </h1>
+                </header>
                 <p>
                   MicroBuddy's Software Service specializes in creating bespoke
                   solutions, turning concepts into effective outcomes, fostering
                   innovation, and achieving success.
                 </p>
-              </div>
+              </article>
             </ScrollAnimation>
             <ScrollAnimation
               animateOnce={true}
@@ -112,16 +112,16 @@ const OurService = () => {
               className="mt-[-4rem] mx-[1rem] rounded-xl h-fit cloud-service"
             >
               <img className="my-[-6rem]" src={img6} alt="" />
-              <div className="mt-[3rem] mx-[1rem] mb-[1rem]">
-                <h1 className="text-[24px] my-[0.5rem] font-bold">
+              <article className="mt-[3rem] mx-[1rem] mb-[1rem]">
+                <header className="text-[24px] my-[0.5rem] font-bold">
                   Cloud Service
-                </h1>
+                </header>
                 <p>
                   MicroBuddy's Cloud Service ensures infinite scalability,
                   robust security, and uninterrupted operation for effortless
                   adjustment in the digital world.
                 </p>
-              </div>
+              </article>
             </ScrollAnimation>
           </div>
           {/*md*/}
@@ -129,55 +129,55 @@ const OurService = () => {
             <div className="pt-[5rem]">
               <div className="mx-[1rem] rounded-xl h-[17rem] tech-service">
                 <img className="my-[-6rem]" src={img3} alt="" />
-                <div className="mt-[3rem] mx-[1rem] mb-[1rem]">
-                  <h1 className="text-[24px] my-[0.5rem] font-bold ">
+                <article className="mt-[3rem] mx-[1rem] mb-[1rem]">
+                  <header className="text-[24px] my-[0.5rem] font-bold ">
                     Tech Service
-                  </h1>
+                  </header>
                   <p>
                     MicroBuddy's Tech Support streamlines complexity, enhancing
                     digital environments for seamless operations and innovation.
                   </p>
-                </div>
+                </article>
               </div>
             </div>
             <div className=" mx-[1rem] rounded-xl h-[17rem] graphic-design">
               <img className="my-[-6rem]" src={img4} alt="" />
-              <div className="mt-[3rem] mx-[1rem] mb-[1rem]">
-                <h1 className="text-[24px] my-[0.5rem] font-bold">
+              <article className="mt-[3rem] mx-[1rem] mb-[1rem]">
+                <header className="text-[24px] my-[0.5rem] font-bold">
                   Graphic Design
-                </h1>
+                </header>
                 <p>
                   MicroBuddy's Graphic Design Service transforms ideas into
                   compelling visuals, bolstering brand influence through
                   creative mastery.
                 </p>
-              </div>
+              </article>
             </div>
             <div className="mx-[1rem] rounded-xl h-[17rem] software-service">
               <img className="my-[-6rem]" src={img5} alt="" />
-              <div className="mt-[3rem] mx-[1rem] mb-[1rem]">
-                <h1 className="text-[24px] my-[0.5rem] font-bold">
+              <article className="mt-[3rem] mx-[1rem] mb-[1rem]">
+                <header className="text-[24px] my-[0.5rem] font-bold">
                   Software Service
-                </h1>
+                </header>
                 <p>
                   MicroBuddy's Software Service specializes in creating bespoke
                   solutions, turning concepts into effective outcomes, fostering
                   innovation, and achieving success.
                 </p>
-              </div>
+              </article>
             </div>
             <div className="mt-[-5rem] mx-[1rem] rounded-xl h-[17rem] cloud-service">
               <img className="my-[-6rem]" src={img6} alt="" />
-              <div className="mt-[3rem] mx-[1rem] mb-[1rem]">
-                <h1 className="text-[24px] my-[0.5rem] font-bold">
+              <article className="mt-[3rem] mx-[1rem] mb-[1rem]">
+                <header className="text-[24px] my-[0.5rem] font-bold">
                   Cloud Service
-                </h1>
+                </header>
                 <p>
                   MicroBuddy's Cloud Service ensures infinite scalability,
                   robust security, and uninterrupted operation for effortless
                   adjustment in the digital world.
                 </p>
-              </div>
+              </article>
             </div>
           </div>
         </div>
@@ -187,67 +187,67 @@ const OurService = () => {
             <div className="px-[1rem] py-[7rem] text-black">
               <div className="mx-[1rem] rounded-xl tech-service">
                 <img className="my-[-6rem]" src={img3} alt="" />
-                <div className="mt-[3rem] mx-[1rem] mb-[1rem]">
-                  <h1 className="text-[24px] my-[0.5rem] font-bold">
+                <article className="mt-[3rem] mx-[1rem] mb-[1rem]">
+                  <header className="text-[24px] my-[0.5rem] font-bold">
                     Tech Service
-                  </h1>
+                  </header>
                   <p>
                     MicroBuddy's Tech Support streamlines complexity, enhancing
                     digital environments for seamless operations and innovation.
                   </p>
-                </div>
+                </article>
               </div>
             </div>
             <div className="px-[1rem] py-[7rem] text-black">
               <div className=" mx-[1rem] rounded-xl graphic-design">
                 <img className="my-[-6rem]" src={img4} alt="" />
-                <div className="mt-[3rem] mx-[1rem] mb-[1rem]">
-                  <h1 className="text-[24px] my-[0.5rem] font-bold">
+                <article className="mt-[3rem] mx-[1rem] mb-[1rem]">
+                  <header className="text-[24px] my-[0.5rem] font-bold">
                     Graphic Design
-                  </h1>
+                  </header>
                   <p>
                     MicroBuddy's Graphic Design Service transforms ideas into
                     compelling visuals, bolstering brand influence through
                     creative mastery.
                   </p>
-                </div>
+                </article>
               </div>
             </div>
             <div className="px-[1rem] py-[7rem] text-black">
               <div className="mx-[1rem] rounded-xl software-service">
                 <img className="my-[-6rem]" src={img5} alt="" />
-                <div className="mt-[3rem] mx-[1rem] mb-[1rem]">
-                  <h1 className="text-[24px] my-[0.5rem] font-bold">
+                <article className="mt-[3rem] mx-[1rem] mb-[1rem]">
+                  <header className="text-[24px] my-[0.5rem] font-bold">
                     Software Service
-                  </h1>
+                  </header>
                   <p>
                     MicroBuddy's Software Service specializes in creating
                     bespoke solutions, turning concepts into effective outcomes,
                     fostering innovation, and achieving success.
                   </p>
-                </div>
+                </article>
               </div>
             </div>
             <div className="px-[1rem] py-[7rem] text-black">
               <div className=" mx-[1rem] rounded-xl cloud-service">
                 <img className="my-[-6rem]" src={img6} alt="" />
-                <div className="mt-[3rem] mx-[1rem] mb-[1rem]">
-                  <h1 className="text-[24px] my-[0.5rem] font-bold">
+                <article className="mt-[3rem] mx-[1rem] mb-[1rem]">
+                  <header className="text-[24px] my-[0.5rem] font-bold">
                     Cloud Service
-                  </h1>
+                  </header>
                   <p>
                     MicroBuddy's Cloud Service ensures infinite scalability,
                     robust security, and uninterrupted operation for effortless
                     adjustment in the digital world.
                   </p>
-                </div>
+                </article>
               </div>
             </div>
           </Slider>
         </div>
         {/*lg*/}
         <div className="hidden lg:flex text-end relative w-1/2 mx-[1rem] items-center">
-          <div>
+          <article>
             <div className="mirror w-[6rem] absolute right-4 top-[13rem] z-[1]">
               <div className="relative">
                 <img className="breathe" src={img1} alt="" />
@@ -279,7 +279,7 @@ const OurService = () => {
                 <button className="primary-button">Learn More</button>
               </Link>
             </div>
-          </div>
+          </article>
         </div>
       </div>
       {/*lg*/}
@@ -292,7 +292,7 @@ const OurService = () => {
           />
         </ScrollAnimation>
       </div>
-    </div>
+    </section>
   );
 };
 

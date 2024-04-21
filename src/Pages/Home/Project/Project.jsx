@@ -15,7 +15,7 @@ import toast, { ToastBar, Toaster } from "react-hot-toast";
 
 const Project = () => {
   return (
-    <div>
+    <section>
       <div className="mx-[1rem] md:mx-[5rem] lg:max-w-[70rem] lg:mx-auto lg:flex gap-[5rem]">
         {/*lg*/}
         <div className="hidden lg:flex">
@@ -249,7 +249,7 @@ const Project = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

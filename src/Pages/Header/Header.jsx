@@ -20,49 +20,46 @@ const Header = () => {
     setIsOpen(false);
   };
   return (
-    <header className="navbar absolute-center w-full lg:max-w-[90rem] mt-[2rem] md:mt-[3rem]">
+    <nav className="navbar absolute-center w-full lg:max-w-[90rem] mt-[2rem] md:mt-[3rem]">
       <div className="navbar-start z-50 w-[10rem] md:w-[20rem] lg:w-[20rem]">
-        <Link href="/">
+        <Link to="/">
           <img src={img} alt="Logo" />
         </Link>
       </div>
       <div className="hidden lg:flex text-nowrap text-sm font-[600] w-full mx-auto">
         <div className="mx-auto flex items-center">
-          <NavLink exact className="z-[50] space-a" to="/">
+          <NavLink className="z-[50] space-a" to="/">
             Home
           </NavLink>
 
-          <NavLink exact className="z-[50] space-a" to="/how-it-works">
+          <NavLink className="z-[50] space-a" to="/how-it-works">
             How IT Works
           </NavLink>
-          <NavLink exact className="z-[50] space-a" to="/it-service">
+          <NavLink className="z-[50] space-a" to="/it-service">
             IT Service
           </NavLink>
 
-          <NavLink exact className="z-[50] space-a" to="/about-us">
+          <NavLink className="z-[50] space-a" to="/about-us">
             About Us
           </NavLink>
 
           <div className="flex justify-center items-center ms-[-1.7rem] mb-[-0.1rem]">
-            <button
-              href="/"
-              className="group flex justify-center p-2 rounded-md drop-shadow-xl from-gray-800 font-semibold hover:translate-y-[-.15rem] hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
-            >
+            <button className="group flex justify-center p-2 rounded-md drop-shadow-xl from-gray-800 font-semibold hover:translate-y-[-.15rem] hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]">
               <IoIosArrowDown />
               <div className="absolute opacity-0 group-hover:opacity-100 bg-[#fff] group-hover:backdrop-blur-md group-hover:text-sm translate-y-[-3.5rem] group-hover:-translate-y-[-2rem] duration-700 rounded-xl overflow-hidden scale-[.2] group-hover:scale-[1]">
                 <div className="my-[1rem]">
-                  <NavLink exact className="z-[50] space-a" to="/Career">
+                  <NavLink className="z-[50] space-a" to="/Career">
                     Career
                   </NavLink>
                 </div>
                 <div className="my-[1rem]">
-                  <NavLink exact className="z-[50] space-a" to="/portfolio">
+                  <NavLink className="z-[50] space-a" to="/portfolio">
                     Portfolio
                   </NavLink>
                 </div>
 
                 <div className="my-[1rem]">
-                  <NavLink exact className="z-[50] space-a" to="/contact">
+                  <NavLink className="z-[50] space-a" to="/contact">
                     Contact
                   </NavLink>
                 </div>
@@ -199,7 +196,7 @@ const Header = () => {
           </Drawer>
         </div>
       </div>
-    </header>
+    </nav>
   );
 };
 

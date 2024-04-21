@@ -11,18 +11,18 @@ import Slider from "react-slick";
 
 const Companies = () => {
   return (
-    <div className="mb-[5rem]">
+    <section className="mb-[5rem]">
       <div className="lg:max-w-[75rem] mx-[1rem] lg:mx-auto">
         <div className="hidden lg:block overflow-hidden h-[8rem] mt-[5rem]">
           <div className="pop-up">
-            <h1 className="text-center header lg:text-[160px] lg:mt-[-3.5rem]">
+            <header className="text-center header lg:text-[160px] lg:mt-[-3.5rem]">
               COMPANIES
-            </h1>
+            </header>
           </div>
         </div>
-        <h1 className="text-center header text-[55px] md:text-[100px] lg:hidden">
+        <header className="text-center header text-[55px] md:text-[100px] lg:hidden">
           COMPANIES
-        </h1>
+        </header>
         <h1 className="text-center tracking-[0.5rem] md:tracking-[0.8rem] lg:tracking-[1.65rem] text-[22px] md:text-[35px] lg:text-[50px] mt-[-40px] md:mt-[-75px] lg:mt-[-75px] onHeader">
           We Help to Grow
         </h1>
@@ -131,7 +131,7 @@ const Companies = () => {
           </div>
         </Slider>
       </div>
-    </div>
+    </section>
   );
 };
 

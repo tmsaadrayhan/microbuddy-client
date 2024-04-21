@@ -165,7 +165,7 @@ const Content = () => {
                 </div>
               </div>
               {/*Only sm*/}
-              <img className="md:hidden" src={img15} />
+              <img className="md:hidden mx-auto" src={img15} />
               <ScrollAnimation
                 animateOnce={true}
                 offset={500}
@@ -216,7 +216,7 @@ const Content = () => {
               </div>
             </div>
             {/*Only sm*/}
-            <img className="md:hidden" src={img15} />
+            <img className="md:hidden mx-auto" src={img15} />
             <ScrollAnimation
               animateOnce={true}
               offset={50}
@@ -263,7 +263,7 @@ const Content = () => {
                 </div>
               </div>
               {/*Only sm*/}
-              <img className="md:hidden" src={img15} />
+              <img className="md:hidden mx-auto" src={img15} />
               {/*lg and md*/}
               <div className="md:w-1/2 overflow-hidden hidden md:block">
                 <ScrollAnimation
@@ -664,7 +664,10 @@ const Content = () => {
                   onSubmit={(values) => {
                     axios
                       // .post("https://37.60.225.188:8081/content-email", values)
-                      .post("https://mb.insigniatours.com/content-email", values)
+                      .post(
+                        "https://mb.insigniatours.com/content-email",
+                        values
+                      )
                       .then(function (response) {
                         console.log(response);
                         toast.custom((t) => (

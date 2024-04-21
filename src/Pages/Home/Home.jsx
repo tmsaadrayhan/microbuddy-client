@@ -32,20 +32,20 @@ const Home = () => {
   if (loading)
     return (
       <div className="w-full py-[15rem]">
-        <img className="mx-auto" src={imgLoad} alt="" />
+        <img className="mx-auto" src={imgLoad} alt="Loading" />
       </div>
     );
   else
     return (
       <div>
         <Helmet>
-          <title>MICROBUDDY-IT SUPPORT & SERVICES</title>
+          <title>MICROBUDDY-HOME</title>
           <meta
             name="IT SUPPORT"
             content="Microbuddy offers IT support & services for businesses, including website & app development, software solutions, design, digital marketing & more."
           />
         </Helmet>
-        <div className="bg-head">
+        <section className="bg-head">
           <div className="relative lg:flex gap-4 pt-20 lg:max-w-[70rem] mx-[0] lg:mx-auto items-center">
             <div className="mx-auto">
               <div className="left-text text-wrap lg:pe-[5rem] mx-auto md:max-w-[30rem] lg:max-w-[35rem]">
@@ -62,18 +62,20 @@ const Home = () => {
                   <img
                     className="ms-[-0.5rem] mb-[-1rem] w-[25rem] "
                     src={MicrobuddyImg}
-                    alt=""
+                    alt="Microbuddy's Text Image"
                   />
                   <h1 className="text-4xl font-black">Got You Covered.</h1>
                   <div className="max-w-[24rem]">
-                    <p>
-                      Highly cost-effective IT support that completely
-                      transforms your experience is our mission.
-                    </p>
-                    <p>
-                      Transform your IT experience with highly affordable
-                      support and efficient solutions is our core mission.
-                    </p>
+                    <article>
+                      <p>
+                        Highly cost-effective IT support that completely
+                        transforms your experience is our mission.
+                      </p>
+                      <p>
+                        Transform your IT experience with highly affordable
+                        support and efficient solutions is our core mission.
+                      </p>
+                    </article>
                   </div>
                   {/*lg and md*/}
                   <div className="hidden md:flex items-center mt-4 mb-[2rem]">
@@ -176,7 +178,7 @@ const Home = () => {
             <div className="mx-auto lg:mx-[0] relative ">
               <div className="hidden lg:block absolute w-[6.5rem] bottom-[80px] -left-[125px]">
                 <div className="relative">
-                  <img className="breathe" src={img3} alt="" />
+                  <img className="breathe" src={img3} alt="Rubik's Cube" />
                 </div>
               </div>
 
@@ -188,8 +190,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
-
+        </section>
         <Companies></Companies>
         <OurService></OurService>
         <Why></Why>

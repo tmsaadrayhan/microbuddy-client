@@ -20,11 +20,27 @@ const Review = () => {
   const previous = () => {
     sliderRef.slickPrev();
   };
-  const texts = [
-    "Microbuddy exceeded my expectations with their IT service and support. Their team was incredibly responsive and knowledgeable, swiftly resolving any issues we encountered. From software glitches to hardware malfunctions, they tackled every challenge with professionalism and efficiency. Their proactive approach to maintenance has minimized downtime for our business, ensuring smooth operations at all times. I highly recommend Microbuddy to any company seeking reliable IT solutions and unparalleled support.",
-    "Microbuddy has been instrumental in optimizing our IT infrastructure. Their support team is top-notch, always available to assist us with any technical issues quickly. What truly sets them apart is their dedication to understanding our unique business needs and providing tailored solutions. They've implemented innovative strategies that have streamlined our processes and enhanced productivity. With Microbuddy's expertise, we feel confident in our technology's reliability, allowing us to focus on our core objectives. I can't thank them enough for their exceptional service and support.",
-    "Choosing Microbuddy for our IT service needs has been a game-changer for our organization. Their team is incredibly proactive, often resolving issues before we even notice them. Their depth of knowledge and expertise have been evident in every interaction we've had. From network security to software updates, they've consistently delivered high-quality solutions tailored to our requirements. Microbuddy has become an invaluable partner, empowering us to stay ahead in a fast-paced digital landscape. If you're seeking a reliable IT service provider, look no further than Microbuddy.",
-    "Microbuddy has been a lifesaver for our small business. Their support team is always available and goes above and beyond to ensure our operations run smoothly. They've helped us transition to cloud-based solutions, significantly improving our efficiency and collaboration. What's truly remarkable is their commitment to customer satisfaction; they take the time to explain technical concepts in a way that's easy to understand, empowering us to make informed decisions. With Microbuddy handling our IT needs, we can focus on confidently growing our business. I highly recommend them to anyone in need of dependable IT services.",
+  const reviews = [
+    {
+      title: "Dustin Zhu",
+      review:
+        "Microbuddy exceeded my expectations with their IT service and support. Their team was incredibly responsive and knowledgeable, swiftly resolving any issues we encountered. From software glitches to hardware malfunctions, they tackled every challenge with professionalism and efficiency. Their proactive approach to maintenance has minimized downtime for our business, ensuring smooth operations at all times. I highly recommend Microbuddy to any company seeking reliable IT solutions and unparalleled support.",
+    },
+    {
+      title: "Salman Alqahtani",
+      review:
+        "Microbuddy has been instrumental in optimizing our IT infrastructure. Their support team is top-notch, always available to assist us with any technical issues quickly. What truly sets them apart is their dedication to understanding our unique business needs and providing tailored solutions. They've implemented innovative strategies that have streamlined our processes and enhanced productivity. With Microbuddy's expertise, we feel confident in our technology's reliability, allowing us to focus on our core objectives. I can't thank them enough for their exceptional service and support.",
+    },
+    {
+      title: "Yashika Babbar",
+      review:
+        "Choosing Microbuddy for our IT service needs has been a game-changer for our organization. Their team is incredibly proactive, often resolving issues before we even notice them. Their depth of knowledge and expertise have been evident in every interaction we've had. From network security to software updates, they've consistently delivered high-quality solutions tailored to our requirements. Microbuddy has become an invaluable partner, empowering us to stay ahead in a fast-paced digital landscape. If you're seeking a reliable IT service provider, look no further than Microbuddy.",
+    },
+    {
+      title: "Salman Parvez",
+      review:
+        "Microbuddy has been a lifesaver for our small business. Their support team is always available and goes above and beyond to ensure our operations run smoothly. They've helped us transition to cloud-based solutions, significantly improving our efficiency and collaboration. What's truly remarkable is their commitment to customer satisfaction; they take the time to explain technical concepts in a way that's easy to understand, empowering us to make informed decisions. With Microbuddy handling our IT needs, we can focus on confidently growing our business. I highly recommend them to anyone in need of dependable IT services.",
+    },
   ];
   const [isExpanded1, setIsExpanded1] = useState(false);
   const [isExpanded2, setIsExpanded2] = useState(false);
@@ -44,7 +60,7 @@ const Review = () => {
   };
 
   return (
-    <div>
+    <section>
       <div className="relative lg:max-w-[70rem] mx-auto mt-[4rem]">
         <div className="text-center font-[700] lg:mb-[rem]">
           <div className="mx-[1rem] md:mx-auto md:w-[40rem]">
@@ -88,8 +104,10 @@ const Review = () => {
                   <div className="w-[15rem] px-[3rem] py-[4rem]">
                     <img className="rounded-full w-[10rem]" src={imgDZ} />
                   </div>
-                  <div className="py-[5rem] w-[30rem] text-left">
-                    <h1 className="text-5xl font-bold">Dustin Zhu</h1>
+                  <article className="py-[5rem] w-[30rem] text-left">
+                    <header className="text-5xl font-bold">
+                      {reviews[0].title}
+                    </header>
                     <Rating
                       fullSymbol={
                         <IoMdStar className="text-[#FFD600] text-5xl" />
@@ -105,7 +123,7 @@ const Review = () => {
                     />
                     {!isExpanded1 ? (
                       <p className="py-6 text-xl">
-                        {texts[0].slice(0, 150)}
+                        {reviews[0].review.slice(0, 150)}
                         {".... "}
                         <span
                           onClick={toggleExpansion1}
@@ -117,7 +135,7 @@ const Review = () => {
                     ) : (
                       <p className="py-6 text-xl">
                         {" "}
-                        {texts[0]}{" "}
+                        {reviews[0].review}{" "}
                         <span
                           onClick={toggleExpansion1}
                           className="text-primary underline"
@@ -127,7 +145,7 @@ const Review = () => {
                         </span>
                       </p>
                     )}
-                  </div>
+                  </article>
                 </div>
               </div>
             </div>
@@ -137,8 +155,10 @@ const Review = () => {
                   <div className="w-[15rem] px-[3rem] py-[4rem]">
                     <img className="rounded-full" src={imgSA} />
                   </div>
-                  <div className="py-[5rem] w-[30rem] text-left">
-                    <h1 className="text-5xl font-bold">Salman Alqahtani</h1>
+                  <article className="py-[5rem] w-[30rem] text-left">
+                    <header className="text-5xl font-bold">
+                      {reviews[1].title}
+                    </header>
 
                     <Rating
                       fullSymbol={
@@ -155,7 +175,7 @@ const Review = () => {
                     />
                     {!isExpanded2 ? (
                       <p className="py-6 text-xl">
-                        {texts[1].slice(0, 150)}
+                        {reviews[1].review.slice(0, 150)}
                         {".... "}
                         <span
                           onClick={toggleExpansion2}
@@ -167,7 +187,7 @@ const Review = () => {
                     ) : (
                       <p className="py-6 text-xl">
                         {" "}
-                        {texts[1]}{" "}
+                        {reviews[1].review}{" "}
                         <span
                           onClick={toggleExpansion2}
                           className="text-primary underline"
@@ -177,7 +197,7 @@ const Review = () => {
                         </span>
                       </p>
                     )}
-                  </div>
+                  </article>
                 </div>
               </div>
             </div>
@@ -187,10 +207,10 @@ const Review = () => {
                   <div className="w-[15rem] px-[3rem] py-[4rem]">
                     <img className="rounded-full" src={imgYB} />
                   </div>
-                  <div className="py-[5rem] w-[30rem] text-left">
-                    <h1 className="text-4xl md:text-5xl font-bold">
-                      Yashika Babbar
-                    </h1>
+                  <article className="py-[5rem] w-[30rem] text-left">
+                    <header className="text-4xl md:text-5xl font-bold">
+                      {reviews[2].title}
+                    </header>
                     <Rating
                       fullSymbol={
                         <IoMdStar className="text-[#FFD600] text-5xl" />
@@ -206,7 +226,7 @@ const Review = () => {
                     />
                     {!isExpanded3 ? (
                       <p className="py-6 text-xl">
-                        {texts[2].slice(0, 150)}
+                        {reviews[2].review.slice(0, 150)}
                         {".... "}
                         <span
                           onClick={toggleExpansion3}
@@ -218,7 +238,7 @@ const Review = () => {
                     ) : (
                       <p className="py-6 text-xl">
                         {" "}
-                        {texts[2]}{" "}
+                        {reviews[2].review}{" "}
                         <span
                           onClick={toggleExpansion3}
                           className="text-primary underline"
@@ -228,7 +248,7 @@ const Review = () => {
                         </span>
                       </p>
                     )}
-                  </div>
+                  </article>
                 </div>
               </div>
             </div>
@@ -238,10 +258,10 @@ const Review = () => {
                   <div className="w-[15rem] px-[3rem] py-[4rem]">
                     <img className="rounded-full" src={imgSP} />
                   </div>
-                  <div className="py-[5rem] w-[30rem] text-left">
-                    <h1 className="text-4xl md:text-5xl font-bold">
-                      Salman Parvez
-                    </h1>
+                  <article className="py-[5rem] w-[30rem] text-left">
+                    <header className="text-4xl md:text-5xl font-bold">
+                      {reviews[3].title}
+                    </header>
                     <Rating
                       fullSymbol={
                         <IoMdStar className="text-[#FFD600] text-5xl" />
@@ -257,7 +277,7 @@ const Review = () => {
                     />
                     {!isExpanded4 ? (
                       <p className="py-6 text-xl">
-                        {texts[3].slice(0, 150)}
+                        {reviews[3].review.slice(0, 150)}
                         {".... "}
                         <span
                           onClick={toggleExpansion4}
@@ -269,7 +289,7 @@ const Review = () => {
                     ) : (
                       <p className="py-6 text-xl">
                         {" "}
-                        {texts[3]}{" "}
+                        {reviews[3].review}{" "}
                         <span
                           onClick={toggleExpansion4}
                           className="text-primary underline"
@@ -279,7 +299,7 @@ const Review = () => {
                         </span>
                       </p>
                     )}
-                  </div>
+                  </article>
                 </div>
               </div>
             </div>
@@ -300,10 +320,10 @@ const Review = () => {
                     <img className="rounded-full w-[10rem]" src={imgDZ} />
                   </div>
 
-                  <div className="py-[3rem] text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold">
-                      Dustin Zhu
-                    </h1>
+                  <article className="py-[3rem] text-center">
+                    <header className="text-4xl md:text-5xl font-bold">
+                      {reviews[0].title}
+                    </header>
                     <Rating
                       fullSymbol={
                         <IoMdStar className="text-[#FFD600] text-4xl md:text-5xl" />
@@ -319,7 +339,7 @@ const Review = () => {
                     />
                     {!isExpanded1 ? (
                       <p className="py-6 text-xl">
-                        {texts[0].slice(0, 150)}
+                        {reviews[0].review.slice(0, 150)}
                         {".... "}
                         <span
                           onClick={toggleExpansion1}
@@ -331,7 +351,7 @@ const Review = () => {
                     ) : (
                       <p className="py-6 text-xl">
                         {" "}
-                        {texts[0]}{" "}
+                        {reviews[0].review}{" "}
                         <span
                           onClick={toggleExpansion1}
                           className="text-primary underline"
@@ -341,7 +361,7 @@ const Review = () => {
                         </span>
                       </p>
                     )}
-                  </div>
+                  </article>
                 </div>
               </div>
             </div>
@@ -352,10 +372,10 @@ const Review = () => {
                     <img className="rounded-full w-[10rem]" src={imgSA} />
                   </div>
 
-                  <div className="py-[3rem] text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold">
-                      Salman Alqahtani
-                    </h1>
+                  <article className="py-[3rem] text-center">
+                    <header className="text-4xl md:text-5xl font-bold">
+                      {reviews[1].title}
+                    </header>
                     <Rating
                       fullSymbol={
                         <IoMdStar className="text-[#FFD600] text-4xl md:text-5xl" />
@@ -371,7 +391,7 @@ const Review = () => {
                     />
                     {!isExpanded2 ? (
                       <p className="py-6 text-xl">
-                        {texts[1].slice(0, 150)}
+                        {reviews[1].review.slice(0, 150)}
                         {".... "}
                         <span
                           onClick={toggleExpansion2}
@@ -383,7 +403,7 @@ const Review = () => {
                     ) : (
                       <p className="py-6 text-xl">
                         {" "}
-                        {texts[1]}{" "}
+                        {reviews[1].review}{" "}
                         <span
                           onClick={toggleExpansion2}
                           className="text-primary underline"
@@ -393,7 +413,7 @@ const Review = () => {
                         </span>
                       </p>
                     )}
-                  </div>
+                  </article>
                 </div>
               </div>
             </div>
@@ -403,10 +423,10 @@ const Review = () => {
                   <div className="mx-auto w-fit mt-[2rem]">
                     <img className="rounded-full w-[10rem]" src={imgYB} />
                   </div>
-                  <div className="py-[3rem] text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold">
-                      Yashika Babbar
-                    </h1>
+                  <article className="py-[3rem] text-center">
+                    <header className="text-4xl md:text-5xl font-bold">
+                      {reviews[2].title}
+                    </header>
                     <Rating
                       fullSymbol={
                         <IoMdStar className="text-[#FFD600] text-4xl md:text-5xl" />
@@ -422,7 +442,7 @@ const Review = () => {
                     />
                     {!isExpanded3 ? (
                       <p className="py-6 text-xl">
-                        {texts[2].slice(0, 150)}
+                        {reviews[2].review.slice(0, 150)}
                         {".... "}
                         <span
                           onClick={toggleExpansion3}
@@ -434,7 +454,7 @@ const Review = () => {
                     ) : (
                       <p className="py-6 text-xl">
                         {" "}
-                        {texts[2]}{" "}
+                        {reviews[2].review}{" "}
                         <span
                           onClick={toggleExpansion3}
                           className="text-primary underline"
@@ -444,7 +464,7 @@ const Review = () => {
                         </span>
                       </p>
                     )}
-                  </div>
+                  </article>
                 </div>
               </div>
             </div>
@@ -455,10 +475,10 @@ const Review = () => {
                     <img className="rounded-full w-[10rem]" src={imgSP} />
                   </div>
 
-                  <div className="py-[3rem] text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold">
-                      Salman Parvez
-                    </h1>
+                  <article className="py-[3rem] text-center">
+                    <header className="text-4xl md:text-5xl font-bold">
+                      {reviews[3].title}
+                    </header>
                     <Rating
                       fullSymbol={
                         <IoMdStar className="text-[#FFD600] text-4xl md:text-5xl" />
@@ -474,7 +494,7 @@ const Review = () => {
                     />
                     {!isExpanded4 ? (
                       <p className="py-6 text-xl">
-                        {texts[3].slice(0, 150)}
+                        {reviews[3].review.slice(0, 150)}
                         {".... "}
                         <span
                           onClick={toggleExpansion4}
@@ -486,7 +506,7 @@ const Review = () => {
                     ) : (
                       <p className="py-6 text-xl">
                         {" "}
-                        {texts[3]}{" "}
+                        {reviews[3].review}{" "}
                         <span
                           onClick={toggleExpansion4}
                           className="text-primary underline"
@@ -496,14 +516,14 @@ const Review = () => {
                         </span>
                       </p>
                     )}
-                  </div>
+                  </article>
                 </div>
               </div>
             </div>
           </Slider>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
