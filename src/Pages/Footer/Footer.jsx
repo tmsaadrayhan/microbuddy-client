@@ -12,9 +12,12 @@ import img8 from "../../assets/footer/group2.png";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const Footer = () => {
+  
   return (
     <footer className="relative text-[black]">
       {/* footer head*/}
+
+      {/*lg*/}
       <div id="footer-parent" className="hidden lg:block">
         <ScrollAnimation
           duration={1}
@@ -59,14 +62,15 @@ const Footer = () => {
           </div>
         </ScrollAnimation>
       </div>
+      {/*md and sm*/}
       <div className="block lg:hidden mt-[15rem] md:mt-[10rem] text-center md:text-start">
         <div className="absolute-center bg-[#14133B] lg:rounded-3xl md:flex w-full lg:w-[65rem] items-center z-up mx-auto lg:my-[0] pt-[2rem] md:pt-[0rem] md:h-[15rem] lg:h-[10rem] text-white">
           <div className="md:ms-[4rem] md:w-1/2 lg:w-3/5">
             <div>
-              <div className="flex justify-center md:justify-start">
+              <div className="flex justify-center content-center md:justify-start">
                 <div className="flex items-center">
                   <img className="me-[1rem]" src={img1} />
-                  <p className="text-lg">Let's Get in Touch</p>
+                  <h1 className="text-lg">Let's Get in Touch</h1>
                 </div>
               </div>
               <h1 className="text-2xl font-bold py-[1rem]">
@@ -74,7 +78,7 @@ const Footer = () => {
               </h1>
             </div>
           </div>
-          <div className="md:w-1/2 lg:w-2/5 flex justify-center mt-[1rem] md:mt-[0] my-[3rem]">
+          <div className="md:w-1/2 lg:w-2/5 flex justify-center content-center md:mb-[0rem] mb-[2rem]">
             <Link to="/contact">
               <button className="bg-[#666AE5] py-[0.75rem] rounded-xl px-[2rem] border-4 text-lg">
                 Get Started Now

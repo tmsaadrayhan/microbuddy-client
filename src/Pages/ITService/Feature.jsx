@@ -1,13 +1,13 @@
-const Feature = ({feature}) => {
-  const {title, description} =feature;
+const Feature = ({ feature }) => {
+  const { title, description } = feature;
   return (
     <div>
-      <div className="blue-shadow">
-        <h1 className="text-xl font-bold">{title}</h1>
-        <p>
-          {description}
-        </p>
-      </div>
+      <article className="blue-shadow">
+        <header>
+          <h1 className="text-xl font-bold">{title}</h1>
+        </header>
+        <p>{description}</p>
+      </article>
     </div>
   );
 };

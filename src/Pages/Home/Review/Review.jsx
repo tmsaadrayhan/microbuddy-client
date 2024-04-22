@@ -106,7 +106,7 @@ const Review = () => {
                   </div>
                   <article className="py-[5rem] w-[30rem] text-left">
                     <header className="text-5xl font-bold">
-                      {reviews[0].title}
+                      <h1>{reviews[0].title}</h1>
                     </header>
                     <Rating
                       fullSymbol={
@@ -157,7 +157,7 @@ const Review = () => {
                   </div>
                   <article className="py-[5rem] w-[30rem] text-left">
                     <header className="text-5xl font-bold">
-                      {reviews[1].title}
+                      <h1>{reviews[1].title}</h1>
                     </header>
 
                     <Rating
@@ -209,7 +209,7 @@ const Review = () => {
                   </div>
                   <article className="py-[5rem] w-[30rem] text-left">
                     <header className="text-4xl md:text-5xl font-bold">
-                      {reviews[2].title}
+                      <h1>{reviews[2].title}</h1>
                     </header>
                     <Rating
                       fullSymbol={
@@ -260,7 +260,7 @@ const Review = () => {
                   </div>
                   <article className="py-[5rem] w-[30rem] text-left">
                     <header className="text-4xl md:text-5xl font-bold">
-                      {reviews[3].title}
+                      <h1>{reviews[3].title}</h1>
                     </header>
                     <Rating
                       fullSymbol={
@@ -322,7 +322,7 @@ const Review = () => {
 
                   <article className="py-[3rem] text-center">
                     <header className="text-4xl md:text-5xl font-bold">
-                      {reviews[0].title}
+                      <h1>{reviews[0].title}</h1>
                     </header>
                     <Rating
                       fullSymbol={
@@ -374,7 +374,7 @@ const Review = () => {
 
                   <article className="py-[3rem] text-center">
                     <header className="text-4xl md:text-5xl font-bold">
-                      {reviews[1].title}
+                      <h1>{reviews[1].title}</h1>
                     </header>
                     <Rating
                       fullSymbol={
@@ -425,7 +425,7 @@ const Review = () => {
                   </div>
                   <article className="py-[3rem] text-center">
                     <header className="text-4xl md:text-5xl font-bold">
-                      {reviews[2].title}
+                      <h1>{reviews[2].title}</h1>
                     </header>
                     <Rating
                       fullSymbol={
@@ -477,7 +477,7 @@ const Review = () => {
 
                   <article className="py-[3rem] text-center">
                     <header className="text-4xl md:text-5xl font-bold">
-                      {reviews[3].title}
+                      <h1>{reviews[3].title}</h1>
                     </header>
                     <Rating
                       fullSymbol={

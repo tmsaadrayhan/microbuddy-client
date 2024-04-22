@@ -8,8 +8,37 @@ import Slider from "react-slick";
 import { useRef } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
+import { MdDescription } from "react-icons/md";
 
 const YouTube = () => {
+  const youtubeData = [
+    {
+      channel: {
+        name: "SpeedyBuddy",
+        description:
+          "Welcome to Speed Codding, Speedy Budddy is the ultimate destination for programmers and coding enthusiasts who want to improve their coding skills and knowledge in the most efficient way possible.",
+      },
+      slide: {
+        name: "Speedy Buddy",
+        title: "Code Learning",
+        description:
+          "Learn to code faster and more effectively with Speedy Buddy. Our concise tutorials cover web development, data science, machine learning, and more. Subscribe to our channel and join our passionate community today.",
+      },
+    },
+    {
+      channel: {
+        name: "DesignBuddy",
+        description:
+          "Welcome to Speed Codding, Speedy Budddy is the ultimate destination for programmers and coding enthusiasts who want to improve their coding skills and knowledge in the most efficient way possible.",
+      },
+      slide: {
+        name: "Design Buddy",
+        title: "Design Content",
+        description:
+          "Design Buddy is here to improve your design skills with our fast-paced tutorial videos from Microbuddyy’s best designers. From beginner to pro, we cover Adobe Photoshop, Illustrator, Figma, and more. Join now to unlock your potential!",
+      },
+    },
+  ];
   let sliderRef = useRef(null);
   const next = () => {
     sliderRef.slickNext();
@@ -62,35 +91,29 @@ const YouTube = () => {
                   <div className="bg-[#F0F0F0] mx-[auto] lg:mx-[0] md:w-[30rem] text-center md:rounded-xl mb-[5rem]">
                     <img className="my-[-1rem]" src={img3} alt="" />
                     <img className="w-full" src={img4} alt="" />
-                    <div className="md:m-[1rem]">
-                      <h1 className="font-bold">SpeedyBuddy</h1>
-                      <p>
-                        Welcome to Speed Codding, Speedy Budddy is the ultimate
-                        destination for programmers and coding enthusiasts who
-                        want to improve their coding skills and knowledge in the
-                        most efficient way possible.
-                      </p>
-                    </div>
+                    <article className="md:m-[1rem]">
+                      <header className="font-bold">
+                        <h1>{youtubeData[0].channel.name}</h1>
+                      </header>
+                      <p>{youtubeData[0].channel.description}</p>
+                    </article>
                     <Link to="http://www.youtube.com/@speedybuddyy">
                       <button className="btn btn-error text-white rounded-full mb-[1rem]">
                         Subscribe Now
                       </button>
                     </Link>
                   </div>
-                  <div className="text-end md:text-center lg:text-start lg:mx-[0] md:w-[30rem] m-4 p-[2rem]">
-                    <h1 className="text-4xl md:text-5xl font-bold">
-                      1. Speedy Buddy
-                    </h1>
-                    <p className="text-[#666AE5] text-xl my-[1rem]">
-                      Code Learning
-                    </p>
-                    <p>
-                      Learn to code faster and more effectively with Speedy
-                      Buddy. Our concise tutorials cover web development, data
-                      science, machine learning, and more. Subscribe to our
-                      channel and join our passionate community today.
-                    </p>
-                  </div>
+                  <article className="text-end md:text-center lg:text-start lg:mx-[0] md:w-[30rem] m-4 p-[2rem]">
+                    <header>
+                      <h1 className="text-4xl md:text-5xl font-bold">
+                        {youtubeData[0].slide.name}
+                      </h1>
+                      <p className="text-[#666AE5] text-xl my-[1rem]">
+                        {youtubeData[0].slide.title}
+                      </p>
+                    </header>
+                    <p>{youtubeData[0].slide.description}</p>
+                  </article>
                 </div>
               </div>
               <div>
@@ -98,15 +121,12 @@ const YouTube = () => {
                   <div className="bg-[#F0F0F0] mx-[auto] lg:mx-[0] md:max-w-[30rem] text-center rounded-xl mb-[5rem]">
                     <img className="my-[-1rem]" src={img3} alt="" />
                     <img className="w-full" src={img5} alt="" />
-                    <div className="md:m-[1rem]">
-                      <h1 className="font-bold">DesignBuddy</h1>
-                      <p>
-                        Welcome to Speed Codding, Speedy Budddy is the ultimate
-                        destination for programmers and coding enthusiasts who
-                        want to improve their coding skills and knowledge in the
-                        most efficient way possible.
-                      </p>
-                    </div>
+                    <article className="md:m-[1rem]">
+                      <header className="font-bold">
+                        <h1>{youtubeData[1].channel.name}</h1>
+                      </header>
+                      <p>{youtubeData[1].channel.description}</p>
+                    </article>
 
                     <Link to="http://www.youtube.com/@DesignBuddy0">
                       <button className="btn btn-error text-white rounded-full mb-[1rem]">
@@ -114,21 +134,17 @@ const YouTube = () => {
                       </button>
                     </Link>
                   </div>
-                  <div className="text-end md:text-center lg:text-start md:mx-auto lg:mx-[0] md:w-[30rem] m-4 p-[2rem]">
-                    <h1 className="text-4xl md:text-5xl font-bold">
-                      2. Design Buddy-
-                    </h1>
-                    <p className="text-[#666AE5] text-xl my-[1rem]">
-                      Design Content
-                    </p>
-                    <p>
-                      Design Buddy is here to improve your design skills with
-                      our fast-paced tutorial videos from Microbuddyy’s best
-                      designers. From beginner to pro, we cover Adobe Photoshop,
-                      Illustrator, Figma, and more. Join now to unlock your
-                      potential!
-                    </p>
-                  </div>
+                  <article className="text-end md:text-center lg:text-start md:mx-auto lg:mx-[0] md:w-[30rem] m-4 p-[2rem]">
+                    <header>
+                      <h1 className="text-4xl md:text-5xl font-bold">
+                        {youtubeData[1].slide.name}
+                      </h1>
+                      <p className="text-[#666AE5] text-xl my-[1rem]">
+                        {youtubeData[1].slide.title}
+                      </p>
+                    </header>
+                    <p>{youtubeData[1].slide.description}</p>
+                  </article>
                 </div>
               </div>
             </Slider>
@@ -149,35 +165,31 @@ const YouTube = () => {
                   <div className="bg-[#F0F0F0] mx-[auto] lg:mx-[0] md:w-[30rem] text-center md:rounded-xl mt-[-5rem] mb-[5rem]">
                     <img className="my-[-1rem]" src={img3} alt="" />
                     <img className="mx-auto" src={img4} alt="" />
-                    <div className="md:m-[1rem]">
-                      <h1 className="font-bold">SpeedyBuddy</h1>
-                      <p>
-                        Welcome to Speed Codding, Speedy Budddy is the ultimate
-                        destination for programmers and coding enthusiasts who
-                        want to improve their coding skills and knowledge in the
-                        most efficient way possible.
-                      </p>
-                    </div>
+                    <article className="md:m-[1rem]">
+                      <header>
+                        <h1 className="font-bold">
+                          {youtubeData[0].channel.name}
+                        </h1>
+                      </header>
+                      <p>{youtubeData[0].channel.description}</p>
+                    </article>
                     <Link to="http://www.youtube.com/@speedybuddyy">
                       <button className="btn btn-error text-white rounded-full mb-[1rem]">
                         Subscribe Now
                       </button>
                     </Link>
                   </div>
-                  <div className="text-end md:text-center lg:text-start md:mx-auto lg:mx-[0] md:w-[30rem] m-4 p-[2rem]">
-                    <h1 className="text-4xl md:text-5xl font-bold">
-                      1. Speedy Buddy
-                    </h1>
-                    <p className="text-[#666AE5] text-xl my-[1rem]">
-                      Code Learning
-                    </p>
-                    <p>
-                      Learn to code faster and more effectively with Speedy
-                      Buddy. Our concise tutorials cover web development, data
-                      science, machine learning, and more. Subscribe to our
-                      channel and join our passionate community today.
-                    </p>
-                  </div>
+                  <article className="text-end md:text-center lg:text-start md:mx-auto lg:mx-[0] md:w-[30rem] m-4 p-[2rem]">
+                    <header>
+                      <h1 className="text-4xl md:text-5xl font-bold">
+                        {youtubeData[0].slide.name}
+                      </h1>
+                      <p className="text-[#666AE5] text-xl my-[1rem]">
+                        {youtubeData[0].slide.title}
+                      </p>
+                    </header>
+                    <p>{youtubeData[0].slide.description}</p>
+                  </article>
                 </div>
               </div>
               <div className="pt-[5rem] ps-[2rem] pb-[3rem] lg:mx-[auto] lg:px-[10rem] text-black">
@@ -185,36 +197,31 @@ const YouTube = () => {
                   <div className="bg-[#F0F0F0] mx-[auto] lg:mx-[0] md:w-[30rem] text-center md:rounded-xl mt-[-5rem] mb-[5rem]">
                     <img className="my-[-1rem]" src={img3} alt="" />
                     <img className="mx-auto" src={img5} alt="" />
-                    <div className="md:m-[1rem]">
-                      <h1 className="font-bold">DesignBuddy</h1>
-                      <p>
-                        Welcome to Speed Codding, Speedy Budddy is the ultimate
-                        destination for programmers and coding enthusiasts who
-                        want to improve their coding skills and knowledge in the
-                        most efficient way possible.
-                      </p>
-                    </div>
+                    <article className="md:m-[1rem]">
+                      <header>
+                        <h1 className="font-bold">
+                          {youtubeData[1].channel.name}
+                        </h1>
+                      </header>
+                      <p>{youtubeData[1].channel.name}</p>
+                    </article>
                     <Link to="http://www.youtube.com/@DesignBuddy0">
                       <button className="btn btn-error text-white rounded-full mb-[1rem]">
                         Subscribe Now
                       </button>
                     </Link>
                   </div>
-                  <div className="text-end md:text-center lg:text-start md:mx-auto lg:mx-[0] md:w-[30rem] m-4 p-[2rem]">
-                    <h1 className="text-4xl md:text-5xl font-bold">
-                      2. Design Buddy-
-                    </h1>
-                    <p className="text-[#666AE5] text-xl my-[1rem]">
-                      Design Content
-                    </p>
-                    <p>
-                      Design Buddy is here to improve your design skills with
-                      our fast-paced tutorial videos from Microbuddyy’s best
-                      designers. From beginner to pro, we cover Adobe Photoshop,
-                      Illustrator, Figma, and more. Join now to unlock your
-                      potential!
-                    </p>
-                  </div>
+                  <article className="text-end md:text-center lg:text-start md:mx-auto lg:mx-[0] md:w-[30rem] m-4 p-[2rem]">
+                    <header>
+                      <h1 className="text-4xl md:text-5xl font-bold">
+                        {youtubeData[1].slide.name}
+                      </h1>
+                      <p className="text-[#666AE5] text-xl my-[1rem]">
+                        {youtubeData[1].slide.title}
+                      </p>
+                    </header>
+                    <p>{youtubeData[1].slide.description}</p>
+                  </article>
                 </div>
               </div>
             </Slider>

@@ -20,7 +20,7 @@ const OurService = () => {
           <article className="text-end w-full mx-auto md:max-w-[35rem] md:mb-[10rem]">
             <div>
               <header className="gradient-text text-7xl md:text-9xl font-bold z-[-1rem]">
-                SERVICES
+                <h1>SERVICES</h1>
               </header>
             </div>
             <div className="mt-[-2.5rem] md:mt-[-4.5rem]">
@@ -59,7 +59,7 @@ const OurService = () => {
                 <img className="my-[-6rem]" src={img3} alt="" />
                 <article className="mt-[3rem] mx-[1rem] mb-[1rem]">
                   <header className="text-[24px] my-[0.5rem] font-bold">
-                    Tech Service
+                    <h1>Tech Service</h1>
                   </header>
                   <p>
                     MicroBuddy's Tech Support streamlines complexity, enhancing
@@ -77,7 +77,7 @@ const OurService = () => {
               <img className="my-[-6rem]" src={img4} alt="" />
               <article className="mt-[3rem] mx-[1rem] mb-[1rem]">
                 <header className="text-[24px] my-[0.5rem] font-bold">
-                  Graphic Design
+                  <h1>Graphic Design</h1>
                 </header>
                 <p>
                   MicroBuddy's Graphic Design Service transforms ideas into
@@ -96,7 +96,7 @@ const OurService = () => {
               <img className="my-[-6rem]" src={img5} alt="" />
               <article className="mt-[3rem] mx-[1rem] mb-[1rem]">
                 <header className="text-[24px] my-[0.5rem] font-bold">
-                  Software Service
+                  <h1>Software Service</h1>
                 </header>
                 <p>
                   MicroBuddy's Software Service specializes in creating bespoke
@@ -114,7 +114,7 @@ const OurService = () => {
               <img className="my-[-6rem]" src={img6} alt="" />
               <article className="mt-[3rem] mx-[1rem] mb-[1rem]">
                 <header className="text-[24px] my-[0.5rem] font-bold">
-                  Cloud Service
+                  <h1>Cloud Service</h1>
                 </header>
                 <p>
                   MicroBuddy's Cloud Service ensures infinite scalability,
@@ -131,7 +131,7 @@ const OurService = () => {
                 <img className="my-[-6rem]" src={img3} alt="" />
                 <article className="mt-[3rem] mx-[1rem] mb-[1rem]">
                   <header className="text-[24px] my-[0.5rem] font-bold ">
-                    Tech Service
+                    <h1>Tech Service</h1>
                   </header>
                   <p>
                     MicroBuddy's Tech Support streamlines complexity, enhancing
@@ -144,7 +144,7 @@ const OurService = () => {
               <img className="my-[-6rem]" src={img4} alt="" />
               <article className="mt-[3rem] mx-[1rem] mb-[1rem]">
                 <header className="text-[24px] my-[0.5rem] font-bold">
-                  Graphic Design
+                  <h1>Graphic Design</h1>
                 </header>
                 <p>
                   MicroBuddy's Graphic Design Service transforms ideas into
@@ -157,7 +157,7 @@ const OurService = () => {
               <img className="my-[-6rem]" src={img5} alt="" />
               <article className="mt-[3rem] mx-[1rem] mb-[1rem]">
                 <header className="text-[24px] my-[0.5rem] font-bold">
-                  Software Service
+                  <h1>Software Service</h1>
                 </header>
                 <p>
                   MicroBuddy's Software Service specializes in creating bespoke
@@ -170,7 +170,7 @@ const OurService = () => {
               <img className="my-[-6rem]" src={img6} alt="" />
               <article className="mt-[3rem] mx-[1rem] mb-[1rem]">
                 <header className="text-[24px] my-[0.5rem] font-bold">
-                  Cloud Service
+                  <h1>Cloud Service</h1>
                 </header>
                 <p>
                   MicroBuddy's Cloud Service ensures infinite scalability,
@@ -189,7 +189,7 @@ const OurService = () => {
                 <img className="my-[-6rem]" src={img3} alt="" />
                 <article className="mt-[3rem] mx-[1rem] mb-[1rem]">
                   <header className="text-[24px] my-[0.5rem] font-bold">
-                    Tech Service
+                    <h1>Tech Service</h1>
                   </header>
                   <p>
                     MicroBuddy's Tech Support streamlines complexity, enhancing
@@ -203,7 +203,7 @@ const OurService = () => {
                 <img className="my-[-6rem]" src={img4} alt="" />
                 <article className="mt-[3rem] mx-[1rem] mb-[1rem]">
                   <header className="text-[24px] my-[0.5rem] font-bold">
-                    Graphic Design
+                    <h1>Graphic Design</h1>
                   </header>
                   <p>
                     MicroBuddy's Graphic Design Service transforms ideas into
@@ -218,7 +218,7 @@ const OurService = () => {
                 <img className="my-[-6rem]" src={img5} alt="" />
                 <article className="mt-[3rem] mx-[1rem] mb-[1rem]">
                   <header className="text-[24px] my-[0.5rem] font-bold">
-                    Software Service
+                    <h1>Software Service</h1>
                   </header>
                   <p>
                     MicroBuddy's Software Service specializes in creating
@@ -233,7 +233,7 @@ const OurService = () => {
                 <img className="my-[-6rem]" src={img6} alt="" />
                 <article className="mt-[3rem] mx-[1rem] mb-[1rem]">
                   <header className="text-[24px] my-[0.5rem] font-bold">
-                    Cloud Service
+                    <h1>Cloud Service</h1>
                   </header>
                   <p>
                     MicroBuddy's Cloud Service ensures infinite scalability,

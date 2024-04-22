@@ -72,16 +72,22 @@ const Content = () => {
             <img className="breathe" src={img1} alt="" />
           </div>
           <div className="px-[1rem] mx-auto text-start flex items-center">
-            <div>
-              <div className="overflow-hidden">
-                <img className="w-[15rem] lg:w-auto pop-up" src={grow} alt="" />
-              </div>
-              <h1 className="text-[32px] md:text-6xl font-black mt-[-2rem] md:mt-[-3rem] text-[#C470FF]">
-                INTERCONNECTED
-              </h1>
-              <h1 className="text-[18px] md:text-4xl font-[600]">
-                RAPIDLY GROWING BUSINESS
-              </h1>
+            <article>
+              <header>
+                <div className="overflow-hidden">
+                  <img
+                    className="w-[15rem] lg:w-auto pop-up"
+                    src={grow}
+                    alt=""
+                  />
+                </div>
+                <h1 className="text-[32px] md:text-6xl font-black mt-[-2rem] md:mt-[-3rem] text-[#C470FF]">
+                  INTERCONNECTED
+                </h1>
+                <h1 className="text-[18px] md:text-4xl font-[600]">
+                  RAPIDLY GROWING BUSINESS
+                </h1>
+              </header>
               <div className="hidden md:block">
                 <p className="text-lg">
                   We offer both design and software development to move faster
@@ -108,7 +114,7 @@ const Content = () => {
                   </div>
                 </button>
               </Link>
-            </div>
+            </article>
           </div>
           <div className="flex justify-center lg:justify-end">
             <img src={img2} alt="" />

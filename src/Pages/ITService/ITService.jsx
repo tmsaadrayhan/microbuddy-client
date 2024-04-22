@@ -172,206 +172,229 @@ const ITService = () => {
         <HeaderBG></HeaderBG>
 
         <div className="pt-[5rem] lg:max-w-[70rem] lg:mx-auto relative">
-          <div className="hidden lg:block absolute w-[8rem] right-[-10rem]">
-            <img className="breathe" src={img1} alt="" />
-          </div>
-          <div className="text-end md:text-center mx-[1rem] lg:mx-[0rem]">
-            <div className="flex justify-center">
-              <div className="overflow-hidden">
-                <div className="pop-up">
-                  <img className="w-[60rem]" src={img} alt="" />
-                </div>
-              </div>
+          <section>
+            <div className="hidden lg:block absolute w-[8rem] right-[-10rem]">
+              <img className="breathe" src={img1} alt="" />
             </div>
-            <h1 className="hidden md:block text-6xl tracking-[1.5rem] lg:tracking-[1.5rem] mt-[-3rem] lg:mt-[-4rem] font-bold ms-[1rem]">
-              OUR SERVICES
-            </h1>
-            <div className="flex md:hidden justify-end mt-[-2rem]">
-              <img className="w-[20rem]" src={img14} alt="" />
-            </div>
-            <p>
-              MicroBuddy combines innovation with excellence, providing a wide
-              array of services to enhance your business. Our Cloud Service
-              delivers boundless scalability and top-notch security, while our
-              Tech Service streamlines operations in the ever-evolving tech
-              environment.
-            </p>
-          </div>
-
-          <div className="w-auto md:w-[40rem] lg:w-auto mx-auto">
-            {/*lg*/}
-            <div className="hidden lg:grid pt-[2rem] px-[2rem] grid-cols-4 gap-4 services overflow-hidden">
-              <div onClick={handleClick1} className="pt-[5rem] one">
-                <div className="mx-[1rem] rounded-xl mt-[5rem] tech-service">
-                  <img className="mt-[-6rem]" src={img2} alt="" />
-                  <div className="mx-[1rem] mb-[2rem]">
-                    <h1 className="text-xl font-bold">{techData.title}</h1>
-                    <p>{techData.description}</p>
-                  </div>
-                </div>
-              </div>
-              <div
-                onClick={handleClick2}
-                className="mx-[1rem] rounded-xl mt-[5rem] graphic-design two h-fit"
-              >
-                <img className="mt-[-6rem]" src={img3} alt="" />
-                <div className="mx-[1rem] mb-[2rem]">
-                  <h1 className="text-xl font-bold">{graphicsData.title}</h1>
-                  <p>{graphicsData.description}</p>
-                </div>
-              </div>
-              <div onClick={handleClick3} className="pt-[5rem] three">
-                <div className="mx-[1rem] rounded-xl mt-[5rem] software-service">
-                  <img className="mt-[-6rem]" src={img4} alt="" />
-                  <div className="mx-[1rem] mb-[2rem]">
-                    <h1 className="text-xl font-bold">{softwareData.title}</h1>
-                    <p>{softwareData.description}</p>
-                  </div>
-                </div>
-              </div>
-              <div
-                onClick={handleClick4}
-                className=" mx-[1rem] rounded-xl mt-[5rem] cloud-service four h-fit"
-              >
-                <img className="mt-[-6rem]" src={img5} alt="" />
-                <div className="mx-[1rem] mb-[2rem]">
-                  <h1 className="text-xl font-bold">{cloudData.title}</h1>
-                  <p>{cloudData.description}</p>
-                </div>
-              </div>
-            </div>
-            {/*md*/}
-            <div className="mt-[2rem] hidden md:grid lg:hidden grid-cols-2 lg:grid-cols-4 gap-4 services pt-[1rem] overflow-hidden">
-              <div onClick={handleClick1} className="pt-[5rem]">
-                <div className="mx-[1rem] rounded-xl h-[20rem] mt-[5rem] tech-service">
-                  <img className="mt-[-6rem]" src={img2} alt="" />
-                  <div className="mx-[1rem] mb-[2rem]">
-                    <h1 className="text-xl font-bold">{techData.title}</h1>
-                    <p>{techData.description}</p>
-                  </div>
-                </div>
-              </div>
-              <div
-                onClick={handleClick2}
-                className="mx-[1rem] rounded-xl h-[20rem] mt-[5rem] graphic-design"
-              >
-                <img className="mt-[-6rem]" src={img3} alt="" />
-                <div className="mx-[1rem] mb-[2rem]">
-                  <h1 className="text-xl font-bold">{graphicsData.title}</h1>
-                  <p>{graphicsData.description}</p>
-                </div>
-              </div>
-              <div onClick={handleClick3} className="pt-[5rem]">
-                <div className=" mx-[1rem] rounded-xl h-[20rem] mt-[5rem] software-service">
-                  <img className="mt-[-6rem]" src={img4} alt="" />
-                  <div className="mx-[1rem] mb-[2rem]">
-                    <h1 className="text-xl font-bold">{softwareData.title}</h1>
-                    <p>{softwareData.description}</p>
-                  </div>
-                </div>
-              </div>
-              <div
-                onClick={handleClick4}
-                className=" mx-[1rem] rounded-xl h-[20rem] mt-[5rem] cloud-service"
-              >
-                <img className="mt-[-6rem]" src={img5} alt="" />
-                <div className="mx-[1rem] mb-[2rem]">
-                  <h1 className="text-xl font-bold">{cloudData.title}</h1>
-                  <p>{cloudData.description}</p>
-                </div>
-              </div>
-            </div>
-            {/*sm*/}
-            <div className="block md:hidden">
-              <Slider autoplay={true} arrows={false}>
-                <div className="py-[7rem] px-[3rem] text-black">
-                  <div className="mx-[1rem] rounded-xl tech-service">
-                    <img className="my-[-6rem]" src={img2} alt="" />
-                    <div className="mt-[3rem] mx-[1rem] mb-[2rem]">
-                      <h1 className="text-[24px] my-[0.5rem] font-bold">
-                        {techData.title}
-                      </h1>
-                      <p>{techData.description}</p>
+          </section>
+          <section>
+            <article className="text-end md:text-center mx-[1rem] lg:mx-[0rem]">
+              <header>
+                <div className="flex justify-center">
+                  <div className="overflow-hidden">
+                    <div className="pop-up">
+                      <img className="w-[60rem]" src={img} alt="" />
                     </div>
                   </div>
                 </div>
-                <div className="py-[7rem] px-[3rem] text-black">
-                  <div className=" mx-[1rem] rounded-xl graphic-design">
-                    <img className="my-[-6rem]" src={img3} alt="" />
-                    <div className="mt-[3rem] mx-[1rem] mb-[2rem]">
-                      <h1 className="text-[24px] my-[0.5rem] font-bold">
+                <h1 className="hidden md:block text-6xl tracking-[1.5rem] lg:tracking-[1.5rem] mt-[-3rem] lg:mt-[-4rem] font-bold ms-[1rem]">
+                  OUR SERVICES
+                </h1>
+                <div className="flex md:hidden justify-end mt-[-2rem]">
+                  <img className="w-[20rem]" src={img14} alt="" />
+                </div>
+              </header>
+              <p>
+                MicroBuddy combines innovation with excellence, providing a wide
+                array of services to enhance your business. Our Cloud Service
+                delivers boundless scalability and top-notch security, while our
+                Tech Service streamlines operations in the ever-evolving tech
+                environment.
+              </p>
+            </article>
+          </section>
+          <section>
+            <div className="w-auto md:w-[40rem] lg:w-auto mx-auto">
+              {/*lg*/}
+              <div className="hidden lg:grid pt-[2rem] px-[2rem] grid-cols-4 gap-4 services overflow-hidden">
+                <div onClick={handleClick1} className="pt-[5rem] one">
+                  <div className="mx-[1rem] rounded-xl mt-[5rem] tech-service">
+                    <img className="mt-[-6rem]" src={img2} alt="" />
+                    <article className="mx-[1rem] mb-[2rem]">
+                      <header>
+                        <h1 className="text-xl font-bold">{techData.title}</h1>
+                      </header>
+                      <p>{techData.description}</p>
+                    </article>
+                  </div>
+                </div>
+                <div
+                  onClick={handleClick2}
+                  className="mx-[1rem] rounded-xl mt-[5rem] graphic-design two h-fit"
+                >
+                  <img className="mt-[-6rem]" src={img3} alt="" />
+                  <article className="mx-[1rem] mb-[2rem]">
+                    <header>
+                      <h1 className="text-xl font-bold">
                         {graphicsData.title}
                       </h1>
-                      <p>{graphicsData.description}</p>
-                    </div>
-                  </div>
+                    </header>
+                    <p>{graphicsData.description}</p>
+                  </article>
                 </div>
-                <div className="py-[7rem] px-[3rem] text-black">
-                  <div className="mx-[1rem] rounded-xl software-service">
-                    <img className="my-[-6rem]" src={img4} alt="" />
-                    <div className="mt-[3rem] mx-[1rem] mb-[2rem]">
-                      <h1 className="text-[24px] my-[0.5rem] font-bold">
-                        {softwareData.title}
-                      </h1>
+                <div onClick={handleClick3} className="pt-[5rem] three">
+                  <div className="mx-[1rem] rounded-xl mt-[5rem] software-service">
+                    <img className="mt-[-6rem]" src={img4} alt="" />
+                    <article className="mx-[1rem] mb-[2rem]">
+                      <header>
+                        <h1 className="text-xl font-bold">
+                          {softwareData.title}
+                        </h1>
+                      </header>
                       <p>{softwareData.description}</p>
-                    </div>
+                    </article>
                   </div>
                 </div>
-                <div className="py-[7rem] px-[3rem] text-black">
-                  <div className=" mx-[1rem] rounded-xl cloud-service">
-                    <img className="my-[-6rem]" src={img5} alt="" />
-                    <div className="mt-[3rem] mx-[1rem] mb-[2rem]">
-                      <h1 className="text-[24px] my-[0.5rem] font-bold">
-                        {cloudData.title}
+                <div
+                  onClick={handleClick4}
+                  className=" mx-[1rem] rounded-xl mt-[5rem] cloud-service four h-fit"
+                >
+                  <img className="mt-[-6rem]" src={img5} alt="" />
+                  <article className="mx-[1rem] mb-[2rem]">
+                    <header>
+                      <h1 className="text-xl font-bold">{cloudData.title}</h1>
+                    </header>
+                    <p>{cloudData.description}</p>
+                  </article>
+                </div>
+              </div>
+              {/*md*/}
+              <div className="mt-[2rem] hidden md:grid lg:hidden grid-cols-2 lg:grid-cols-4 gap-4 services pt-[1rem] overflow-hidden">
+                <div onClick={handleClick1} className="pt-[5rem]">
+                  <div className="mx-[1rem] rounded-xl h-[20rem] mt-[5rem] tech-service">
+                    <img className="mt-[-6rem]" src={img2} alt="" />
+                    <article className="mx-[1rem] mb-[2rem]">
+                      <header>
+                        <h1 className="text-xl font-bold">{techData.title}</h1>
+                      </header>
+                      <p>{techData.description}</p>
+                    </article>
+                  </div>
+                </div>
+                <div
+                  onClick={handleClick2}
+                  className="mx-[1rem] rounded-xl h-[20rem] mt-[5rem] graphic-design"
+                >
+                  <img className="mt-[-6rem]" src={img3} alt="" />
+                  <article className="mx-[1rem] mb-[2rem]">
+                    <header>
+                      <h1 className="text-xl font-bold">
+                        {graphicsData.title}
                       </h1>
-                      <p>{cloudData.description}</p>
-                    </div>
+                    </header>
+                    <p>{graphicsData.description}</p>
+                  </article>
+                </div>
+                <div onClick={handleClick3} className="pt-[5rem]">
+                  <div className=" mx-[1rem] rounded-xl h-[20rem] mt-[5rem] software-service">
+                    <img className="mt-[-6rem]" src={img4} alt="" />
+                    <article className="mx-[1rem] mb-[2rem]">
+                      <header>
+                        <h1 className="text-xl font-bold">
+                          {softwareData.title}
+                        </h1>
+                      </header>
+                      <p>{softwareData.description}</p>
+                    </article>
                   </div>
                 </div>
-              </Slider>
+                <div
+                  onClick={handleClick4}
+                  className=" mx-[1rem] rounded-xl h-[20rem] mt-[5rem] cloud-service"
+                >
+                  <img className="mt-[-6rem]" src={img5} alt="" />
+                  <article className="mx-[1rem] mb-[2rem]">
+                    <header>
+                      <h1 className="text-xl font-bold">{cloudData.title}</h1>
+                    </header>
+                    <p>{cloudData.description}</p>
+                  </article>
+                </div>
+              </div>
+              {/*sm*/}
+              <div className="block md:hidden">
+                <Slider autoplay={true} arrows={false}>
+                  <div className="py-[7rem] px-[3rem] text-black">
+                    <div className="mx-[1rem] rounded-xl tech-service">
+                      <img className="my-[-6rem]" src={img2} alt="" />
+                      <article className="mt-[3rem] mx-[1rem] mb-[2rem]">
+                        <header>
+                          <h1 className="text-[24px] my-[0.5rem] font-bold">
+                            {techData.title}
+                          </h1>
+                        </header>
+                        <p>{techData.description}</p>
+                      </article>
+                    </div>
+                  </div>
+                  <div className="py-[7rem] px-[3rem] text-black">
+                    <div className=" mx-[1rem] rounded-xl graphic-design">
+                      <img className="my-[-6rem]" src={img3} alt="" />
+                      <article className="mt-[3rem] mx-[1rem] mb-[2rem]">
+                        <header>
+                          <h1 className="text-[24px] my-[0.5rem] font-bold">
+                            {graphicsData.title}
+                          </h1>
+                        </header>
+                        <p>{graphicsData.description}</p>
+                      </article>
+                    </div>
+                  </div>
+                  <div className="py-[7rem] px-[3rem] text-black">
+                    <div className="mx-[1rem] rounded-xl software-service">
+                      <img className="my-[-6rem]" src={img4} alt="" />
+                      <article className="mt-[3rem] mx-[1rem] mb-[2rem]">
+                        <header>
+                          <h1 className="text-[24px] my-[0.5rem] font-bold">
+                            {softwareData.title}
+                          </h1>
+                        </header>
+                        <p>{softwareData.description}</p>
+                      </article>
+                    </div>
+                  </div>
+                  <div className="py-[7rem] px-[3rem] text-black">
+                    <div className=" mx-[1rem] rounded-xl cloud-service">
+                      <img className="my-[-6rem]" src={img5} alt="" />
+                      <article className="mt-[3rem] mx-[1rem] mb-[2rem]">
+                        <header>
+                          <h1 className="text-[24px] my-[0.5rem] font-bold">
+                            {cloudData.title}
+                          </h1>
+                        </header>
+                        <p>{cloudData.description}</p>
+                      </article>
+                    </div>
+                  </div>
+                </Slider>
+              </div>
             </div>
-          </div>
-          <div
-            ref={ref1}
-            className="lg:flex gap-4 my-[5rem] items-center mx-[1rem] lg:mx-[0rem]"
-          >
-            {/*lg*/}
-            <ScrollAnimation
-              animateOnce={true}
-              animateIn="it-from-left"
-              className="hidden lg:block mt-[-1rem] w-1/2"
+          </section>
+          <section>
+            <div
+              ref={ref1}
+              className="lg:flex gap-4 my-[5rem] items-center mx-[1rem] lg:mx-[0rem]"
             >
-              <div className="overflow-hidden mb-[-3rem]">
-                <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                  <img src={img6} alt="" />
-                </ScrollAnimation>
-              </div>
-              <h1 className="text-4xl font-[700] text-[#886CFF]">
-                {techData.title}
-              </h1>
-              <p className="text-lg">{techData.description}</p>
-              <div className="ms-[-1rem]">
-                {techData.features.map((feature) => (
-                  <Feature
-                    key={techData.features.indexOf(feature)}
-                    feature={feature}
-                  ></Feature>
-                ))}
-              </div>
-            </ScrollAnimation>
-            {/*md and sm*/}
-            <div className="lg:hidden">
-              <div className="overflow-hidden">
-                <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                  <img src={img6} alt="" />
-                </ScrollAnimation>
-              </div>
-              <div className="mt-[-1rem] md:mt-[-3rem]">
-                <h1 className="text-4xl font-[700] text-[#886CFF]">
-                  {techData.title}
-                </h1>
-                <p className="text-lg">{techData.description}</p>
-                <div className="mx-[-1rem] md:mx-[0rem] md:ms-[-1rem]">
+              {/*lg*/}
+              <ScrollAnimation
+                animateOnce={true}
+                animateIn="it-from-left"
+                className="hidden lg:block mt-[-1rem]"
+              >
+                <div className="overflow-hidden mb-[-3rem]">
+                  <ScrollAnimation animateOnce={true} animateIn="pop-up">
+                    <img src={img6} alt="" />
+                  </ScrollAnimation>
+                </div>
+                <article>
+                  <header>
+                    <h1 className="text-4xl font-[700] text-[#886CFF]">
+                      {techData.title}
+                    </h1>
+                  </header>
+                  <p className="text-lg">{techData.description}</p>
+                </article>
+                <div className="ms-[-1rem]">
                   {techData.features.map((feature) => (
                     <Feature
                       key={techData.features.indexOf(feature)}
@@ -379,26 +402,52 @@ const ITService = () => {
                     ></Feature>
                   ))}
                 </div>
+              </ScrollAnimation>
+              {/*md and sm*/}
+              <div className="lg:hidden">
+                <div className="overflow-hidden">
+                  <ScrollAnimation animateOnce={true} animateIn="pop-up">
+                    <img src={img6} alt="" />
+                  </ScrollAnimation>
+                </div>
+                <div className="mt-[-1rem] md:mt-[-3rem]">
+                  <article>
+                    <header>
+                      <h1 className="text-4xl font-[700] text-[#886CFF]">
+                        {techData.title}
+                      </h1>
+                    </header>
+                    <p className="text-lg">{techData.description}</p>
+                  </article>
+                  <div className="mx-[-1rem] md:mx-[0rem] md:ms-[-1rem]">
+                    {techData.features.map((feature) => (
+                      <Feature
+                        key={techData.features.indexOf(feature)}
+                        feature={feature}
+                      ></Feature>
+                    ))}
+                  </div>
+                </div>
               </div>
-            </div>
-            <ScrollAnimation
-              animateOnce={true}
-              delay={1000}
-              animateIn="grow-from-0"
-              className=""
-            >
               <ScrollAnimation
                 animateOnce={true}
-                duration={4}
                 delay={1000}
-                animateIn="breathe"
-                className="w-full"
+                animateIn="grow-from-0"
+                className=""
               >
-                <img className="w-full" src={img7} alt="" />
+                <ScrollAnimation
+                  animateOnce={true}
+                  duration={4}
+                  delay={1000}
+                  animateIn="breathe"
+                  className="w-full"
+                >
+                  <img className="w-full" src={img7} alt="" />
+                </ScrollAnimation>
               </ScrollAnimation>
-            </ScrollAnimation>
-          </div>
-          <div
+            </div>
+          </section>
+          <section
             ref={ref2}
             className="lg:flex gap-4 my-[5rem] items-center mx-[1rem] lg:mx-[0rem]"
           >
@@ -419,10 +468,14 @@ const ITService = () => {
                   </ScrollAnimation>
                 </div>
                 <div className="mt-[-1rem] md:mt-[-1.5rem] text-end">
-                  <h1 className="text-4xl font-[700] text-[#886CFF]">
-                    {graphicsData.title}
-                  </h1>
-                  <p className="text-lg">{graphicsData.description}</p>
+                  <article>
+                    <header>
+                      <h1 className="text-4xl font-[700] text-[#886CFF]">
+                        {graphicsData.title}
+                      </h1>
+                    </header>
+                    <p className="text-lg">{graphicsData.description}</p>
+                  </article>
                   <div className="me-[-1rem]">
                     {graphicsData.features.map((feature) => (
                       <Feature
@@ -441,10 +494,14 @@ const ITService = () => {
                   </ScrollAnimation>
                 </div>
                 <div className="md:w-[30rem] mt-[-1rem] md:mt-[-1.5rem] text-end">
-                  <h1 className="text-4xl font-[700] text-[#886CFF]">
-                    {graphicsData.title}
-                  </h1>
-                  <p className="text-lg">{graphicsData.description}</p>
+                  <article>
+                    <header>
+                      <h1 className="text-4xl font-[700] text-[#886CFF]">
+                        {graphicsData.title}
+                      </h1>
+                    </header>
+                    <p className="text-lg">{graphicsData.description}</p>
+                  </article>
                   <div className="mx-[-1rem] md:mx-[0rem] md:me-[-1rem]">
                     {graphicsData.features.map((feature) => (
                       <Feature
@@ -459,8 +516,8 @@ const ITService = () => {
             <div className="block lg:hidden">
               <img className="w-full" src={img9} alt="" />
             </div>
-          </div>
-          <div
+          </section>
+          <section
             ref={ref3}
             className="lg:flex gap-4 my-[5rem] items-center mx-[1rem] lg:mx-[0rem]"
           >
@@ -476,10 +533,14 @@ const ITService = () => {
                 </ScrollAnimation>
               </div>
               <div className="mt-[-1rem] md:mt-[-1.5rem]">
-                <h1 className="text-4xl font-[700] text-[#0081F5]">
-                  {softwareData.title}
-                </h1>
-                <p className="text-lg">{softwareData.description}</p>
+                <article>
+                  <header>
+                    <h1 className="text-4xl font-[700] text-[#0081F5]">
+                      {softwareData.title}
+                    </h1>
+                  </header>
+                  <p className="text-lg">{softwareData.description}</p>
+                </article>
                 <div className="ms-[-1rem]">
                   {softwareData.features.map((feature) => (
                     <Feature
@@ -498,10 +559,14 @@ const ITService = () => {
                 </ScrollAnimation>
               </div>
               <div className="mt-[-1rem] md:mt-[-1.5rem] md:w-[28rem]">
-                <h1 className="text-4xl font-[700] text-[#0081F5]">
-                  {softwareData.title}
-                </h1>
-                <p className="text-lg">{softwareData.description}</p>
+                <article>
+                  <header>
+                    <h1 className="text-4xl font-[700] text-[#0081F5]">
+                      {softwareData.title}
+                    </h1>
+                  </header>
+                  <p className="text-lg">{softwareData.description}</p>
+                </article>
                 <div className="mx-[-1rem] md:mx-[0rem] md:ms-[-1rem]">
                   {softwareData.features.map((feature) => (
                     <Feature
@@ -523,8 +588,8 @@ const ITService = () => {
             <div className="lg:hidden">
               <img className="w-full breathe" src={img11} alt="" />
             </div>
-          </div>
-          <div
+          </section>
+          <section
             ref={ref4}
             className="lg:flex gap-4 my-[5rem] items-center mx-[1rem] lg:mx-[0rem]"
           >
@@ -551,10 +616,14 @@ const ITService = () => {
                   </ScrollAnimation>
                 </div>
                 <div className="w-auto mt-[-1rem] md:mt-[-2rem] text-end">
-                  <h1 className="text-4xl font-[700] text-[#F55498]">
-                    {cloudData.title}
-                  </h1>
-                  <p className="text-lg">{cloudData.description}</p>
+                  <article>
+                    <header>
+                      <h1 className="text-4xl font-[700] text-[#F55498]">
+                        {cloudData.title}
+                      </h1>
+                    </header>
+                    <p className="text-lg">{cloudData.description}</p>
+                  </article>
                   <div className="me-[-1rem]">
                     {cloudData.features.map((feature) => (
                       <Feature
@@ -573,10 +642,14 @@ const ITService = () => {
                   </ScrollAnimation>
                 </div>
                 <div className="w-auto md:w-[28rem] mt-[-1rem] md:mt-[-2rem] text-end">
-                  <h1 className="text-4xl font-[700] text-[#F55498]">
-                    {cloudData.title}
-                  </h1>
-                  <p>{cloudData.description}</p>
+                  <article>
+                    <header>
+                      <h1 className="text-4xl font-[700] text-[#F55498]">
+                        {cloudData.title}
+                      </h1>
+                    </header>
+                    <p>{cloudData.description}</p>
+                  </article>
                   <div className="mx-[-1rem] md:mx-[0rem] md:me-[-1rem]">
                     {cloudData.features.map((feature) => (
                       <Feature
@@ -591,7 +664,7 @@ const ITService = () => {
             <div className="block lg:hidden">
               <img className="w-full breathe" src={img13} alt="" />
             </div>
-          </div>
+          </section>
         </div>
       </div>
     );

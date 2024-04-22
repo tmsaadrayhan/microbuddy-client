@@ -7,8 +7,23 @@ import ScrollAnimation from "react-animate-on-scroll";
 import Slider from "react-slick";
 import { useRef } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { MdDescription } from "react-icons/md";
 
 const WebProject = () => {
+  const webData = [
+    {
+      name: "Xerrat",
+      title: "Blog Website",
+      description:
+        "Xerrat is a concern of Microbuddy that offers a broad spectrum of information and expertise to our visitors. We have a team of experienced blog writers who provide the best insights on various topics. Through our blogs, we aim to provide our visitors with a wide range of information and knowledge.",
+    },
+    {
+      name: "Portifai",
+      title: "Blog Website",
+      description:
+        "Not only IT support, we also help to create free visually appealing portfolios to showcase your professional achievements and stand out.",
+    },
+  ];
   let sliderRef = useRef(null);
   const next = () => {
     sliderRef.slickNext();
@@ -36,9 +51,11 @@ const WebProject = () => {
                 <img src={img2} alt="" />
               </ScrollAnimation>
             </div>
-            <h1 className="font-[700] text-4xl md:text-5xl mt-[-25px] md:mt-[-40px]">
-              WEBSITE
-            </h1>
+            <header>
+              <h1 className="font-[700] text-4xl md:text-5xl mt-[-25px] md:mt-[-40px]">
+                WEBSITE
+              </h1>
+            </header>
           </div>
         </div>
         <div className="mt-[1rem] md:mt-[0rem]">
@@ -60,22 +77,19 @@ const WebProject = () => {
               <div>
                 <div className="flex items-center">
                   <div className="mx-[0rem] lg:w-[30rem] p-[2rem]">
-                    <div className="md:w-[30rem]">
-                      <h1 className="text-5xl font-bold">1. Xerrat</h1>
-                      <div className="w-[20rem]">
+                    <article className="md:w-[30rem]">
+                      <header>
+                        <h1 className="text-5xl font-bold">
+                          {webData[0].name}
+                        </h1>
                         <p className="text-[#666AE5] text-xl mb-[1rem]">
-                          Blog Website
+                          {webData[0].title}
                         </p>
-                        <p>
-                          Xerrat is a concern of Microbuddy that offers a broad
-                          spectrum of information and expertise to our visitors.
-                          We have a team of experienced blog writers who provide
-                          the best insights on various topics. Through our
-                          blogs, we aim to provide our visitors with a wide
-                          range of information and knowledge.
-                        </p>
+                      </header>
+                      <div className="w-[20rem]">
+                        <p>{webData[0].description}</p>
                       </div>
-                    </div>
+                    </article>
                   </div>
                   <img className="ms-[-10rem]" src={img3} alt="" />
                 </div>
@@ -83,19 +97,19 @@ const WebProject = () => {
               <div>
                 <div className="flex items-center">
                   <div className="mx-[2rem] md:mx-[0rem] lg:w-[30rem] p-[2rem]">
-                    <div className="md:w-[30rem]">
-                      <h1 className="text-5xl font-bold">2. Portifai</h1>
-                      <div className="w-[20rem]">
+                    <article className="md:w-[30rem]">
+                      <header>
+                        <h1 className="text-5xl font-bold">
+                          {webData[1].name}
+                        </h1>
                         <p className="text-[#666AE5] text-xl mb-[1rem]">
-                          Blog Website
+                          {webData[1].title}
                         </p>
-                        <p>
-                          Not only IT support, we also help to create free
-                          visually appealing portfolios to showcase your
-                          professional achievements and stand out.
-                        </p>
+                      </header>
+                      <div className="w-[20rem]">
+                        <p>{webData[1].description}</p>
                       </div>
-                    </div>
+                    </article>
                   </div>
                   <img className="ms-[-10rem]" src={img4} alt="" />
                 </div>
@@ -117,22 +131,19 @@ const WebProject = () => {
                 <div className="blue-box md:flex items-center justify-center lg:justify-start lg:w-[110rem] rounded-3xl mx-auto lg:mx-[0rem] lg:ms-[5rem] lg:ps-[3rem] lg:pe-[15rem] pb-[2rem]">
                   <div className="lg:w-[30rem] p-[2rem]">
                     <img src={img3} alt="" />
-                    <div className="text-center mx-auto md:max-w-[30rem]">
-                      <h1 className="text-5xl font-bold">1. Xerrat</h1>
-                      <div>
+                    <article className="text-center mx-auto md:max-w-[30rem]">
+                      <header>
+                        <h1 className="text-5xl font-bold">
+                          {webData[0].name}
+                        </h1>
                         <p className="text-[#666AE5] text-xl mb-[1rem]">
-                          Blog Website
+                          {webData[0].title}
                         </p>
-                        <p>
-                          Xerrat is a concern of Microbuddy that offers a broad
-                          spectrum of information and expertise to our visitors.
-                          We have a team of experienced blog writers who provide
-                          the best insights on various topics. Through our
-                          blogs, we aim to provide our visitors with a wide
-                          range of information and knowledge.
-                        </p>
+                      </header>
+                      <div>
+                        <p>{webData[0].description}</p>
                       </div>
-                    </div>
+                    </article>
                   </div>
                 </div>
               </div>
@@ -140,19 +151,19 @@ const WebProject = () => {
                 <div className="blue-box md:flex items-center justify-center lg:justify-start lg:w-[110rem] rounded-3xl mx-auto lg:mx-[0rem] lg:ms-[5rem] lg:ps-[3rem] lg:pe-[15rem] pb-[2rem]">
                   <div className="mx-[2rem] md:mx-[0rem] lg:w-[30rem]  p-[2rem]">
                     <img className="hidden lg:block" src={img4} alt="" />
-                    <div className="mx-auto text-center md:max-w-[30rem]">
-                      <h1 className="text-5xl font-bold">2. Portifai</h1>
-                      <div>
+                    <article className="mx-auto text-center md:max-w-[30rem]">
+                      <header>
+                        <h1 className="text-5xl font-bold">
+                          {webData[1].name}
+                        </h1>
                         <p className="text-[#666AE5] text-xl mb-[1rem]">
-                          Blog Website
+                          {webData[1].title}
                         </p>
-                        <p>
-                          Not only IT support, we also help to create free
-                          visually appealing portfolios to showcase your
-                          professional achievements and stand out.
-                        </p>
+                      </header>
+                      <div>
+                        <p>{webData[1].description}</p>
                       </div>
-                    </div>
+                    </article>
                   </div>
                 </div>
               </div>
