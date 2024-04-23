@@ -4,7 +4,6 @@ import imgDZ from "../../../assets/review/dustinzhu.jpg";
 import imgSA from "../../../assets/review/salmanalqahtani.jpg";
 import imgSP from "../../../assets/review/salmanparvez.jpg";
 import imgYB from "../../../assets/review/yashikababbar.jpg";
-import img4 from "../../../assets/review/reviews.png";
 import Rating from "react-rating";
 import { IoIosArrowBack, IoIosArrowForward, IoMdStar } from "react-icons/io";
 import { IoMdStarOutline } from "react-icons/io";
@@ -66,7 +65,6 @@ const Review = () => {
           <div className="mx-[1rem] md:mx-auto md:w-[40rem]">
             <div className="overflow-hidden">
               <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                <img src={img4} alt="" />
               </ScrollAnimation>
             </div>
           </div>

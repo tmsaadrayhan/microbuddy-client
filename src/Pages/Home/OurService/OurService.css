@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap");
 @media (min-width: 1024px) {
   .service-bg {
     background-image: linear-gradient(to bottom, white, #eeeefa);
@@ -113,6 +114,7 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: bolder;
 }
 .mirror {
   -webkit-transform: scaleX(-1);

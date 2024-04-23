@@ -13,7 +13,7 @@ const Why = () => {
           <header>
             <div className="overflow-hidden">
               <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                <h1 className="text-[100px] md:text-[180px] why-head">WHY</h1>
+                <h1 className="text-[100px] md:text-[180px] why-head">HELP</h1>
               </ScrollAnimation>
             </div>
             <h1 className="text-5xl font-bold mt-[-4rem] md:mt-[-7rem] mb-[0.5rem]">

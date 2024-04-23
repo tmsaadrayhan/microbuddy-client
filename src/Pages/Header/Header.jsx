@@ -48,7 +48,7 @@ const Header = () => {
               <IoIosArrowDown />
               <div className="absolute opacity-0 group-hover:opacity-100 bg-[#fff] group-hover:backdrop-blur-md group-hover:text-sm translate-y-[-3.5rem] group-hover:-translate-y-[-2rem] duration-700 rounded-xl overflow-hidden scale-[.2] group-hover:scale-[1]">
                 <div className="my-[1rem]">
-                  <NavLink className="z-[50] space-a" to="/Career">
+                  <NavLink className="z-[50] space-a" to="/career">
                     Career
                   </NavLink>
                 </div>

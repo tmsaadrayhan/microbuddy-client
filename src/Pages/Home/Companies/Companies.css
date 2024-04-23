@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap");
 
 .header {
   background: linear-gradient(
@@ -8,13 +8,11 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-align: center;
   font-weight: bolder;
-}
+  }
 .onHeader {
   color: #000;
   margin-left: 20px;
-
   text-align: center;
   font-family: Outfit;
   font-style: normal;

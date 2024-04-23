@@ -19,7 +19,7 @@ const OurService = () => {
         <div className="flex lg:hidden justify-end mx-[1rem] md:mx-[3rem]">
           <article className="text-end w-full mx-auto md:max-w-[35rem] md:mb-[10rem]">
             <div>
-              <header className="gradient-text text-7xl md:text-9xl font-bold z-[-1rem]">
+              <header className="header text-7xl md:text-9xl z-[-1rem]">
                 <h1>SERVICES</h1>
               </header>
             </div>
