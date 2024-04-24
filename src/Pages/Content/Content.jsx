@@ -109,7 +109,7 @@ const Content = () => {
                 </Link>
               </article>
             </div>
-            <div className="flex justify-center lg:justify-end">
+            <div className="flex justify-center lg:justify-end mt-[1rem]">
               <img src={img2} alt="" />
             </div>
           </div>
@@ -117,8 +117,17 @@ const Content = () => {
         <section>
           <div className="lg:max-w-[70rem] lg:mx-auto mt-[5rem] ">
             <div className="overflow-hidden">
+              {/* lg */}
+              <div className="pop-up">
+                <h1 className="hidden lg:block header text-[80px] md:text-[170px] text-center">
+                  HOW
+                </h1>
+              </div>
+              {/* sm and md */}
               <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                <h1 className="header text-[80px] md:text-[170px] text-center">HOW</h1>
+                <h1 className="lg:hidden header text-[80px] md:text-[170px] text-center">
+                  HOW
+                </h1>
               </ScrollAnimation>
             </div>
             <header>
@@ -290,7 +299,7 @@ const Content = () => {
                   </div>
                 </div>
                 {/*Only sm*/}
-                <img className="md:hidden mx-auto" src={img15} />
+                <img className="md:hidden mx-auto mt-[1rem]" src={img15} />
                 {/*lg and md*/}
                 <div className="md:w-1/2 overflow-hidden hidden md:block">
                   <ScrollAnimation
@@ -344,12 +353,14 @@ const Content = () => {
             <div className="text-center">
               <div className="overflow-hidden">
                 <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                  <h1 className="header text-[170px]">SERVICE</h1>
+                  <h1 className="header text-[80px] md:text-[140px] lg:text-[170px]">
+                    SERVICE
+                  </h1>
                 </ScrollAnimation>
               </div>
               <div className="w-fit mx-auto">
                 <header>
-                  <h1 className="text-4xl md:text-6xl font-black mt-[-2rem] md:mt-[-4rem]">
+                  <h1 className="text-4xl md:text-6xl font-black mt-[-3.5rem] md:mt-[-7rem] lg:mt-[-8rem]">
                     Service You Get
                   </h1>
                   <p>FOR RAPIDLY GROWING BUSINESS</p>
@@ -656,7 +667,7 @@ const Content = () => {
         </section>
         <section>
           <div className="lg:max-w-[70rem] mb-[12rem] mx-auto">
-            <div className="lg:flex">
+            <div className="lg:flex lg:gap-[5rem]">
               <div className="lg:w-1/2">
                 <div className="hidden lg:flex justify-end">
                   <img className="breathe w-[8rem]" src={img1} alt="" />
@@ -670,13 +681,17 @@ const Content = () => {
                   <div className="w-full flex justify-center md:justify-end">
                     <div className="overflow-hidden w-fit">
                       <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                        WRITE
+                        <header>
+                          <h1 className="header text-[100px] md:text-[170px]">
+                            WRITE
+                          </h1>
+                        </header>
                       </ScrollAnimation>
                     </div>
                   </div>
                   <article>
                     <header>
-                      <h1 className="mt-[-3rem] text-6xl font-black text-center md:text-end text-[#666AE5]">
+                      <h1 className="mt-[-4rem] md:mt-[-7rem] text-5xl md:text-6xl font-black text-center md:text-end text-[#666AE5]">
                         Write to US
                       </h1>
                     </header>
@@ -808,7 +823,7 @@ const Content = () => {
                     }) => (
                       <form
                         onSubmit={handleSubmit}
-                        className="mt-[2rem] px-[1rem] md:px-[0]"
+                        className="mt-[1rem] px-[1rem] md:px-[0]"
                       >
                         <div className=" grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
                           <div className="form-control">
@@ -819,7 +834,7 @@ const Content = () => {
                               onChange={handleChange}
                               onBlur={handleBlur}
                               value={values.name}
-                              className="input write-input input-bordered"
+                              className="h-[2.5rem] input write-input input-bordered"
                               required
                             />
                           </div>
@@ -831,12 +846,12 @@ const Content = () => {
                               onChange={handleChange}
                               onBlur={handleBlur}
                               value={values.email}
-                              className="input write-input input-bordered"
+                              className="h-[2.5rem] input write-input input-bordered"
                               required
                             />
                           </div>
                         </div>
-                        <div className="form-control mt-6">
+                        <div className="form-control mt-[1rem]">
                           <input
                             type="text"
                             placeholder="Subject"
@@ -844,13 +859,13 @@ const Content = () => {
                             onBlur={handleBlur}
                             name="subject"
                             value={values.values}
-                            className="input write-input input-bordered"
+                            className="h-[2.5rem] input write-input input-bordered"
                             required
                           />
                         </div>
                         <div className="form-control">
                           <textarea
-                            className="input input-bordered rounded-xl w-full h-[10rem] mt-[1.75rem]"
+                            className="input input-bordered rounded-xl w-full h-[7rem] mt-[1rem]"
                             onChange={handleChange}
                             onBlur={handleBlur}
                             name="message"
@@ -864,9 +879,9 @@ const Content = () => {
                             <button
                               type="submit"
                               disabled={isSubmitting}
-                              className="absolute left-[-5rem] text-wrap button-child w-[11rem]"
+                              className="absolute left-[-5rem] text-wrap button-child w-[11rem] text-[#666AE5] font-[600]"
                             >
-                              Send Message
+                              SUBMIT
                             </button>
                           </div>
                         </div>

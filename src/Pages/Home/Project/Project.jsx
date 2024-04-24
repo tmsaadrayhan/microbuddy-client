@@ -1,6 +1,5 @@
 import ScrollAnimation from "react-animate-on-scroll";
 import img1 from "../../../assets/project/idea.webp";
-import img2 from "../../../assets/project/project.png";
 import img3 from "../../../assets/cube.webp";
 import successtoast from "../../../assets/successtoast.svg";
 import errortoast from "../../../assets/errortoast.svg";
@@ -32,10 +31,10 @@ const Project = () => {
           <div className="text-center">
             <div className="overflow-hidden">
               <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                <img className="mx-auto" src={img2} alt="" />
+                <h1 className="header text-[60px] md:text-[120px]">PROJECT</h1>
               </ScrollAnimation>
             </div>
-            <div className="mt-[-2rem] md:mt-[-3rem] text-[30px] md:text-[50px] lg:text-[35px] font-[700]">
+            <div className="mt-[-3rem] md:mt-[-6rem] text-[30px] md:text-[50px] lg:text-[35px] font-[700]">
               <h1 className="mb-[-0.5rem]">
                 Let’s Turn Your Project idea into a Reality !
               </h1>

@@ -65,10 +65,11 @@ const Review = () => {
           <div className="mx-[1rem] md:mx-auto md:w-[40rem]">
             <div className="overflow-hidden">
               <ScrollAnimation animateOnce={true} animateIn="pop-up">
+                <h1 className="header text-[60px] md:text-[120px]">REVIEWS</h1>
               </ScrollAnimation>
             </div>
           </div>
-          <h1 className="md:text-4xl lg:text-5xl mt-[-1.25rem] md:mt-[-2rem] lg:mt-[-2rem]">
+          <h1 className="md:text-4xl lg:text-5xl mt-[-2.5rem] md:mt-[-5rem] lg:mt-[-5rem]">
             WE HAVE CUSTOMERS WORLDWIDE-
           </h1>
           <h1 className="md:text-4xl lg:text-5xl">READ WHAT THEY SAY.</h1>

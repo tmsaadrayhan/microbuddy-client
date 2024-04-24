@@ -60,26 +60,26 @@ const Projects = () => {
   return (
     <section className="max-w-[90rem] lg:mx-auto relative">
       <div className="my-[5rem]">
-        <div className="hidden lg:block absolute left-[0rem] top-[10rem]">
+        <div className="hidden lg:block absolute left-[0rem] top-[15rem]">
           <img src={img1} alt="" />
         </div>
         <div>
-          <div className="flex md:justify-center">
-            <div className="text-center mx-[2rem] md:mx-[0rem] lg:w-[35rem] static lg:absolute lg:left-[0rem] lg:top-[3rem]">
+          <div className="flex justify-center">
+            <div className="text-center mx-[2rem] md:mx-[0rem] static lg:absolute lg:left-[0rem] lg:top-[3rem]">
               <div className="overflow-hidden">
                 <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                  <img src={img2} alt="" />
+                  <h1 className="header text-[60px] md:text-[100px]">PROJECTS</h1>
                 </ScrollAnimation>
               </div>
-              <h1 className="font-[700] text-4xl md:text-7xl lg:text-5xl mt-[-30px] md:mt-[-40px]">
+              <h1 className="font-[700] text-3xl md:text-5xl mt-[-3rem] md:mt-[-4rem]">
                 DEVELOPED APPS
               </h1>
             </div>
           </div>
           {/*lg*/}
           <div className="hidden lg:block ms-[-8rem] mx-auto">
-            <div className="absolute w-[150rem] top-[10rem] left-[13rem] text-black">
-              <div className="ps-[2rem] pt-[1rem] blue-box h-[38rem] flex rounded-3xl"></div>
+            <div className="absolute w-[150rem] top-[13rem] left-[13rem] text-black">
+              <div className="ps-[2rem] mt-[1rem] pt-[1rem] blue-box h-[38rem] flex rounded-3xl"></div>
             </div>
             <Slider
               ref={(slider) => {
@@ -156,10 +156,10 @@ const Projects = () => {
             </div>
           </div>
           {/*md*/}
-          <div className="hidden md:block lg:hidden lg:w-[150rem] lg:mx-auto">
+          <div className="hidden md:block lg:hidden mx-[-1rem]">
             <Slider autoplay={true} arrows={false}>
-              <div className="pt-[5rem] text-black">
-                <div className=" pt-[1rem] blue-box lg:w-[120rem] rounded-3xl">
+              <div className="py-[5rem] px-[1rem] text-black">
+                <div className="pt-[1rem] blue-box lg:w-[120rem] rounded-3xl">
                   <img
                     className="mx-auto z-50 block md:hidden"
                     src={img3}
@@ -176,7 +176,7 @@ const Projects = () => {
                   </article>
                 </div>
               </div>
-              <div className="pt-[5rem] text-black">
+              <div className="py-[5rem] px-[1rem] text-black">
                 <div className="pt-[1rem] blue-box lg:w-[120rem] rounded-3xl">
                   <img
                     className="mx-auto text z-50 block md:hidden"
@@ -194,7 +194,7 @@ const Projects = () => {
                   </article>
                 </div>
               </div>
-              <div className="pt-[5rem] text-black">
+              <div className="py-[5rem] px-[1rem] text-black">
                 <div className="pt-[1rem] blue-box lg:w-[120rem] rounded-3xl">
                   <img
                     className="mx-auto z-50 block md:hidden"
@@ -212,7 +212,7 @@ const Projects = () => {
                   </article>
                 </div>
               </div>
-              <div className="pt-[5rem] text-black">
+              <div className="py-[5rem] px-[1rem] text-black">
                 <div className="pt-[1rem] blue-box lg:w-[105rem] rounded-3xl">
                   <img
                     className="mx-auto z-50 block md:hidden"

@@ -9,7 +9,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bolder;
-  }
+  z-index: -10;
+}
 .onHeader {
   color: #000;
   margin-left: 20px;

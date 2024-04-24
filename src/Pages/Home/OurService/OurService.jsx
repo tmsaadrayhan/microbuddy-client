@@ -19,11 +19,11 @@ const OurService = () => {
         <div className="flex lg:hidden justify-end mx-[1rem] md:mx-[3rem]">
           <article className="text-end w-full mx-auto md:max-w-[35rem] md:mb-[10rem]">
             <div>
-              <header className="header text-7xl md:text-9xl z-[-1rem]">
+              <header className="header text-7xl md:text-[110px] z-[-1rem]">
                 <h1>SERVICES</h1>
               </header>
             </div>
-            <div className="mt-[-2.5rem] md:mt-[-4.5rem]">
+            <div className="mt-[-2.5rem] md:mt-[-4rem]">
               <div className="flex justify-end">
                 <img className="w-[14rem] md:w-[30rem]" src={img7} alt="" />
               </div>
@@ -256,11 +256,15 @@ const OurService = () => {
             <div>
               <div className="hidden lg:block overflow-hidden">
                 <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                  <img src={img8} alt="" />
+                  <h1
+                    className="header text-[120px]"
+                  >
+                    SERVICE
+                  </h1>
                 </ScrollAnimation>
               </div>
             </div>
-            <div className="mt-[-3rem]">
+            <div className="mt-[-6rem]">
               <div className="flex justify-end">
                 <img className="max-w-[32rem]" src={img7} alt="" />
               </div>

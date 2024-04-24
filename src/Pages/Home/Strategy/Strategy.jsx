@@ -46,10 +46,10 @@ const Strategy = () => {
         <header>
           <div className="overflow-hidden">
             <ScrollAnimation animateOnce={true} animateIn="pop-up">
-              <img className="mx-auto w-[50rem]" src={img2} alt="" />
+              <h1 className="text-[60px] md:text-[120px] header">STRATEGY</h1>
             </ScrollAnimation>
           </div>
-          <div className="text-[20px] md:text-[34px] lg:text-[43px] font-[700] mt-[-2rem] md:mt-[-4rem]">
+          <div className="text-[20px] md:text-[34px] lg:text-[43px] font-[700] mt-[-2.5rem] md:mt-[-5rem] lg:mt-[-6rem]">
             <h1 className="mb-[-0.5rem] md:mb-[-1rem]">A QUALITY IT SUPPORT</h1>
             <h1>FOR EVERYONE</h1>
           </div>

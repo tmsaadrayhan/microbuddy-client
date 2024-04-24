@@ -667,548 +667,571 @@ const AboutUs = () => {
               </Slider>
             </div>
           </section>
-          <div className="mt-20 relative max-w-[70rem] lg:mx-auto">
-            <div className="text-center font-[700] lg:mb-[-11rem]">
-              <header>
-                <div className="mx-[1rem] md:mx-auto">
-                  <div className="overflow-hidden">
-                    <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                      <h1 className="header text-[50px] md:text-[100px] lg:text-[120px] tracking-[0.2em]">
-                        REVIEWS
-                      </h1>
-                    </ScrollAnimation>
+          <section>
+            <div className="mt-20 relative max-w-[70rem] lg:mx-auto">
+              <div className="text-center font-[700] lg:mb-[-11rem]">
+                <header>
+                  <div className="mx-[1rem] md:mx-auto">
+                    <div className="overflow-hidden">
+                      <ScrollAnimation animateOnce={true} animateIn="pop-up">
+                        <h1 className="header text-[50px] md:text-[100px] lg:text-[120px] tracking-[0.2em]">
+                          REVIEWS
+                        </h1>
+                      </ScrollAnimation>
+                    </div>
                   </div>
-                </div>
-                <h1 className="md:text-4xl lg:text-5xl mt-[-2rem] md:mt-[-4rem] lg:mt-[-5rem]">
-                  WE HAVE CUSTOMERS WORLDWIDE-
-                </h1>
-                <h1 className="md:text-4xl lg:text-5xl">READ WHAT THEY SAY.</h1>
-              </header>
-            </div>
-            {/* lg */}
-            <img
-              className="lg:mt-[7rem] -z-50 hidden lg:block"
-              src={img16}
-              alt=""
-            />
-            {/* am and md */}
-            <img
-              className="mx-auto w-full -z-50 block lg:hidden"
-              src={img1Md}
-              alt=""
-            />
-            {/* lg */}
-            <div className="hidden lg:block z-50 w-[7rem] absolute top-[0rem] left-[0rem]">
-              <div className="relative">
-                <img className="breathe" src={img1} alt="" />
+                  <h1 className="md:text-4xl lg:text-5xl mt-[-2rem] md:mt-[-4rem] lg:mt-[-5rem]">
+                    WE HAVE CUSTOMERS WORLDWIDE-
+                  </h1>
+                  <h1 className="md:text-4xl lg:text-5xl">
+                    READ WHAT THEY SAY.
+                  </h1>
+                </header>
               </div>
-            </div>
-            <div className="lg:w-[60rem] -z-10 lg:-mt-[25rem] mb-[5rem] lg:mx-auto">
-              {/*lg*/}
-              <div className="hidden lg:block max-w-[60rem] -z-10 -mt-[25rem] mx-auto">
-                <div className="hidden lg:block absolute left-[3rem] top-[35rem]">
-                  <button onClick={previous}>
-                    <IoIosArrowBack className="text-[#666ae580] text-[40px]" />
-                  </button>
+              {/* lg */}
+              <img
+                className="lg:mt-[7rem] -z-50 hidden lg:block"
+                src={img16}
+                alt=""
+              />
+              {/* am and md */}
+              <img
+                className="mx-auto w-full -z-50 block lg:hidden"
+                src={img1Md}
+                alt=""
+              />
+              {/* lg */}
+              <div className="hidden lg:block z-50 w-[7rem] absolute top-[0rem] left-[0rem]">
+                <div className="relative">
+                  <img className="breathe" src={img1} alt="" />
                 </div>
-                <Slider
-                  ref={(slider) => {
-                    sliderRef = slider;
-                  }}
-                  overScan={1}
-                  autoplay={true}
-                  arrows={false}
-                >
-                  <div className="p-[3rem] text-black">
-                    <div className="bg-white mx-auto rounded-[3rem] border blue-box">
-                      <div className="flex">
-                        <div className="w-[15rem] px-[3rem] py-[4rem]">
-                          <img className="rounded-full w-[10rem]" src={imgDZ} />
-                        </div>
-                        <article>
-                          <div className="py-[5rem] w-[30rem] text-left">
-                            <header>
-                              <h1 className="text-5xl font-bold">Dustin Zhu</h1>
-                            </header>
-                            <Rating
-                              fullSymbol={
-                                <IoMdStar className="text-[#FFD600] text-5xl" />
-                              }
-                              emptySymbol={
-                                <IoMdStarOutline className="text-[#FFD600] text-5xl" />
-                              }
-                              readonly={true}
-                              placeholderSymbol={
-                                <IoMdStar className="text-[#FFD600] text-5xl" />
-                              }
-                              placeholderRating={5}
+              </div>
+              <div className="lg:w-[60rem] -z-10 lg:-mt-[25rem] mb-[5rem] lg:mx-auto">
+                {/*lg*/}
+                <div className="hidden lg:block max-w-[60rem] -z-10 -mt-[25rem] mx-auto">
+                  <div className="hidden lg:block absolute left-[3rem] top-[35rem]">
+                    <button onClick={previous}>
+                      <IoIosArrowBack className="text-[#666ae580] text-[40px]" />
+                    </button>
+                  </div>
+                  <Slider
+                    ref={(slider) => {
+                      sliderRef = slider;
+                    }}
+                    overScan={1}
+                    autoplay={true}
+                    arrows={false}
+                  >
+                    <div className="p-[3rem] text-black">
+                      <div className="bg-white mx-auto rounded-[3rem] border blue-box">
+                        <div className="flex">
+                          <div className="w-[15rem] px-[3rem] py-[4rem]">
+                            <img
+                              className="rounded-full w-[10rem]"
+                              src={imgDZ}
                             />
-                            {!isExpanded1 ? (
-                              <p className="py-6 text-xl">
-                                {texts[0].slice(0, 150)}
-                                {".... "}
-                                <span
-                                  onClick={toggleExpansion1}
-                                  className="text-primary underline"
-                                >
-                                  Show more.
-                                </span>
-                              </p>
-                            ) : (
-                              <p className="py-6 text-xl">
-                                {" "}
-                                {texts[0]}{" "}
-                                <span
-                                  onClick={toggleExpansion1}
-                                  className="text-primary underline"
-                                >
-                                  {" "}
-                                  Show less
-                                </span>
-                              </p>
-                            )}
                           </div>
-                        </article>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-[3rem] text-black">
-                    <div className="bg-white mx-auto rounded-[3rem] border blue-box">
-                      <div className="flex ">
-                        <div className="w-[15rem] px-[3rem] py-[4rem]">
-                          <img className="rounded-full" src={imgSA} />
-                        </div>
-                        <div className="py-[5rem] w-[30rem] text-left">
                           <article>
-                            <header>
-                              <h1 className="text-5xl font-bold">
-                                Salman Alqahtani
-                              </h1>
-                            </header>
-                            <Rating
-                              fullSymbol={
-                                <IoMdStar className="text-[#FFD600] text-5xl" />
-                              }
-                              emptySymbol={
-                                <IoMdStarOutline className="text-[#FFD600] text-5xl" />
-                              }
-                              readonly={true}
-                              placeholderSymbol={
-                                <IoMdStar className="text-[#FFD600] text-5xl" />
-                              }
-                              placeholderRating={5}
-                            />
-                            {!isExpanded2 ? (
-                              <p className="py-6 text-xl">
-                                {texts[1].slice(0, 150)}
-                                {".... "}
-                                <span
-                                  onClick={toggleExpansion2}
-                                  className="text-primary underline"
-                                >
-                                  Show more.
-                                </span>
-                              </p>
-                            ) : (
-                              <p className="py-6 text-xl">
-                                {" "}
-                                {texts[1]}{" "}
-                                <span
-                                  onClick={toggleExpansion2}
-                                  className="text-primary underline"
-                                >
+                            <div className="py-[5rem] w-[30rem] text-left">
+                              <header>
+                                <h1 className="text-5xl font-bold">
+                                  Dustin Zhu
+                                </h1>
+                              </header>
+                              <Rating
+                                fullSymbol={
+                                  <IoMdStar className="text-[#FFD600] text-5xl" />
+                                }
+                                emptySymbol={
+                                  <IoMdStarOutline className="text-[#FFD600] text-5xl" />
+                                }
+                                readonly={true}
+                                placeholderSymbol={
+                                  <IoMdStar className="text-[#FFD600] text-5xl" />
+                                }
+                                placeholderRating={5}
+                              />
+                              {!isExpanded1 ? (
+                                <p className="py-6 text-xl">
+                                  {texts[0].slice(0, 150)}
+                                  {".... "}
+                                  <span
+                                    onClick={toggleExpansion1}
+                                    className="text-primary underline"
+                                  >
+                                    Show more.
+                                  </span>
+                                </p>
+                              ) : (
+                                <p className="py-6 text-xl">
                                   {" "}
-                                  Show less
-                                </span>
-                              </p>
-                            )}
+                                  {texts[0]}{" "}
+                                  <span
+                                    onClick={toggleExpansion1}
+                                    className="text-primary underline"
+                                  >
+                                    {" "}
+                                    Show less
+                                  </span>
+                                </p>
+                              )}
+                            </div>
                           </article>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="p-[3rem] text-black">
-                    <div className="bg-white mx-auto rounded-[3rem] border blue-box">
-                      <div className="flex ">
-                        <div className="w-[15rem] px-[3rem] py-[4rem]">
-                          <img className="rounded-full" src={imgYB} />
-                        </div>
-                        <div className="py-[5rem] w-[30rem] text-left">
-                          <article>
-                            <header>
-                              <h1 className="text-4xl md:text-5xl font-bold">
-                                Yashika Babbar
-                              </h1>
-                            </header>
-                            <Rating
-                              fullSymbol={
-                                <IoMdStar className="text-[#FFD600] text-5xl" />
-                              }
-                              emptySymbol={
-                                <IoMdStarOutline className="text-[#FFD600] text-5xl" />
-                              }
-                              readonly={true}
-                              placeholderSymbol={
-                                <IoMdStar className="text-[#FFD600] text-5xl" />
-                              }
-                              placeholderRating={5}
-                            />
-                            {!isExpanded3 ? (
-                              <p className="py-6 text-xl">
-                                {texts[2].slice(0, 150)}
-                                {".... "}
-                                <span
-                                  onClick={toggleExpansion3}
-                                  className="text-primary underline"
-                                >
-                                  Show more.
-                                </span>
-                              </p>
-                            ) : (
-                              <p className="py-6 text-xl">
-                                {" "}
-                                {texts[2]}{" "}
-                                <span
-                                  onClick={toggleExpansion3}
-                                  className="text-primary underline"
-                                >
+                    <div className="p-[3rem] text-black">
+                      <div className="bg-white mx-auto rounded-[3rem] border blue-box">
+                        <div className="flex ">
+                          <div className="w-[15rem] px-[3rem] py-[4rem]">
+                            <img className="rounded-full" src={imgSA} />
+                          </div>
+                          <div className="py-[5rem] w-[30rem] text-left">
+                            <article>
+                              <header>
+                                <h1 className="text-5xl font-bold">
+                                  Salman Alqahtani
+                                </h1>
+                              </header>
+                              <Rating
+                                fullSymbol={
+                                  <IoMdStar className="text-[#FFD600] text-5xl" />
+                                }
+                                emptySymbol={
+                                  <IoMdStarOutline className="text-[#FFD600] text-5xl" />
+                                }
+                                readonly={true}
+                                placeholderSymbol={
+                                  <IoMdStar className="text-[#FFD600] text-5xl" />
+                                }
+                                placeholderRating={5}
+                              />
+                              {!isExpanded2 ? (
+                                <p className="py-6 text-xl">
+                                  {texts[1].slice(0, 150)}
+                                  {".... "}
+                                  <span
+                                    onClick={toggleExpansion2}
+                                    className="text-primary underline"
+                                  >
+                                    Show more.
+                                  </span>
+                                </p>
+                              ) : (
+                                <p className="py-6 text-xl">
                                   {" "}
-                                  Show less
-                                </span>
-                              </p>
-                            )}
-                          </article>
+                                  {texts[1]}{" "}
+                                  <span
+                                    onClick={toggleExpansion2}
+                                    className="text-primary underline"
+                                  >
+                                    {" "}
+                                    Show less
+                                  </span>
+                                </p>
+                              )}
+                            </article>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="p-[3rem] text-black">
-                    <div className="bg-white mx-auto rounded-[3rem] border blue-box">
-                      <div className="flex ">
-                        <div className="w-[15rem] px-[3rem] py-[4rem]">
-                          <img className="rounded-full" src={imgSP} />
-                        </div>
-                        <div className="py-[5rem] w-[30rem] text-left">
-                          <article>
-                            <header>
-                              <h1 className="text-4xl md:text-5xl font-bold">
-                                Salman Parvez
-                              </h1>
-                            </header>
-                            <Rating
-                              fullSymbol={
-                                <IoMdStar className="text-[#FFD600] text-5xl" />
-                              }
-                              emptySymbol={
-                                <IoMdStarOutline className="text-[#FFD600] text-5xl" />
-                              }
-                              readonly={true}
-                              placeholderSymbol={
-                                <IoMdStar className="text-[#FFD600] text-5xl" />
-                              }
-                              placeholderRating={5}
-                            />
-                            {!isExpanded4 ? (
-                              <p className="py-6 text-xl">
-                                {texts[3].slice(0, 150)}
-                                {".... "}
-                                <span
-                                  onClick={toggleExpansion4}
-                                  className="text-primary underline"
-                                >
-                                  Show more.
-                                </span>
-                              </p>
-                            ) : (
-                              <p className="py-6 text-xl">
-                                {" "}
-                                {texts[3]}{" "}
-                                <span
-                                  onClick={toggleExpansion4}
-                                  className="text-primary underline"
-                                >
+                    <div className="p-[3rem] text-black">
+                      <div className="bg-white mx-auto rounded-[3rem] border blue-box">
+                        <div className="flex ">
+                          <div className="w-[15rem] px-[3rem] py-[4rem]">
+                            <img className="rounded-full" src={imgYB} />
+                          </div>
+                          <div className="py-[5rem] w-[30rem] text-left">
+                            <article>
+                              <header>
+                                <h1 className="text-4xl md:text-5xl font-bold">
+                                  Yashika Babbar
+                                </h1>
+                              </header>
+                              <Rating
+                                fullSymbol={
+                                  <IoMdStar className="text-[#FFD600] text-5xl" />
+                                }
+                                emptySymbol={
+                                  <IoMdStarOutline className="text-[#FFD600] text-5xl" />
+                                }
+                                readonly={true}
+                                placeholderSymbol={
+                                  <IoMdStar className="text-[#FFD600] text-5xl" />
+                                }
+                                placeholderRating={5}
+                              />
+                              {!isExpanded3 ? (
+                                <p className="py-6 text-xl">
+                                  {texts[2].slice(0, 150)}
+                                  {".... "}
+                                  <span
+                                    onClick={toggleExpansion3}
+                                    className="text-primary underline"
+                                  >
+                                    Show more.
+                                  </span>
+                                </p>
+                              ) : (
+                                <p className="py-6 text-xl">
                                   {" "}
-                                  Show less
-                                </span>
-                              </p>
-                            )}
-                          </article>
+                                  {texts[2]}{" "}
+                                  <span
+                                    onClick={toggleExpansion3}
+                                    className="text-primary underline"
+                                  >
+                                    {" "}
+                                    Show less
+                                  </span>
+                                </p>
+                              )}
+                            </article>
+                          </div>
                         </div>
                       </div>
                     </div>
+                    <div className="p-[3rem] text-black">
+                      <div className="bg-white mx-auto rounded-[3rem] border blue-box">
+                        <div className="flex ">
+                          <div className="w-[15rem] px-[3rem] py-[4rem]">
+                            <img className="rounded-full" src={imgSP} />
+                          </div>
+                          <div className="py-[5rem] w-[30rem] text-left">
+                            <article>
+                              <header>
+                                <h1 className="text-4xl md:text-5xl font-bold">
+                                  Salman Parvez
+                                </h1>
+                              </header>
+                              <Rating
+                                fullSymbol={
+                                  <IoMdStar className="text-[#FFD600] text-5xl" />
+                                }
+                                emptySymbol={
+                                  <IoMdStarOutline className="text-[#FFD600] text-5xl" />
+                                }
+                                readonly={true}
+                                placeholderSymbol={
+                                  <IoMdStar className="text-[#FFD600] text-5xl" />
+                                }
+                                placeholderRating={5}
+                              />
+                              {!isExpanded4 ? (
+                                <p className="py-6 text-xl">
+                                  {texts[3].slice(0, 150)}
+                                  {".... "}
+                                  <span
+                                    onClick={toggleExpansion4}
+                                    className="text-primary underline"
+                                  >
+                                    Show more.
+                                  </span>
+                                </p>
+                              ) : (
+                                <p className="py-6 text-xl">
+                                  {" "}
+                                  {texts[3]}{" "}
+                                  <span
+                                    onClick={toggleExpansion4}
+                                    className="text-primary underline"
+                                  >
+                                    {" "}
+                                    Show less
+                                  </span>
+                                </p>
+                              )}
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Slider>
+                  <div className="hidden lg:block absolute right-[3rem] top-[35rem]">
+                    <button onClick={next}>
+                      <IoIosArrowForward className="text-[#666ae580] text-[40px]" />
+                    </button>
                   </div>
-                </Slider>
-                <div className="hidden lg:block absolute right-[3rem] top-[35rem]">
-                  <button onClick={next}>
-                    <IoIosArrowForward className="text-[#666ae580] text-[40px]" />
-                  </button>
+                </div>
+                {/*md and sm*/}
+                <div className="-z-10 mb-[5rem] mx-auto lg:hidden ">
+                  <Slider overScan={1} autoplay={true} arrows={false}>
+                    <div className="px-[1rem] py-[2rem] text-black">
+                      <div className="bg-white mx-auto rounded-3xl blue-box px-[1rem]">
+                        <div>
+                          <div className="mx-auto w-fit mt-[2rem]">
+                            <img
+                              className="rounded-full w-[10rem]"
+                              src={imgDZ}
+                            />
+                          </div>
+
+                          <div className="py-[3rem] text-center">
+                            <article>
+                              <header>
+                                <h1 className="text-4xl md:text-5xl font-bold">
+                                  Dustin Zhu
+                                </h1>
+                              </header>
+                              <Rating
+                                fullSymbol={
+                                  <IoMdStar className="text-[#FFD600] text-4xl md:text-5xl" />
+                                }
+                                emptySymbol={
+                                  <IoMdStarOutline className="text-[#FFD600] text-4xl md:text-5xl" />
+                                }
+                                readonly={true}
+                                placeholderSymbol={
+                                  <IoMdStar className="text-[#FFD600] text-4xl md:text-5xl" />
+                                }
+                                placeholderRating={5}
+                              />
+                              {!isExpanded1 ? (
+                                <p className="py-6 text-xl">
+                                  {texts[0].slice(0, 150)}
+                                  {".... "}
+                                  <span
+                                    onClick={toggleExpansion1}
+                                    className="text-primary underline"
+                                  >
+                                    Show more.
+                                  </span>
+                                </p>
+                              ) : (
+                                <p className="py-6 text-xl">
+                                  {" "}
+                                  {texts[0]}{" "}
+                                  <span
+                                    onClick={toggleExpansion1}
+                                    className="text-primary underline"
+                                  >
+                                    {" "}
+                                    Show less
+                                  </span>
+                                </p>
+                              )}
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="px-[1rem] py-[2rem] text-black">
+                      <div className="bg-white mx-auto rounded-3xl blue-box px-[1rem]">
+                        <div>
+                          <div className="mx-auto w-fit mt-[2rem]">
+                            <img
+                              className="rounded-full w-[10rem]"
+                              src={imgSA}
+                            />
+                          </div>
+
+                          <div className="py-[3rem] text-center">
+                            <article>
+                              <header>
+                                <h1 className="text-4xl md:text-5xl font-bold">
+                                  Salman Alqahtani
+                                </h1>
+                              </header>
+                              <Rating
+                                fullSymbol={
+                                  <IoMdStar className="text-[#FFD600] text-4xl md:text-5xl" />
+                                }
+                                emptySymbol={
+                                  <IoMdStarOutline className="text-[#FFD600] text-4xl md:text-5xl" />
+                                }
+                                readonly={true}
+                                placeholderSymbol={
+                                  <IoMdStar className="text-[#FFD600] text-4xl md:text-5xl" />
+                                }
+                                placeholderRating={5}
+                              />
+                              {!isExpanded2 ? (
+                                <p className="py-6 text-xl">
+                                  {texts[1].slice(0, 150)}
+                                  {".... "}
+                                  <span
+                                    onClick={toggleExpansion2}
+                                    className="text-primary underline"
+                                  >
+                                    Show more.
+                                  </span>
+                                </p>
+                              ) : (
+                                <p className="py-6 text-xl">
+                                  {" "}
+                                  {texts[1]}{" "}
+                                  <span
+                                    onClick={toggleExpansion2}
+                                    className="text-primary underline"
+                                  >
+                                    {" "}
+                                    Show less
+                                  </span>
+                                </p>
+                              )}
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="px-[1rem] py-[2rem] text-black">
+                      <div className="bg-white mx-auto rounded-3xl blue-box px-[1rem]">
+                        <div>
+                          <div className="mx-auto w-fit mt-[2rem]">
+                            <img
+                              className="rounded-full w-[10rem]"
+                              src={imgYB}
+                            />
+                          </div>
+
+                          <div className="py-[3rem] text-center">
+                            <article>
+                              <header>
+                                <h1 className="text-4xl md:text-5xl font-bold">
+                                  Yashika Babbar
+                                </h1>
+                              </header>
+                              <Rating
+                                fullSymbol={
+                                  <IoMdStar className="text-[#FFD600] text-4xl md:text-5xl" />
+                                }
+                                emptySymbol={
+                                  <IoMdStarOutline className="text-[#FFD600] text-4xl md:text-5xl" />
+                                }
+                                readonly={true}
+                                placeholderSymbol={
+                                  <IoMdStar className="text-[#FFD600] text-4xl md:text-5xl" />
+                                }
+                                placeholderRating={5}
+                              />
+                              {!isExpanded3 ? (
+                                <p className="py-6 text-xl">
+                                  {texts[2].slice(0, 150)}
+                                  {".... "}
+                                  <span
+                                    onClick={toggleExpansion3}
+                                    className="text-primary underline"
+                                  >
+                                    Show more.
+                                  </span>
+                                </p>
+                              ) : (
+                                <p className="py-6 text-xl">
+                                  {" "}
+                                  {texts[2]}{" "}
+                                  <span
+                                    onClick={toggleExpansion3}
+                                    className="text-primary underline"
+                                  >
+                                    {" "}
+                                    Show less
+                                  </span>
+                                </p>
+                              )}
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="px-[1rem] py-[2rem] text-black">
+                      <div className="bg-white mx-auto rounded-3xl blue-box px-[1rem]">
+                        <div>
+                          <div className="mx-auto w-fit mt-[2rem]">
+                            <img
+                              className="rounded-full w-[10rem]"
+                              src={imgSP}
+                            />
+                          </div>
+
+                          <div className="py-[3rem] text-center">
+                            <article>
+                              <header>
+                                <h1 className="text-4xl md:text-5xl font-bold">
+                                  Salman Parvez
+                                </h1>
+                              </header>
+                              <Rating
+                                fullSymbol={
+                                  <IoMdStar className="text-[#FFD600] text-4xl md:text-5xl" />
+                                }
+                                emptySymbol={
+                                  <IoMdStarOutline className="text-[#FFD600] text-4xl md:text-5xl" />
+                                }
+                                readonly={true}
+                                placeholderSymbol={
+                                  <IoMdStar className="text-[#FFD600] text-4xl md:text-5xl" />
+                                }
+                                placeholderRating={5}
+                              />
+                              {!isExpanded4 ? (
+                                <p className="py-6 text-xl">
+                                  {texts[3].slice(0, 150)}
+                                  {".... "}
+                                  <span
+                                    onClick={toggleExpansion4}
+                                    className="text-primary underline"
+                                  >
+                                    Show more.
+                                  </span>
+                                </p>
+                              ) : (
+                                <p className="py-6 text-xl">
+                                  {" "}
+                                  {texts[3]}{" "}
+                                  <span
+                                    onClick={toggleExpansion4}
+                                    className="text-primary underline"
+                                  >
+                                    {" "}
+                                    Show less
+                                  </span>
+                                </p>
+                              )}
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Slider>
                 </div>
               </div>
-              {/*md and sm*/}
-              <div className="-z-10 mb-[5rem] mx-auto lg:hidden ">
-                <Slider overScan={1} autoplay={true} arrows={false}>
-                  <div className="px-[1rem] py-[2rem] text-black">
-                    <div className="bg-white mx-auto rounded-3xl blue-box px-[1rem]">
-                      <div>
-                        <div className="mx-auto w-fit mt-[2rem]">
-                          <img className="rounded-full w-[10rem]" src={imgDZ} />
-                        </div>
-
-                        <div className="py-[3rem] text-center">
-                          <article>
-                            <header>
-                              <h1 className="text-4xl md:text-5xl font-bold">
-                                Dustin Zhu
-                              </h1>
-                            </header>
-                            <Rating
-                              fullSymbol={
-                                <IoMdStar className="text-[#FFD600] text-4xl md:text-5xl" />
-                              }
-                              emptySymbol={
-                                <IoMdStarOutline className="text-[#FFD600] text-4xl md:text-5xl" />
-                              }
-                              readonly={true}
-                              placeholderSymbol={
-                                <IoMdStar className="text-[#FFD600] text-4xl md:text-5xl" />
-                              }
-                              placeholderRating={5}
-                            />
-                            {!isExpanded1 ? (
-                              <p className="py-6 text-xl">
-                                {texts[0].slice(0, 150)}
-                                {".... "}
-                                <span
-                                  onClick={toggleExpansion1}
-                                  className="text-primary underline"
-                                >
-                                  Show more.
-                                </span>
-                              </p>
-                            ) : (
-                              <p className="py-6 text-xl">
-                                {" "}
-                                {texts[0]}{" "}
-                                <span
-                                  onClick={toggleExpansion1}
-                                  className="text-primary underline"
-                                >
-                                  {" "}
-                                  Show less
-                                </span>
-                              </p>
-                            )}
-                          </article>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="px-[1rem] py-[2rem] text-black">
-                    <div className="bg-white mx-auto rounded-3xl blue-box px-[1rem]">
-                      <div>
-                        <div className="mx-auto w-fit mt-[2rem]">
-                          <img className="rounded-full w-[10rem]" src={imgSA} />
-                        </div>
-
-                        <div className="py-[3rem] text-center">
-                          <article>
-                            <header>
-                              <h1 className="text-4xl md:text-5xl font-bold">
-                                Salman Alqahtani
-                              </h1>
-                            </header>
-                            <Rating
-                              fullSymbol={
-                                <IoMdStar className="text-[#FFD600] text-4xl md:text-5xl" />
-                              }
-                              emptySymbol={
-                                <IoMdStarOutline className="text-[#FFD600] text-4xl md:text-5xl" />
-                              }
-                              readonly={true}
-                              placeholderSymbol={
-                                <IoMdStar className="text-[#FFD600] text-4xl md:text-5xl" />
-                              }
-                              placeholderRating={5}
-                            />
-                            {!isExpanded2 ? (
-                              <p className="py-6 text-xl">
-                                {texts[1].slice(0, 150)}
-                                {".... "}
-                                <span
-                                  onClick={toggleExpansion2}
-                                  className="text-primary underline"
-                                >
-                                  Show more.
-                                </span>
-                              </p>
-                            ) : (
-                              <p className="py-6 text-xl">
-                                {" "}
-                                {texts[1]}{" "}
-                                <span
-                                  onClick={toggleExpansion2}
-                                  className="text-primary underline"
-                                >
-                                  {" "}
-                                  Show less
-                                </span>
-                              </p>
-                            )}
-                          </article>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="px-[1rem] py-[2rem] text-black">
-                    <div className="bg-white mx-auto rounded-3xl blue-box px-[1rem]">
-                      <div>
-                        <div className="mx-auto w-fit mt-[2rem]">
-                          <img className="rounded-full w-[10rem]" src={imgYB} />
-                        </div>
-
-                        <div className="py-[3rem] text-center">
-                          <article>
-                            <header>
-                              <h1 className="text-4xl md:text-5xl font-bold">
-                                Yashika Babbar
-                              </h1>
-                            </header>
-                            <Rating
-                              fullSymbol={
-                                <IoMdStar className="text-[#FFD600] text-4xl md:text-5xl" />
-                              }
-                              emptySymbol={
-                                <IoMdStarOutline className="text-[#FFD600] text-4xl md:text-5xl" />
-                              }
-                              readonly={true}
-                              placeholderSymbol={
-                                <IoMdStar className="text-[#FFD600] text-4xl md:text-5xl" />
-                              }
-                              placeholderRating={5}
-                            />
-                            {!isExpanded3 ? (
-                              <p className="py-6 text-xl">
-                                {texts[2].slice(0, 150)}
-                                {".... "}
-                                <span
-                                  onClick={toggleExpansion3}
-                                  className="text-primary underline"
-                                >
-                                  Show more.
-                                </span>
-                              </p>
-                            ) : (
-                              <p className="py-6 text-xl">
-                                {" "}
-                                {texts[2]}{" "}
-                                <span
-                                  onClick={toggleExpansion3}
-                                  className="text-primary underline"
-                                >
-                                  {" "}
-                                  Show less
-                                </span>
-                              </p>
-                            )}
-                          </article>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="px-[1rem] py-[2rem] text-black">
-                    <div className="bg-white mx-auto rounded-3xl blue-box px-[1rem]">
-                      <div>
-                        <div className="mx-auto w-fit mt-[2rem]">
-                          <img className="rounded-full w-[10rem]" src={imgSP} />
-                        </div>
-
-                        <div className="py-[3rem] text-center">
-                          <article>
-                            <header>
-                              <h1 className="text-4xl md:text-5xl font-bold">
-                                Salman Parvez
-                              </h1>
-                            </header>
-                            <Rating
-                              fullSymbol={
-                                <IoMdStar className="text-[#FFD600] text-4xl md:text-5xl" />
-                              }
-                              emptySymbol={
-                                <IoMdStarOutline className="text-[#FFD600] text-4xl md:text-5xl" />
-                              }
-                              readonly={true}
-                              placeholderSymbol={
-                                <IoMdStar className="text-[#FFD600] text-4xl md:text-5xl" />
-                              }
-                              placeholderRating={5}
-                            />
-                            {!isExpanded4 ? (
-                              <p className="py-6 text-xl">
-                                {texts[3].slice(0, 150)}
-                                {".... "}
-                                <span
-                                  onClick={toggleExpansion4}
-                                  className="text-primary underline"
-                                >
-                                  Show more.
-                                </span>
-                              </p>
-                            ) : (
-                              <p className="py-6 text-xl">
-                                {" "}
-                                {texts[3]}{" "}
-                                <span
-                                  onClick={toggleExpansion4}
-                                  className="text-primary underline"
-                                >
-                                  {" "}
-                                  Show less
-                                </span>
-                              </p>
-                            )}
-                          </article>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Slider>
+            </div>
+          </section>
+        </div>
+        <section>
+          <div className="bg-[#666AE5] text-white py-[5rem]">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 lg:w-[70rem] mx-auto relative">
+              <div className="hidden lg:block absolute top-[-8rem] right-[20rem] w-[6rem]">
+                <div className="relative">
+                  <img className="breathe" src={img1} alt="" />
+                </div>
+              </div>
+              <div className="text-center font-bold">
+                <h1 className="text-5xl lg:text-7xl">
+                  <CountUpOnScroll end={3} />+
+                </h1>
+                <header>
+                  <h1>Business Year</h1>
+                </header>
+              </div>
+              <div className="text-center font-bold">
+                <h1 className="text-5xl lg:text-7xl">
+                  <CountUpOnScroll end={200} />+
+                </h1>
+                <header>
+                  <h1>Clients</h1>
+                </header>
+              </div>
+              <div className="text-center font-bold col-span-2 md:col-span-1">
+                <h1 className="text-5xl lg:text-7xl">
+                  <CountUpOnScroll end={540} />+
+                </h1>
+                <header>
+                  <h1>Projects</h1>
+                </header>
               </div>
             </div>
           </div>
-        </div>
-        <div className="bg-[#666AE5] text-white py-[5rem]">
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 lg:w-[70rem] mx-auto relative">
-            <div className="hidden lg:block absolute top-[-8rem] right-[20rem] w-[6rem]">
-              <div className="relative">
-                <img className="breathe" src={img1} alt="" />
-              </div>
-            </div>
-            <div className="text-center font-bold">
-              <h1 className="text-5xl lg:text-7xl">
-                <CountUpOnScroll end={3} />+
-              </h1>
-              <header>
-                <h1>Business Year</h1>
-              </header>
-            </div>
-            <div className="text-center font-bold">
-              <h1 className="text-5xl lg:text-7xl">
-                <CountUpOnScroll end={200} />+
-              </h1>
-              <header>
-                <h1>Clients</h1>
-              </header>
-            </div>
-            <div className="text-center font-bold col-span-2 md:col-span-1">
-              <h1 className="text-5xl lg:text-7xl">
-                <CountUpOnScroll end={540} />+
-              </h1>
-              <header>
-                <h1>Projects</h1>
-              </header>
-            </div>
-          </div>
-        </div>
+        </section>
       </div>
     );
 };

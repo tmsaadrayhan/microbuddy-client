@@ -31,18 +31,15 @@ const Header = () => {
           <NavLink className="z-[50] space-a" to="/">
             Home
           </NavLink>
-
           <NavLink className="z-[50] space-a" to="/how-it-works">
             How IT Works
           </NavLink>
           <NavLink className="z-[50] space-a" to="/it-service">
             IT Service
           </NavLink>
-
           <NavLink className="z-[50] space-a" to="/about-us">
             About Us
           </NavLink>
-
           <div className="flex justify-center items-center ms-[-1.7rem] mb-[-0.1rem]">
             <button className="group flex justify-center p-2 rounded-md drop-shadow-xl from-gray-800 font-semibold hover:translate-y-[-.15rem] hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]">
               <IoIosArrowDown />

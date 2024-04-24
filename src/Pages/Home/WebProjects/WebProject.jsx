@@ -48,23 +48,23 @@ const WebProject = () => {
           <div className="text-center lg:w-[35rem]">
             <div className="overflow-hidden ">
               <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                <img src={img2} alt="" />
+              <h1 className="header text-[60px] md:text-[100px]">PROJECTS</h1>
               </ScrollAnimation>
             </div>
             <header>
-              <h1 className="font-[700] text-4xl md:text-5xl mt-[-25px] md:mt-[-40px]">
+              <h1 className="font-[700] text-4xl md:text-5xl mt-[-3rem] md:mt-[-4rem]">
                 WEBSITE
               </h1>
             </header>
           </div>
         </div>
         <div className="mt-[1rem] md:mt-[0rem]">
-          <div className="hidden lg:block lg:absolute lg:top-[10rem] lg:left-[0rem]">
+          <div className="hidden lg:block lg:absolute lg:top-[14rem] lg:left-[0rem]">
             <img className="w-[6.5rem]" src={img1} alt="" />
           </div>
           {/*lg*/}
-          <div className="hidden lg:block ms-[-2rem] lg:h-[40rem]">
-            <div className="absolute pt-[2rem] lg:pt-[10rem] ps-[2rem] lg:px-[5rem] pb-[3rem] text-black">
+          <div className="hidden lg:block ms-[-2rem] lg:h-[43rem]">
+            <div className="absolute top-[3rem] pt-[2rem] lg:pt-[10rem] ps-[2rem] lg:px-[5rem] pb-[3rem] text-black">
               <div className="blue-box flex h-[30rem] items-center justify-start w-[110rem] rounded-3xl mx-[0rem] ms-[5rem] ps-[3rem] pe-[15rem] pb-[2rem]"></div>
             </div>
             <Slider
@@ -72,7 +72,7 @@ const WebProject = () => {
                 sliderRef = slider;
               }}
               {...settings}
-              className="ms-[12rem] pt-[5rem]"
+              className="ms-[12rem] pt-[10rem]"
             >
               <div>
                 <div className="flex items-center">

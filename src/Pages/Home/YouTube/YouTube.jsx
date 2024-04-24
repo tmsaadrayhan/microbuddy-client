@@ -57,97 +57,101 @@ const YouTube = () => {
     fade: true, // Enable fade effect
   };
   return (
-    <div className="lg:mx-auto">
-      <div className="lg:max-w-[90rem] lg:mx-auto relative">
-        <div className="text-center flex justify-center lg:justify-end lg:mb-[0] relative lg:mx-[0rem]">
-          <div className="md:m-[1rem] md:m-[0rem] lg:ms-[10rem] lg:w-[35rem] lg:absolute lg:right-[0rem] lg:top-[-3rem]">
-            <div className="overflow-hidden">
-              <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                <img src={img2} alt="" />
-              </ScrollAnimation>
+    <section>
+      <div className="lg:mx-auto">
+        <div className="lg:max-w-[90rem] lg:mx-auto relative">
+          <div className="text-center flex justify-center lg:justify-end lg:mb-[0] relative lg:mx-[0rem]">
+            <div className="m-[1rem] lg:ms-[10rem] lg:w-[35rem] lg:absolute lg:right-[0rem] lg:top-[0rem]">
+              <div className="overflow-hidden">
+                <ScrollAnimation animateOnce={true} animateIn="pop-up">
+                  <h1 className="header text-[60px] md:text-[100px]">
+                    PROJECTS
+                  </h1>
+                </ScrollAnimation>
+              </div>
+              <h1 className="font-[700] text-3xl md:text-5xl mt-[-2.5rem] md:mt-[-4rem]">
+                YOUTUBE CHANNEL
+              </h1>
             </div>
-            <h1 className="font-[700] text-4xl md:text-5xl mt-[-25px] md:mt-[-40px]">
-              YOUTUBE CHANNEL
-            </h1>
           </div>
-        </div>
-        <div>
           {/*lg*/}
-          <div className="hidden lg:block">
-            <div className="absolute right-[116rem] w-[12rem] md:rounded-2xl">
+          <div className="hidden lg:block mt-[5rem]">
+            <div className="absolute right-[116rem] top-[7rem] w-[12rem] md:rounded-2xl">
               <div className="pt-[5rem] ps-[2rem] pb-[3rem] lg:mx-[auto] lg:px-[10rem] text-black">
                 <div className="blue-box w-[108rem] rounded-3xl lg:flex lg:items-center justify-end lg:ps-[10rem] h-[35rem]"></div>
               </div>
             </div>
-            <Slider
-              className="hidden lg:block"
-              ref={(slider) => {
-                sliderRef = slider;
-              }}
-              {...settings}
-            >
-              <div>
-                <div className="flex items-center me-[10rem]">
-                  <div className="bg-[#F0F0F0] mx-[auto] lg:mx-[0] md:w-[30rem] text-center md:rounded-xl mb-[5rem]">
-                    <img className="my-[-1rem]" src={img3} alt="" />
-                    <img className="w-full" src={img4} alt="" />
-                    <article className="md:m-[1rem]">
-                      <header className="font-bold">
-                        <h1>{youtubeData[0].channel.name}</h1>
+            <div>
+              <Slider
+                className="hidden lg:block"
+                ref={(slider) => {
+                  sliderRef = slider;
+                }}
+                {...settings}
+              >
+                <div>
+                  <div className="flex items-center me-[10rem]">
+                    <div className="bg-[#F0F0F0] mx-[auto] lg:mx-[0] md:w-[30rem] text-center md:rounded-xl mb-[5rem]">
+                      <img className="my-[-1rem]" src={img3} alt="" />
+                      <img className="w-full" src={img4} alt="" />
+                      <article className="md:m-[1rem]">
+                        <header className="font-bold">
+                          <h1>{youtubeData[0].channel.name}</h1>
+                        </header>
+                        <p>{youtubeData[0].channel.description}</p>
+                      </article>
+                      <Link to="http://www.youtube.com/@speedybuddyy">
+                        <button className="btn btn-error text-white rounded-full mb-[1rem]">
+                          Subscribe Now
+                        </button>
+                      </Link>
+                    </div>
+                    <article className="text-end md:text-center lg:text-start lg:mx-[0] md:w-[30rem] m-4 p-[2rem]">
+                      <header>
+                        <h1 className="text-4xl md:text-5xl font-bold">
+                          {youtubeData[0].slide.name}
+                        </h1>
+                        <p className="text-[#666AE5] text-xl my-[1rem]">
+                          {youtubeData[0].slide.title}
+                        </p>
                       </header>
-                      <p>{youtubeData[0].channel.description}</p>
+                      <p>{youtubeData[0].slide.description}</p>
                     </article>
-                    <Link to="http://www.youtube.com/@speedybuddyy">
-                      <button className="btn btn-error text-white rounded-full mb-[1rem]">
-                        Subscribe Now
-                      </button>
-                    </Link>
                   </div>
-                  <article className="text-end md:text-center lg:text-start lg:mx-[0] md:w-[30rem] m-4 p-[2rem]">
-                    <header>
-                      <h1 className="text-4xl md:text-5xl font-bold">
-                        {youtubeData[0].slide.name}
-                      </h1>
-                      <p className="text-[#666AE5] text-xl my-[1rem]">
-                        {youtubeData[0].slide.title}
-                      </p>
-                    </header>
-                    <p>{youtubeData[0].slide.description}</p>
-                  </article>
                 </div>
-              </div>
-              <div>
-                <div className="flex items-center me-[10rem]">
-                  <div className="bg-[#F0F0F0] mx-[auto] lg:mx-[0] md:max-w-[30rem] text-center rounded-xl mb-[5rem]">
-                    <img className="my-[-1rem]" src={img3} alt="" />
-                    <img className="w-full" src={img5} alt="" />
-                    <article className="md:m-[1rem]">
-                      <header className="font-bold">
-                        <h1>{youtubeData[1].channel.name}</h1>
-                      </header>
-                      <p>{youtubeData[1].channel.description}</p>
-                    </article>
+                <div>
+                  <div className="flex items-center me-[10rem]">
+                    <div className="bg-[#F0F0F0] mx-[auto] lg:mx-[0] md:max-w-[30rem] text-center rounded-xl mb-[5rem]">
+                      <img className="my-[-1rem]" src={img3} alt="" />
+                      <img className="w-full" src={img5} alt="" />
+                      <article className="md:m-[1rem]">
+                        <header className="font-bold">
+                          <h1>{youtubeData[1].channel.name}</h1>
+                        </header>
+                        <p>{youtubeData[1].channel.description}</p>
+                      </article>
 
-                    <Link to="http://www.youtube.com/@DesignBuddy0">
-                      <button className="btn btn-error text-white rounded-full mb-[1rem]">
-                        Subscribe Now
-                      </button>
-                    </Link>
+                      <Link to="http://www.youtube.com/@DesignBuddy0">
+                        <button className="btn btn-error text-white rounded-full mb-[1rem]">
+                          Subscribe Now
+                        </button>
+                      </Link>
+                    </div>
+                    <article className="text-end md:text-center lg:text-start md:mx-auto lg:mx-[0] md:w-[30rem] m-4 p-[2rem]">
+                      <header>
+                        <h1 className="text-4xl md:text-5xl font-bold">
+                          {youtubeData[1].slide.name}
+                        </h1>
+                        <p className="text-[#666AE5] text-xl my-[1rem]">
+                          {youtubeData[1].slide.title}
+                        </p>
+                      </header>
+                      <p>{youtubeData[1].slide.description}</p>
+                    </article>
                   </div>
-                  <article className="text-end md:text-center lg:text-start md:mx-auto lg:mx-[0] md:w-[30rem] m-4 p-[2rem]">
-                    <header>
-                      <h1 className="text-4xl md:text-5xl font-bold">
-                        {youtubeData[1].slide.name}
-                      </h1>
-                      <p className="text-[#666AE5] text-xl my-[1rem]">
-                        {youtubeData[1].slide.title}
-                      </p>
-                    </header>
-                    <p>{youtubeData[1].slide.description}</p>
-                  </article>
                 </div>
-              </div>
-            </Slider>
+              </Slider>
+            </div>
             <div className="hidden lg:block absolute right-[15rem] bottom-[5rem]">
               <button className="btn" onClick={previous}>
                 <IoIosArrowBack />
@@ -226,14 +230,15 @@ const YouTube = () => {
               </div>
             </Slider>
           </div>
+          {/* only lg */}
           <img
-            className=" hidden lg:block absolute w-[6rem] right-[2rem] top-[6rem]"
+            className="hidden lg:block absolute w-[6rem] right-[2rem] top-[13rem]"
             src={img1}
             alt=""
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -178,21 +178,20 @@ const ITService = () => {
             </div>
           </section>
           <section>
-            <article className="text-end md:text-center mx-[1rem] lg:mx-[0rem]">
+            <article className="text-center mx-[1rem] lg:mx-[0rem]">
               <header>
                 <div className="flex justify-center">
                   <div className="overflow-hidden">
                     <div className="pop-up">
-                      <img className="w-[60rem]" src={img} alt="" />
+                      <h1 className="tracking-[.5rem] md:tracking-[1.5rem] text-[45px] md:text-[110px] header">
+                        SERVICES
+                      </h1>
                     </div>
                   </div>
                 </div>
-                <h1 className="hidden md:block text-6xl tracking-[1.5rem] lg:tracking-[1.5rem] mt-[-3rem] lg:mt-[-4rem] font-bold ms-[1rem]">
+                <h1 className="text-[25px] md:text-[50px] tracking-[.5rem] md:tracking-[1.5rem] lg:tracking-[1.5rem] mt-[-2rem] md:mt-[-5rem] font-bold ms-[1rem]">
                   OUR SERVICES
                 </h1>
-                <div className="flex md:hidden justify-end mt-[-2rem]">
-                  <img className="w-[20rem]" src={img14} alt="" />
-                </div>
               </header>
               <p>
                 MicroBuddy combines innovation with excellence, providing a wide
@@ -373,7 +372,7 @@ const ITService = () => {
           <section>
             <div
               ref={ref1}
-              className="lg:flex gap-4 my-[5rem] items-center mx-[1rem] lg:mx-[0rem]"
+              className="lg:flex gap-4  items-center mx-[1rem] lg:mx-[0rem]"
             >
               {/*lg*/}
               <ScrollAnimation
@@ -381,14 +380,14 @@ const ITService = () => {
                 animateIn="it-from-left"
                 className="hidden lg:block mt-[-1rem]"
               >
-                <div className="overflow-hidden mb-[-3rem]">
+                <div className="overflow-hidden">
                   <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                    <img src={img6} alt="" />
+                    <h1 className="header text-[170px]">TECH</h1>
                   </ScrollAnimation>
                 </div>
                 <article>
                   <header>
-                    <h1 className="text-4xl font-[700] text-[#886CFF]">
+                    <h1 className="text-4xl mt-[-7rem] font-[700] text-[#886CFF]">
                       {techData.title}
                     </h1>
                   </header>
@@ -407,10 +406,12 @@ const ITService = () => {
               <div className="lg:hidden">
                 <div className="overflow-hidden">
                   <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                    <img src={img6} alt="" />
+                    <h1 className="header text-[100px] md:text-[170px]">
+                      TECH
+                    </h1>
                   </ScrollAnimation>
                 </div>
-                <div className="mt-[-1rem] md:mt-[-3rem]">
+                <div className="mt-[-4.5rem] md:mt-[-7rem]">
                   <article>
                     <header>
                       <h1 className="text-4xl font-[700] text-[#886CFF]">
