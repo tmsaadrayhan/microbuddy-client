@@ -62,66 +62,74 @@ const Contact = () => {
         </Helmet>
         <HeaderBG></HeaderBG>
         <div className="pt-[5rem] lg:max-w-[70rem] lg:mx-auto pb-[18rem] md:pb-[30rem] lg:pb-[50rem] mb-[-10rem] relative">
-          <div className="hidden lg:block absolute w-[4rem] right-[-10rem] ">
-            <img className="breathe" src={img1} alt="" />
+          <div className="hidden lg:flex absolute w-[4rem] right-[-10rem] ">
+            <img className="breathe " src={img1} alt="" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 mx-[1rem] lg:mx-[0rem]">
-            <div>
+            <div className="content-center">
               <img src={img2} alt="" />
             </div>
             <div className="lg:ms-[5rem]">
-              <div className="overflow-hidden">
-                <div className="pop-up">
-                  <img src={img3} alt="" />
+              <article>
+                <div className="overflow-hidden lg:ms-[-3rem]">
+                  <div className="pop-up">
+                    <header>
+                      <h1 className="header text-[55px] lg:text-[75px] tracking-[.25em]">
+                        CONTACT
+                      </h1>
+                    </header>
+                  </div>
                 </div>
-              </div>
-              <div className=" mt-[-1rem] lg:mt-[-2rem]">
-                <div>
-                  <h1 className="text-[40px] font-[700] text-[#43D9B3]">
-                    CONTACT US
-                  </h1>
-                  <p className="text-[#00000099]">
-                    Get in touch to discuss your employee well-being needs
-                    today. Please give us a call, drop us an email, or fill out
-                    the contact form and we’ll get back to you.
-                  </p>
-                </div>
+                <div className=" mt-[-2.5rem] lg:mt-[-3.5rem]">
+                  <div>
+                    <header>
+                      <h1 className="text-[30px] lg:text-[40px] font-[700] text-[#43D9B3]">
+                        CONTACT US
+                      </h1>
+                    </header>
+                    <p className="text-[#00000099]">
+                      Get in touch to discuss your employee well-being needs
+                      today. Please give us a call, drop us an email, or fill
+                      out the contact form and we’ll get back to you.
+                    </p>
+                  </div>
 
-                <div className="flex lg:mt-[2rem]">
-                  <div className="p-2 w-[5rem]">
-                    <img className="w-[2.75rem]" src={img5} alt="" />
+                  <div className="flex lg:mt-[2rem]">
+                    <div className="p-2 w-[5rem]">
+                      <img className="w-[2.75rem]" src={img5} alt="" />
+                    </div>
+                    <div>
+                      <p className="mt-[0.25rem] text-[#666AE5]">Our Phone</p>
+                      <p className="mt-[-0.5rem] font-[300]">01894688850</p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="mt-[0.25rem] text-[#666AE5]">Our Phone</p>
-                    <p className="mt-[-0.5rem] font-[300]">01894688850</p>
+                  <div className="flex lg:mt-[0.5rem]">
+                    <div className="p-2 w-[5rem]">
+                      <img className="w-[2.75rem]" src={img6} alt="" />
+                    </div>
+                    <div>
+                      <p className="mt-[0.25rem] text-[#666AE5]">Our Email</p>
+                      <p className="mt-[-0.5rem] font-[300]">
+                        info@microbuddy.tech
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex lg:mt-[0.5rem]">
+                    <div className="p-1 w-[5rem]">
+                      <img className="w-[3rem]" src={img7} alt="" />
+                    </div>
+                    <div>
+                      <p className="mt-[0.25rem] text-[#666AE5]">Our Address</p>
+                      <p className="mt-[-0.5rem] font-[300]">
+                        House -11, Road - 01, Block - F, Banasree,
+                      </p>
+                      <p className="mt-[-0.25rem] font-[300]">
+                        Dhaka, Bangladesh
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div className="flex lg:mt-[0.5rem]">
-                  <div className="p-2 w-[5rem]">
-                    <img className="w-[2.75rem]" src={img6} alt="" />
-                  </div>
-                  <div>
-                    <p className="mt-[0.25rem] text-[#666AE5]">Our Email</p>
-                    <p className="mt-[-0.5rem] font-[300]">
-                      info@microbuddy.tech
-                    </p>
-                  </div>
-                </div>
-                <div className="flex lg:mt-[0.5rem]">
-                  <div className="p-1 w-[5rem]">
-                    <img className="w-[3rem]" src={img7} alt="" />
-                  </div>
-                  <div>
-                    <p className="mt-[0.25rem] text-[#666AE5]">Our Address</p>
-                    <p className="mt-[-0.5rem] font-[300]">
-                      House -11, Road - 01, Block - F, Banasree,
-                    </p>
-                    <p className="mt-[-0.25rem] font-[300]">
-                      Dhaka, Bangladesh
-                    </p>
-                  </div>
-                </div>
-              </div>
+              </article>
             </div>
           </div>
           <div>

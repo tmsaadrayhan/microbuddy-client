@@ -1,12 +1,8 @@
 import imgLoad from "../../assets/loading.gif";
-import img1 from "../../assets/cube.webp";
-import img2 from "../../assets/career/welcome.png";
 import img3 from "../../assets/career/career.webp";
-import img4 from "../../assets/career/circuler.png";
 import img5 from "../../assets/career/vector1.png";
 import img6 from "../../assets/career/group298.png";
 import img7 from "../../assets/career/vector.png";
-import img8 from "../../assets/career/benefits.png";
 import img9 from "../../assets/career/1.png";
 import img10 from "../../assets/career/2.png";
 import img11 from "../../assets/career/3.png";
@@ -24,7 +20,6 @@ import img22 from "../../assets/career/g2.webp";
 import img23 from "../../assets/career/g3.webp";
 import img24 from "../../assets/career/g4.webp";
 import img25 from "../../assets/career/g5.webp";
-import img26 from "../../assets/career/team.png";
 import { Link } from "react-router-dom";
 import "./Career.css";
 import { Helmet } from "react-helmet";
@@ -58,31 +53,38 @@ const Career = () => {
           <title>Career</title>
         </Helmet>
         <HeaderBG></HeaderBG>
-        <div className="mx-[0rem] lg:mx-auto lg:w-[70rem]">
+        <div className="mx-[0rem] lg:mx-auto lg:max-w-[70rem] p-[1rem]">
           {/*lg*/}
           <div className="relative hidden my-[5rem] lg:flex lg:items-center">
-            
             <div className="career-from-left w-[37rem] mx-auto z-50">
-              <div className="from-left">
-                <div className="overflow-hidden">
-                  <img className="pop-up" src={img2} alt="" />
+              <article>
+                <div className="from-left">
+                  <header>
+                    <div className="overflow-hidden">
+                      <div className="pop-up">
+                        <h1 className="header text-[100px] lg:text-[100px]">
+                          WELCOME
+                        </h1>
+                      </div>
+                    </div>
+                    <h1 className="mt-[-4.5rem] text-[40px] font-[700]">
+                      MICROBUDDY'S CAREER
+                    </h1>
+                  </header>
                 </div>
-                <h1 className="mt-[-2.5rem] text-[40px] font-[700]">
-                  MICROBUDDY'S CAREER
-                </h1>
-              </div>
-              <div className="mt-[1.5rem] w-[32rem]">
-                <div className="fade-in">
-                  <p>
-                    Join a dynamic team that shapes the future through
-                    creativity and collaboration. Whether tech, design, or
-                    support, your unique skills find a home here. we value your
-                    unique talents. Experience a culture of collaboration and
-                    growth, we’re offering more than a job. Shape the future
-                    with MicroBuddy.
-                  </p>
+                <div className="mt-[1.5rem] w-[32rem]">
+                  <div className="fade-in">
+                    <p>
+                      Join a dynamic team that shapes the future through
+                      creativity and collaboration. Whether tech, design, or
+                      support, your unique skills find a home here. we value
+                      your unique talents. Experience a culture of collaboration
+                      and growth, we’re offering more than a job. Shape the
+                      future with MicroBuddy.
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </article>
             </div>
             <div className="career-from-right">
               <div className="">
@@ -93,38 +95,55 @@ const Career = () => {
           {/*sm and md*/}
           <div className="block lg:hidden gap-4 my-[5rem] lg:items-center">
             <div className="mx-[2rem] md:mx-auto">
-              <img className="mx-auto" src={img2} alt="" />
-              <div className="mt-[-1rem] md:mt-[-1.5rem] text-center md:mx-[1rem]">
-                <h1 className="text-2xl md:text-6xl font-[700]">
-                  MICROBUDDY'S CAREER
-                </h1>
-                <p>
-                  Join a dynamic team that shapes the future through creativity
-                  and collaboration. Whether tech, design, or support, your
-                  unique skills find a home here. we value your unique talents.
-                  Experience a culture of collaboration and growth, we’re
-                  offering more than a job. Shape the future with MicroBuddy.
-                </p>
-              </div>
+              <article>
+                <div className="overflow-hidden">
+                  <div className="pop-up">
+                    <header>
+                      <h1 className="header text-center lg:text-start text-[55px] md:text-[100px] lg:text-[100px]">
+                        WELCOME
+                      </h1>
+                    </header>
+                  </div>
+                </div>
+                <div className="mt-[-2.5rem] md:mt-[-4rem] text-center md:mx-[1rem]">
+                  <header>
+                    <h1 className="text-[22px] md:text-5xl font-[700]">
+                      MICROBUDDY'S CAREER
+                    </h1>
+                  </header>
+                  <p>
+                    Join a dynamic team that shapes the future through
+                    creativity and collaboration. Whether tech, design, or
+                    support, your unique skills find a home here. we value your
+                    unique talents. Experience a culture of collaboration and
+                    growth, we’re offering more than a job. Shape the future
+                    with MicroBuddy.
+                  </p>
+                </div>
+              </article>
             </div>
             <div>
               <img className="w-full" src={img3} alt="" />
             </div>
           </div>
           <div className="mx-[2rem] md:mx-auto lg:w-[45rem]">
-            <div className="overflow-hidden">
-              <div className="pop-up">
-                <img src={img4} alt="" />
+            <header>
+              <div className="overflow-hidden">
+                <div className="pop-up">
+                  <h1 className="header text-[45px] md:text-[100px] tracking-[.15em] text-center">
+                    CIRCULAR
+                  </h1>
+                </div>
               </div>
-            </div>
-            <div className="text-center">
-              <h1 className="font-[700] text-[30px] md:text-4xl md:text-[50px] mt-[-25px] md:mt-[-40px]">
-                Current Job Openings
-              </h1>
-              <p className="text-xl mt-[1rem]">
-                Find your next job at Microbuddy.
-              </p>
-            </div>
+              <div className="text-center">
+                <h1 className="font-[700] text-[25px] md:text-4xl md:text-[50px] mt-[-2.2rem] md:mt-[-4rem]">
+                  Current Job Openings
+                </h1>
+                <p className="text-xl md:mt-[1rem]">
+                  Find your next job at Microbuddy.
+                </p>
+              </div>
+            </header>
           </div>
           <div className="mx-[0rem] md:mx-[2rem] lg:mx-auto blue-career-box rounded-xl lg:flex lg:content-center md:flex md:items-center my-[3rem] md:my-[5rem] py-[2rem] lg:w-[60rem]">
             <div className="md:w-3/5 lg:w-1/2 font-[700] mx-[2rem] md:mx-[0rem] md:ps-[4rem]">
@@ -165,200 +184,283 @@ const Career = () => {
             </div>
           </div>
           <div className="mx-[2rem] md:mx-auto md:w-[45rem]">
-            <div className="overflow-hidden">
-              <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                <img src={img8} alt="" />
-              </ScrollAnimation>
-            </div>
-            <h1 className="text-center font-[700] text-4xl text-[30px] md:text-[50px] mt-[-25px] md:mt-[-40px] flex justify-center">
-              <ScrollAnimation animateOnce={true} animateIn="move-left">
-                Benefits
-              </ScrollAnimation>
-              <ScrollAnimation animateOnce={true} animateIn="grow-from-0">
-                @
-              </ScrollAnimation>
-              <ScrollAnimation animateOnce={true} animateIn="move-right">
-                Microbuddy
-              </ScrollAnimation>
-            </h1>
-            <h1 className=" text-center md:font-[500] text-xl mt-[0rem] md:mt-[1rem]">
-              Here are some of the perks you’ll enjoy at Microbuddy
-            </h1>
+            <header>
+              <div className="overflow-hidden">
+                <ScrollAnimation animateOnce={true} animateIn="pop-up">
+                  <header>
+                    <h1 className="header tracking-[.15em] text-[45px] md:text-[100px] text-center">
+                      BENEFITS
+                    </h1>
+                  </header>
+                </ScrollAnimation>
+              </div>
+              <h1 className="text-center font-[700] text-4xl text-[30px] md:text-[50px] mt-[-2.2rem] md:mt-[-4rem] flex justify-center">
+                <ScrollAnimation animateOnce={true} animateIn="move-left">
+                  Benefits
+                </ScrollAnimation>
+                <ScrollAnimation animateOnce={true} animateIn="grow-from-0">
+                  @
+                </ScrollAnimation>
+                <ScrollAnimation animateOnce={true} animateIn="move-right">
+                  Microbuddy
+                </ScrollAnimation>
+              </h1>
+              <h1 className=" text-center md:font-[500] text-xl mt-[0rem] md:mt-[1rem]">
+                Here are some of the perks you’ll enjoy at Microbuddy
+              </h1>
+            </header>
           </div>
           <div className="mx-[2rem] lg:mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-[1rem] md:mt-[3rem]">
             <div className="hover:scale-110 duration-300 blue-box-career p-[2rem]">
-              <div className="h-[12rem]"><p className="text-xl">
-                Our medical insurance ensures your well-being is covered. We
-                prioritize your health, providing peace of mind for whatever
-                life throws your way.
-              </p></div>
-              <div className="flex items-end">
-                <div className="w-full">
-                  <h1 className="text-2xl font-[700]">Medical Insurance</h1>
+              <article>
+                <div className="h-[12rem]">
+                  <p className="text-xl">
+                    Our medical insurance ensures your well-being is covered. We
+                    prioritize your health, providing peace of mind for whatever
+                    life throws your way.
+                  </p>
                 </div>
-                <div className="flex justify-end w-[6rem]">
-                  <img className="" src={img9} alt="" />
+                <div className="flex items-end">
+                  <div className="w-full">
+                    <header>
+                      <h1 className="text-2xl font-[700]">Medical Insurance</h1>
+                    </header>
+                  </div>
+                  <div className="flex justify-end w-[6rem]">
+                    <img className="" src={img9} alt="" />
+                  </div>
                 </div>
-              </div>
+              </article>
             </div>
             <div className="hover:scale-110 duration-300 blue-box-career p-[2rem]">
-              <div className="h-[12rem]"><p className="text-xl">
-                Work on your terms with our flexible arrangements. We support
-                your unique needs, ensuring a balanced and productive work-life
-                blend.
-              </p></div>
-              <div className="flex items-end">
-                <div className="w-full">
-                  <h1 className="text-2xl font-[700]">Flexibility</h1>
+              <article>
+                <div className="h-[12rem]">
+                  <p className="text-xl">
+                    Work on your terms with our flexible arrangements. We
+                    support your unique needs, ensuring a balanced and
+                    productive work-life blend.
+                  </p>
                 </div>
-                <div className="flex justify-end w-[6rem]">
-                  <img className="" src={img10} alt="" />
+                <div className="flex items-end">
+                  <div className="w-full">
+                    <header>
+                      <h1 className="text-2xl font-[700]">Flexibility</h1>
+                    </header>
+                  </div>
+                  <div className="flex justify-end w-[6rem]">
+                    <img className="" src={img10} alt="" />
+                  </div>
                 </div>
-              </div>
+              </article>
             </div>
             <div className="hover:scale-110 duration-300 blue-box-career p-[2rem]">
-              <div className="h-[12rem]"><p className="text-xl">
-                Join us for delicious, communal meals. Beyond nourishment, we
-                foster camaraderie and enjoyment in every bite.
-              </p></div>
-              <div className="flex items-end">
-                <div className="w-full">
-                  <h1 className="text-2xl font-[700]">Office Meals</h1>
+              <article>
+                <div className="h-[12rem]">
+                  <p className="text-xl">
+                    Join us for delicious, communal meals. Beyond nourishment,
+                    we foster camaraderie and enjoyment in every bite.
+                  </p>
                 </div>
-                <div className="flex justify-end w-[6rem]">
-                  <img className="" src={img11} alt="" />
+                <div className="flex items-end">
+                  <div className="w-full">
+                    <header>
+                      <h1 className="text-2xl font-[700]">Office Meals</h1>
+                    </header>
+                  </div>
+                  <div className="flex justify-end w-[6rem]">
+                    <img className="" src={img11} alt="" />
+                  </div>
                 </div>
-              </div>
+              </article>
             </div>
             <div className="hover:scale-110 duration-300 blue-box-career p-[2rem] hidden md:block">
-              <div className="h-[12rem]"><p className="text-xl">
-                Celebrate parenthood with our supportive benefits. Take time off
-                worry-free to bond with your newborn.
-              </p></div>
-              <div className="flex items-end">
-                <div className="w-full">
-                  <h1 className="text-2xl font-[700]">
-                    Maternity/ Paternity Benefits
-                  </h1>
+              <article>
+                <div className="h-[12rem]">
+                  <p className="text-xl">
+                    Celebrate parenthood with our supportive benefits. Take time
+                    off worry-free to bond with your newborn.
+                  </p>
                 </div>
-                <div className="flex justify-end w-[6rem]">
-                  <img className="" src={img12} alt="" />
+                <div className="flex items-end">
+                  <div className="w-full">
+                    <header>
+                      <h1 className="text-2xl font-[700]">
+                        Maternity/ Paternity Benefits
+                      </h1>
+                    </header>
+                  </div>
+                  <div className="flex justify-end w-[6rem]">
+                    <img className="" src={img12} alt="" />
+                  </div>
                 </div>
-              </div>
+              </article>
             </div>
             <div className="hover:scale-110 duration-300 blue-box-career p-[2rem] hidden md:block">
-              <div className="h-[12rem]"><p className="text-xl">
-                Experience a lively workplace where creativity thrives. Laughter
-                and celebration are always welcome, making work enjoyable.
-              </p></div>
-              <div className="flex items-end">
-                <div className="w-full">
-                  <h1 className="text-2xl font-[700]">Fun Office</h1>
+              <article>
+                <div className="h-[12rem]">
+                  <p className="text-xl">
+                    Experience a lively workplace where creativity thrives.
+                    Laughter and celebration are always welcome, making work
+                    enjoyable.
+                  </p>
                 </div>
-                <div className="flex justify-end w-[6rem]">
-                  <img className="" src={img13} alt="" />
+                <div className="flex items-end">
+                  <div className="w-full">
+                    <header>
+                      <h1 className="text-2xl font-[700]">Fun Office</h1>
+                    </header>
+                  </div>
+                  <div className="flex justify-end w-[6rem]">
+                    <img className="" src={img13} alt="" />
+                  </div>
                 </div>
-              </div>
+              </article>
             </div>
             <div className="hover:scale-110 duration-300 blue-box-career p-[2rem] hidden md:block">
-              <div className="h-[12rem]"><p className="text-xl">
-                Elevate your skills with our top-notch training programs. We
-                invest in your growth for long-term success.
-              </p></div>
-              <div className="flex items-end">
-                <div className="w-full">
-                  <h1 className="text-2xl font-[700]">Quality Trainings</h1>
+              <article>
+                <div className="h-[12rem]">
+                  <p className="text-xl">
+                    Elevate your skills with our top-notch training programs. We
+                    invest in your growth for long-term success.
+                  </p>
                 </div>
-                <div className="flex justify-end w-[6rem]">
-                  <img className="" src={img14} alt="" />
+                <div className="flex items-end">
+                  <div className="w-full">
+                    <header>
+                      <h1 className="text-2xl font-[700]">Quality Trainings</h1>
+                    </header>
+                  </div>
+                  <div className="flex justify-end w-[6rem]">
+                    <img className="" src={img14} alt="" />
+                  </div>
                 </div>
-              </div>
+              </article>
             </div>
             <div className="hover:scale-110 duration-300 blue-box-career p-[2rem] hidden lg:block">
-              <div className="h-[12rem]"><p className="text-xl">
-                Progress in your career with ample opportunities. We're
-                committed to helping you achieve your goals and aspirations.
-              </p></div>
-              <div className="flex items-end">
-                <div className="w-full">
-                  <h1 className="text-2xl font-[700]">Career Growth</h1>
+              <article>
+                <div className="h-[12rem]">
+                  <p className="text-xl">
+                    Progress in your career with ample opportunities. We're
+                    committed to helping you achieve your goals and aspirations.
+                  </p>
                 </div>
-                <div className="flex justify-end w-[6rem]">
-                  <img className="" src={img15} alt="" />
+                <div className="flex items-end">
+                  <div className="w-full">
+                    <header>
+                      <h1 className="text-2xl font-[700]">Career Growth</h1>
+                    </header>
+                  </div>
+                  <div className="flex justify-end w-[6rem]">
+                    <img className="" src={img15} alt="" />
+                  </div>
                 </div>
-              </div>
+              </article>
             </div>
             <div className="hover:scale-110 duration-300 blue-box-career p-[2rem] hidden lg:block">
-              <div className="h-[12rem]"><p className="text-xl">
-                Receive fair compensation for your efforts. Your contributions
-                are valued and rewarded accordingly.
-              </p></div>
-              <div className="flex items-end">
-                <div className="w-full">
-                  <h1 className="text-2xl font-[700]">Income Opportunity</h1>
+              <article>
+                <div className="h-[12rem]">
+                  <p className="text-xl">
+                    Receive fair compensation for your efforts. Your
+                    contributions are valued and rewarded accordingly.
+                  </p>
                 </div>
-                <div className="flex justify-end w-[6rem]">
-                  <img className="" src={img16} alt="" />
+                <div className="flex items-end">
+                  <div className="w-full">
+                    <header>
+                      <h1 className="text-2xl font-[700]">
+                        Income Opportunity
+                      </h1>
+                    </header>
+                  </div>
+                  <div className="flex justify-end w-[6rem]">
+                    <img className="" src={img16} alt="" />
+                  </div>
                 </div>
-              </div>
+              </article>
             </div>
             <div className="hover:scale-110 duration-300 blue-box-career p-[2rem] hidden lg:block">
-              <div className="h-[12rem]"><p className="text-xl">
-                Collaborate with skilled professionals. Our diverse team fosters
-                innovation and excellence.
-              </p></div>
-              <div className="flex items-end">
-                <div className="w-full">
-                  <h1 className="text-2xl font-[700]">Qualified Team</h1>
+              <article>
+                <div className="h-[12rem]">
+                  <p className="text-xl">
+                    Collaborate with skilled professionals. Our diverse team
+                    fosters innovation and excellence.
+                  </p>
                 </div>
-                <div className="flex justify-end w-[6rem]">
-                  <img className="" src={img17} alt="" />
+                <div className="flex items-end">
+                  <div className="w-full">
+                    <header>
+                      <h1 className="text-2xl font-[700]">Qualified Team</h1>
+                    </header>
+                  </div>
+                  <div className="flex justify-end w-[6rem]">
+                    <img src={img17} alt="" />
+                  </div>
                 </div>
-              </div>
+              </article>
             </div>
             <div className="hover:scale-110 duration-300 blue-box-career p-[2rem] hidden lg:block">
-              <div className="h-[12rem]"><p className="text-xl">
-                Secure your future with our financial plans. We're here to help
-                you achieve your long-term goals.
-              </p></div>
-              <div className="flex items-end">
-                <div className="w-full">
-                  <h1 className="text-2xl font-[700]">Savings & Investment</h1>
+              <article>
+                <div className="h-[12rem]">
+                  <p className="text-xl">
+                    Secure your future with our financial plans. We're here to
+                    help you achieve your long-term goals.
+                  </p>
                 </div>
-                <div className="flex justify-end w-[6rem]">
-                  <img className="" src={img18} alt="" />
+                <div className="flex items-end">
+                  <div className="w-full">
+                    <header>
+                      <h1 className="text-2xl font-[700]">
+                        Savings & Investment
+                      </h1>
+                    </header>
+                  </div>
+                  <div className="flex justify-end w-[6rem]">
+                    <img className="" src={img18} alt="" />
+                  </div>
                 </div>
-              </div>
+              </article>
             </div>
             <div className="hover:scale-110 duration-300 blue-box-career p-[2rem] hidden lg:block">
-              <div className="h-[12rem]"><p className="text-xl">
-                Access financial support conveniently. We offer assistance for
-                unexpected expenses, ensuring peace of mind.
-              </p></div>
-              <div className="flex items-end">
-                <div className="w-full">
-                  <h1 className="text-2xl font-[700]">
-                    Loan & Credit Facility
-                  </h1>
+              <article>
+                <div className="h-[12rem]">
+                  <p className="text-xl">
+                    Access financial support conveniently. We offer assistance
+                    for unexpected expenses, ensuring peace of mind.
+                  </p>
                 </div>
-                <div className="flex justify-end w-[6rem]">
-                  <img className="" src={img19} alt="" />
+                <div className="flex items-end">
+                  <div className="w-full">
+                    <header>
+                      <h1 className="text-2xl font-[700]">
+                        Loan & Credit Facility
+                      </h1>
+                    </header>
+                  </div>
+                  <div className="flex justify-end w-[6rem]">
+                    <img className="" src={img19} alt="" />
+                  </div>
                 </div>
-              </div>
+              </article>
             </div>
             <div className="hover:scale-110 duration-300 blue-box-career p-[2rem] hidden lg:block">
-              <div className="h-[12rem]"><p className="text-xl">
-                Breathe easily in our green workspace. We prioritize your
-                well-being with clean, refreshing air.
-              </p></div>
-              <div className="flex items-end">
-                <div className="w-full">
-                  <h1 className="text-2xl font-[700]">Clean Air</h1>
+              <article>
+                <div className="h-[12rem]">
+                  <p className="text-xl">
+                    Breathe easily in our green workspace. We prioritize your
+                    well-being with clean, refreshing air.
+                  </p>
                 </div>
-                <div className="flex justify-end w-[6rem]">
-                  <img className="" src={img20} alt="" />
+                <div className="flex items-end">
+                  <div className="w-full">
+                    <header>
+                      <h1 className="text-2xl font-[700]">Clean Air</h1>
+                    </header>
+                  </div>
+                  <div className="flex justify-end w-[6rem]">
+                    <img className="" src={img20} alt="" />
+                  </div>
                 </div>
-              </div>
+              </article>
             </div>
           </div>
           <div className="w-full flex mt-[3rem] lg:hidden">
@@ -367,19 +469,23 @@ const Career = () => {
             </button>
           </div>
           <div className="mx-[2rem] md:mx-auto md:w-[45rem] mt-[4rem]">
-            <div className="overflow-hidden">
-              <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                <img src={img26} alt="" />
-              </ScrollAnimation>
-            </div>
-            <div className="text-center">
-              <h1 className="font-[700] text-[28px] md:text-[64px] mt-[-25px] md:mt-[-5rem]">
-                Join Microbuddy Team
-              </h1>
-              <p className="text-xl">
-                We would like a picture of You to be posted here.
-              </p>
-            </div>
+            <header>
+              <div className="overflow-hidden">
+                <ScrollAnimation animateOnce={true} animateIn="pop-up">
+                  <h1 className="ms-[.5rem] md:ms-[0.5rem] header tracking-[.15em] text-[80px] md:text-[180px] text-center">
+                    TEAM
+                  </h1>
+                </ScrollAnimation>
+              </div>
+              <div className="text-center">
+                <h1 className="font-[700] text-[25px] md:text-[64px] mt-[-4rem] md:mt-[-8rem]">
+                  Join Microbuddy Team
+                </h1>
+                <p className="text-xl">
+                  We would like a picture of You to be posted here.
+                </p>
+              </div>
+            </header>
           </div>
           {/* md & sm */}
           <div className="block lg:hidden md:mt-[3rem]">
@@ -412,21 +518,36 @@ const Career = () => {
           <div className="hidden lg:block mt-[3rem]">
             <div className="flex">
               <div className="overflow-hidden m-[0.25rem] w-[47%] h-[25rem]">
-                <img className="hover:scale-110 duration-300 w-full h-full" src={img21} />
+                <img
+                  className="hover:scale-110 duration-300 w-full h-full"
+                  src={img21}
+                />
               </div>
               <div className="overflow-hidden m-[0.25rem] w-[53%] h-[25rem]">
-                <img className="hover:scale-110 duration-300 w-full h-full" src={img22} />
+                <img
+                  className="hover:scale-110 duration-300 w-full h-full"
+                  src={img22}
+                />
               </div>
             </div>
             <div className="flex">
               <div className="overflow-hidden m-[0.25rem] h-[16rem] w-[30%]">
-                <img className="hover:scale-110 duration-300 h-full" src={img23} />
+                <img
+                  className="hover:scale-110 duration-300 h-full"
+                  src={img23}
+                />
               </div>
               <div className="overflow-hidden m-[0.25rem] h-[16rem] w-[30%]">
-                <img className="hover:scale-110 duration-300 h-full" src={img24} />
+                <img
+                  className="hover:scale-110 duration-300 h-full"
+                  src={img24}
+                />
               </div>
               <div className="overflow-hidden m-[0.25rem] h-[16rem] w-[40%]">
-                <img className="hover:scale-110 duration-300 h-full" src={img25} />
+                <img
+                  className="hover:scale-110 duration-300 h-full"
+                  src={img25}
+                />
               </div>
             </div>
           </div>

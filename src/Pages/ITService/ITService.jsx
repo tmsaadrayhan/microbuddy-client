@@ -382,7 +382,9 @@ const ITService = () => {
               >
                 <div className="overflow-hidden">
                   <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                    <h1 className="header text-[170px]">TECH</h1>
+                    <header>
+                      <h1 className="header text-[170px]">TECH</h1>
+                    </header>
                   </ScrollAnimation>
                 </div>
                 <article>
@@ -406,9 +408,11 @@ const ITService = () => {
               <div className="lg:hidden">
                 <div className="overflow-hidden">
                   <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                    <h1 className="header text-[100px] md:text-[170px]">
-                      TECH
-                    </h1>
+                    <header>
+                      <h1 className="header text-[100px] md:text-[170px]">
+                        TECH
+                      </h1>
+                    </header>
                   </ScrollAnimation>
                 </div>
                 <div className="mt-[-4.5rem] md:mt-[-7rem]">
@@ -450,28 +454,37 @@ const ITService = () => {
           </section>
           <section
             ref={ref2}
-            className="lg:flex gap-4 my-[5rem] items-center mx-[1rem] lg:mx-[0rem]"
+            className="lg:flex lg:gap-4 my-[5rem] items-center mx-[1rem] lg:mx-[0rem]"
           >
             {/*lg*/}
-            <div className="hidden lg:block w-1/2">
-              <img className="w-full" src={img9} alt="" />
-            </div>
+            <ScrollAnimation
+              delay={1000}
+              animateOnce={true}
+              animateIn="grow-from-0"
+              className="w-1/2"
+            >
+              <div className="hidden lg:block">
+                <img className="w-full breathe" src={img9} alt="" />
+              </div>
+            </ScrollAnimation>
             <div className="flex justify-end lg:w-1/2">
               {/*lg*/}
               <ScrollAnimation
                 animateOnce={true}
                 animateIn="it-from-right"
-                className="hidden lg:block "
+                className="hidden lg:block"
               >
                 <div className="overflow-hidden">
                   <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                    <img src={img8} alt="" />
+                    <header>
+                      <h1 className="header text-[130px] text-end">DESIGN</h1>
+                    </header>
                   </ScrollAnimation>
                 </div>
-                <div className="mt-[-1rem] md:mt-[-1.5rem] text-end">
+                <div className="w-auto mt-[-5.5rem] text-end">
                   <article>
                     <header>
-                      <h1 className="text-4xl font-[700] text-[#886CFF]">
+                      <h1 className="text-4xl font-[700] text-[#00D362]">
                         {graphicsData.title}
                       </h1>
                     </header>
@@ -491,13 +504,17 @@ const ITService = () => {
               <div className="lg:hidden">
                 <div className="overflow-hidden">
                   <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                    <img className="md:w-[30rem]" src={img8} alt="" />
+                    <header>
+                      <h1 className="header text-[80px] md:text-[170px] text-end">
+                        DESIGN
+                      </h1>
+                    </header>
                   </ScrollAnimation>
                 </div>
-                <div className="md:w-[30rem] mt-[-1rem] md:mt-[-1.5rem] text-end">
+                <div className="mt-[-3.5rem] md:mt-[-7rem] text-end">
                   <article>
                     <header>
-                      <h1 className="text-4xl font-[700] text-[#886CFF]">
+                      <h1 className="text-4xl font-[700] text-[#00D362]">
                         {graphicsData.title}
                       </h1>
                     </header>
@@ -530,10 +547,12 @@ const ITService = () => {
             >
               <div className="overflow-hidden">
                 <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                  <img src={img10} alt="" />
+                  <header>
+                    <h1 className="header text-[80px]">SOFTWARE</h1>
+                  </header>
                 </ScrollAnimation>
               </div>
-              <div className="mt-[-1rem] md:mt-[-1.5rem]">
+              <div className="mt-[-3.5rem]">
                 <article>
                   <header>
                     <h1 className="text-4xl font-[700] text-[#0081F5]">
@@ -556,10 +575,12 @@ const ITService = () => {
             <div className="lg:hidden">
               <div className="overflow-hidden">
                 <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                  <img className="md:w-[35rem]" src={img10} alt="" />
+                  <header>
+                    <h1 className="header text-[55px] md:text-[100px]">SOFTWARE</h1>
+                  </header>
                 </ScrollAnimation>
               </div>
-              <div className="mt-[-1rem] md:mt-[-1.5rem] md:w-[28rem]">
+              <div className="mt-[-3rem] md:mt-[-4.5rem]">
                 <article>
                   <header>
                     <h1 className="text-4xl font-[700] text-[#0081F5]">
@@ -613,10 +634,12 @@ const ITService = () => {
               >
                 <div className="overflow-hidden">
                   <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                    <img className="w-auto " src={img12} alt="" />
+                    <header>
+                      <h1 className="header text-[150px] text-end">CLOUD</h1>
+                    </header>
                   </ScrollAnimation>
                 </div>
-                <div className="w-auto mt-[-1rem] md:mt-[-2rem] text-end">
+                <div className="w-auto mt-[-6.5rem] text-end">
                   <article>
                     <header>
                       <h1 className="text-4xl font-[700] text-[#F55498]">
@@ -639,10 +662,12 @@ const ITService = () => {
               <div className="lg:hidden">
                 <div className="overflow-hidden">
                   <ScrollAnimation animateOnce={true} animateIn="pop-up">
-                    <img className="w-auto md:w-[28rem]" src={img12} alt="" />
+                    <header>
+                      <h1 className="header text-[90px] md:text-[150px] text-end">CLOUD</h1>
+                    </header>
                   </ScrollAnimation>
                 </div>
-                <div className="w-auto md:w-[28rem] mt-[-1rem] md:mt-[-2rem] text-end">
+                <div className="w-auto mt-[-4rem] md:mt-[-6.5rem] text-end">
                   <article>
                     <header>
                       <h1 className="text-4xl font-[700] text-[#F55498]">
