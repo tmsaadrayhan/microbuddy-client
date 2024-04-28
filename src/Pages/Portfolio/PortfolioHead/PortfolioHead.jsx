@@ -16,7 +16,7 @@ const PortfolioHead = () => {
             <div className="overflow-hidden">
               <div className="pop-up">
                 <header>
-                  <h1 className="header tracking-[.2em] text-[60px] md:text-[120px] lg:text-[150px] text-center">
+                  <h1 className="header tracking-[.2em] text-[50px] md:text-[120px] lg:text-[150px] text-center">
                     Portfolio
                   </h1>
                 </header>
@@ -24,7 +24,7 @@ const PortfolioHead = () => {
             </div>
             <div>
               <img
-                className="w-[15rem] md:w-[30rem] mt-[-2.5rem] md:mt-[-6rem] mx-auto"
+                className="w-[12rem] md:w-[30rem] mt-[-2.25rem] md:mt-[-6rem] mx-auto"
                 src={img}
                 alt=""
               />
