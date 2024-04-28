@@ -60,15 +60,15 @@ const Case2 = () => {
         </div>
       </div>
       <div className="w-full">
-                    <div className="mx-auto w-fit mt-[3rem]">
-                      <button
-                        style={{ border: "1px solid #666AE5" }}
-                        className="transition-all ease-in-out duration-[600ms] text-[#666AE5] hover:text-[#FFFFFF] hover:bg-[#666AE5] text-2xl font-bold px-[2rem] py-[.5rem] rounded-xl mx-auto"
-                      >
-                        Load More
-                      </button>
-                    </div>
-                  </div>
+        <div className="mx-auto w-fit mt-[3rem]">
+          <button
+            style={{ border: "1px solid #666AE5" }}
+            className="transition-all ease-in-out duration-[600ms] text-[#666AE5] hover:text-[#FFFFFF] hover:bg-[#666AE5] text-2xl font-bold px-[2rem] py-[.5rem] rounded-xl mx-auto"
+          >
+            Load More
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
