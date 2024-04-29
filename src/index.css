@@ -179,5 +179,5 @@ button {
 }
 
 .portfolio-image-container:hover .portfolio-image-text {
-  transform: translateY(-5rem);
+  transform: translateY(-7rem);
 }

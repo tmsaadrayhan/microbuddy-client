@@ -9,7 +9,7 @@ const Why = () => {
   return (
     <section className="md:mt-12">
       <div className="max-w-[70rem] mx-auto lg:flex">
-        <article className="relative md:max-w-[47rem] lg:w-1/2 mx-auto px-[1rem]">
+        <article className="relative lg:w-1/2 mx-auto px-[1rem]">
           <header>
             <div className="overflow-hidden">
               <ScrollAnimation animateOnce={true} animateIn="pop-up">
@@ -43,12 +43,14 @@ const Why = () => {
               <p className="mb-[2.32rem]">Maintenance</p>
             </div>
           </div>
-          <div className="hidden lg:block absolute top-5 md:right-[5rem] lg:right-[-5rem] w-32">
+          {/* lg */}
+          <div className="hidden lg:block absolute top-5 right-[-5rem] w-32">
             <div className="relative">
               <img className="breathe z-50" src={img2} alt="" />
             </div>
           </div>
         </article>
+        {/* lg */}
         <div className="hidden lg:flex px-[1rem] items-center">
           <ScrollAnimation
             animateOnce={true}
@@ -58,6 +60,7 @@ const Why = () => {
             <img className="-z-50" src={img1} alt="" />
           </ScrollAnimation>
         </div>
+        {/* md and sm */}
         <div className="lg:hidden overflow-hidden px-[1rem]">
           <ScrollAnimation
             animateOnce={true}

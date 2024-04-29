@@ -41,7 +41,7 @@ const Strategy = () => {
     },
   ];
   return (
-    <section className="lg:max-w-[80rem] lg:mx-auto">
+    <section className="max-w-[80rem] lg:mx-auto">
       <div className="text-center px-[1rem]">
         <header>
           <div className="overflow-hidden">
@@ -57,7 +57,7 @@ const Strategy = () => {
       </div>
       {/*lg and md*/}
       <div className="hidden md:block lg:flex justify-normal items-center mx-auto px-[1rem]">
-        <div className="z-[50] md:ms-[2rem] lg:ms-0">
+        <div className="z-[50] ms-[2rem] lg:ms-0">
           {strategyDataLeft.map((strategy) => (
             <StrategyInfo
               key={strategyDataLeft.indexOf(strategy)}
@@ -68,18 +68,20 @@ const Strategy = () => {
           ))}
         </div>
         <div className="col-span-1 mx-auto lg:mx-[-4rem]">
+          {/* lg */}
           <div className="hidden lg:block relative">
             <div>
               <img className="breathe mx-auto w-[40rem]" src={img1} alt="" />
             </div>
           </div>
+          {/* md */}
           <img
             className="block lg:hidden mx-auto w-[40rem]"
             src={img1}
             alt=""
           />
         </div>
-        <div className="z-[50] md:ms-[2rem] lg:ms-0">
+        <div className="z-[50] ms-[2rem] lg:ms-0">
           {strategyDataRight.map((strategy) => (
             <StrategyInfo
               key={strategyDataRight.indexOf(strategy)}
@@ -107,13 +109,12 @@ const Strategy = () => {
             duration={2}
             animateIn="grow-from-4"
           >
-            <div className="block md:hidden">
-              <img className="block mx-auto w-[40rem]" src={img1} alt="" />
+            <div>
+              <img className="block mx-auto" src={img1} alt="" />
             </div>
           </ScrollAnimation>
-          <img className="hidden mx-auto w-[40rem]" src={img1} alt="" />
         </div>
-        <div className="z-[50] lg:ms-0">
+        <div className="z-[50]">
           {strategyDataRight.map((strategy) => (
             <StrategyInfoSm
               key={strategyDataRight.indexOf(strategy)}

@@ -84,7 +84,7 @@ const Review = () => {
         />
         {/*lg*/}
         <div className="hidden lg:block max-w-[60rem] -z-10 -mt-[25rem] mx-auto">
-          <div className="hidden lg:block absolute left-[3rem] top-[45rem]">
+          <div className="absolute left-[3rem] top-[45rem]">
             <button onClick={previous}>
               <IoIosArrowBack className="text-[#666ae580] text-[40px]" />
             </button>
@@ -207,7 +207,7 @@ const Review = () => {
                     <img className="rounded-full" src={imgYB} />
                   </div>
                   <article className="py-[5rem] w-[30rem] text-left">
-                    <header className="text-4xl md:text-5xl font-bold">
+                    <header className="text-5xl font-bold">
                       <h1>{reviews[2].title}</h1>
                     </header>
                     <Rating
@@ -258,7 +258,7 @@ const Review = () => {
                     <img className="rounded-full" src={imgSP} />
                   </div>
                   <article className="py-[5rem] w-[30rem] text-left">
-                    <header className="text-4xl md:text-5xl font-bold">
+                    <header className="text-5xl font-bold">
                       <h1>{reviews[3].title}</h1>
                     </header>
                     <Rating
@@ -303,7 +303,7 @@ const Review = () => {
               </div>
             </div>
           </Slider>
-          <div className="hidden lg:block absolute right-[3rem] top-[45rem]">
+          <div className="absolute right-[3rem] top-[45rem]">
             <button onClick={next}>
               <IoIosArrowForward className="text-[#666ae580] text-[40px]" />
             </button>

@@ -69,7 +69,7 @@ const Portfolio = () => {
           </div>
         </section>
         <section>
-          <div className="pt-[5rem] lg:max-w-[82rem] px-[1rem] lg:mx-auto">
+          <div className="pt-[5rem] max-w-[82rem] px-[1rem] lg:mx-auto">
             <div>
               <div className="flex flex-wrap justify-center gap-[1rem] text-nowrap text-xl overflow-hidden mb-[1rem]">
                 <p
