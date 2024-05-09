@@ -134,7 +134,6 @@ const All = () => {
   return (
     <section>
       <div>
-        All
         <div className="hidden md:flex flex-wrap justify-center">
           {!learnMore
             ? all.slice(0, 6).map((currentelement, index) => (
@@ -277,7 +276,7 @@ const All = () => {
                 </div>
               ))}
         </div>
-        <div className="w-full">
+        {all.length>6 && <div className="w-full">
           <div className="mx-auto w-fit mt-[3rem]">
             <button
               onClick={handleLearnMore}
@@ -298,7 +297,7 @@ const All = () => {
               Show Less
             </button>
           </div>
-        </div>
+        </div>}
       </div>
     </section>
   );
