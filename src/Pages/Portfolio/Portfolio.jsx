@@ -278,7 +278,10 @@ const Portfolio = () => {
               }}
             />
           </div>
-          <div className="lg:max-w-[82rem] px-[1rem] lg:mx-auto">
+          <div>
+            <p className="text-3xl text-center font-[500]">No data yet</p>
+          </div>
+          {/* <div className="lg:max-w-[82rem] px-[1rem] lg:mx-auto">
             <div>
               <div className="flex flex-wrap justify-center gap-[1rem] text-nowrap text-xl overflow-hidden mb-[1rem]">
                 <p
@@ -334,7 +337,7 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </section>
       </div>
     );

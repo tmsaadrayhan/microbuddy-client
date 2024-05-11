@@ -4,132 +4,117 @@ const require = createRequire(import.meta.url);
 import crypto from "crypto";
 const fs = require("fs");
 const path = require("path");
-const folderPath = "src/assets/portfolio/website/";
+const folderPath = "src/assets/portfolio/banner/";
 fs.readdir(folderPath, (err, files) => {
   if (err) {
-    console.error(err);
-  }
-  files.forEach((file) => {
-    if (file.toLocaleLowerCase() !== file) {
-      fs.rename(
-        folderPath + file,
-        folderPath + file.toLocaleLowerCase(),
-        (err) => {
-          if (err) {
-            console.error(err);
-          } else {
-            console.log(file);
-          }
-        }
-      );
-    }
-  });
-});
-fs.readdir(folderPath, (err, files) => {
-  if (err) {
-    console.error("Error reading directory:", err);
+    console.error('Error reading directory:', err);
     return;
   }
 
-  // Iterate over each file
-  files.forEach((file) => {
-    // Construct the full file path
-    const filePath = path.join(folderPath, file);
-
-    // Remove parentheses from the file name
-    const newFileName = file.replace(/[()]/g, "");
-
-    // Construct the full new file path
-    const newFilePath = path.join(folderPath, newFileName);
-
-    // Rename the file
-    fs.rename(filePath, newFilePath, (renameErr) => {
-      if (renameErr) {
-        console.error("Error renaming file:", renameErr);
-      } else {
-        console.log(`File ${file} renamed successfully!`);
-      }
-    });
+  // Print all file names
+  files.forEach(file => {
+    console.log(file);
   });
 });
-fs.readdir(folderPath, (err, files) => {
-  if (err) {
-    console.error("Error reading directory:", err);
-    return;
-  }
+// fs.readdir(folderPath, (err, files) => {
+//   if (err) {
+//     console.error(err);
+//   }
+//   files.forEach((file) => {
+//     if (file.toLocaleLowerCase() !== file) {
+//       fs.rename(
+//         folderPath + file,
+//         folderPath + file.toLocaleLowerCase(),
+//         (err) => {
+//           if (err) {
+//             console.error(err);
+//           } else {
+//             console.log(file);
+//           }
+//         }
+//       );
+//     }
+//   });
+// });
+// fs.readdir(folderPath, (err, files) => {
+//   if (err) {
+//     console.error("Error reading directory:", err);
+//     return;
+//   }
 
-  // Iterate over each file
-  files.forEach((file) => {
-    // Construct the full file path
-    const filePath = path.join(folderPath, file);
+//   // Iterate over each file
+//   files.forEach((file) => {
+//     // Construct the full file path
+//     const filePath = path.join(folderPath, file);
 
-    // Remove parentheses from the file name
-    const newFileName = file.replace(/\s/g, "");
+//     // Remove parentheses from the file name
+//     const newFileName = file.replace(/[()]/g, "-");
 
-    // Construct the full new file path
-    const newFilePath = path.join(folderPath, newFileName);
+//     // Construct the full new file path
+//     const newFilePath = path.join(folderPath, newFileName);
 
-    // Rename the file
-    fs.rename(filePath, newFilePath, (renameErr) => {
-      if (renameErr) {
-        console.error("Error renaming file:", renameErr);
-      } else {
-        console.log(`File ${file} renamed successfully!`);
-      }
-    });
-  });
-});
-fs.readdir(folderPath, (err, files) => {
-  if (err) {
-    console.error("Error reading directory:", err);
-    return;
-  }
+//     // Rename the file
+//     fs.rename(filePath, newFilePath, (renameErr) => {
+//       if (renameErr) {
+//         console.error("Error renaming file:", renameErr);
+//       } else {
+//         console.log(`File ${file} renamed successfully!`);
+//       }
+//     });
+//   });
+// });
+// fs.readdir(folderPath, (err, files) => {
+//   if (err) {
+//     console.error("Error reading directory:", err);
+//     return;
+//   }
 
-  // Iterate over each file
-  files.forEach((file) => {
-    // Construct the full file path
-    const filePath = path.join(folderPath, file);
+//   // Iterate over each file
+//   files.forEach((file) => {
+//     // Construct the full file path
+//     const filePath = path.join(folderPath, file);
 
-    // Remove parentheses from the file name
-    const newFileName = file.replace(/-/g, "");
+//     // Remove parentheses from the file name
+//     const newFileName = file.replace(/\s/g, "-");
 
-    // Construct the full new file path
-    const newFilePath = path.join(folderPath, newFileName);
+//     // Construct the full new file path
+//     const newFilePath = path.join(folderPath, newFileName);
 
-    // Rename the file
-    fs.rename(filePath, newFilePath, (renameErr) => {
-      if (renameErr) {
-        console.error("Error renaming file:", renameErr);
-      } else {
-        console.log(`File ${file} renamed successfully!`);
-      }
-    });
-  });
-});
-fs.readdir(folderPath, (err, files) => {
-  if (err) {
-    console.error("Error reading directory:", err);
-    return;
-  }
+//     // Rename the file
+//     fs.rename(filePath, newFilePath, (renameErr) => {
+//       if (renameErr) {
+//         console.error("Error renaming file:", renameErr);
+//       } else {
+//         console.log(`File ${file} renamed successfully!`);
+//       }
+//     });
+//   });
+// });
 
-  // Iterate over each file
-  files.forEach((file) => {
-    // Construct the full file path
-    const filePath = path.join(folderPath, file);
+// fs.readdir(folderPath, (err, files) => {
+//   if (err) {
+//     console.error("Error reading directory:", err);
+//     return;
+//   }
 
-    // Remove parentheses from the file name
-    const newFileName = file.replace(/_/g, "");
+//   // Iterate over each file
+//   files.forEach((file) => {
+//     // Construct the full file path
+//     const filePath = path.join(folderPath, file);
 
-    // Construct the full new file path
-    const newFilePath = path.join(folderPath, newFileName);
+//     // Remove parentheses from the file name
+//     const newFileName = file.replace(/_/g, "-");
 
-    // Rename the file
-    fs.rename(filePath, newFilePath, (renameErr) => {
-      if (renameErr) {
-        console.error("Error renaming file:", renameErr);
-      } else {
-        console.log(`File ${file} renamed successfully!`);
-      }
-    });
-  });
-});
+//     // Construct the full new file path
+//     const newFilePath = path.join(folderPath, newFileName);
+
+//     // Rename the file
+//     fs.rename(filePath, newFilePath, (renameErr) => {
+//       if (renameErr) {
+//         console.error("Error renaming file:", renameErr);
+//       } else {
+//         console.log(`File ${file} renamed successfully!`);
+//       }
+//     });
+//   });
+// });
